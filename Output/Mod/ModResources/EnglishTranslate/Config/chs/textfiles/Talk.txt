@@ -69834,291 +69834,291 @@ t605in0111_034	in05742	0	0	...... 		0	t605in0111_035		0	0
 t605in0111_035	in0111	0	0	...... 		0			0	0
 t605in0111_036	in05742	0	0	...... 		0			0	0
 t605in0111_037	in0111	1	0	Ah... {junior}! Don't you think this weather is good for a walk somewhere!		0	t605in0111_038		0	0
-t605in0111_038	in0111	0	0	Let's just go to the back of the mountain and hang out!		0		m_stand00_talk13	0	0
+t605in0111_038	in0111	0	0	Let's go for a hike!		0		m_stand00_talk13	0	0
 t605in0111_039	in05742	0	0	...... 		0			0	0
 t605in0111_040	in0111	1	0	Miss Cai, would you like to come with us?		0		m_stand00_talk03	0	0
-t605in0111_041	in05742	0	0	Hey! I'll do as I'm told!		0			0	0
-t605in0111_042		0	1	(Walking with Wu Zhe and Cai Si girl in the back of the mountain...)		0			0	{ "MultiAction" : [ { "RewardAction" : "re7000411_07"} , { "RewardAction" : "re7000803_02"}  ]} 
+t605in0111_041	in05742	0	0	Ah! Well since you're inviting me...		0			0	0
+t605in0111_042		0	1	(Went for a small hike with Wu Zhe and Miss Cai...)		0			0	{ "MultiAction" : [ { "RewardAction" : "re7000411_07"} , { "RewardAction" : "re7000803_02"}  ]} 
 t605in0111_043	in05742	0	0	...... 		0			0	0
-t605in0111_044	in05742	0	0	Ah... no more no more... 		0	t605in0111_045		0	0
+t605in0111_044	in05742	0	0	Ah... I can't, I'm done....		0	t605in0111_045		0	0
 t605in0111_045	in0111	4	0	Miss Cai!		0			0	0
-t605in0111_046	in0111	2	0	Let's go pour a bowl of cold water, please {junior} take care of it.		0			0	0
-t605in0111_047	in05742	0	0	Brother Wu is really great, so diligent exercise every day, never shouting tired.		0			0	0
+t605in0111_046	in0111	2	0	I'll go get some water, {junior} please take care of her.		0			0	0
+t605in0111_047	in05742	0	0	Brother Wu is amazing, training so hard everyday without a word of complaint.		0			0	0
 t605in0111_048	in05742	0	0	Ah! And of course, {address_1} {name_1} too!		0			0	0
-t605in0111_049	in0111	0	0	We're back! Here! Miss Cai drink this, it will make you feel better.		0	t605in0111_050		0	0
+t605in0111_049	in0111	0	0	I'm back! Here, Miss Cai, have some water, you will feel better.		0	t605in0111_050		0	0
 t605in0111_050	in05742	0	0	Thank you Brother Wu.		0			0	0
-t605in0111_051	in05742	0	0	Hoo... 		0	t605in0111_052		0	0
-t605in0111_052	in0111	0	0	Miss Cai, you do not need to work out with us, it is too hard.		0	t605in0111_053		0	0
-t605in0111_053	in05742	0	0	More or less, the woman also want to be able to some self-preservation power ah!		0	t605in0111_054		0	0
-t605in0111_054	in0111	0	0	Hey! We and {address_1} will protect you!		0	t605in0111_055		0	0
-t605in0111_055	in05742	0	0	Mmm! I believe in you guys!		0			0	0
-t605in0111_056	in0111	0	0	That said, we have to work harder to do!		0	t605in0111_057		0	0
-t605in0111_057	in0111	0	0	Then Miss Cai rest here first, {junior} we come back to squat a Tael a Time!		0			0	0
-t605in0111_058		0	1	(Working out with Wu ZheLasts...)		0			0	{ "MultiAction" : [ { "RewardAction" : "re7000411_07"} , { "RewardAction" : "re7000803_02"}  ]} 
+t605in0111_051	in05742	0	0	Sigh....		0	t605in0111_052		0	0
+t605in0111_052	in0111	0	0	Miss Cai, you don't have to work out with us, it's too strenuous.		0	t605in0111_053		0	0
+t605in0111_053	in05742	0	0	At the very least, I want to have some ability to protect myself!		0	t605in0111_054		0	0
+t605in0111_054	in0111	0	0	Hey! Me and {address_1} will protect you!		0	t605in0111_055		0	0
+t605in0111_055	in05742	0	0	Yes, I believe you!		0			0	0
+t605in0111_056	in0111	0	0	That being said, I have to work even harder!		0	t605in0111_057		0	0
+t605in0111_057	in0111	0	0	Then Miss Cai you can take a break here first, {junior} let's horse stance for four hours!		0			0	0
+t605in0111_058		0	1	(Working out with Wu Zhe...)		0			0	{ "MultiAction" : [ { "RewardAction" : "re7000411_07"} , { "RewardAction" : "re7000803_02"}  ]} 
 t605in0111_059	in0111	1	0	Mmm... yummy... yummy... 		0			0	0
 t605in0111_060	in05742	0	0	Brother Wu ! What are you doing sneaking around?		0			0	0
 t605in0111_061	in0111	4	0	Miss Cai... Miss Cai! Why aren't you resting at this hour?		0	t605in0111_062		0	0
 t605in0111_062	in05742	0	0	Rest? It's still early in the day!		0			0	0
-t605in0111_063		0	1	(The moon is in the middle of the sky and all is silent...)		0			0	0
-t605in0111_064	in05742	0	0	I was alone in my room, so I was looking for a place to hang out.		0	t605in0111_065	f_stand00_talk03	0	0
-t605in0111_065	in0111	3	0	It is now late and it is too dangerous to wander at will.		0	t605in0111_066	m_stand00_talk01	0	0
-t605in0111_066	in05742	0	0	Isn't there still you guys here?		0	t605in0111_067		0	0
+t605in0111_063		0	1	(The moon is high in the sky, and it's dead silent...)		0			0	0
+t605in0111_064	in05742	0	0	I was just being bored alone in my room so I was thinking I'd come out for a walk.		0	t605in0111_065	f_stand00_talk03	0	0
+t605in0111_065	in0111	3	0	It's late, and walking around is dangerous.		0	t605in0111_066	m_stand00_talk01	0	0
+t605in0111_066	in05742	0	0	But aren't you all here?		0	t605in0111_067		0	0
 t605in0111_067	in0111	4	0	...... 		0			0	0
-t605in0111_068	in0111	0	0	Okay, where do you want to go this time of year?		0	t605in0111_069	m_stand00_talk02	0	0
-t605in0111_069	in05742	0	0	Great! Let's go, let's go!		0		f_stand00_talk13	0	0
+t605in0111_068	in0111	0	0	Alright, where do you want to go?		0	t605in0111_069	m_stand00_talk02	0	0
+t605in0111_069	in05742	0	0	Great, let's go let's go!		0		f_stand00_talk13	0	0
 t605in0111_070	in05742	0	0	Brother Wu, this is delicious! What's this again?		0	t605in0111_071		0	0
-t605in0111_071	in0111	1	0	Hey, hey! This is our Canteen Aunt's specialty, lice porridge!		0	t605in0111_098		0	0
-t605in0111_072	in05742	0	0	{address_1} {name_1} How about you? I'm not sure if I'll be able to get a few sips.		0	t605in0111_073		0	0
+t605in0111_071	in0111	1	0	Hehe, this is a specialty of the Auntie's, fish porridge!		0	t605in0111_098		0	0
+t605in0111_072	in05742	0	0	{address_1} {name_1} What about you? Watching your reaction from eating it seems delicious, I wonder if you would be willing to share some?		0	t605in0111_073		0	0
 t605in0111_073	in0111	4	0	This... 		0	t605in0111_074		0	0
 t605in0111_074	in05742	0	0	...... 		0			0	0
-t605in0111_075	in0111	0	0	Well, {junior} you can let Miss Cai try a few mouthfuls, but do not pour too much ah!		0			0	0
+t605in0111_075	in0111	0	0	Well, {junior} you can let Miss Cai try a little, but not too much!		0			0	0
 t605in0111_076		0	1	（......）		0			0	0
-t605in0111_077	in05742	0	0	Hmmm... phew... 		0	t605in0111_078		0	0
-t605in0111_078	in05742	0	0	Hoo... 		0			0	0
-t605in0111_079	in0111	3	0	Let's let Miss Qianling help Miss Cai back to her room... 		0		m_stand00_talk01	0	0
-t605in0111_080	in05742	0	0	Hoo... Brother Wu... said... 		0	t605in0111_081		0	0
-t605in0111_081	in05742	0	0	To protect me... 		0	t605in0111_082		0	0
-t605in0111_082	in05742	0	0	Hoo... 		0			0	0
-t605in0111_083	in05742	0	0	Hoo... 		0	t605in0111_084		0	0
+t605in0111_077	in05742	0	0	Mmm...hmmm		0	t605in0111_078		0	0
+t605in0111_078	in05742	0	0	Mmm...		0			0	0
+t605in0111_079	in0111	3	0	Let's let Miss Qianling help Miss Cai get back to her room...		0		m_stand00_talk01	0	0
+t605in0111_080	in05742	0	0	Mmm...Brother Wu said...		0	t605in0111_081		0	0
+t605in0111_081	in05742	0	0	To protect me...		0	t605in0111_082		0	0
+t605in0111_082	in05742	0	0	Mmm...		0			0	0
+t605in0111_083	in05742	0	0	Mmm....		0	t605in0111_084		0	0
 t605in0111_084	in0111	4	0	...... 		0			0	0
-t605in0111_085	in0111	0	0	Ahem! Then I'll trouble {junior} to look after it, I'll go and look for Miss Qianling.		0			0	{ "MultiAction" : [ { "RewardAction" : "re7000803_02"} , { "RewardAction" : "re7000411_07"}  ]} 
-t605in0111_086	in0111	2	0	Hoo... hoo... 		1	t605in0111_087,t605in0111_088		0	0
+t605in0111_085	in0111	0	0	Ahem! Then I'll trouble {junior} to look after her, I'll go and look for Miss Qianling.		0			0	{ "MultiAction" : [ { "RewardAction" : "re7000803_02"} , { "RewardAction" : "re7000411_07"}  ]} 
+t605in0111_086	in0111	2	0	Huff...huff....		1	t605in0111_087,t605in0111_088		0	0
 t605in0111_087		0	3	Senior Brother, want to take a break?		0	t605in0111_089		0	0
-t605in0111_088		0	4	Senior Brother, can I help you prepare something?		0	t605in0111_092		0	0
+t605in0111_088		0	4	Senior Brother, do you need me to help you with anything?		0	t605in0111_092		0	0
 t605in0111_089	in0111	2	0	...... 		0	t605in0111_090		0	{ "MultiAction" : [ { "NpcFaceToPlayer" : "in0111", 0}  ]} 
-t605in0111_090	in0111	1	0	Hey! We can handle this level!		0	t605in0111_091		0	0
-t605in0111_091	in0111	1	0	{If you're tired, take a break!		0			0	0
+t605in0111_090	in0111	1	0	Ha! Just this level? I can handle it!		0	t605in0111_091		0	0
+t605in0111_091	in0111	1	0	{junior}, if you're tired, take a break!		0			0	0
 t605in0111_092	in0111	2	0	...... 		0	t605in0111_093		0	{ "MultiAction" : [ { "NpcFaceToPlayer" : "in0111", 0}  ]} 
-t605in0111_093	in0111	1	0	Thanks {junior}, we don't need anything.		0	t605in0111_094		0	0
-t605in0111_094	in0111	1	0	If {junior} is tired, go rest yourself!		0			0	0
+t605in0111_093	in0111	1	0	Thanks {junior}, I don't need anything.		0	t605in0111_094		0	0
+t605in0111_094	in0111	1	0	If {junior} is tired, you can take a break!		0			0	0
 t605in0111_095		0	1	（......）		0			0	{ "MultiAction" : [ { "RewardAction" : "re7000803_01"} , { "RewardAction" : "re7000411_07"}  ]} 
-t605in0111_096		0	1	(Still hanging around with Wu Zhe and Cai Si...)		0			0	{ "MultiAction" : [ { "RewardAction" : "re7000411_07"} , { "RewardAction" : "re7000803_02"}  ]} 
+t605in0111_096		0	1	(Hung around with Wu Zhe and Cai Si....)		0			0	{ "MultiAction" : [ { "RewardAction" : "re7000411_07"} , { "RewardAction" : "re7000803_02"}  ]} 
 t605in0111_097		0	1	（......）		0	t605in0111_063		0	0
 t605in0111_098	in05742	0	0	Oh!		0			0	0
-t605in0111_100	in0111	2	0	Hoo... hoo... 		1	t605in0111_101,t605in0111_102		0	0
+t605in0111_100	in0111	2	0	Huff...huff....		1	t605in0111_101,t605in0111_102		0	0
 t605in0111_101		0	3	Senior Brother, can I help you prepare something?		0	t605in0111_106		0	{ "MultiAction" : [ { "SetFlagAction" : 0, 1, "fe605in011111_2_03"}  ]} 
 t605in0111_102		0	4	Senior Brother, want to take a break?		0	t605in0111_103		0	{ "MultiAction" : [ { "SetFlagAction" : 0, 2, "fe605in011111_2_03"}  ]} 
 t605in0111_103	in0111	2	0	...... 		0			0	0
-t605in0111_104	in0111	1	0	Hey! We can handle this level!		0	t605in0111_105		0	0
-t605in0111_105	in0111	1	0	{If you're tired, take a break!		0			0	0
+t605in0111_104	in0111	1	0	Ha! Just this level? I got this!		0	t605in0111_105		0	0
+t605in0111_105	in0111	1	0	{junior} if you're tired you can take a break first!		0			0	0
 t605in0111_106	in0111	2	0	...... 		0			0	0
-t605in0111_107	in0111	1	0	Thanks {junior}, we don't need anything.		0	t605in0111_108		0	0
-t605in0111_108	in0111	1	0	If {junior} is tired, go rest yourself!		0			0	0
+t605in0111_107	in0111	1	0	Thanks {junior}, I don't need anything.		0	t605in0111_108		0	0
+t605in0111_108	in0111	1	0	If {junior} is tired, go take a break first.		0			0	0
 t605in0111_109		0	1	（......）		0			0	{ "MultiAction" : [ { "RewardAction" : "re7000803_02"} , { "RewardAction" : "re7000411_07"}  ]} 
-t605in0111_110	in0111	2	0	Hoo... hoo... 		1	t605in0111_111,t605in0111_112		0	0
+t605in0111_110	in0111	2	0	Huff...huff....		1	t605in0111_111,t605in0111_112		0	0
 t605in0111_111		0	4	Senior Brother, can I help you prepare something?		0	t605in0111_113		0	0
 t605in0111_112		0	3	Senior Brother, want to take a break?		0	t605in0111_113		0	0
 t605in0111_113	in0111	2	0	...... 		1	t605in0111_114		0	0
 t605in0111_114		0	3	Senior Brother? 		0	t605in0111_115		0	0
 t605in0111_115	in0111	2	0	...... 		0	t605in0111_116		0	0
-t605in0111_116	in0111	2	0	Not enough... not enough... 		0	t605in0111_117		0	0
-t605in0111_117	in0111	2	0	Hoo... hoo... 		0	t605in0111_118		0	0
-t605in0111_118		0	1	(Wu Zhe didn't seem to hear anything...)		0			0	{ "MultiAction" : [ { "RewardAction" : "re7000411_07"} , { "RewardAction" : "re7000803_02"}  ]} 
-t605in0111_119	in0111	2	0	Hoo... hoo... 		1	t605in0111_120,t605in0111_121		0	0
-t605in0111_120		0	3	Senior Brother, want to take a break?		0	t605in0111_123		0	{ "MultiAction" : [ { "NpcFaceToPlayer" : "in0111", 0}  ]} 
-t605in0111_121		0	4	Senior Brother, can I help you prepare something?		0	t605in0111_122		0	{ "MultiAction" : [ { "NpcFaceToPlayer" : "in0111", 0}  ]} 
-t605in0111_122	in0111	1	0	No, Senior Brother is not tired at all!		0	t605in0111_126		0	0
-t605in0111_123	in0111	1	0	Ha! Not yet!		0	t605in0111_124		0	0
+t605in0111_116	in0111	2	0	Not...enough...not nearly enough...		0	t605in0111_117		0	0
+t605in0111_117	in0111	2	0	Huff...huff....		0	t605in0111_118		0	0
+t605in0111_118		0	1	(Wu Zhe doesn't seem to  be hearing you...)		0			0	{ "MultiAction" : [ { "RewardAction" : "re7000411_07"} , { "RewardAction" : "re7000803_02"}  ]} 
+t605in0111_119	in0111	2	0	Huff...huff....		1	t605in0111_120,t605in0111_121		0	0
+t605in0111_120		0	3	Senior Brother, can I help you prepare something?		0	t605in0111_123		0	{ "MultiAction" : [ { "NpcFaceToPlayer" : "in0111", 0}  ]} 
+t605in0111_121		0	4	Senior Brother, want to take a break?		0	t605in0111_122		0	{ "MultiAction" : [ { "NpcFaceToPlayer" : "in0111", 0}  ]} 
+t605in0111_122	in0111	1	0	Nah! I'm not tired yet!		0	t605in0111_126		0	0
+t605in0111_123	in0111	1	0	Hah! Not yet!		0	t605in0111_124		0	0
 t605in0111_124	in0111	0	0	What about {junior} ?		0	t605in0111_125		0	0
-t605in0111_125	in0111	0	0	Don't get hungry or tired!		0			0	0
+t605in0111_125	in0111	0	0	Don't go hungry or get tired!		0			0	0
 t605in0111_126	in0111	0	0	...... 		0	t605in0111_127		0	0
-t605in0111_127	in0111	0	0	Ah! Or is it {junior} lacking?		0			0	0
-t605in0111_128	in0111	1	0	Hey! {junior} is really good! Then we can't lose!		0		m_stand00_talk13	0	0
-t605in0111_129		0	1	(Working out with Wu ZheLasts...)		0			0	{ "MultiAction" : [ { "RewardAction" : "re7000411_07"} , { "RewardAction" : "re7000803_03"}  ]} 
-t605in0111_130	in0111	2	0	Hoo... hoo... 		1	t605in0111_132,t605in0111_131		0	0
-t605in0111_131		0	3	Senior Brother, do you want to take a break at this moment?		0			0	{ "MultiAction" : [ { "SetFlagAction" : 0, 2, "fe605in011111_2_04"}  ]} 
-t605in0111_132		0	4	Senior Brother, do you want to go out of the Pavilion for a walk?		0			0	{ "MultiAction" : [ { "SetFlagAction" : 0, 1, "fe605in011111_2_04"}  ]} 
+t605in0111_127	in0111	0	0	Ah! {junior} is tired?		0			0	0
+t605in0111_128	in0111	1	0	Hah! {junior} is really good! I won't lose t oyou!		0		m_stand00_talk13	0	0
+t605in0111_129		0	1	(Continued working out with Wu Zhe...)		0			0	{ "MultiAction" : [ { "RewardAction" : "re7000411_07"} , { "RewardAction" : "re7000803_03"}  ]} 
+t605in0111_130	in0111	2	0	Huff...huff....		1	t605in0111_132,t605in0111_131		0	0
+t605in0111_131		0	3	Senior Brother, what about taking a break now?		0			0	{ "MultiAction" : [ { "SetFlagAction" : 0, 2, "fe605in011111_2_04"}  ]} 
+t605in0111_132		0	4	Senior Brother, want to go out for a walk?		0			0	{ "MultiAction" : [ { "SetFlagAction" : 0, 1, "fe605in011111_2_04"}  ]} 
 t605in0111_133	in0111	0	0	...... 		0			0	0
 t605in0111_134	in0111	0	0	...... 		0			0	0
-t605in0111_135	in0111	1	0	I'm not going to do that. Since {junior} said so, let's go out to the Pavilion!		0		m_stand00_talk13	0	0
-t605in0111_136	in0111	1	0	Great! But it would be a waste of this beautiful windy weather to simply take a break!	t605in0111_137	0	t605in0111_138		{ "LogicalNode" : [ { "CheckCurrentTime" : 1}  ], 0} 	0
-t605in0111_137	in0111	1	0	Great! But it would be a waste of this beautiful night if we simply rested!		0	t605in0111_138		0	0
-t605in0111_138	in0111	1	0	Why don't we go out to the Pavilion and hang out?		0		m_stand00_talk13	0	0
-t605in0111_139		0	1	(Hanging out with Wu Zhe around Xia Pavilion...)		0			0	{ "MultiAction" : [ { "RewardAction" : "re7000803_03"} , { "RewardAction" : "re7000411_07"}  ]} 
+t605in0111_135	in0111	1	0	Sure! Since {junior} asked, let's go out for a walk!		0		m_stand00_talk13	0	0
+t605in0111_136	in0111	1	0	Great! But just sitting and resting would be such a waste of a beautiful day!	t605in0111_137	0	t605in0111_138		{ "LogicalNode" : [ { "CheckCurrentTime" : 1}  ], 0} 	0
+t605in0111_137	in0111	1	0	Great! But just sitting and resting would be such a waste of a beautiful evening!		0	t605in0111_138		0	0
+t605in0111_138	in0111	1	0	Why don't we go out for a walk?		0		m_stand00_talk13	0	0
+t605in0111_139		0	1	(Hung around with Wu Zhe....)		0			0	{ "MultiAction" : [ { "RewardAction" : "re7000803_03"} , { "RewardAction" : "re7000411_07"}  ]} 
 t605in0111_140	in0111	0	0	...... 		1	t605in0111_141,t605in0111_142		0	0
 t605in0111_141		0	3	Senior Brother! I've been looking for you for a while!		0			0	{ "MultiAction" : [ { "SetFlagAction" : 0, 1, "fe605in011111_2_05"}  ]} 
-t605in0111_142		0	4	Senior Brother! It's a good thing you weren't at the training ground today!		0			0	{ "MultiAction" : [ { "SetFlagAction" : 0, 2, "fe605in011111_2_05"}  ]} 
+t605in0111_142		0	4	Senior Brother! It's rare to see you not at the practice fields!		0			0	{ "MultiAction" : [ { "SetFlagAction" : 0, 2, "fe605in011111_2_05"}  ]} 
 t605in0111_143	in0111	4	0	{junior}! 		0			0	0
 t605in0111_144	in0111	1	0	Hahahahahahaha!		0			0	0
 t605in0111_145	in0111	0	0	Yes!		0			0	0
 t605in0111_146	in0111	0	0	Sorry!		0			0	0
-t605in0111_147	in0111	0	0	We're thinking about something!		0			0	0
-t605in0111_148	in0111	0	0	{junior} Why not... sit together?		0	t605in0111_149		0	0
-t605in0111_149	in0111	0	0	What about sunbathing and enjoying the view?	t605in0111_150	0			{ "LogicalNode" : [ { "CheckCurrentTime" : 1}  ], 0} 	0
-t605in0111_150	in0111	0	0	What about blowing the evening breeze and enjoying the night?		0			0	0
-t605in0111_151	in0111	0	0	Great! Come here!		0			0	0
-t605in0111_152	in0111	0	0	Hey! Sorry, this one is a little small, let's move it... 		0			0	0
-t605in0111_153		0	1	(Enjoyed the scenery with Wu Zhe for a while.)		0			0	{ "MultiAction" : [ { "RewardAction" : "re7000803_03"} , { "RewardAction" : "re7000411_07"}  ]} 
+t605in0111_147	in0111	0	0	I was just thinking about stuff!		0			0	0
+t605in0111_148	in0111	0	0	{junior} Why not... sit with me?		0	t605in0111_149		0	0
+t605in0111_149	in0111	0	0	Enjoy the sunshine and the sights or whatever?	t605in0111_150	0			{ "LogicalNode" : [ { "CheckCurrentTime" : 1}  ], 0} 	0
+t605in0111_150	in0111	0	0	Enjoy the evening breeze or whatever?		0			0	0
+t605in0111_151	in0111	0	0	Great! Over here!		0			0	0
+t605in0111_152	in0111	0	0	Hah! Sorry, it's a bit crowded here, I'll move over...		0			0	0
+t605in0111_153		0	1	(Enjoyed the scenery with Wu Zhe.)		0			0	{ "MultiAction" : [ { "RewardAction" : "re7000803_03"} , { "RewardAction" : "re7000411_07"}  ]} 
 t605in0111_154	in0111	0	0	{junior}! 		0	t605in0111_155		0	0
 t605in0111_155	in0111	0	0	Let's spar!		0			0	0
 t605in0111_156	in0111	0	0	...... 		0	t605in0111_157		0	0
 t605in0111_157	in0111	1	0	Hahahaha!		0	t605in0111_158		0	0
-t605in0111_158	in0111	1	0	{junior} is awesome!		0	t605in0111_159		0	0
-t605in0111_159	in0111	0	0	Ai'ya, that's not good!		0			0	0
-t605in0111_160	in0111	0	0	Senior Brother can't lose like this!		0	t605in0111_161		0	0
-t605in0111_161	in0111	0	0	{junior} Wait a minute!		0	t605in0111_162		0	0
-t605in0111_162	in0111	0	0	Let Senior Brother work out for a few days!		0	t605in0111_163		0	0
-t605in0111_163	in0111	0	0	Next time we will come back to compare!		0		m_stand00_talk13	0	0
-t605in0111_165		0	1	(and Wu Zhe worked out some more...)		0			0	{ "MultiAction" : [ { "RewardAction" : "re7000803_01"} , { "RewardAction" : "re7000411_07"}  ]} 
-t1310302_bs0283	in0202	0	0	Take care of the surrounding corpse zombie first, without the advantage of numbers, Abyssal Palace will not be afraid!		0	t1310302_bs0236		0	0
-t1101101_043		0	1	(<color=#FF0000>[Move]</color> Click the <color=#FF0000>Standby</color> button in the lower right corner of the Painting surface to <color=#FF0000>end the character's action in the current Round</color>.)		0	t1101101_017		0	0
-t1101101_061		0	1	(<color=#FF0000>[Perspective]</color> Pushing the <color=#FF0000>right joystick</color> left and right can <color=#FF0000>turn the perspective</color>.)		0	t1101101_062		0	0
-t1101101_062		0	1	(<color=#FF0000>[Perspective]</color>Pushing the <color=#FF0000>right lever</color> back and forth will <color=#FF0000>pull the Painting surface far and near</color>.)		0	t1101101_060		0	0
+t605in0111_158	in0111	1	0	{junior} is too strong!		0	t605in0111_159		0	0
+t605in0111_159	in0111	0	0	Aiyah, that won't do!		0			0	0
+t605in0111_160	in0111	0	0	I can't lose like this as a Senior Brother		0	t605in0111_161		0	0
+t605in0111_161	in0111	0	0	{junior}, hang on!		0	t605in0111_162		0	0
+t605in0111_162	in0111	0	0	Let me train a few more days!		0	t605in0111_163		0	0
+t605in0111_163	in0111	0	0	Then we'll go again!		0		m_stand00_talk13	0	0
+t605in0111_165		0	1	(Worked out with Wu Zhe some more...)		0			0	{ "MultiAction" : [ { "RewardAction" : "re7000803_01"} , { "RewardAction" : "re7000411_07"}  ]} 
+t1310302_bs0283	in0202	0	0	Get rid fo the Corpse zombies in the area, once they don't have any numbers advantage, the Abyssal Palace is nothing to be afraid of!		0	t1310302_bs0236		0	0
+t1101101_043		0	1	(<color=#FF0000>[Move]</color> Click the <color=#FF0000>Standby</color> button in the lower right corner <color=#FF0000>end the character's action in the current Round</color>.)		0	t1101101_017		0	0
+t1101101_061		0	1	(<color=#FF0000>[Camera]</color> Pushing the <color=#FF0000>right joystick</color> left and right can <color=#FF0000>rotate the camera</color>.)		0	t1101101_062		0	0
+t1101101_062		0	1	(<color=#FF0000>[Perspective]</color>Pushing the <color=#FF0000>right lever</color> back and forth will <color=#FF0000>zoom in or out</color>.)		0	t1101101_060		0	0
 t5201112_077	in05364	0	0	Let's me show you the power of Earth Dragon Sect.		0	t5201112_078		0	0
 t5201112_078	in05365	0	0	Hmph! Once you're done with the tough talk, go ahead and make your move.		0	t5201112_079		0	0
 t5201112_079	in05364	0	0	Hmph! Let's see if you can withstand my punch!		0			0	0
 t5201112_080	in05365	0	0	Hmph, look at your crude and reckless attack, typical of brute strength without brains. The quality of Earth Dragon Sect is evidently mediocre.		0	t5201112_083		0	0
-t5201112_081	in05364	0	0	This... Unexpectedly... strike at empty air... 		0	t5201112_080		0	0
-t5201112_082	in05365	0	0	It's my turn now, watch my move!		0			0	0
+t5201112_081	in05364	0	0	Ah...it...missed...		0	t5201112_080		0	0
+t5201112_082	in05365	0	0	My turn, take this!		0			0	0
 t5201112_083	in05364	0	0	You...!		0	t5201112_082		0	0
 t5201133_091		0	1	(Master Mu appreciates you even more!)		0			0	{ "MultiAction" : [ { "SetFlagAction" : 1, 1, "fg0209_MasterLove"}  ]} 
-t5201139_015	in0205	0	0	... This cave is swollen and fast, these corpse zombies are using it as a cover, must be a high level of guidance... 		0			0	0
-t1010903_064	in0701	0	0	At this age, it is already outstanding to have this level of Sword art.		0	t1010903_072		0	0
-t1010903_072	in0701	0	0	However, it is always the daily practice of seven or eight Time, saying that the Sword art has not yet become.		0	t1010903_073		0	0
-t1010903_073	in0701	0	0	In my opinion, the success and not yet determined, this practice, people are certainly the first to collapse.		0	t1010903_074		0	0
-t1010903_074	in0701	0	0	Really! You don't even listen to me! Should I say that they are father and daughter? The same virtue as the old Chu... 		0	t1010903_056	m_stand00_talk01	0	0
-t1010903_075		0	3	Can't you use ordinary bruising cream?		0	t1010903_077		0	0
-t1010903_076		0	4	The supplies in the court are so serious, and the bruising cream is not?		0	t1010903_077		0	0
-t1010903_077	in0701	0	0	Hey! This you do not understand, listen to what you say, Jing girl's injury, afraid of unusual ointment is already insufficient.		0	t1010903_078		0	0
-t1010903_078	in0701	0	0	That girl can be stubborn, if you can see that she is injured, the condition of the affected area must be much more serious than it seems.		0	t1010903_079	m_stand00_talk01	0	0
-t1010903_079	in0701	0	0	... ordinary bruising medicine, but can not cure, can not make up for the wear and tear that she has accumulated over the years.		0	t1010903_061		0	0
-t1010903_080		0	3	The disciple may... have not really been there?		0	t1010903_082		0	0
-t1010903_081		0	4	Where are you talking about, Master Dao Heng?		0	t1010903_082		0	0
-t1010903_082	in0701	0	0	My goodness... I see you guys running around Five Elder Mountain all the time... aren't you all just bumbling around and not doing anything serious?		0	t1010903_083	m_stand00_talk41	0	0
-t1010903_083	in0701	0	0	Alas... But remember, there... then... then go there... to the east... get it?		0	t1010903_063	m_stand00_talk01	0	0
-t1010904_080	in03008	0	0	Although I believe that with Master Jing's martial arts skills, just probing should not be a problem.		0	t1010904_081		0	0
-t1010904_081	in03008	0	0	However, seeing {friend_1} {name_1}'s worried look, it might be more reassuring to follow up personally.		0	t1010904_082		0	0
+t5201139_015	in0205	0	0	...The Corpse Zombies using this cave as cover, they must have a strategist helping them...		0			0	0
+t1010903_064	in0701	0	0	To have such a skill level with the sword at this age, is very outstanding.		0	t1010903_072		0	0
+t1010903_072	in0701	0	0	But, still saying you're not done even after training for 14, 16 hours a day.		0	t1010903_073		0	0
+t1010903_073	in0701	0	0	In my opinion, before you even get to completion, training like this your body will collapse.		0	t1010903_074		0	0
+t1010903_074	in0701	0	0	Tsk! You don't even listen to anyone! Should we say "Like father like child" Just like Old Chu...		0	t1010903_056	m_stand00_talk01	0	0
+t1010903_075		0	3	Can't use ordinary medicine?		0	t1010903_077		0	0
+t1010903_076		0	4	Are we so short on supplies we don't have any basic medicine?		0	t1010903_077		0	0
+t1010903_077	in0701	0	0	Hah! See, that's where you don't understand, Jing's injury is going to require much more than basics.		0	t1010903_078		0	0
+t1010903_078	in0701	0	0	That kid is stubborn, if you can tell she's hurt, then the actual injury is much worse.		0	t1010903_079	m_stand00_talk01	0	0
+t1010903_079	in0701	0	0	...Normal medicine, not going to cut it. It's not going to heal all the injuries built up over time.		0	t1010903_061		0	0
+t1010903_080		0	3	I...really haven't been there before?		0	t1010903_082		0	0
+t1010903_081		0	4	Master Dao Heng, what are you talking about?		0	t1010903_082		0	0
+t1010903_082	in0701	0	0	My gosh..I just see you all running around Five Elder Mountains all day, are you just frolicking about?		0	t1010903_083	m_stand00_talk41	0	0
+t1010903_083	in0701	0	0	Sigh...just remember, get there...then go East....got it?		0	t1010903_063	m_stand00_talk01	0	0
+t1010904_080	in03008	0	0	But I believe in Master Jing's skills. She is just scouting it out, it shouldn't be a problem.		0	t1010904_081		0	0
+t1010904_081	in03008	0	0	However, seeing {friend_1} {name_1}'s worried look on your face, maybe you should go check it out yourself to bring you peace of mind.		0	t1010904_082		0	0
 t1010904_082	in03008	0	0	I'm sorry to say that I'm not able to accompany {friend_1} {name_1} because I have other commitments.		0	t1010904_083		0	0
-t1010904_083	in03008	0	0	But fortunately, I just heard on the sidelines the details of where Master Jing was going to scout.		0			0	0
-t1010904_084	in0575502	0	0	Tch... this girl is so tenacious, she has received several claws...!		0	t1010904_085		0	0
-t1010904_085	in0575503	0	0	Don't be afraid! There are many of us! I don't believe she can hold out much longer!		0	t1010904_018		0	0
+t1010904_083	in03008	0	0	But I think I heard that Master Jing was just going to scout out the area.		0			0	0
+t1010904_084	in0575502	0	0	Tsk...what a stubborn girl, she's already wounded...!		0	t1010904_085		0	0
+t1010904_085	in0575503	0	0	Don't be afraid! We have a numbers advantage! I don't think she'll hold out much longer!		0	t1010904_018		0	0
 t1010904_086		0	5	Who will die is yet to be seen, demons!		0			0	{ "MultiAction" : [ { "RewardAction" : "re7000204_07"}  ]} 
-t1010904_087	in0575503	0	0	Fie! Empty words... the hypocrisy of chivalry, we have seen a lot, do not think we will fall for it!		0			0	0
+t1010904_087	in0575503	0	0	Bullshit! Spewing bullshit...all the fake charity from you Xia, we've seen enough, we won't fall for it again!		0			0	0
 t1010904_088	in0109	0	0	......! 		0		in0575503	0	0
 t1010904_090	in0109	0	0	...... 		0	t1010904_091		0	0
-t1010904_091	in0109	0	0	Even so, it is enough to circle with it.		0			0	0
-t1010904_092		0	3	In the past, the hard practice is to... 		0	t1010904_093		0	0
+t1010904_091	in0109	0	0	Even so, dealing with you is enough.		0			0	0
+t1010904_092		0	3	All the hard practice in the past, is for...		0	t1010904_093		0	0
 t1010904_093	in0109	0	0	...... 		1	t1010904_067,t1010904_068		0	0
-t1010904_191	in0701	0	0	{address_3}, although I understand that you are worried about Ah Jing, but we in the Pavilion master can not be so weak.		0	t1010904_192		0	0
-t1010904_192	in0701	0	0	Next time just trust more Jing girl... ah bah bah bah, this kind of dangerous thing, don't have next time.		0			0	0
-t1010904_193	in0109	0	0	Regardless of the age, regardless of martial arts skills, since I am a day in the Pavilion as a teacher, when a day will not change this original intention.		0	t1010904_137		0	0
+t1010904_191	in0701	0	0	{address_3}, although I understand that you are worried about Ah Jing, but the Masters in the Pavillion aren't so weak.		0	t1010904_192		0	0
+t1010904_192	in0701	0	0	Next time just trust her...Ah what am I talking about, there won't be a next time.		0			0	0
+t1010904_193	in0109	0	0	Regardless of age, regardless of skill, since I am a Master here then I won't change. 		0	t1010904_137		0	0
 t1010904_200	in0109	0	0	...... 		0	t1010904_201		0	0
-t1010904_201	in0109	1	0	The thing is not as {name_1} {name_2} said, it is he who is dragging his feet. Rather, I... have not mapped out the situation.		0	t1010904_202		0	0
-t1010904_202	in0109	0	0	I think those corpse zombies are not the core members of Abyssal Palace, but the people who are under the compulsion of the moment.		0	t1010904_203		0	0
-t1010904_203	in0109	3	0	If the first to subdue, and then brought back to the Pavilion medical treatment, when you can restore the former appearance... before the heavy hand.		1	t1010904_204,t1010904_205		0	{ "MultiAction" : [ { "PlayerFaceToNPC" : "in0109", 0}  ]} 
-t1010904_204		0	3	They chose this path, it is self-inflicted.		0			0	0
-t1010904_205		0	4	But the master is almost an accident... 		0			0	0
+t1010904_201	in0109	1	0	It's not as {name_1} {name_2} said like they dragged me down. It was me...I didn't understand the situation clearly.		0	t1010904_202		0	0
+t1010904_202	in0109	0	0	I think those Corpse Zombies, judging from their clothing, aren't the core of the Abyssal Palace, but merely plain people who have been tricked by them.		0	t1010904_203		0	0
+t1010904_203	in0109	3	0	If we subdue them first and bring them back for treatment, we can turn them back...that's why I went easy.		1	t1010904_204,t1010904_205		0	{ "MultiAction" : [ { "PlayerFaceToNPC" : "in0109", 0}  ]} 
+t1010904_204		0	3	They chose that path, they must deal with the consequences.		0			0	0
+t1010904_205		0	4	But Master was almost hurt because of that...		0			0	0
 t1010904_206	in0109	0	0	...... 		0	t1010904_207		0	0
-t1010904_207	in0109	0	0	Even so, if we don't give them another way... they will only continue to be used by Abyssal Palace and go further and further down the wrong path.		0	t1010904_208		0	0
-t1010904_208	in0109	1	0	This is the guideline of Headmaster Chu's ear... and... the way to follow as a teacher.		0			0	0
-t1010905_059	in05761	0	0	Alas... I think I am a third-grade Commander, the army under the command of the strong, and you six powerful generals.		0	t1010905_060		0	0
-t1010905_060	in05761	0	0	At least in the area of a province, can be said to call the wind and rain, but also got the jade name "Kou see sorrow".		0	t1010905_061		0	0
-t1010905_061	in05761	0	0	Now what... themselves into the ko, worry is really worry... 		0	t1010905_034		0	0
-t1010905_062		0	3	After the rendezvous, we have to tell the master about this... 		0			0	0
-t1010905_063		0	4	A former general... now he's a bandit... 		0			0	0
-t1010905_064		0	1	(It seems that the other party intends to strike at a nearby caravan...)		1	t1010905_062,t1010905_063		0	0
+t1010904_207	in0109	0	0	Even if that's the case, if we don't give them another path...then they will continue to be used by the Abyssal Palace and go further down that path. 		0	t1010904_208		0	0
+t1010904_208	in0109	1	0	This is what Headmaster Chu teaches and waht he believes...and also...what I believe.		0			0	0
+t1010905_059	in05761	0	0	Sigh...thinking that I was once a Commander of the third rank, with many soldiers and you six capable captains.		0	t1010905_060		0	0
+t1010905_060	in05761	0	0	At least in a small area I could summon winds and call the rain, and was once known as "Bandit's Sorrow." to some.		0	t1010905_061		0	0
+t1010905_061	in05761	0	0	But now...I am a bandit...sorrowful indeed.		0	t1010905_034		0	0
+t1010905_062		0	3	After we meet up, we should tell Master...		0			0	0
+t1010905_063		0	4	A former general...is now a bandit...		0			0	0
+t1010905_064		0	1	(Looks like they are planning to attack a merchant caravan nearby...)		1	t1010905_062,t1010905_063		0	0
 t1010905_251	in0109	1	0	...... 		1			0	0
-t1010905_252		0	5	Master, my disciple... did a good job, right?		0	t1010905_253		0	0
+t1010905_252		0	5	Master, I did..pretty good right?		0	t1010905_253		0	0
 t1010905_253	in0109	0	0	You... 		0	t1010905_254		0	0
-t1010905_254	in0109	1	0	... you did, very well.		0			0	0
-t1010907_079	in0204	0	0	These I have seen in the eyes, today, I will not and turn a blind eye.		0		f_stand03_await00	0	0
-t1010907_157	in0204	0	0	I... that's all I want! Otherwise... 		0			0	0
-t1010907_397		0	4	I thank you, Master, for your compliments!		0	t1010907_391		0	{ "MultiAction" : [ { "PlayPlayerAnimationAction" : [ { 0, "m_stand00_salute01", 1.00000}  ]}  ]} 
-t1010907_399	in0109	0	0	You once said: Although I am a teacher, but I do not have to be perfect, but also wish to cut each other, each other to find the way.		0	t1010907_356		0	0
-t1010907_495	in0109	0	0	And... this blessing should not be just for me.		0	t1010907_496		0	0
-t1010907_496	in0109	1	0	Likewise, it is also a recognition and tribute to your chivalry and your dedication to be close to and help others.		1	t1010907_423		0	{ "MultiAction" : [ { "PlayPlayerAnimationAction" : [ { 0, "m_stand00_talk33", 1.00000}  ]}  ]} 
-t1011003_426		0	1	(Senior Sister Shangguan was not seen on the martial arts field, only Junior Sister Lin was wielding her saber in a rage.)		0			0	0
-t1011003_427		0	1	(Although her sabermanship is messy and lacking in accuracy, her aura of indifference and arrogance forces everyone around her to stay away...)		0			0	0
-t1011003_428		0	1	(Now I'm not brave enough to ask her sister's whereabouts...)		0			0	0
-t1011003_429		0	1	(... Increase <color=#FF0000>Bravery</color> to <color=#FF0000>450 points</color>, then give it another try.)		0			0	0
-t1011003_430		0	1	(On the martial arts field, Junior Sister Lin was still seen wielding her saber in a terrifying manner.)		0			0	0
-t1011003_431		0	1	(I'm not brave enough to ask her sister's whereabouts...)		0			0	0
-t1011003_432		0	1	(... Increase <color=#FF0000>Bravery</color> to <color=#FF0000>450 points</color>, then give it another try.)		0			0	0
-t1011004_068	in0110	1	0	I knew there was no way he would be captured or beheaded! He's my big brother! Never fails to disappoint us!		0	t1011004_069	f_stand00_talk13	0	0
-t1011004_069	in0110	0	0	He must be thinking of a counterattack somewhere because he's worried about something!		0			0	0
-t1011005_482	in0110	2	0	Indeed... if the Northern Flame army is dispatched, it will be easy to destroy the barbarian army... 		0	t1011005_483		0	0
-t1011005_483	in0110	2	0	But fear is afraid that the barbarian army is surrounded to fight a fish to death, directly regardless of losses Onslaught harm still besieged father... 		0	t1011005_484		0	0
-t1011005_484	in0110	2	0	And if a small force infiltrates, in terms of breakout, Strength is far from... 		0	t1011005_485		0	0
-t1011005_485	in0110	2	0	Now the only way, only let brother infiltrate, with the barbarians to his trust, quietly bring father out... 		0	t1011005_486		0	0
-t1011005_486	in0110	2	0	Let Nellie's army lose the value of being Onslaught and then dispatch a large army to besiege... 		0			0	0
-t1011005_487	in03010	0	0	But Senior Sister! Tong Zhi... well... how can he... be trusted?		0	t1011005_488		0	0
-t1011005_488	in0110	2	0	If you choose to turn your back on the Shangguan family just because you lost the position of family head... then... in order to get dad back safely... 		0	t1011005_492		0	0
-t1011005_489	in0110	2	0	Including the position of Shangguan family head, what can not be abandoned?		0			0	0
-t1011005_490	in0110	3	0	And... brother... has never let me down... I can't believe... he would so easily... 		0			0	0
+t1010905_254	in0109	1	0	...You did. You did very well.		0			0	0
+t1010907_079	in0204	0	0	I see all of this, today, I'm just gonna keep one eye closed and one eye open.		0		f_stand03_await00	0	0
+t1010907_157	in0204	0	0	I...I only thought of this way! But...		0			0	0
+t1010907_397		0	4	Thank you for the compliments, Master!		0	t1010907_391		0	{ "MultiAction" : [ { "PlayPlayerAnimationAction" : [ { 0, "m_stand00_salute01", 1.00000}  ]}  ]} 
+t1010907_399	in0109	0	0	You once said: Even though I am a teacher, but I don't need to be perfect, I am willng to spar to find our own paths.		0	t1010907_356		0	0
+t1010907_495	in0109	0	0	Also...these blessings are not just for me.		0	t1010907_496		0	0
+t1010907_496	in0109	1	0	At the same time, this is also for your own path, as well as your sincerety and compassion for others.		1	t1010907_423		0	{ "MultiAction" : [ { "PlayPlayerAnimationAction" : [ { 0, "m_stand00_talk33", 1.00000}  ]}  ]} 
+t1011003_426		0	1	(Can't find Senior Sister Shangguan on the practice field, but Junior Sister Lin's movements are quite fierce.)		0			0	0
+t1011003_427		0	1	(Even though there's no order or discipline to her movements, but the look of fury on her face causes everyone to back away...)		0			0	0
+t1011003_428		0	1	(Currently lacking the Bravery to ask about her sister...)		0			0	0
+t1011003_429		0	1	(... Increase <color=#FF0000>Bravery</color> to <color=#FF0000>450 points</color>, then come back to give it another try.)		0			0	0
+t1011003_430		0	1	(You only see Junior Sister Lin swinging away wither her weapon, a terrifying sight.)		0			0	0
+t1011003_431		0	1	(Currently lacking the Bravery to ask about her sister...)		0			0	0
+t1011003_432		0	1	(... Increase <color=#FF0000>Bravery</color> to <color=#FF0000>450 points</color>, then come back to give it another try.)		0			0	0
+t1011004_068	in0110	1	0	I kknew there was no way they would be captured or executed! He's my big brother! He'll never let me down!		0	t1011004_069	f_stand00_talk13	0	0
+t1011004_069	in0110	0	0	He must be worried about something, and planning a coutner attack!		0			0	0
+t1011005_482	in0110	2	0	Indeed...right now if we dispatch the North Flame Army, destroying the enemy would be easy...		0	t1011005_483		0	0
+t1011005_483	in0110	2	0	But the fear is that if they become surrounded they would fight to the bitter end and not care about their losses and hurt Father who is still in a dire situation.		0	t1011005_484		0	0
+t1011005_484	in0110	2	0	And if we try to infiltrate with a small force, we wouldn't have enough strength to fight our way back out...		0	t1011005_485		0	0
+t1011005_485	in0110	2	0	The only option we have now, is to let brother infiltrate, earn their trust, and sneak Father out...		0	t1011005_486		0	0
+t1011005_486	in0110	2	0	Let them lose the value of being attacked directly, then shift our troops for a large attack...		0			0	0
+t1011005_487	in03010	0	0	But, Senior Sister!  How...uh...can he be trusted?		0	t1011005_488		0	0
+t1011005_488	in0110	2	0	If he betrayed us because he lost the status of head of the family...then to get my Father back safely...		0	t1011005_492		0	0
+t1011005_489	in0110	2	0	Including that head of family position, why wouldn't I give that up?		0			0	0
+t1011005_490	in0110	3	0	Besides...Brother...never let me down, I don't believe he would so easiliy...		0			0	0
 t1011005_491	in0110	2	0	...... 		0			0	0
-t1011005_492	in0110	2	0	I will throw in my favor, what he wants, I can promise him!		0	t1011005_489		0	0
+t1011005_492	in0110	2	0	I'll give him everything he wants!		0	t1011005_489		0	0
 t1011006_193	in0602	0	0	He's right... 		0			0	0
 t1011006_194	in0602	0	0	Have I ever let you down before?		0	t1011006_195		0	0
-t1011006_195	in0602	0	0	But how did you... respond to my trust?		0	t1011006_183		0	0
+t1011006_195	in0602	0	0	But...how did you respond my trust?		0	t1011006_183		0	0
 t1011006_249		0	1	(The longer we delay, the more pursuers will be...)		0			0	0
-t1011006_250		0	1	(It seems that for the time being no more pursuers... but this does not mean that it is safe, get out of the way!)		0			0	0
-t1011006_251	in54005	0	0	Don't forget what you were chased by the Raggedy Guard and Secret Guard and nearly killed, and what you said when you fled to our camp.		0	t1011006_253		0	0
+t1011006_250		0	1	(Looks like there are no more pursuers...but this doesn't mean it's safe, the priority is still to escape!)		0			0	0
+t1011006_251	in54005	0	0	Don't forget what you said when you were being chased by those Secret Guard members when you came to our camp.		0	t1011006_253		0	0
 t1011006_252	in0602	0	0	...... 		0			0	0
-t1011006_253	in54005	0	0	What... those bastards, none of them are trustworthy, all of them are scumbags who will turn their backs after using them?		0		m_stand00_await02	0	0
-t1011006_254	in54005	0	0	And what did we do with Scarlet Bone Horde at that time?		0	t1011006_255	m_stand00_talk03	0	0
-t1011006_255	in54005	0	0	Although you have killed our unknown number of warriors in the past few years, but the king once you see the red-bone bloodline flowing in your body... 		0	t1011006_256		0	0
-t1011006_256	in54005	0	0	You were immediately accepted with tolerance, and you were even allowed to participate in the planning of the southern expedition.		0	t1011006_260	m_stand03_await00	0	0
-t1011006_257	in54005	0	0	On the one hand, you go to great lengths to pay, but repeatedly betray your people... 		0	t1011006_258	m_stand00_talk03	0	0
-t1011006_258	in54005	0	0	On one side is the person who accepts you unconditionally regardless of past killings... 		0	t1011006_259	m_stand00_talk02	0	0
-t1011006_259	in54005	0	0	How to choose, still need me to teach you?		0			0	0
-t1011006_260	in54005	0	0	... even I have to listen to you three... 		0			0	0
-t1011103_212		0	1	(Watching Senior Brother Wu squatting in horse stance as always...)		0			0	0
-t1011103_213		0	1	(If you just want to squat for a few Time in one breath, most of the disciples in the Pavilion can do it.)		0			0	0
-t1011103_214		0	1	(But to be as persistent as Senior Brother Woo for years and years, you have to have more than normal patience and perseverance to tie the horse stance.)		0			0	0
-t1011103_215		0	1	(Now... also failed to have the confidence to be able to work out with Senior Brother Wu so lasts...)		0			0	0
-t1011103_216		0	1	(... Raise <color=#FF0000>Resolve</color> to <color=#FF0000>450 points</color> and come back to seek martial arts Senior Brother.)		0			0	0
-t1011103_217		0	1	(not yet able to have enough Resolve degree, can be patient with Senior Brother Wu together with exercise...)		0			0	0
-t1011103_218		0	1	(... Boost <color=#FF0000>Resolve</color> to <color=#FF0000>450 points</color>, and come back to seek martial arts Senior Brother.)		0			0	0
-t1101103_042		0	1	[Basic Operation] Push the <color=#FF0000>left stick</color> to make the character move forward, backward, left and right.		0	t1101103_025		0	0
+t1011006_253	in54005	0	0	What...those bastards, can't trust a single one, all of them are backstabbing manipulative cheats?		0		m_stand00_await02	0	0
+t1011006_254	in54005	0	0	And how did the Scarlet Bone Horde handle it?		0	t1011006_255	m_stand00_talk03	0	0
+t1011006_255	in54005	0	0	And these years, you've killed many of our soldiers, but our King saw you still have some Scarlet Bone blood in you...		0	t1011006_256		0	0
+t1011006_256	in54005	0	0	Didn't we immediately accept you, and let you join in on the planning to march South?		0	t1011006_260	m_stand03_await00	0	0
+t1011006_257	in54005	0	0	One side is a side of people who you gave everything to, but kept betraying you...		0	t1011006_258	m_stand00_talk03	0	0
+t1011006_258	in54005	0	0	Another side is a side of people who put the past behind, and accepted you without condition...		0	t1011006_259	m_stand00_talk02	0	0
+t1011006_259	in54005	0	0	Do I even need you to teach you what to choose?		0			0	0
+t1011006_260	in54005	0	0	...Even I have to listen to you yap...		0			0	0
+t1011103_212		0	1	(Brother Wu is doing horse stance as usual...)		0			0	0
+t1011103_213		0	1	(If it was just doing horse stance for a few hours, lots of other students an do it.)		0			0	0
+t1011103_214		0	1	(But to do it day after day non stop like Brother Wu, one would need super natrual patience and persistence.)		0			0	0
+t1011103_215		0	1	(Right now...lacking the confidence to train like Brother Wu...)		0			0	0
+t1011103_216		0	1	(... Raise <color=#FF0000>Resolve</color> to <color=#FF0000>450</color> first, then come find Brother Wu)		0			0	0
+t1011103_217		0	1	(Don't have the resolve to train with patience like Brother Wu...)		0			0	0
+t1011103_218		0	1	(... Raise <color=#FF0000>Resolve</color> to <color=#FF0000>450</color> first, then come find Brother Wu)		0			0	0
+t1101103_042		0	1	[Basic Operation] Use the <color=#FF0000>left joystick</color> to move forward, backward, left and right.		0	t1101103_025		0	0
 t1101103_350		0	1	(<color=#FF0000>[Drop]</color> if you see a shine on a grid, you may be able to pick something up when you get there!)		0			0	0
-t1103101_683		0	1	(Speaking of which, why in the world would... come to Xia Pavilion?)		1	t1103101_684,t1103101_685		0	0
+t1103101_683		0	1	(Speaking of...why did I come to Xia Pavillion?)		1	t1103101_684,t1103101_685		0	0
 t1103101_684		0	3	<color=#FFCC22>Because I want to protect the goodness of the world! </color>		0			0	{ "MultiAction" : [ { "SetFlagAction" : 0, 2, "fe1103101_2_22"} , { "RewardAction" : "re7000001_02"} , { "SetFlagAction" : 0, 1, "fe1103101_1_00"}  ]} 
 t1103101_685		0	4	<color=#FFCC22>Because I will kill all the evil people in the world! </color>		0			0	{ "MultiAction" : [ { "SetFlagAction" : 0, 2, "fe1103101_2_22"} , { "RewardAction" : "re7000002_02"} , { "SetFlagAction" : 0, 2, "fe1103101_1_00"}  ]} 
 t1201103_744	in22003	0	0	Well... I'm the court counselor... actually will fall here...!		0			0	0
 t1201103_745	in0202	0	0	...... 		0	t1201103_746		0	0
 t1201103_746		0	1	(The Black Robed martial artist appreciates you even more!)		0	t1201103_744		0	0
-t1201103_800	in22003	0	0	... Abominable... Shouldn't be... Shouldn't be... 		0	t1201103_801		0	0
+t1201103_800	in22003	0	0	...Damnit...it shouldn't be like this...not like this....		0	t1201103_801		0	0
 t1201103_801	in22003	0	0	Damn! Damn!		0			0	0
-t1306501_056	in0201	0	0	{name_2}'er, your group system is special, the front line of the battlefield, by your own for the battle situation dispatch personnel, remember not to slip up.		0	t1306501_036		0	0
-t1306501_057	in0201	0	0	<color=#FF0000>He</color>... will surely come and serve as a sharp weapon against our master, to make our master shake inside.		0	t1306501_060	m_stand00_talk00	0	0
-t1306501_058	in0105	0	0	If not surprisingly, <color=#FF0000>he</color> will also attack the Pavilion as a surprise attacker... just as Headmaster predicted... 		0	t1306501_059		0	0
+t1306501_056	in0201	0	0	{name_2}'er, your group is special, you take the lead of them at the front lines, take caution.		0	t1306501_036		0	0
+t1306501_057	in0201	0	0	<color=#FF0000>He</color>... will surely come, and be a weapon against me, to shake my resolve.		0	t1306501_060	m_stand00_talk00	0	0
+t1306501_058	in0105	0	0	If it is as we expect, <color=#FF0000>he</color> will also arrive and attack directly...as Headmaster predicts...		0	t1306501_059		0	0
 t1306501_059	in0105	3	0	...... 		0	t1306501_044		0	0
-t1306501_060	in0105	0	0	No... disciple means, Headmaster you really want to...?		0	t1306501_061		0	0
+t1306501_060	in0105	0	0	No...I mean..Headmaster you really are....?		0	t1306501_061		0	0
 t1306501_061	in0201	0	0	...... 		0	t1306501_062	m_stand00_talk00	0	0
-t1306501_062	in0201	0	0	Just as you are my disciples in general, I do not want to see you go astray and do something against your heart.		0	t1306501_063	m_stand00_talk00	0	0
-t1306501_063	in0201	0	0	I had the same thought in mind for him... 		0	t1306501_064	m_stand00_talk00	0	0
-t1306501_064	in0201	0	0	His life divergent path, is the division owed to him. And this... may be the last chance.		0	t1306501_065	m_stand00_talk00	0	0
+t1306501_062	in0201	0	0	Just like you are my disciples, I don't wish to see any of you walk down the wrong path and do thing aginst your will.		0	t1306501_063	m_stand00_talk00	0	0
+t1306501_063	in0201	0	0	I feel the same...about him.		0	t1306501_064	m_stand00_talk00	0	0
+t1306501_064	in0201	0	0	The path he is on now, is because of me. And this time...maybe it's the last chance.		0	t1306501_065	m_stand00_talk00	0	0
 t1306501_065	in0105	3	0	...... 		1	t1306501_066,t1306501_067		0	0
 t1306501_066		0	3	Headmaster Chu... 		0	t1306501_068		0	0
 t1306501_067		0	4	If this is Headmaster's wish... I am willing to cooperate.		0	t1306501_069		0	0
 t1306501_068	in0201	0	0	...... 		0	t1306501_040	m_stand00_talk00	0	0
 t1306501_069	in0201	0	0	... Thanks a lot, {name_2}'er.		0	t1306501_040	m_stand00_talk00	0	0
 t1306501_192	in0202	0	0	......! 		0	t1306501_193		0	0
-t1306501_193		0	1	(At this time, a figure flashed in the darkness of the mountain forest, running up the mountain with a ghostly stance!)		0	t1306501_194		0	0
-t1306501_194	in0202	0	0	Look at the figure, the white robe hanging... seems not the two Swordsmen, but the scribe dressed as corpse zombie... 		0	t1306501_195		0	0
-t1306501_195	in0202	0	0	That direction... hum is really towards herb lab.		0	t1306501_196		0	0
-t1306501_196	in0202	0	0	Now that I've seen you, you can't get away with it!		0			0	0
-t1306502_075		0	1	(Gongsun Ming was seriously wounded and received another blow and was unable to resist, finally lying down in a pool of blood and taking his last breath...)		0	t1306502_046		0	0
-t1306502_076		0	1	(Now Gongsun Ming is in crisis, we have to <color=#FF0000>save him</color>, otherwise the consequences are unthinkable!)		0			0	0
-t1306502_077	io261231	0	0	I didn't expect... still can't take this guy's life...!		0	t1306502_078		0	0
-t1306502_078	in0208	0	0	Xiao Ming... you retreat to rest and stop pushing yourself.		0	t1306502_079		0	0
+t1306501_193		0	1	(Suddenly a shadowy figure flashed by, it dashes up the hill like a ghost!)		0	t1306501_194		0	0
+t1306501_194	in0202	0	0	That figure, long white robe...it's not the two swordsman, but that scholarly looking Corpse Zombie....		0	t1306501_195		0	0
+t1306501_195	in0202	0	0	That way...hmph, they are indeed going for the Herb Lab.		0	t1306501_196		0	0
+t1306501_196	in0202	0	0	Since I saw you, don't think about running away!		0			0	0
+t1306502_075		0	1	(Gongsun Ming is heavily wounded, after taking the last hit, he finally collapses in a pool of blood, taking his l ast breath...)		0	t1306502_046		0	0
+t1306502_076		0	1	(Gongsun Ming is in danger, we have to <color=#FF0000>save him</color>, otherwise the consequences are unthinkable!)		0			0	0
+t1306502_077	io261231	0	0	Still couldn't....take this guys' life...!		0	t1306502_078		0	0
+t1306502_078	in0208	0	0	Xiao Ming...retreat, don't force yourself.		0	t1306502_079		0	0
 t1306502_079	in03007	0	0	This... but...!		0	t1306502_081		0	0
-t1306502_080		0	1	(Although Gongsun Ming was upset, he obeyed Ning Chuchu's order and retired to the back line to recover from his injuries.)		0			0	0
-t1306502_081	in0208	0	0	You want to get back in the game, there are opportunities later... 		0	t1306502_082		0	0
-t1306502_082	in0208	0	0	Later back to the Pavilion boil injury after... will be with the teacher to review this initiative.		0	t1306502_083		0	0
+t1306502_080		0	1	(Although Gongsun Ming did not want to retreat, he still obeyd Ning Chuchu's orders and retreated to take care of his wounds.)		0			0	0
+t1306502_081	in0208	0	0	If you want to get back, there are chances in the future...		0	t1306502_082		0	0
+t1306502_082	in0208	0	0	Later when we get back to the Pavillion...we'll go over the mission today.		0	t1306502_083		0	0
 t1306502_083	in03007	0	0	... Yes, Master Ning.		0	t1306502_080		0	0
-t1306502_146		0	1	(The master stationed on the east side is Flying Snowy Fox, and the west side is Master Mu... which way to choose?)		1	t1306502_140,t1306502_141		0	0
-t1306502_296	in03006	0	0	Hoo... I can... still... fight you...!		0	t1306502_297		0	0
-t1306502_297		0	1	(Guan Qiao'er is in bad shape... Gotta <color=#FF0000>hurry to save her</color> or the consequences are unthinkable!)		0			0	0
-t1306502_298	in0109	0	0	Guan Qiao'er, stand down. Get well and return to the battle line to help.		0	t1306502_299		0	0
-t1306502_299	in03006	0	0	Hoo... hoo... sorry... Jing Master... disciples will soon... return to the front...!		0			0	0
-t1306502_351		0	1	(The master stationed on the east side is Huo Tan, while the west side is Liu Xinping... which way to choose?)		1	t1306502_345,t1306502_346		0	0
-t1306504_086		0	1	(Although Chu Tianbi was not in danger of dying due to his profound kung fu, he was still shocked that the corpse poison could cause such a huge depletion to his body.)		0	t1306504_087		0	0
-t1306504_087		0	1	(body in this corpse poison, if it is the general public, only afraid of... --- )		0			0	0
-t1306504_365	in0202	0	0	... but I won't make the same mistake again!		0			0	0
+t1306502_146		0	1	(Master Linghu is guarding the East, Master Mu is defending to the west...which way to go?)		1	t1306502_140,t1306502_141		0	0
+t1306502_296	in03006	0	0	Huff...I can stil..fight...!		0	t1306502_297		0	0
+t1306502_297		0	1	(Guan Qiao'er is in bad shape... Have to <color=#FF0000>hurry to save her</color> or the consequences are unthinkable!)		0			0	0
+t1306502_298	in0109	0	0	Guan Qiao'er, stand down. Treat your wonds first then come back to assist.		0	t1306502_299		0	0
+t1306502_299	in03006	0	0	Huff.....sorry...Master Jing...I'll return...as soon as I can...!		0			0	0
+t1306502_351		0	1	(Master Huo Tan is posted to the East, and Master Liu Xinping is to the west...which way to go?)		1	t1306502_345,t1306502_346		0	0
+t1306504_086		0	1	(Although Chu Tianbi is strong and isn't in mortal danger, but he is still suprised at the damage the poison can do.)		0	t1306504_087		0	0
+t1306504_087		0	1	(If it was a normal person who was infected with this poison....)		0			0	0
+t1306504_365	in0202	0	0	...butI won't make the same mistake again!		0			0	0
 t1306504_597		0	5	No... there must be... a better way!		0	t1306504_557		0	0
 t1306504_598	in05599a	0	0	... Maybe... it's really time... 		0	t1306504_599		0	0
-t1306504_599	in05599a	0	0	If you can pass all the work of Tianqing Qi and Three Laughs at Tiger Brook to Chang Rui, maybe... will be able to save him back...!		0	t1306504_534		0	0
+t1306504_599	in05599a	0	0	If I can pass on the Three Laughs at Tiger Brook and Clear Heaven Creed to Cahngrui...maybe he can be saved...!		0	t1306504_534		0	0
 t1306505_000	in0204	0	0	Headmaster, everyone is here and ready to go.		0	t1306505_001		0	0
 t1306505_001	in0204	0	0	The members of the group, led by me, have also gone to the location in charge.		0	t1306505_002		0	0
 t1306505_002	in0201	0	0	Well, thanks for your trouble, Xinping.		0			0	0
@@ -70135,10 +70135,10 @@ t1306505_012	in0107	0	0	...... 		0	t1306505_013		0	0
 t1306505_013	in0102	2	0	However, today's rally is indeed different from the past, if the order is given, the entire Pavilion should also be called in the square.		0	t1306505_014		0	0
 t1306505_014	in0111	3	0	Yeah... I got nervous after I received the information from Master Ryu's rally... Maybe it's related to Abyssal Palace?		0	t1306505_015	m_stand00_talk30	0	0
 t1306505_015	in0111	3	0	After all, it has been more than half a year since our pavilion sectmates mobilized to fight against Abyssal Palace, so perhaps it is time to start a real confrontation.		0	t1306505_016		0	0
-t1306505_016	in0104	3	0	... what should come will always come, this period of time on the Abyssal Palace investigation and good offices, the results of the preparation of the people in the Pavilion, will be viewed one by one.		0	t1306505_017		0	0
+t1306505_016	in0104	3	0	...What is bound to happen will happen, all of our efforts against the Abyssal Palace will be looked at.		0	t1306505_017		0	0
 t1306505_017	in0105	0	0	Hum... regardless of the purpose of today's rally, as long as the preparation is good, there is nothing to worry about.		0	t1306505_018		0	0
 t1306505_018	in0201	0	0	Well, Kun'er is right.		0			0	0
-t1306505_019	in0201	0	0	This period of time, the efforts you have done are in the eyes of the teacher, as long as you keep it up, there is no need to worry too much.		0	t1306505_020	m_stand00_talk00	0	0
+t1306505_019	in0201	0	0	During these days, we've all seen your hard work, as long as you presist, you don't need to worry.		0	t1306505_020	m_stand00_talk00	0	0
 t1306505_020	in0201	0	0	And today, it is time to bring your achievements together and build them into a solid wall.		0	t1306505_021		0	0
 t1306505_021	in0201	0	0	To defend against the imminent invasion of Abyssal Palace.		1	t1306505_022,t1306505_023	m_stand00_talk00	0	0
 t1306505_022		0	3	Is Abyssal Palace... really going to come?		0	t1306505_024		0	0
@@ -70156,7 +70156,7 @@ t1306505_033	in0103	4	0	The target is actually placed in herb lab...? Ah...!		0	
 t1306505_034	in0102	2	0	...We are the only ones in the entire martial arts world who are continuing to fight against the zombies, and we have the medical skills that are strong enough to resist the poison of the smoke tapir... Then...		0	t1306505_035		0	0
 t1306505_035	in0102	2	0	They will be afraid... that we have developed antidote that can fight the corpse poison...!		0	t1306505_036		0	0
 t1306505_036	in0111	4	0	This... way, Divine Wind Temple is also at risk!		0	t1306505_037	m_stand00_talk41	0	0
-t1306505_037	in0204	0	0	Our division commander has also discussed this, but in addition to sending reinforcements from the Divine Wind Temple,		0	t1306505_038		0	0
+t1306505_037	in0204	0	0	Regarding this, we've discussed it as well, in addition to the assistance from the Divine Wind Temple,		0	t1306505_038		0	0
 t1306505_038	in0204	0	0	In the fight against Abyssal Palace, Divine Wind Temple has always taken a passive stance and does not fight directly against it, except for saving civilians... 		0	t1306505_039	f_stand00_talk02	0	0
 t1306505_039	in0204	0	0	So for them, we are still the primary target to deal with.		0	t1306505_040		0	0
 t1306505_040	in0201	0	0	Well, having said that, we will still send some of our disciples to the outskirts of Divine Wind Temple to scout the area in case Abyssal Palace makes a surprise move.		0	t1306505_041	m_stand00_talk00	0	0
@@ -70167,7 +70167,7 @@ t1306505_044	in0201	0	0	And this is also the reason why I called all of you to c
 t1306505_045	in0106	4	0	... But, Headmaster, why did you call only us... what about other fellow disciples?		0	t1306505_046	m_stand00_talk00	0	0
 t1306505_046	in0201	0	0	This is the next matter that I will explain.		0	t1306505_047		0	0
 t1306505_047	in0201	0	0	Since the enemy is in the dark and we are in the light, there is only one thing we have to do, which is to hold defence on Mount Lu and be careful of the attack from the Abyssal Palace.		0	t1306505_048		0	0
-t1306505_048	in0201	0	0	To do this, we need to fortify the routes that are easy to invade up the mountain, laying out scouting Automaton with disciples who act as front-line scouts.		0	t1306505_049	m_stand00_talk00	0	0
+t1306505_048	in0201	0	0	As such, we have to setup defenses along expected paths for the attackers and scouts to alert us of any dangers,		0	t1306505_049	m_stand00_talk00	0	0
 t1306505_049	in0204	0	0	All the disciples are led by their respective divisional leaders in the Pavilion and are responsible for different operations and defensive positions, and some of the teams have now started their operations.		0	t1306505_050	m_stand00_talk02	0	0
 t1306505_050	in0103	0	0	So that's why Master Jing and Master Shangguan also took the disciples they were in charge of... 		0	t1306505_051		0	0
 t1306505_051	in0111	0	0	Well... then, Master Liu here is our leading master?		0	t1306505_052	m_stand00_talk00	0	0
@@ -70176,7 +70176,7 @@ t1306505_053	in0201	0	0	Master Ning will lead the scouting team, patrol the pass
 t1306505_054	in0201	0	0	The medical team is led by Master Dao Heng and uses the mountain gate as the base for medical cauldrons, taking advantage of the easy-to-guard nature of the mountain gate to ensure that the wounded can be cured at any time.		0	t1306505_055		0	0
 t1306505_055	in0201	0	0	Master Mu is used to acting alone, so he will complete the Automaton arming operation alone and set up the "Source Stone Magnetic Array" to assist in the defense.		0	t1306505_056		0	0
 t1306505_056	in0107	0	0	......! 		0	t1306505_057		0	0
-t1306505_057	in0106	3	0	Source, Source Stone... magnetic array...? Another word for organics that gives me a headache... 		0	t1306505_058	m_stand00_talk32	0	0
+t1306505_057	in0106	3	0	Source, source stone...array...? More words that make my head hurt...		0	t1306505_058	m_stand00_talk32	0	0
 t1306505_058	in0201	0	0	The rest of the masters, such as Master Jing, Master Shangguan, Master Liu, Master Snowy Fox, and Master Huo, are responsible for leading the resistance groups to engage corpse zombie.		0	t1306505_059	m_stand00_talk00	0	0
 t1306505_059	in0201	0	0	And those present, led by your master, are the <color=#FF0000>mobile group</color>.		0	t1306505_060	m_stand00_talk03	0	0
 t1306505_060	in0105	0	0	... mobile group?		1	t1306505_061,t1306505_062		0	0
@@ -70185,43 +70185,43 @@ t1306505_062		0	4	What does the mobile group... actually have to do?		0	t1306505
 t1306505_063	in0201	0	0	As the name implies, you are responsible for mobile-type missions on the battlefield, such as defense, support, and intelligence, all of which may be assigned to you.		0	t1306505_064	m_stand00_talk02	0	0
 t1306505_064	in0201	0	0	One of the reasons why I chose you to take up this task is that you have a good understanding and deep friendship, so you can rest assured that you will be given the dispatch.		0			0	0
 t1306505_100	in0106	1	0	Mobile group huh... sounds good to me!		0	t1306505_101	m_stand00_talk13	0	0
-t1306505_101	in0102	0	0	Well... although the mobile group scheduling flexibility, but also can assign everyone stationed in various strongholds, if needed, then immediately go to other places to support.		0	t1306505_102		0	0
-t1306505_102	in0104	0	0	I can be stationed at the mountain gate to assist the medical boil team, but if there is a need at other bases, I can also go to support them.		0	t1306505_103		0	0
-t1306505_103	in0201	0	0	It seems that you already have an idea. However, as I still have important matters to deal with, I can't lead you all to run the mission personally... 		0		m_stand00_talk00	0	0
-t1306505_104	in0201	0	0	Therefore, I wish to appoint {name_1} {name_2} as the acting head of the mobile group... I wonder if you have the will to do so, {name_2}'er?		0		m_stand00_talk03	0	0
-t1306505_105	in0103	1	0	Ah... {friend_2} {name_1} to be the group leader? That's definitely no problem!		0	t1306505_106	f_stand00_talk00	0	0
-t1306505_106	in0103	0	0	Several previous missions were made possible by the presence of {friend_2} {name_1}, so that they could be completed successfully!		0	t1306505_107	f_stand00_talk02	0	0
-t1306505_107	in0106	1	0	Hey, hey, then please enlighten me more, {name_1} team leader! I, Nam Warrior, am at the disposal of the team leader, never a second word!		0	t1306505_108	m_stand00_talk03	0	0
+t1306505_101	in0102	0	0	Yes...the flexibilty of the mobile group will be able to help wherever needed.		0	t1306505_102		0	0
+t1306505_102	in0104	0	0	I see, we can go and support the medical team, t hat way if there is a need we can also assist.		0	t1306505_103		0	0
+t1306505_103	in0201	0	0	Looks like everyone has their plans. Unfortunately I have other matters to attend to and will not be able to personally lead this mission...		0		m_stand00_talk00	0	0
+t1306505_104	in0201	0	0	Therefore, I wish to appoint {name_1} {name_2} as the acting team leader... I wonder if you have the will to do so, {name_2}'er?		0		m_stand00_talk03	0	0
+t1306505_105	in0103	1	0	Ah... {friend_2} {name_1} to be the leader? That's definitely no problem!		0	t1306505_106	f_stand00_talk00	0	0
+t1306505_106	in0103	0	0	Several previous dangerious missions were completed successfully because of {friend_2} {name_1}!		0	t1306505_107	f_stand00_talk02	0	0
+t1306505_107	in0106	1	0	Hehe, then I'm counting on you, {name_1} team leader! I, the great warrior Nan will follow orders without question!		0	t1306505_108	m_stand00_talk03	0	0
 t1306505_108	in0107	1	0	...... 		1	t1306505_109,t1306505_110		0	0
 t1306505_109		0	3	There must be a better candidate for this... than me.		0	t1306505_111		0	{ "MultiAction" : [ { "RewardAction" : "re7000202_09"} , { "PlayPlayerAnimationAction" : [ { 0, "m_stand00_talk01", 1.00000}  ]}  ]} 
-t1306505_110		0	4	Since Headmaster has entrusted me with the task, I will live up to his expectations.		0	t1306505_120		0	{ "MultiAction" : [ { "RewardAction" : "re7000204_09"} , { "PlayPlayerAnimationAction" : [ { 0, "m_stand00_talk00", 1.00000}  ]}  ]} 
-t1306505_111	in0105	0	0	Hmph, {name_1} {name_2}, are you not afraid?		0	t1306505_112		0	0
-t1306505_112	in0105	0	0	Whatever Headmaster's reason for choosing you, it's not an excuse you can use to escape.		0	t1306505_113		0	0
-t1306505_113	in0102	3	0	Well... although I think the words of Brother Stone are a little serious... but my thoughts are the same as Brother Stone and everyone else.		0	t1306505_114		0	0
-t1306505_114	in0102	0	0	{friend_1} {name_1}, you have personally committed many dangers and rescued your partner from fire, and have been loved by the people in the Pavilion.		0	t1306505_115	f_stand00_talk03	0	0
-t1306505_115	in0102	1	0	If you are afraid of your lack of experience, we can all help.		0	t1306505_116	f_stand00_talk00	0	0
-t1306505_116	in0111	1	0	Yes, yes, yes! Although I am Senior Brother, I feel that I am not a leader, but {junior} {name_1} has the qualification!		0	t1306505_117	m_stand00_talk13	0	0
+t1306505_110		0	4	Since Headmaster has entrusted me with this role, I won't let him down.		0	t1306505_120		0	{ "MultiAction" : [ { "RewardAction" : "re7000204_09"} , { "PlayPlayerAnimationAction" : [ { 0, "m_stand00_talk00", 1.00000}  ]}  ]} 
+t1306505_111	in0105	0	0	Hmph, {name_1} {name_2}, scared?		0	t1306505_112		0	0
+t1306505_112	in0105	0	0	No matter what the reasons are for Headmaster selecting you, you can't use any of them to avoid the responsibility.		0	t1306505_113		0	0
+t1306505_113	in0102	3	0	Hm...I think Brother Shi is a bit harsh with words...but my thinking is the same as Brother Shi and everyone else.		0	t1306505_114		0	0
+t1306505_114	in0102	0	0	{friend_1} {name_1}, you've risked yourself many times to save us, everyone loves and respsects you.		0	t1306505_115	f_stand00_talk03	0	0
+t1306505_115	in0102	1	0	Today you are selected by the Headmaster, no one has any dissent, if you're afraid that you don't have the experience, we will all help you.		0	t1306505_116	f_stand00_talk00	0	0
+t1306505_116	in0111	1	0	Yeah yeah! Even though I'm your Senior, but I don't think I can lead. But, {junior} {name_1} has the chops!		0	t1306505_117	m_stand00_talk13	0	0
 t1306505_117	in0111	1	0	Gaining leadership experience early is never a bad thing for you!		0	t1306505_118		0	0
-t1306505_118	in0104	1	0	Hee hee, it's rare for a Brother Wu to say such inspiring words, so you'll be glad to accept them, {junior} {name_1}.		0	t1306505_119		0	0
-t1306505_119	in0111	3	0	Hmm... Miss Xiao, stop making fun of me.		1	t1306505_128,t1306505_129	m_stand00_talk32	0	0
-t1306505_120	in0105	1	0	Heh, very bold to try.		0	t1306505_121		0	0
-t1306505_121	in0105	0	0	Well, I would like to see what kind of situation the mobile team led by you will go to.		0	t1306505_122		0	0
-t1306505_122	in0102	0	0	Well, {friend_1} {name_1}, you have personally committed many dangers to save your partner from fire, and have long been loved by the people in the Pavilion.		0	t1306505_123		0	0
-t1306505_123	in0102	1	0	It is only natural that you are now being promoted by Headmaster. Please feel free to guide us, and I believe we can all assist.		0	t1306505_124	f_stand00_talk03	0	0
-t1306505_124	in0111	1	0	That's right! {junior} {name_1} has the qualifications to be a general, I've seen that for a long time!		0	t1306505_125	m_stand00_talk13	0	0
+t1306505_118	in0104	1	0	Hehe, it's so rare to hear Brother Wu speaking such praise, just accept it, {junior} {name_1}.		0	t1306505_119		0	0
+t1306505_119	in0111	3	0	Ah...Miss Xiao, no need to embarass me.		1	t1306505_128,t1306505_129	m_stand00_talk32	0	0
+t1306505_120	in0105	1	0	Heh, you got guts.		0	t1306505_121		0	0
+t1306505_121	in0105	0	0	Then, I will see, where you will take this team.		0	t1306505_122		0	0
+t1306505_122	in0102	0	0	{friend_1} {name_1}, you've risked yourself many times to save us, everyone loves and respsects you.		0	t1306505_123		0	0
+t1306505_123	in0102	1	0	Today you are selected by the Headmaster, taht's expected, pelase lead us, I think everyone will help too.		0	t1306505_124	f_stand00_talk03	0	0
+t1306505_124	in0111	1	0	That's right! {junior} {name_1} has the qualifications to be a great leader, I knew that early on!		0	t1306505_125	m_stand00_talk13	0	0
 t1306505_125	in0111	1	0	Gaining leadership experience early is never a bad thing for you!		0	t1306505_126		0	0
-t1306505_126	in0104	1	0	The first thing you need to do is to get a good idea of what you're doing. But what he said is true, {junior} {name_1}.		0	t1306505_127		0	0
-t1306505_127	in0111	3	0	Hmm... Miss Xiao, stop making fun of me.		1	t1306505_128,t1306505_129	m_stand00_talk32	0	0
-t1306505_128		0	3	Thank you guys, I will try to do a good job.		0	t1306505_130		0	{ "MultiAction" : [ { "RewardAction" : "re7000201_09"}  ]} 
-t1306505_129		0	4	If there is something I did not do well, please write more.		0	t1306505_130		0	{ "MultiAction" : [ { "RewardAction" : "re7000203_09"}  ]} 
-t1306505_130	in0201	0	0	Oh, seeing your deep emotional side, I know that the division has made the right decision in selecting you as the mobile group.		0	t1306505_131		0	0
-t1306505_131	in0201	0	0	Well... then, I will now assign you the first job that the head of the mobile team should be responsible for-		0	t1306505_132		0	0
-t1306505_132	in0201	0	0	According to the aspirations and abilities of each group member, please arrange the most suitable operation project and operating base for each of them.		0	t1306505_133	m_stand00_talk03	0	0
-t1306505_133	in0201	0	0	Can you do it?		1	t1306505_134,t1306505_135		0	0
-t1306505_134		0	3	Yes, I already have an idea.		0	t1306505_136		0	0
-t1306505_135		0	4	As long as the thoughtfulness of... will not be a problem.		0	t1306505_136		0	0
-t1306505_136	in0201	0	0	Then, I'll leave everything to you.		0		m_stand00_talk00	0	0
-t1306505_137		0	1	(I didn't expect that Headmaster Chu would be willing to hand over such a heavy responsibility to himself, plus everyone's expectations, so I have to do everything right.)		0	t1306505_138		0	0
+t1306505_126	in0104	1	0	Hehe, it's so rare for Brother Wu to sing such praise, but he's righ though, {junior} {name_1}.		0	t1306505_127		0	0
+t1306505_127	in0111	3	0	Ah...Miss Xiao, no need to embarass me.		1	t1306505_128,t1306505_129	m_stand00_talk32	0	0
+t1306505_128		0	3	Thank you everyone, I will do my best.		0	t1306505_130		0	{ "MultiAction" : [ { "RewardAction" : "re7000201_09"}  ]} 
+t1306505_129		0	4	Please be forgiving if I don't do a good job.		0	t1306505_130		0	{ "MultiAction" : [ { "RewardAction" : "re7000203_09"}  ]} 
+t1306505_130	in0201	0	0	Hehe, seeing your deep connections, I know that selecting you as the mobile group was the correct choice.		0	t1306505_131		0	0
+t1306505_131	in0201	0	0	Then...I will give you the first job as acting leader-		0	t1306505_132		0	0
+t1306505_132	in0201	0	0	According to the abilities and wishes of each member, assign them the appropriate roles and positions.		0	t1306505_133	m_stand00_talk03	0	0
+t1306505_133	in0201	0	0	{name_2}'er, can you do it?		1	t1306505_134,t1306505_135		0	0
+t1306505_134		0	3	Yes, I have some thoughts.		0	t1306505_136		0	0
+t1306505_135		0	4	I think as long as I plan appropriately...there won't be any issues.		0	t1306505_136		0	0
+t1306505_136	in0201	0	0	Then, I'll leave it to you.		0		m_stand00_talk00	0	0
+t1306505_137		0	1	(Didn't expect Headmaster Chu to hand over such a large responsibility, in addition to everyone's expectations, I have to do well.)		0	t1306505_138		0	0
 t1306505_138		0	1	(To assign the most appropriate tasks to each group member, taking into account their aspirations and abilities.)		0	t1306505_139		0	0
 t1306505_139		0	1	(Arrangements if not properly, the worst case scenario, perhaps the loss of life of partners...)		0	t1306505_140		0	0
 t1306505_140		0	1	(Gotta think about it...)		0			0	0
