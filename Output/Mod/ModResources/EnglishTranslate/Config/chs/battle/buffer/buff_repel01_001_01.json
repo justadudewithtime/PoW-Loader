@@ -1,1 +1,1 @@
-buff_repel01_001_01	Repel	Randomly clear 1 negative effect	Randomly clear 1 negative state	buff_hp	Positive	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "DefenderRandomClearBuffAction" : 2, 1} , { "BufferTimesAction" : 2, 1}  ]}  ]} 
+buff_repel01_001_01	Repel	Randomly clear 1 negative effect	Randomly remove 1 negative status effect.	buff_hp	Positive	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "DefenderRandomClearBuffAction" : 2, 1} , { "BufferTimesAction" : 2, 1}  ]}  ]} 

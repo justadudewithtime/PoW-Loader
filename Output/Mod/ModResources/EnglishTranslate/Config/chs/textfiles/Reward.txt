@@ -339,24 +339,24 @@ re5111202_03	［传书］解决山兽之患：活血养心丹	True		{ "LogicalNo
 re6021100_00	力量锻炼初阶泡澡	True	Strength +2	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 200, 1010}  ], 0} 
 re6021200_00	力量锻炼中阶泡澡	True	Strength +3	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 1010}  ], 0} 
 re6021300_00	力量锻炼高端泡澡	True	Strength +5	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 500, 1010}  ], 0} 
-re6022100_00	体魄锻炼初阶泡澡	True	Body +2	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 200, 1020}  ], 0} 
-re6022200_00	体魄锻炼中阶泡澡	True	Body +3	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 1020}  ], 0} 
-re6022300_00	体魄锻炼高端泡澡	True	Body +5	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 500, 1020}  ], 0} 
-re6023100_00	灵巧锻炼初阶泡澡	True	Smart + 2	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 200, 1030}  ], 0} 
-re6023200_00	灵巧锻炼中阶泡澡	True	Smart + 3	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 1030}  ], 0} 
+re6022100_00	体魄锻炼初阶泡澡	True	Vitality +2	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 200, 1020}  ], 0} 
+re6022200_00	体魄锻炼中阶泡澡	True	Vitality +3	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 1020}  ], 0} 
+re6022300_00	体魄锻炼高端泡澡	True	Vitality +5	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 500, 1020}  ], 0} 
+re6023100_00	灵巧锻炼初阶泡澡	True	Dexterity + 2	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 200, 1030}  ], 0} 
+re6023200_00	灵巧锻炼中阶泡澡	True	Dexterity + 3	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 1030}  ], 0} 
 re6023300_00	灵巧锻炼高端泡澡	True	Dexterity +5	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 500, 1030}  ], 0} 
 re6024100_00	意志锻炼初阶泡澡	True	Will +2	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 200, 1040}  ], 0} 
 re6024200_00	意志锻炼中阶泡澡	True	Will +3	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 1040}  ], 0} 
 re6024300_00	意志锻炼高端泡澡	True	Will +5	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 500, 1040}  ], 0} 
 re6030000_00	心法修练泡澡	True	Will +3	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 1040}  ], 0} 
 re6030100_00	拳法修练泡澡	True	Strength +3	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 1010}  ], 0} 
-re6030200_00	腿法修练泡澡	True	Smart + 3	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 1030}  ], 0} 
+re6030200_00	腿法修练泡澡	True	Dexterity + 3	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 1030}  ], 0} 
 re6030300_00	剑法修练泡澡	True	Spirit +3	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 1040}  ], 0} 
-re6030400_00	刀法修练泡澡	True	Body +3	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 1020}  ], 0} 
+re6030400_00	刀法修练泡澡	True	Vitality +3	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 1020}  ], 0} 
 re6030500_00	长柄修练泡澡	True	Strength +3	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 1010}  ], 0} 
-re6030600_00	短柄修练泡澡	True	Smart + 3	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 1030}  ], 0} 
-re6030700_00	暗器修练泡澡	True	Spirit +3	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 1040}  ], 0} 
-re6031300_00	医学修练泡澡	True	Body +3	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 1020}  ], 0} 
+re6030600_00	短柄修练泡澡	True	Dexterity + 3	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 1030}  ], 0} 
+re6030700_00	暗器修练泡澡	True	Will +3	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 1040}  ], 0} 
+re6031300_00	医学修练泡澡	True	Vitality +3	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 1020}  ], 0} 
 re6041100_00	斗琴初阶泡澡	True	Qin +5 cultivation +5	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 800, 3010} , { "SetPlayerUpgradableProperty" : 1, 1000, 2020}  ], 0} 
 re6041200_00	斗琴中阶泡澡	True	Qin +8 cultivation +8	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 3010} , { "SetPlayerUpgradableProperty" : 1, 1500, 2020}  ], 0} 
 re6041300_00	斗琴高端泡澡	True	Qin +10 Cultivation +10	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1500, 3010} , { "SetPlayerUpgradableProperty" : 1, 2000, 2020}  ], 0} 
@@ -665,7 +665,7 @@ re7000802_06	精神值惩罚：大幅减少(第二年)	True		{ "LogicalNode" : [
 re7000802_07	精神值惩罚：小幅减少(第三年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 2, 7}  ], 0} 
 re7000802_08	精神值惩罚：中幅减少(第三年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 2, 15}  ], 0} 
 re7000802_09	精神值惩罚：大幅减少(第三年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 2, 30}  ], 0} 
-re7000803_01	精神值奖励：日常交友用(1~3阶)	True	Spirit +5	{ "LogicalNode" : [ { "RewardEmotionAction" : 1, 7}  ], 0} 
+re7000803_01	精神值奖励：日常交友用(1~3阶)	True	Will +5	{ "LogicalNode" : [ { "RewardEmotionAction" : 1, 7}  ], 0} 
 re7000902_01	段红儿好感度阶段提升	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0102", ""}  ], 0} 
 re7000903_01	锺若昕好感度阶段提升	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0103", ""}  ], 0} 
 re7000904_01	萧芊菱好感度阶段提升	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0104", ""}  ], 0} 

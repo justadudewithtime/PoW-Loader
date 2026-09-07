@@ -1,1 +1,1 @@
-debuff0490_Great Exhaustion00	Great Numbness	Unable to parry for 2 rounds		debuff_parry	Negative	2	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "BufferRestrictedStateAction" : 400004, 1}  ]} , { "BufferEventNode" : 40, [ { "BufferTimesAction" : 2, 1}  ]}  ]} 
+debuff0490_Great Exhaustion00	Great Numbness	Unable to block for 2 rounds		debuff_parry	Negative	2	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "BufferRestrictedStateAction" : 400004, 1}  ]} , { "BufferEventNode" : 40, [ { "BufferTimesAction" : 2, 1}  ]}  ]} 

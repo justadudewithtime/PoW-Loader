@@ -1,1 +1,1 @@
-bt1303101_02_Guard	Abide by Each Other	Parry rate +30%		buff_parry	None	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "BufferPropertyAction" : 6003, 1, 30.00000}  ]}  ]} 
+bt1303101_02_Guard	Abide by Each Other	Block rate +30%		buff_parry	None	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "BufferPropertyAction" : 6003, 1, 30.00000}  ]}  ]} 

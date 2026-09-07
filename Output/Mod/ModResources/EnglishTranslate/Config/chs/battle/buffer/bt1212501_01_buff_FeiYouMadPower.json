@@ -1,1 +1,1 @@
-bt1212501_01_buff_FeiYouMadPower	Crazy Avengers	Critical hit rate +60%, Parry rate +60%		buff_fury	None	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "BufferPropertyAction" : 6004, 1, 60.00000} , { "BufferPropertyAction" : 6003, 1, 60.00000}  ]}  ]} 
+bt1212501_01_buff_FeiYouMadPower	Crazy Avengers	Critical hit rate +60%, Block rate +60%		buff_fury	None	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "BufferPropertyAction" : 6004, 1, 60.00000} , { "BufferPropertyAction" : 6003, 1, 60.00000}  ]}  ]} 

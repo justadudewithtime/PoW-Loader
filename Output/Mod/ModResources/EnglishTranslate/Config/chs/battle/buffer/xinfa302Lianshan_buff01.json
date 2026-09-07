@@ -1,1 +1,1 @@
-xinfa302Lianshan_buff01	Harrow Grave	Increase Parry rate and Dodge rate by 10%.	Lianshan Gong first order	buff_xingfa	Positive	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "BufferPropertyAction" : 6003, 4, 10.00000} , { "BufferPropertyAction" : 6002, 4, 10.00000}  ]}  ]}
+xinfa302Lianshan_buff01	Harrow Grave	Increase Block rate and Dodge rate by 10%.	Lianshan Gong first order	buff_xingfa	Positive	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "BufferPropertyAction" : 6003, 4, 10.00000} , { "BufferPropertyAction" : 6002, 4, 10.00000}  ]}  ]}

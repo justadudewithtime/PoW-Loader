@@ -1,331 +1,331 @@
-bigbosstest2	bf0605_01	bigbosstest2		Y000072.ogg	Chu Duan Battle Test	a_gettingready_rever	a_gettingready_rever
-bigbosstest3	bf0605_01	bigbosstest3		Y000072.ogg	Chu Duan Battle Test	a_gettingready_rever	a_gettingready_rever
-bigbosstesttest	bf0605_01	bigbosstesttest		Y000072.ogg	Chu Duan Battle Test	a_gettingready_rever	a_gettingready_rever
-bt1010201_01	bf0108_01	bs1010201_01	(Money,43)(it501001,1)	In_battle_01.wav	Duan Hong'Er vs. Three Disciples	m605in010200_01	m605in010200_02
-bt1010203_01	bf0302_01	bs1010203_01	(it413003,1)(it501012,1)	In_battle_01.wav	Duan Hong'Er Tier Three: Stick to Zhenwu Temple	m605in010220_04	m605in010220_05
-bt1010301_01	bf0601_02	bs1010301_01	(Money,102)(it501500,3)	In_battle_01.wav	Zhong Ruoxin Tier 1: Beat the big brown bear	m605in010300_02	m605in010300_03
-bt1010304_01	bf0601_07	bs1010304_01	(it102531,1)(Money,583)	In_battle_01.wav	Zhong Ruoxin Tier Four: Fighting the gangsters to rescue Dai Tongxia	m605in010330_03	m605in010330_03
-bt1010304_02	bf0601_07	bs1010304_02		In_battle_01.wav	Zhong Ruoxin Tier Four: Zhong Dai singles out	m605in010330_04	m605in010330_04
-bt1010501_01	bf0108_01	bs1010501_01	(Money,65)(it501013,1)	In_battle_01.wav	Shi Kun Tier 1: Beat Wang Qi Zhong	m605in010500_01	m605in010500_01
-bt1010601_01	bf0601_01	bs1010601_01	(it501000,1)(it501522,1)	In_battle_01.wav	Nan Feihuang Tier 1: Beat Tang Sanchang	m605in010600_02	m605in010600_03
-bt1010602_01	bf0601_03	bs1010602_01	(it705006,1)(it714005,1)	In_battle_01.wav	Nan Feihuang second-order: playing Old Begger Zhou, Xu Xiaoyuan	m605in010610_04	m605in010610_04
-bt1010603_01	bf0302_01	bs1010603_01	(it104501,1)(Money,156)	In_battle_01.wav	Nan Feihuang Tier Three: Fight against the rogue brothers	m605in010620_01	m605in010620_01
-bt1010604_01	bf0602_11	bs1010604_01	(it103531,1)(Money,589)	In_battle_01.wav	Nan Feihuang Tier Four: Faceless Sword Ghost debuts	m605in010630_03	m605in010630_03
-bt1010701_01	bf0108_01	bs1010701_01	(Money,51)(it501000,1)	In_battle_01.wav	Cheng Yong Tier 1: Beat the North Flame Guard	m605in010700_02	m605in010700_03
-bt1010703_01	bf0601_04	bs1010703_01	(it501014,1)(it501011,1)	In_battle_01.wav	Cheng Yong III: Capture the Sky Stealer Fort master	m605in010720_03	m605in010720_03
-bt1101101_01a	bf0605_01	bs1101101_01a		In_battle_23.wav	Decisive Battle in Chu Section: Chu Tianbi Line	m1101101_02	m1101101_02
-bt1101101_01b	bf0605_01	bs1101101_01b		In_battle_23.wav	Decisive Battle in Chu Section: Duan Xiaolie Line	m1101101_02	m1101101_02
+bigbosstest2	bf0605_01	bigbosstest2		Y000072.ogg	Chu vs. Duan Battle Test	a_gettingready_rever	a_gettingready_rever
+bigbosstest3	bf0605_01	bigbosstest3		Y000072.ogg	Chu vs. Duan Battle Test	a_gettingready_rever	a_gettingready_rever
+bigbosstesttest	bf0605_01	bigbosstesttest		Y000072.ogg	Chu vs. Duan Battle Test	a_gettingready_rever	a_gettingready_rever
+bt1010201_01	bf0108_01	bs1010201_01	(Money,43)(it501001,1)	In_battle_01.wav	Duan Hong'er Tier 1: Battle against the Third Disciple	m605in010200_01	m605in010200_02
+bt1010203_01	bf0302_01	bs1010203_01	(it413003,1)(it501012,1)	In_battle_01.wav	Duan Hong'er Tier 3: "Beating the True Martial Way"	m605in010220_04	m605in010220_05
+bt1010301_01	bf0601_02	bs1010301_01	(Money,102)(it501500,3)	In_battle_01.wav	Zhong Ruoxin Tier 1: Driving away the big brown bear	m605in010300_02	m605in010300_03
+bt1010304_01	bf0601_07	bs1010304_01	(it102531,1)(Money,583)	In_battle_01.wav	Zhong Ruoxin Tier 4: Fighting thugs to rescue Dai Tongxia	m605in010330_03	m605in010330_03
+bt1010304_02	bf0601_07	bs1010304_02		In_battle_01.wav	Zhong Ruoxin Tier 4: Zhong vs. Dai duel	m605in010330_04	m605in010330_04
+bt1010501_01	bf0108_01	bs1010501_01	(Money,65)(it501013,1)	In_battle_01.wav	Shi Kun Tier 1: Fighting Wang Qi's group	m605in010500_01	m605in010500_01
+bt1010601_01	bf0601_01	bs1010601_01	(it501000,1)(it501522,1)	In_battle_01.wav	Nan Feihuang Tier 1: Fighting Tang Sanzhang	m605in010600_02	m605in010600_03
+bt1010602_01	bf0601_03	bs1010602_01	(it705006,1)(it714005,1)	In_battle_01.wav	Nan Feihuang Tier 2: Fighting Old Beggar Zhou and Xu Xiaoyuan	m605in010610_04	m605in010610_04
+bt1010603_01	bf0302_01	bs1010603_01	(it104501,1)(Money,156)	In_battle_01.wav	Nan Feihuang Tier 3: Fighting the Rogue Brothers	m605in010620_01	m605in010620_01
+bt1010604_01	bf0602_11	bs1010604_01	(it103531,1)(Money,589)	In_battle_01.wav	Nan Feihuang Tier 4: Debut of the Faceless Sword Ghost	m605in010630_03	m605in010630_03
+bt1010701_01	bf0108_01	bs1010701_01	(Money,51)(it501000,1)	In_battle_01.wav	Cheng Yong Tier 1: Fighting the Northern Flame Guards	m605in010700_02	m605in010700_03
+bt1010703_01	bf0601_04	bs1010703_01	(it501014,1)(it501011,1)	In_battle_01.wav	Cheng Yong Tier 3: Capturing the Qietian Dock expert	m605in010720_03	m605in010720_03
+bt1101101_01a	bf0605_01	bs1101101_01a		In_battle_23.wav	Chu vs. Duan Decisive Battle: Chu Tianbi Route	m1101101_02	m1101101_02
+bt1101101_01b	bf0605_01	bs1101101_01b		In_battle_23.wav	Chu vs. Duan Decisive Battle: Duan Xiaolie Route	m1101101_02	m1101101_02
 bt1101102_01	bf0901_01	bs1101102_01		In_battle_01.wav	Chongyan Village	m1101102_02	m1101102_02
-bt1101103_01	bf_1401_01	bs1101103_01	(Money,96)	In_battle_01.wav	Opening event_Gimmick plant	m1101103_02	m1101103_02
-bt1101204_01	bf0107_01	bs1101204_01		In_battle_01.wav	Xia Pavillion: Playing Nan Feihuang	m1101204_21	m1101204_21
-bt1101204_02	bf0107_01	bs1101204_02		In_battle_02.wav	Night Detective Xia Pavillion: Escape from Huo Tan	m1101204_22	m1101204_22
-bt1103101_01	bf0602_01	bs1103101_01		In_battle_01.wav	For testing		
-bt1103101_02	bf0602_02	bs1103101_02	(it712005,1)	In_battle_01.wav	Spring Exam miscellaneous fish disciples war	m1103101_04	m1103101_05
-bt1103101_03	bf0602_03	bs1103101_03	(it705005,1)(Money,43)	In_battle_01.wav	Spring ExamDuan Hong'Er side battle	m1103101_07	m1103101_26
-bt1103101_04	bf0602_10	bs1103101_04	(it501000,1)(it712008,1)	In_battle_01.wav	Spring ExamZhong Ruoxin side battle	m1103101_09	m1103101_21
-bt1103101_05	bf0602_04	bs1103101_05	(it501011,1)(Money,112)	In_battle_01.wav	Spring ExamShi Kun main line battle	m1103101_11	m1103101_25
-bt1103101_06	bf0602_09	bs1103101_06	(it501506,1)(it201009,1)	In_battle_03.wav	Spring ExamGong Zihen Battle (Women's Team)	m1103101_14	m1103101_14
-bt1103101_06b	bf0602_09	bs1103101_06b	(it501506,1)(it201009,1)	In_battle_03.wav	Spring ExamGong Zihen battle (men's team)	m1103101_14	m1103101_14
-bt1103101_07	bf0602_03	bs1103101_07	(it501003,1)(Money,61)	In_battle_01.wav	Spring ExamNan Feihuang side battle	m1103101_32	m1103101_32
-bt1103101_08	bf0602_10	bs1103101_08	(it705006,1)	In_battle_01.wav	Spring ExamCheng Yong Branch Battle	m1103101_34	m1103101_34
-bt1106201_01	bf0407_01	bs1106201_01	(it501013,1)(Money,327)	In_battle_01.wav	Summer Exam Ice Cellar: Hall of Vicissitudes Assassin	m1106201_05	m1106201_91
-bt1106201_02	bf0407_01	bs1106201_02	(it501011,1)(it703005,1)	In_battle_01.wav	Summer Exam Ice Cellar: Corpse Zombie	m1106201_07	m1106201_91
-bt1106201_03	bf0603_01	bs1106201_03	(it101512,1)(it501506,1)	In_battle_02.wav	Summer Exam Ice Cellar: Gong Zihen	m1106201_10	m1106201_10
-bt1107201_01	bf0304_01	bs1107201_01	(it705005,1)(it712007,1)(Money,241)	In_battle_01.wav	The first year of Tanabata: the battle for the red purse	m1107201_40	m1107201_40
-bt1107201_02	bf0307_01	bs1107201_02	(it501520,2)(it706005,1)(it501505,1)	In_battle_02.wav	The first year of Tanabata: Flower Terrace of Fate against Zhu Qian (to help)	m1107201_14	m1107201_14
-bt1107201_03	bf0307_01	bs1107201_03	(it501520,2)(it706005,1)(it501505,1)	In_battle_02.wav	The first year of Tanabata: Flower Terrace of Fate against Zhu Qian (involved without reason)	m1107201_14	m1107201_14
-bt1112402_01	bf1301_04	bs1112402_01	(it102531,1)(it105531,1)	In_battle_01.wav	Duan Hong'Er patrol to assist the Sky Stealer Fort crowd	m1112402_12	m1112402_95
-bt1112402_02	bf1301_04	bs1112402_02	(it708010,1)	In_battle_01.wav	Duan Hong'Er patrol to assist Nanchang Soldier1	m1112402_13	m1112402_95
-bt1112402_03	bf1301_04	bs1112402_03	(it102531,1)(it105531,1)	In_battle_01.wav	Duan Hong'Er patrol to assist Nanchang Soldier2	m1112402_14	m1112402_95
-bt1112402_04	bf1301_04	bs1112402_04	(it102531,1)(it105531,1)	In_battle_01.wav	Nan Feihuang patrol to assist the Sky Stealer Fort crowd	m1112402_22	m1112402_95
-bt1112402_05	bf1301_04	bs1112402_05	(it708010,1)	In_battle_01.wav	Nan Feihuang patrol to assist Nanchang Soldier1	m1112402_23	m1112402_95
-bt1112402_06	bf1301_04	bs1112402_06	(it102531,1)(it105531,1)	In_battle_01.wav	Nan Feihuang patrol to assist Nanchang Soldier2	m1112402_24	m1112402_95
-bt1112402_07	bf1301_03	bs1112402_07	(Money,300)(it201031,1)(it604000,1)	In_battle_01.wav	Cheng Yong Patrol	m1112402_32	m1112402_33
-bt1112402_08	bf1301_02	bs1112402_08		In_battle_01.wav	Zhong Ruoxin stay behind	m1112402_42	m1112402_43
-bt1112402_09	bf1301_01	bs1112402_09	(Money,250)(it501011,2)(it501012,2)	In_battle_01.wav	Camp Defense-Patrol Team	m1112403_00	m1112404_00
-bt1112402_10	bf1301_01	bs1112402_10	(Money,250)(it501011,2)(it501012,2)	In_battle_01.wav	Camp Defense-Staying Group	m1112403_00	m1112404_00
-bt1112403_01	bf1301_01	bs1112403_01		In_battle_02.wav	Showdown Linghu Jin	m1112403_01	m1112404_00
-bt1112403_02	bf1301_01	bs1112403_02	(Money,400)(it604001,1)(it104521,1)(it105521,1)	In_battle_02.wav	Protecting wealthy businessmen-fighting the Gimmick soldiers together	m1112403_02	m1112404_00
-bt1112403_03	bf1301_01	bs1112403_03	(Money,400)(it604001,1)(it104521,1)(it105521,1)	In_battle_02.wav	Hand over the wealthy businessman-fight the Gimmick soldiers together	m1112403_03	m1112404_00
-bt2102201_01	bf0107_01	bs2102201_01	(it301007,1)(it501011,1)	In_battle_04.wav	Team Fight Class: Fighting the Gimmick	m2102201_01	m2102201_01
-bt3010203_01	bf0107_01	bs3010203_01		In_battle_04.wav	Punch of Seventy Two Earthly Fiends Foundation Lesson 3	m3010203_01	m3010203_02
-bt3020203_01	bf0107_01	bs3020203_01		In_battle_04.wav	Nine Spirals of the Silver Wheel Foundation Lesson 3	m3020203_01	m3020203_02
-bt3030203_01	bf0107_01	bs3030203_01		In_battle_04.wav	Lu Jun Sword Method Foundation Lesson 3	m3030203_01	m3030203_02
-bt3040203_01	bf0107_01	bs3040203_01		In_battle_04.wav	The third lesson of Shuofeng Saber Method Foundation	m3040203_01	m3040203_02
-bt3050203_01	bf0107_01	bs3050203_01		In_battle_04.wav	Stick of the Five Old Lords Foundation Lesson 3	m3050203_01	m3050203_02
-bt3060203_01	bf0107_01	bs3060203_01		In_battle_04.wav	Poetry of Seven Steps Basic Lesson 3	m3060203_01	m3060203_02
-bt3070203_01	bf0107_01	bs3070203_01		In_battle_04.wav	Stick of the Five Old Lords Foundation Lesson 3	m3070203_01	m3070203_02
-bt4010202_01	bf0107_01	bs4010202_01		In_battle_04.wav	Punch of Seventy Two Earthly Fiends Advanced Class 2	m4010202_01	m4010202_02
-bt4010203_01	bf0107_01	bs4010203_01		In_battle_04.wav	Punch of Seventy Two Earthly Fiends Advanced Class III	m4010203_01	m4010203_02
-bt4020202_01	bf0107_01	bs4020202_01		In_battle_04.wav	Nine Spirals of the Silver Wheel Advanced Class 2	m4020202_01	m4020202_02
-bt4020203_01	bf0107_01	bs4020203_01		In_battle_04.wav	Nine Spirals of the Silver Wheel Advanced Class III	m4020203_01	m4020203_02
-bt4030202_01	bf0107_01	bs4030202_01		In_battle_04.wav	Lujun Sword Method Advanced Class 2	m4030202_01	m4030202_02
-bt4030203_01	bf0107_01	bs4030203_01		In_battle_04.wav	Lujun Sword Method Advanced Lesson 3	m4030203_01	m4030203_02
-bt4040202_01	bf0107_01	bs4040202_01		In_battle_04.wav	The second lesson of the advanced Saber method	m4040202_01	m4040202_02
-bt4040203_01	bf0107_01	bs4040203_01		In_battle_04.wav	The third lesson of the advanced Saber method	m4040203_01	m4040203_02
-bt4050202_01	bf0107_01	bs4050202_01		In_battle_04.wav	Stick of the Five Old Lords Advanced Class II	m4050202_01	m4050202_02
-bt4050203_01	bf0107_01	bs4050203_01		In_battle_04.wav	Stick of the Five Old Lords Advanced Class III	m4050203_01	m4050203_02
-bt4060202_01	bf0107_01	bs4060202_01		In_battle_04.wav	Poetry of Seven Steps Advanced Class 2	m4060202_01	m4060202_02
-bt4060203_01	bf0107_01	bs4060203_01		In_battle_04.wav	Poetry of Seven Steps Advanced Class III	m4060203_01	m4060203_02
-bt5101501_00	bf0107_01	bs5101501_00		In_battle_04.wav	Biography Calligraphy: Test Gimmick's performance	m5101501_01	m5101501_01
-bt5101502_00	bf0601_06	bs5101502_00		In_mood_13.wav	Biography Calligraphy: Collecting herbs	m5101502_01	m5101502_01
-bt5103101_00	bf0107_01	bs5103101_00		In_mood_11.wav	Xia Hidden Challenge (Women's Division)	m5103101_01	m5103101_01
-bt5103102_00	bf0107_01	bs5103102_00		In_mood_11.wav	Xia Hidden Challenge (Men's Division)	m5103101_01	m5103101_01
-bt5104201_00	bf0602_04	bs5104201_00		In_develop_01.wav	Biography Calligraphy: Huo Tan Special Studies (Kicks)	m5104201_01	m5104201_01
-bt5104202_00	bf0107_01	bs5104202_00		In_develop_01.wav	Biography Calligraphy: Flying Snow White Fox Special Course (Kicks)	m5104202_01	m5104202_01
-bt5104203_00	bf0107_01	bs5104203_00		In_battle_04.wav	Biography Calligraphy: Dao Heng Special Training (Handling Method)	m5104203_01	m5104203_01
-bt5104204_00	bf0602_09	bs5104204_00		In_battle_01.wav	Biography Calligraphy: Jing Special Studies (Sword Method)	m5104204_01	m5104204_01
-bt5104205_00	bf0108_02	bs5104205_00		In_battle_01.wav	Biography Calligraphy: Liu Xinping special study (Saber method)	m5104205_01	m5104205_01
-bt5104206_00	bf0107_01	bs5104206_00		In_battle_04.wav	Biography Calligraphy: Tang Sanchang Special Training (Marksmanship)	m5104206_01	m5104206_01
-bt5104207_00	bf0601_08	bs5104207_00		In_mood_13.wav	Biography Calligraphy: Xiao Qianling Special Studies (Medics)	m5104207_01	m5104207_01
-bt5104208_00	bf0601_05	bs5104208_00		In_battle_01.wav	Biography Calligraphy: Mountain beasts are raging. One	m5104208_02	m5104208_02
-bt5104210_00	bf0201_02	bs5104210_00		In_battle_01.wav	Biography Calligraphy: Zhong Ruoxin specializes in Calligraphy	m5104210_01	m5104210_01
-bt5105101_01	bf0201_03	bs5105101_01	(it712007,1)(it501501,1)	In_battle_01.wav	Dragon Boat Festival Food King Fight	m5105101_05	m5105101_04
-bt5105101_02	bf0201_03	bs5105101_02	(it712007,1)(it501501,1)	In_battle_01.wav	Dragon Boat Festival Food King Fight Two (No)	m5105101_05	m5105101_04
-bt5106503_00	bf0601_07	bs5106503_00		In_battle_01.wav	Biography Calligraphy: Mountain Beasts Raging Two	m5106503_02	m5106503_02
-bt5106505_00	bf0107_01	bs5106505_00		In_battle_04.wav	Biography Calligraphy: Test the performance of actual combat Gimmick people	m5106505_01	m5106505_01
-bt5106506_00	bf0604_01	bs5106506_00		In_explore_01.wav	Biography Calligraphy: Nan Feihuang Lanwu Mission	m5106506_01	m5106506_01
-bt5107302_00	bf1301_05	bs5107302_00		In_explore_01.wav	Biography Calligraphy: Help Dao Heng deliver goods	m5107302_02	m5107302_02
-bt5108101_01	bf0801_01	bs5108101_01	(Money,205)	In_battle_01.wav	Calligraphy Biography Calligraphy: Fight Nan Feihuang and Jiang Hongbo	m5108101_00	m5108101_00
-bt5109201_00	bf1301_06	bs5109201_00		In_battle_01.wav	Biography Calligraphy: Cheng Yong's special mission	m5109201_01	m5109201_01
-bt5110201_00	bf0603_01	bs5110201_00		In_develop_01.wav	Biography Calligraphy: Shi Kunvs古 Shao Jin	m5110201_01	m5110201_01
-bt5111202_00	bf0602_05	bs5111202_00		In_battle_01.wav	Biography Calligraphy: Duan Hong'Er special martial arts Biography Calligraphy	m5111202_02	m5111202_02
-bt5112101_00	bf0604_02	bs5112101_00		In_explore_01.wav	Biography Calligraphy: Delivery 2	m5112101_02	m5112101_02
-bt7010302_01	bf0601_09	bs7010302_01		In_battle_01.wav	Zhong Ruoxin Invitation 2: Operate Kunzai to fight Xinzai	m7010302_02	m7010302_02
-bt7010302_02	bf0601_09	bs7010302_02		In_battle_01.wav	Zhong Ruoxin Invitation 2: Operate Xinzai to fight Kunzai	m7010302_02	m7010302_02
-bt7010601_01	bf0107_01	bs7010601_01	(Money,205)	In_battle_04.wav	Fei Deng Invitation 1: Stop the Gimmick People	m7010601_01	m7010601_01
-bt7010701_01	bf0107_01	bs7010701_01		In_battle_04.wav	Cheng Yong Invitation 1: Manipulate Gimmick to beat Huo Tan	m7010701_02	m7010701_02
-test_4vs4	bf0605_01	test_4vs4		Y000072.ogg	Test battle		
-test_4vs4_1	bf0605_01	test_4vs4_1		Y000072.ogg	Test battle		
-test_ai	bf0605_01	test_ai		Y000072.ogg	Test battle		
-test_average_average1	bf0605_01	test_average_average1		Y000072.ogg	Test battle		
-test_average_average1_average2	bf0605_01	test_average_average1_average2		Y000072.ogg	Test battle		
-test_average_average2	bf0605_01	test_average_average2		Y000072.ogg	Test battle		
-test_average_average3	bf0605_01	test_average_average3		Y000072.ogg	Test battle		
-test_average_average4	bf0605_01	test_average_average4		Y000072.ogg	Test battle		
-test_average_average5	bf0605_01	test_average_average5		Y000072.ogg	Test battle		
-test_average_average6	bf0605_01	test_average_average6		Y000072.ogg	Test battle		
-test_average_dex	bf0605_01	test_average_dex		Y000072.ogg	Test battle		
-test_average_spi	bf0605_01	test_average_spi		Y000072.ogg	Test battle		
-test_average_str	bf0605_01	test_average_str		Y000072.ogg	Test battle		
-test_average_vit	bf0605_01	test_average_vit		Y000072.ogg	Test battle		
-test_dex_average	bf0605_01	test_dex_average		Y000072.ogg	Test battle		
-test_dex_spi	bf0605_01	test_dex_spi		Y000072.ogg	Test battle		
-test_skill	bf0605_01	test_skill		Y000072.ogg	Test battle		
-test_str_dex	bf0605_01	test_str_dex		Y000072.ogg	Test battle		
-test_str_spi	bf0605_01	test_str_spi		Y000072.ogg	Test battle		
-test_str_str	bf0605_01	test_str_str		Y000072.ogg	Test battle		
-test_str_vit	bf0605_01	test_str_vit		Y000072.ogg	Test battle		
-test_vit_dex	bf0605_01	test_vit_dex		Y000072.ogg	Test battle		
-test_vit_spi	bf0605_01	test_vit_spi		Y000072.ogg	Test battle		
+bt1101103_01	bf_1401_01	bs1101103_01	(Money,96)	In_battle_01.wav	Opening Event: Mechanism Workshop	m1101103_02	m1101103_02
+bt1101204_01	bf0107_01	bs1101204_01		In_battle_01.wav	Night Infiltration of the Hero's Academy: Fight against Nan Feihuang	m1101204_21	m1101204_21
+bt1101204_02	bf0107_01	bs1101204_02		In_battle_02.wav	Night Infiltration of the Hero's Academy: Fight against Huo Tan	m1101204_22	m1101204_22
+bt1103101_01	bf0602_01	bs1103101_01		In_battle_01.wav	For Testing Purposes		
+bt1103101_02	bf0602_02	bs1103101_02	(it712005,1)	In_battle_01.wav	Spring Exam: Battle against minor disciples	m1103101_04	m1103101_05
+bt1103101_03	bf0602_03	bs1103101_03	(it705005,1)(Money,43)	In_battle_01.wav	Spring Exam: Duan Hong'er side quest battle	m1103101_07	m1103101_26
+bt1103101_04	bf0602_10	bs1103101_04	(it501000,1)(it712008,1)	In_battle_01.wav	Spring Exam: Zhong Ruoxin side quest battle	m1103101_09	m1103101_21
+bt1103101_05	bf0602_04	bs1103101_05	(it501011,1)(Money,112)	In_battle_01.wav	Spring Exam: Shi Kun main quest battle	m1103101_11	m1103101_25
+bt1103101_06	bf0602_09	bs1103101_06	(it501506,1)(it201009,1)	In_battle_03.wav	Spring Exam: Battle against Gong Zihan (Women's Division)	m1103101_14	m1103101_14
+bt1103101_06b	bf0602_09	bs1103101_06b	(it501506,1)(it201009,1)	In_battle_03.wav	Spring Exam: Battle against Gong Zihan (Men's Division)	m1103101_14	m1103101_14
+bt1103101_07	bf0602_03	bs1103101_07	(it501003,1)(Money,61)	In_battle_01.wav	Spring Exam: Nan Feihuang side quest battle	m1103101_32	m1103101_32
+bt1103101_08	bf0602_10	bs1103101_08	(it705006,1)	In_battle_01.wav	Spring Exam: Cheng Yong side quest battle	m1103101_34	m1103101_34
+bt1106201_01	bf0407_01	bs1106201_01	(it501013,1)(Money,327)	In_battle_01.wav	Summer Exam (Ice Cellar): Beihuan Tower Assassins	m1106201_05	m1106201_91
+bt1106201_02	bf0407_01	bs1106201_02	(it501011,1)(it703005,1)	In_battle_01.wav	Summer Exam (Ice Cellar): Undead/Corpses	m1106201_07	m1106201_91
+bt1106201_03	bf0603_01	bs1106201_03	(it101512,1)(it501506,1)	In_battle_02.wav	Summer Exam (Ice Cellar): Gong Zihan	m1106201_10	m1106201_10
+bt1107201_01	bf0304_01	bs1107201_01	(it705005,1)(it712007,1)(Money,241)	In_battle_01.wav	Year 1 Tanabata: Battle for the red sachet	m1107201_40	m1107201_40
+bt1107201_02	bf0307_01	bs1107201_02	(it501520,2)(it706005,1)(it501505,1)	In_battle_02.wav	Year 1 Tanabata: Confronting Zhu Qian at Yuanhua Terrace (Intervening to help)	m1107201_14	m1107201_14
+bt1107201_03	bf0307_01	bs1107201_03	(it501520,2)(it706005,1)(it501505,1)	In_battle_02.wav	Year 1 Tanabata: Confronting Zhu Qian at Yuanhua Terrace (Inadvertently caught in the fray)	m1107201_14	m1107201_14
+bt1112402_01	bf1301_04	bs1112402_01	(it102531,1)(it105531,1)	In_battle_01.wav	Duan Hong'er Patrol: Assisting Qietian Dock members	m1112402_12	m1112402_95
+bt1112402_02	bf1301_04	bs1112402_02	(it708010,1)	In_battle_01.wav	Duan Hong'er Patrol: Assisting Nanchang soldiers (1)	m1112402_13	m1112402_95
+bt1112402_03	bf1301_04	bs1112402_03	(it102531,1)(it105531,1)	In_battle_01.wav	Duan Hong'er Patrol: Assisting Nanchang soldiers (2)	m1112402_14	m1112402_95
+bt1112402_04	bf1301_04	bs1112402_04	(it102531,1)(it105531,1)	In_battle_01.wav	Nan Feihuang Patrol: Assisting Qietian Dock members	m1112402_22	m1112402_95
+bt1112402_05	bf1301_04	bs1112402_05	(it708010,1)	In_battle_01.wav	Nan Feihuang Patrol Assisting Nanchang Troops 1	m1112402_23	m1112402_95
+bt1112402_06	bf1301_04	bs1112402_06	(it102531,1)(it105531,1)	In_battle_01.wav	Nan Feihuang Patrol Battle: Assisting Nanchang Troops 2	m1112402_24	m1112402_95
+bt1112402_07	bf1301_03	bs1112402_07	(Money,300)(it201031,1)(it604000,1)	In_battle_01.wav	Cheng Yong Patrol Battle	m1112402_32	m1112402_33
+bt1112402_08	bf1301_02	bs1112402_08		In_battle_01.wav	Zhong Ruoxin Rear-Guard Battle	m1112402_42	m1112402_43
+bt1112402_09	bf1301_01	bs1112402_09	(Money,250)(it501011,2)(it501012,2)	In_battle_01.wav	Camp Defense: Patrol Squad	m1112403_00	m1112404_00
+bt1112402_10	bf1301_01	bs1112402_10	(Money,250)(it501011,2)(it501012,2)	In_battle_01.wav	Camp Defense: Rear-Guard Squad	m1112403_00	m1112404_00
+bt1112403_01	bf1301_01	bs1112403_01		In_battle_02.wav	Duel Against Linghu Jin	m1112403_01	m1112404_00
+bt1112403_02	bf1301_01	bs1112403_02	(Money,400)(it604001,1)(it104521,1)(it105521,1)	In_battle_02.wav	Protect the Wealthy Merchant: Jointly Fight Automaton Soldiers	m1112403_02	m1112404_00
+bt1112403_03	bf1301_01	bs1112403_03	(Money,400)(it604001,1)(it104521,1)(it105521,1)	In_battle_02.wav	Hand Over the Wealthy Merchant: Jointly Fight Automaton Soldiers	m1112403_03	m1112404_00
+bt2102201_01	bf0107_01	bs2102201_01	(it301007,1)(it501011,1)	In_battle_04.wav	Group Combat Lesson: Fighting Automatons	m2102201_01	m2102201_01
+bt3010203_01	bf0107_01	bs3010203_01		In_battle_04.wav	72-Style Earth-Fiend Fist: Basics (Lesson 3)	m3010203_01	m3010203_02
+bt3020203_01	bf0107_01	bs3020203_01		In_battle_04.wav	Nine-Turn Silver Wheel: Basics (Lesson 3)	m3020203_01	m3020203_02
+bt3030203_01	bf0107_01	bs3030203_01		In_battle_04.wav	Lujun Swordplay: Basics (Lesson 3)	m3030203_01	m3030203_02
+bt3040203_01	bf0107_01	bs3040203_01		In_battle_04.wav	North Wind Saber Technique: Basics (Lesson 3)	m3040203_01	m3040203_02
+bt3050203_01	bf0107_01	bs3050203_01		In_battle_04.wav	Five Elders Staff Technique: Basics (Lesson 3)	m3050203_01	m3050203_02
+bt3060203_01	bf0107_01	bs3060203_01		In_battle_04.wav	Seven-Step Chant: Basics (Lesson 3)	m3060203_01	m3060203_02
+bt3070203_01	bf0107_01	bs3070203_01		In_battle_04.wav	Five Elders Staff Technique: Basics (Lesson 3)	m3070203_01	m3070203_02
+bt4010202_01	bf0107_01	bs4010202_01		In_battle_04.wav	72-Style Earth-Fiend Fist: Advanced (Lesson 2)	m4010202_01	m4010202_02
+bt4010203_01	bf0107_01	bs4010203_01		In_battle_04.wav	72-Style Earth-Fiend Fist: Advanced (Lesson 3)	m4010203_01	m4010203_02
+bt4020202_01	bf0107_01	bs4020202_01		In_battle_04.wav	Nine-Turn Silver Wheel: Advanced (Lesson 2)	m4020202_01	m4020202_02
+bt4020203_01	bf0107_01	bs4020203_01		In_battle_04.wav	Nine-Turn Silver Wheel: Advanced (Lesson 3)	m4020203_01	m4020203_02
+bt4030202_01	bf0107_01	bs4030202_01		In_battle_04.wav	Lujun Swordplay: Advanced (Lesson 2)	m4030202_01	m4030202_02
+bt4030203_01	bf0107_01	bs4030203_01		In_battle_04.wav	Lujun Swordplay: Advanced (Lesson 3)	m4030203_01	m4030203_02
+bt4040202_01	bf0107_01	bs4040202_01		In_battle_04.wav	North Wind Saber Technique: Advanced (Lesson 2)	m4040202_01	m4040202_02
+bt4040203_01	bf0107_01	bs4040203_01		In_battle_04.wav	North Wind Saber Technique: Advanced (Lesson 3)	m4040203_01	m4040203_02
+bt4050202_01	bf0107_01	bs4050202_01		In_battle_04.wav	Five Elders Staff Technique: Advanced (Lesson 2)	m4050202_01	m4050202_02
+bt4050203_01	bf0107_01	bs4050203_01		In_battle_04.wav	Five Elders Staff Technique: Advanced (Lesson 3)	m4050203_01	m4050203_02
+bt4060202_01	bf0107_01	bs4060202_01		In_battle_04.wav	Seven-Step Chant: Advanced (Lesson 2)	m4060202_01	m4060202_02
+bt4060203_01	bf0107_01	bs4060203_01		In_battle_04.wav	Seven-Step Chant: Advanced (Lesson 3)	m4060203_01	m4060203_02
+bt5101501_00	bf0107_01	bs5101501_00		In_battle_04.wav	Mission: Testing Automaton Performance	m5101501_01	m5101501_01
+bt5101502_00	bf0601_06	bs5101502_00		In_mood_13.wav	Mission: Gathering Herbs	m5101502_01	m5101502_01
+bt5103101_00	bf0107_01	bs5103101_00		In_mood_11.wav	Hero's Arena Tournament (Women's Division)	m5103101_01	m5103101_01
+bt5103102_00	bf0107_01	bs5103102_00		In_mood_11.wav	Hero's Arena Tournament (Men's Division)	m5103101_01	m5103101_01
+bt5104201_00	bf0602_04	bs5104201_00		In_develop_01.wav	Mission: Huo Tan's Special Training (Kicking Techniques)	m5104201_01	m5104201_01
+bt5104202_00	bf0107_01	bs5104202_00		In_develop_01.wav	Mission: Feixue Linghu's Special Training (Kicking Techniques)	m5104202_01	m5104202_01
+bt5104203_00	bf0107_01	bs5104203_00		In_battle_04.wav	Mission: Dao Heng's Special Training (Palm Techniques)	m5104203_01	m5104203_01
+bt5104204_00	bf0602_09	bs5104204_00		In_battle_01.wav	Mission: Jing's Special Training (Swordplay)	m5104204_01	m5104204_01
+bt5104205_00	bf0108_02	bs5104205_00		In_battle_01.wav	Mission: Liu Xinping's Special Training (Saber Techniques)	m5104205_01	m5104205_01
+bt5104206_00	bf0107_01	bs5104206_00		In_battle_04.wav	Mission: Tang Sanchang's Special Training (Spear Techniques)	m5104206_01	m5104206_01
+bt5104207_00	bf0601_08	bs5104207_00		In_mood_13.wav	Mission: Xiao Qianling's Special Training (Medical Arts)	m5104207_01	m5104207_01
+bt5104208_00	bf0601_05	bs5104208_00		In_battle_01.wav	Mission: Rampaging Mountain Beasts I	m5104208_02	m5104208_02
+bt5104210_00	bf0201_02	bs5104210_00		In_battle_01.wav	Assignment: Zhong Ruoxin's Signature Weapon	m5104210_01	m5104210_01
+bt5105101_01	bf0201_03	bs5105101_01	(it712007,1)(it501501,1)	In_battle_01.wav	Dragon Boat Festival "Food King" Battle	m5105101_05	m5105101_04
+bt5105101_02	bf0201_03	bs5105101_02	(it712007,1)(it501501,1)	In_battle_01.wav	Dragon Boat Festival "Food King" Battle II (Not yet available)	m5105101_05	m5105101_04
+bt5106503_00	bf0601_07	bs5106503_00		In_battle_01.wav	Assignment: Rampaging Mountain Beasts II	m5106503_02	m5106503_02
+bt5106505_00	bf0107_01	bs5106505_00		In_battle_04.wav	Assignment: Testing Combat Automaton Performance	m5106505_01	m5106505_01
+bt5106506_00	bf0604_01	bs5106506_00		In_explore_01.wav	Assignment: Nan Feihuang's Blue-Tier Weapon Quest	m5106506_01	m5106506_01
+bt5107302_00	bf1301_05	bs5107302_00		In_explore_01.wav	Assignment: Delivering Goods for Dao Heng	m5107302_02	m5107302_02
+bt5108101_01	bf0801_01	bs5108101_01	(Money,205)	In_battle_01.wav	Assignment: Sparring with Nan Feihuang and Jiang Hongbo	m5108101_00	m5108101_00
+bt5109201_00	bf1301_06	bs5109201_00		In_battle_01.wav	Assignment: Cheng Yong's Signature Weapon Quest	m5109201_01	m5109201_01
+bt5110201_00	bf0603_01	bs5110201_00		In_develop_01.wav	Assignment: Shi Kun vs. Gu Shaojin	m5110201_01	m5110201_01
+bt5111202_00	bf0602_05	bs5111202_00		In_battle_01.wav	Assignment: Duan Hong'er's Signature Weapon	m5111202_02	m5111202_02
+bt5112101_00	bf0604_02	bs5112101_00		In_explore_01.wav	Assignment: Delivery Mission II	m5112101_02	m5112101_02
+bt7010302_01	bf0601_09	bs7010302_01		In_battle_01.wav	Zhong Ruoxin Invitation 2: Control Kun to fight Xin	m7010302_02	m7010302_02
+bt7010302_02	bf0601_09	bs7010302_02		In_battle_01.wav	Zhong Ruoxin Invitation 2: Control Xin to fight Kun	m7010302_02	m7010302_02
+bt7010601_01	bf0107_01	bs7010601_01	(Money,205)	In_battle_04.wav	Feihuang Invitation 1: Stop the Automaton	m7010601_01	m7010601_01
+bt7010701_01	bf0107_01	bs7010701_01		In_battle_04.wav	Cheng Yong Invitation 1: Control Automaton to fight Huo Tan	m7010701_02	m7010701_02
+test_4vs4	bf0605_01	test_4vs4		Y000072.ogg	Test Battle		
+test_4vs4_1	bf0605_01	test_4vs4_1		Y000072.ogg	Test Battle		
+test_ai	bf0605_01	test_ai		Y000072.ogg	Test Battle		
+test_average_average1	bf0605_01	test_average_average1		Y000072.ogg	Test Battle		
+test_average_average1_average2	bf0605_01	test_average_average1_average2		Y000072.ogg	Test Battle		
+test_average_average2	bf0605_01	test_average_average2		Y000072.ogg	Test Battle		
+test_average_average3	bf0605_01	test_average_average3		Y000072.ogg	Test Battle		
+test_average_average4	bf0605_01	test_average_average4		Y000072.ogg	Test Battle		
+test_average_average5	bf0605_01	test_average_average5		Y000072.ogg	Test Battle		
+test_average_average6	bf0605_01	test_average_average6		Y000072.ogg	Test Battle		
+test_average_dex	bf0605_01	test_average_dex		Y000072.ogg	Test Battle		
+test_average_spi	bf0605_01	test_average_spi		Y000072.ogg	Test Battle		
+test_average_str	bf0605_01	test_average_str		Y000072.ogg	Test Battle		
+test_average_vit	bf0605_01	test_average_vit		Y000072.ogg	Test Battle		
+test_dex_average	bf0605_01	test_dex_average		Y000072.ogg	Test Battle		
+test_dex_spi	bf0605_01	test_dex_spi		Y000072.ogg	Test Battle		
+test_skill	bf0605_01	test_skill		Y000072.ogg	Test Battle		
+test_str_dex	bf0605_01	test_str_dex		Y000072.ogg	Test Battle		
+test_str_spi	bf0605_01	test_str_spi		Y000072.ogg	Test Battle		
+test_str_str	bf0605_01	test_str_str		Y000072.ogg	Test Battle		
+test_str_vit	bf0605_01	test_str_vit		Y000072.ogg	Test Battle		
+test_vit_dex	bf0605_01	test_vit_dex		Y000072.ogg	Test Battle		
+test_vit_spi	bf0605_01	test_vit_spi		Y000072.ogg	Test Battle		
 07test	bf0702_04	07test		In_battle_01.wav			
-bt1010204_01	bf0108_01	bs1010204_01		In_battle_12.wav	Duan Hong'Er Tier Four: Back Mountain vs. Duan Xiaolie	m605in010230_02	m605in010230_02
-bt1010205_01	bf0602_05	bs1010205_01	(Money,700)	In_battle_21.wav	Duan Hong'Er Tier 5: Five Elder Mountain vs Corpse Zombie	m605in010240_02	m1112402_95
-bt1010401_01	bf0603_01	bs1010401_01		In_battle_01.wav	Xiao Qianling Remakes Tier One_ Battle with Mountain Bandit	m605in010400_06	m605in010400_07
-bt1010402_01	bf0108_01	bs1010402_01	(Money,50)	In_battle_01.wav	Xiao Qianling second order: three hits one	m605in010410_01	m605in010410_02
-bt1010502_00	bf0108_01	bs1010502_00	(it501020,1)(it703005,1)	In_battle_21.wav	Shi Kun second order: protagonist vs Shi Kun	m605in010510_01	m605in010510_01
-bt1010605_01	bf0801_04	bs1010605_00		In_mood_21.wav	Nan Feihuang Fifth Floor: Fire House	m605in010640_08	
-bt1010704_01	bf1102_05	bs1010704_01	(it713007,1)(it501014,1)	In_battle_21.wav	Cheng Yong 4: The Gimmick Soldier	m605in010730_03	m605in010730_03
-bt1011101_01	bf0107_01	bs1011101_01		In_battle_01.wav	Wu Zhe Incident One Fight	m605in011100_02	m605in011100_03
-bt1201102_00	bf0903_01	bs1201102_00	(Money,93)(it501013,1)	In_battle_11.wav	Return to Chongyan Village: The Assassins of the Hall of Vicissitudes attack	m1201102_08	m1201102_90
-bt1201102_10	bf0903_02	bs1201102_10	(it704005,1)(it501506,1)	In_explore_01.wav	Healing Shi Kun: The illusion of an abandoned mine	m1201103_02	m1201103_02
-bt1201102_11	bf0903_03	bs1201102_11	(it501500,3)(it706005,1)	In_explore_01.wav	Healing Shi Kun: the old black bear	m1201103_04	m1201102_90
-bt1201102_12	bf0903_04	bs1201102_12	(Money,46)(it501011,1)	In_battle_11.wav	Healing Shi Kun: Encountered Beggar in front of the lake	m1201103_06	m1201103_06
-bt1201102_12a	bf0903_04	bs1201102_12a	(Money,46)(it501011,1)	In_battle_11.wav	Healing Shi Kun: Encountered Beggar and gangsters before the lake	m1201103_06	m1201103_06
-bt1201102_20	bf0903_05	bs1201102_20	(Money,77)(it501012,1)	In_battle_12.wav	Investigating the disappearance: the village chief’s wife rescued by a gangster	m1201104_05	m1201102_90
-bt1201102_21	bf0903_00	bs1201102_21	(it501020,2)(it708005,1)	In_battle_12.wav	Investigating the disappearance: Zhang Counselor invaded the heavy rock village	m1201104_07	m1201102_90
-bt1201102_22	bf1502_01	bs1201102_22	(Money,354)(it501021,1)	In_mood_08.wav	Investigating the disappearance: capture Zhang Counselor cliff battle	m1201104_09	m1201102_90
-bt1203201_01	bf0401_02	bs1203201_01	(it105531,1)(Money,350)	In_battle_21.wav	Nanchang City Gate Battle Guard	m1203201_13	m1203201_13
-bt1203201_02	bf0401_03	bs1203201_02	(it416005,1)	In_battle_21.wav	Assassins in Nanchang	m1203201_21	m1203201_21
-bt1203201_03	bf1501_01	bs1203201_03	(it501013,3)(Money,400)	In_explore_01.wav	Di listen to fight against the mad disciples	m1203201_22	m1203201_93
-bt1203201_04	bf0601_21	bs1203201_04	(it501506,1)(Money,500)	In_mood_08.wav	Nanchang City Robbery: Against Smoking Tapir	m1203201_25	m1203201_27
-bt1205502_01	bf1101_01	bs1205502_01	(it501011,3)(it501012,3)(it103542,1)	In_battle_21.wav	Xia Pavillion VS three factions at the foot of Zhongnan Mountain	m1205502_01	m1205502_01
-bt1205503_01	bf1102_01	bs1205503_01	(it501011,2)(it501012,2)(it501000,2)	In_battle_21.wav	Cheng Yong will fight together in the living room of the village	m1205503_01	m1112402_95
-bt1205503_02	bf1102_02	bs1205503_02	(it601806,1)(Money,500)	In_battle_21.wav	Zhai Nei Treasure War	m1205503_22	m1112402_95
-bt1205503_03	bf1102_03	bs1205503_03	(it501000,3)	In_battle_21.wav	War in the cell	m1205503_42	m1112402_95
-bt1205504_01	bf1102_04	bs1205504_01	(it715010,1)(it501021,1)(it501506,1)	In_battle_22.wav	The main hall to save Qiu Baihe	m1205504_01	m1112402_95
-bt1205504_02	bf1102_04	bs1205504_02		In_battle_12.wav	Three battles in the main hall	m1205504_11	m1205504_99
-bt1207201_01	bf0401_04	bs1207201_00		In_battle_01.wav	The second year Qixi Festival_Jin GangZhang Qiluo Battle	m1207201_05	m1207201_06
-bt1207201_02	bf0401_05	bs1207201_01	(it201044,1)(it501506,1)	In_battle_01.wav	The second year Tanabata _ Banquet War	m1207201_10	m1207201_11
-bt1210402_01	bf1003_01	bs1210402_01		In_battle_21.wav	Mount Heng Wolf Attack	m1210402_02	m1210402_03
-bt1210402_02	bf1003_02	bs1210402_02	(it414004,1)	In_mood_08.wav	Mount Heng First Battle He Changrui	m1210402_06	m1210403_00
-bt1210404_01	bf1003_02	bs1210404_01	(it715010,1)(it501021,2)(it501506,1)	In_battle_23.wav	Mount Heng vs. Flying Squid	m1210404_01	m1112402_95
-bt1211101_01	bf0107_01	bs1211101_01		In_battle_01.wav	Four Arts Convention Four Zither	m1211101_01	m1211101_01
-bt1211101_02	bf0107_01	bs1211101_02		In_battle_01.wav	Four Arts Convention	m1211101_01	m1211101_01
-bt1211101_03	bf0107_01	bs1211101_03		In_battle_01.wav	Four Arts Convention Four Calligraphy	m1211101_01	m1211101_01
-bt1211101_04	bf0107_01	bs1211101_04		In_battle_01.wav	Four Arts Convention	m1211101_01	m1211101_01
-bt1212402_01	bf0501_01	bs1212402_01	(Money,600)(it501011,3)	In_battle_21.wav	The second year Winter ExamIce CleanSword Pai Mountain Road Battle	m1212402_01	m1112402_95
-bt1212402_02	bf0501_02	bs1212402_02	(Money,600)(it501011,3)	In_battle_21.wav	The second year Winter ExamIce CleanSword Pai Mountain Road World War II	m1212402_02	m1112402_95
-bt1212402_03	bf0501_03	bs1212402_03	(it715010,1)(it501021,2)(it501506,1)	In_battle_22.wav	The second year Winter ExamIce CleanSword School Jin Gang in front of the Su Xin Dian	m1212402_04	m1112402_95
-bt1212501_00	bf0801_03	bs1212501_00	(Money,557)(it501031,1)	In_battle_21.wav	Burning heavy rock village_rescue iron brother war_Zhang Mengyang death route	m1212501_11	m1212501_90
-bt1212501_00b	bf0801_03	bs1212501_00b	(Money,557)(it501031,1)	In_battle_21.wav	Burning heavy rock village_rescue iron brother war_Zhang Mengyang survival route	m1212501_11b	m1212501_90
-bt1212501_01	bf0904_01	bs1212501_01	(Money,821)(it501030,1)(it501031,1)	In_mood_08.wav	Burning heavy rock village_rescue villagers battle_female Ling Wujue	m1212501_20	m1212501_90
-bt1212501_01b	bf0904_01	bs1212501_01b	(Money,821)(it501030,1)(it501031,1)	In_mood_08.wav	Burning heavy rock village_rescue villagers battle_male Ling Wujue	m1212501_20	m1212501_90
-bt1212501_02	bf0904_02	bs1212501_02		In_battle_24.wav	Burning Heavy Rock Village_Thunder from a Thousand Miles	m1212501_21	m1212501_90
-bt2201201_01	bf0107_01	bs2201201_01		In_battle_01.wav	Shangguan Xu Incident One Fight	m2201201_01	m2201201_01
-bt5103502_00	bf0107_02	bs5103502_00		In_battle_01.wav	Dao Heng Biography Calligraphy Incident 2	m5103502_01	m5103502_02
-bt5201101_00	bf0304_01	bs5201101_01		In_battle_01.wav	Biography Calligraphy: Tang Sanchang Biography Calligraphy	m5201101_02	m5201101_02
-bt5201103_00	bf0302_01	bs5201103_00	(Money,200)	In_battle_01.wav	Huo Tan Biography Calligraphy Mission 5201103	m5201103_03	m5201103_04
-bt5201104_01	bf0901_01	bs5201104_01		In_battle_01.wav	Biography Calligraphy. Gimmick Man Part I (Wooden Automaton Heart)	m5201104_03	m5201104_05
-bt5201104_02	bf0901_01	bs5201104_02		In_battle_01.wav	Biography Calligraphy. Gimmick Person Part II (Wooden Automaton Heart)	m5201104_04	m5201104_02
-bt5201105_01	bf0601_10	bs5201105_00		In_explore_01.wav	Biography Calligraphy. Bandit Rage (PartI)	m5201105_02	
-bt5201106_00	bf0401_03	bs5201106_00		In_explore_02.wav	Biography Calligraphy. Bandits Raging Two Provinces	m5201106_03	m5201106_02
-bt5201106_01	bf1501_02	bs5201106_01		In_mood_16.wav	Biography Calligraphy. Bandit Rage 2 Suspension Bridge Battle	m5201106_04	m5201106_05
-bt5201107_00	bf0107_01	bs5201107_01		In_explore_01.wav	Biography Calligraphy. Defense type Wooden Automaton function test	m5201107_02	m5201107_02
-bt5201108_00	bf1301_07	bs5201108_01		In_battle_04.wav	Biography Calligraphy. Defensive Wooden Automaton Function Test II	m5201108_02	m5201108_04
-bt5201109_00	bf0601_06	bs5201109_00		In_explore_02.wav	Biography Calligraphy. Assist in training freshmen Will		
-bt5201109_01	bf0601_04	bs5201109_01		In_mood_08.wav	Biography Calligraphy. Assist in training freshmen Will	m5201109_03	m5201109_03
-bt5201110_00	bf1003_01	bs5201110_00		In_battle_01.wav	Biography Calligraphy. Assist in training freshmen Dexterity	m5201110_02	m5201110_02
-bt5201111_00	bf0107_02	bs5201111_00		In_battle_01.wav	Biography Calligraphy. Assist in training freshmen Vitality		
-bt5201112_00	bf0107_02	bs5201112_00		In_battle_01.wav	Biography Calligraphy. Assist in training freshmen Strength		
-bt5201114_00	bf0601_06	bs5201114_00		In_battle_01.wav	Biography Calligraphy, investigating anomalous beasts		
-bt5201115_00	bf0107_01	bs5201115_00		In_battle_01.wav	Biography Calligraphy. The 2nd Xia Hidden Challenge (with Di Ting)		m5201115_01
-bt5201115_01	bf0107_01	bs5201115_01		In_battle_01.wav	Biography Calligraphy. The 2nd Xia Hidden Challenge (with Di Ting)		m5201115_01
-bt5201115_02	bf0107_01	bs5201115_02		In_battle_04.wav	Biography Calligraphy. The 2nd Xia Hidden Challenge (with Di Ting)	m5201115_01	m5201115_01
-bt5201116_00	bf0107_01	bs5201116_00		In_battle_01.wav	Biography Calligraphy. The 2nd Xia Yin Challenge (with Shangguan Lin)	m5201116_01	m5201115_01
-bt5201116_01	bf0107_01	bs5201116_01		In_battle_01.wav	Biography Calligraphy. The 2nd Xia Yin Challenge (with Shangguan Lin)	m5201116_02	m5201115_01
-bt5201116_02	bf0107_01	bs5201116_02		In_battle_04.wav	Biography Calligraphy. The 2nd Xia Yin Challenge (with Shangguan Lin)	m5201115_01	m5201115_01
-bt5201117_00	bf0107_01	bs5201117_00		In_battle_01.wav	Biography Calligraphy. Martial arts cut through friendly matches	m5201117_01	m5201117_01
-bt5201118_00	bf1501_03	bs5201118_00		In_battle_01.wav	Biography Calligraphy. Martial arts cut through friendly matches	m5201118_01	m5201118_01
-bt5201119_00	bf1501_04	bs5201119_00		In_battle_01.wav	Biography Calligraphy. Five Elder Mountain People	m5201119_01	m5201119_02
-bt5201122_00	bf0801_02	bs5201122_00		In_battle_04.wav	Biography Calligraphy. Pickled White Vegetables	m5201122_01	m5201122_02
-bt5201123_00	bf0604_03	bs5201123_00		In_mood_08.wav	Biography Calligraphy. Pickled White Vegetables	m5201123_03	m5201123_04
-bt5202091_01	bf1501_05	bs5202091_01		In_battle_01.wav	The assassination of Calligraphy_Wu Hao	m5202091_02	m5202091_02
-bt5202091_02	bf1501_05	bs5202091_02		In_battle_01.wav	The second round of the assassination of Calligraphy_Wu Hao	m5202091_03	m5202091_09
-bt5210401_00	bf0701_01	bs5210401_00		In_battle_01.wav	Shangguan Family Fight at banquet	m5210401_02	m5210401_03
-bt5210401_01	bf0702_01	bs5210401_01	(it715015,1)	In_battle_01.wav	Shangguan Family Banquet Obstacle	m5210401_13	m5210401_12
-bt5210401_02	bf0702_02	bs5210401_02	(it715015,2)	In_battle_01.wav	Shangguan’s Family Banquet to quell chaos	m5210401_15	m5210401_12
-bt5210401_03	bf0702_03	bs5210401_03		In_battle_01.wav	Shangguan Family Banquet BOSS Battle	m5210401_19	m5210401_18
-bt_in0104_01	bf0107_02	bs_in0104_01		In_battle_21.wav	Xiao Qianling moves demonstration	a_gettingready_rever	a_gettingready_rever
-bt_in0104_02	bf1501_01	bs_in0104_02		In_battle_21.wav	Xiao Qianling's moves demonstration 2	a_gettingready_rever	a_gettingready_rever
-bt_in0110_01	bf0107_02	bs_in0110_01			Shangguan Xu moves demo	a_gettingready_rever	a_gettingready_rever
-bt_in0110_02	bf0402_01	bs_in0110_02			Shangguan Xu battle demo	a_gettingready_rever	a_gettingready_rever
-bt_in0111_01	bf0107_02	bs_in0111_01		In_battle_21.wav	Wu Zhe moves demonstration	a_gettingready_rever	a_gettingready_rever
-test0701	bf0702_01	test0701		In_battle_01.wav	Shangguan Family Banquet Obstacle		
-bt1010503_00	bf0601_10	bs1010503_00	(it501011,2)(it713008,1)	In_mood_08.wav	Shek Kun third order:The protagonist and Shek Kun again fight king Qi	m605in010520_03	m605in010520_03
-bt1010504_00	bf0601_11	bs1010504_00	(it501011,2)(it713008,1)	In_mood_10.wav	Shek Kun, 4th order.	m605in010530_03	m605in010530_03
-bt1010705_01	bf1103_01	bs1010705_01	(Money,126)(it715015,2)	In_battle_21.wav	Cheng Yong 5th order: dealing with the defense agency soldiers	m605in010740_05	m605in010740_05
-bt1011004_01	bf1301_08	bs1011004_01		In_battle_24.wav	Shangguan Xu four _ Battle one	m605in011030_01	m605in011030_02
-bt1011004_02	bf1301_09	bs1011004_02	(it715010,1)	In_battle_24.wav	Shangguan Xu four _ Battle two	m605in011030_03	m605in011030_04
-bt1011004_03	bf1301_10	bs1011004_03		In_battle_24.wav	Shangguan Xu four _ Battle three	m605in011030_05	m605in011030_06
-bt1011103_01	bf0107_01	bs1011103_01		In_battle_01.wav	Wu rut _ three three five	m605in011120_01	m605in011120_02
-bt5201124_00	bf0304_02	bs5201124_00		In_battle_04.wav	Biography of the book.Dragon Boat Festival Creative Rice Dumpling Contest	m5201124_03	m5201124_04
+bt1010204_01	bf0108_01	bs1010204_01		In_battle_12.wav	Duan Hong'er Rank 4: Vs. Duan Xiaolie (Back Mountain)	m605in010230_02	m605in010230_02
+bt1010205_01	bf0602_05	bs1010205_01	(Money,700)	In_battle_21.wav	Duan Hong'er Rank 5: Vs. Undead (Wulao Mountain)	m605in010240_02	m1112402_95
+bt1010401_01	bf0603_01	bs1010401_01		In_battle_01.wav	Xiao Qianling (Remake) Rank 1: Battle against bandits	m605in010400_06	m605in010400_07
+bt1010402_01	bf0108_01	bs1010402_01	(Money,50)	In_battle_01.wav	Xiao Qianling Rank 2: Three-on-one battle	m605in010410_01	m605in010410_02
+bt1010502_00	bf0108_01	bs1010502_00	(it501020,1)(it703005,1)	In_battle_21.wav	Shi Kun Rank 2: Protagonist vs. Shi Kun	m605in010510_01	m605in010510_01
+bt1010605_01	bf0801_04	bs1010605_00		In_mood_21.wav	Nan Feihuang Rank 5: Burning house	m605in010640_08	
+bt1010704_01	bf1102_05	bs1010704_01	(it713007,1)(it501014,1)	In_battle_21.wav	Cheng Yong Rank 4: Rampaging automaton	m605in010730_03	m605in010730_03
+bt1011101_01	bf0107_01	bs1011101_01		In_battle_01.wav	Wu Zhe Event 1: Battle	m605in011100_02	m605in011100_03
+bt1201102_00	bf0903_01	bs1201102_00	(Money,93)(it501013,1)	In_battle_11.wav	Return to Chongyan Village: Ambush by Beihuan Tower assassins	m1201102_08	m1201102_90
+bt1201102_10	bf0903_02	bs1201102_10	(it704005,1)(it501506,1)	In_explore_01.wav	Healing Shi Kun: Illusions in the abandoned mine	m1201103_02	m1201103_02
+bt1201102_11	bf0903_03	bs1201102_11	(it501500,3)(it706005,1)	In_explore_01.wav	Healing Shi Kun: Old Black the vicious bear	m1201103_04	m1201102_90
+bt1201102_12	bf0903_04	bs1201102_12	(Money,46)(it501011,1)	In_battle_11.wav	Healing Shi Kun: Encounter with a beggar by the lakeside	m1201103_06	m1201103_06
+bt1201102_12a	bf0903_04	bs1201102_12a	(Money,46)(it501011,1)	In_battle_11.wav	Healing Shi Kun: Encounter with a beggar and thugs by the lakeside	m1201103_06	m1201103_06
+bt1201102_20	bf0903_05	bs1201102_20	(Money,77)(it501012,1)	In_battle_12.wav	Investigating the Disappearances: Saving the Village Chief's wife from thugs	m1201104_05	m1201102_90
+bt1201102_21	bf0903_00	bs1201102_21	(it501020,2)(it708005,1)	In_battle_12.wav	Investigating the Disappearances: Battle against Secretary Zhang's raid on Chongyan Village	m1201104_07	m1201102_90
+bt1201102_22	bf1502_01	bs1201102_22	(Money,354)(it501021,1)	In_mood_08.wav	Investigating the Disappearances: Cliffside battle to capture Secretary Zhang	m1201104_09	m1201102_90
+bt1203201_01	bf0401_02	bs1203201_01	(it105531,1)(Money,350)	In_battle_21.wav	Battle against guards at Nanchang City Gate	m1203201_13	m1203201_13
+bt1203201_02	bf0401_03	bs1203201_02	(it416005,1)	In_battle_21.wav	Battle against assassins outside Nanchang City	m1203201_21	m1203201_21
+bt1203201_03	bf1501_01	bs1203201_03	(it501013,3)(Money,400)	In_explore_01.wav	Di Ting vs. Deranged disciples	m1203201_22	m1203201_93
+bt1203201_04	bf0601_21	bs1203201_04	(it501506,1)(Money,500)	In_mood_08.wav	Nanchang City Theft Case: Battle against Yan Mo	m1203201_25	m1203201_27
+bt1205502_01	bf1101_01	bs1205502_01	(it501011,3)(it501012,3)(it103542,1)	In_battle_21.wav	Foot of Mount Zhongnan: Xiayin Pavilion vs. Three Sects	m1205502_01	m1205502_01
+bt1205503_01	bf1102_01	bs1205503_01	(it501011,2)(it501012,2)(it501000,2)	In_battle_21.wav	Rendezvous with Cheng Yong in the stronghold's living quarters	m1205503_01	m1112402_95
+bt1205503_02	bf1102_02	bs1205503_02	(it601806,1)(Money,500)	In_battle_21.wav	Treasure within the stronghold Battle at the Storehouse	m1205503_22	m1112402_95
+bt1205503_03	bf1102_03	bs1205503_03	(it501000,3)	In_battle_21.wav	Battle in the Stronghold's Prison	m1205503_42	m1112402_95
+bt1205504_01	bf1102_04	bs1205504_01	(it715010,1)(it501021,1)(it501506,1)	In_battle_22.wav	Battle to Rescue Qiu Baihe in the Main Hall	m1205504_01	m1112402_95
+bt1205504_02	bf1102_04	bs1205504_02		In_battle_12.wav	Three-Round Martial Arts Contest in the Main Hall	m1205504_11	m1205504_99
+bt1207201_01	bf0401_04	bs1207201_00		In_battle_01.wav	Year 2 Qixi Festival: Battle against "Diamond" Zhang Qiluo	m1207201_05	m1207201_06
+bt1207201_02	bf0401_05	bs1207201_01	(it201044,1)(it501506,1)	In_battle_01.wav	Year 2 Qixi Festival: Grand Battle at the Banquet	m1207201_10	m1207201_11
+bt1210402_01	bf1003_01	bs1210402_01		In_battle_21.wav	Wolf Attack on Mount Heng	m1210402_02	m1210402_03
+bt1210402_02	bf1003_02	bs1210402_02	(it414004,1)	In_mood_08.wav	Battle against He Changrui on Mount Heng	m1210402_06	m1210403_00
+bt1210404_01	bf1003_02	bs1210404_01	(it715010,1)(it501021,2)(it501506,1)	In_battle_23.wav	Battle against the Flying Squid on Mount Heng	m1210404_01	m1112402_95
+bt1211101_01	bf0107_01	bs1211101_01		In_battle_01.wav	Four Arts Tournament: Zither Challenge	m1211101_01	m1211101_01
+bt1211101_02	bf0107_01	bs1211101_02		In_battle_01.wav	Four Arts Tournament: Chess Challenge	m1211101_01	m1211101_01
+bt1211101_03	bf0107_01	bs1211101_03		In_battle_01.wav	Four Arts Tournament: Calligraphy Challenge	m1211101_01	m1211101_01
+bt1211101_04	bf0107_01	bs1211101_04		In_battle_01.wav	Four Arts Tournament: Painting Challenge	m1211101_01	m1211101_01
+bt1212402_01	bf0501_01	bs1212402_01	(Money,600)(it501011,3)	In_battle_21.wav	Year 2 Winter Exam: Battle on the Bingqing Sword Sect Mountain Path (Round 1)	m1212402_01	m1112402_95
+bt1212402_02	bf0501_02	bs1212402_02	(Money,600)(it501011,3)	In_battle_21.wav	Year 2 Winter Exam: Battle on the Bingqing Sword Sect Mountain Path (Round 2)	m1212402_02	m1112402_95
+bt1212402_03	bf0501_03	bs1212402_03	(it715010,1)(it501021,2)(it501506,1)	In_battle_22.wav	Year 2 Winter Exam: Battle against "Diamond" in front of Suxin Hall (Bingqing Sword Sect)	m1212402_04	m1112402_95
+bt1212501_00	bf0801_03	bs1212501_00	(Money,557)(it501031,1)	In_battle_21.wav	Burning of Chongyan Village: Battle to Rescue Brother Tie (Zhang Mengyang Death Route)	m1212501_11	m1212501_90
+bt1212501_00b	bf0801_03	bs1212501_00b	(Money,557)(it501031,1)	In_battle_21.wav	Burning of Chongyan Village: Battle to Rescue Brother Tie (Zhang Mengyang Survival Route)	m1212501_11b	m1212501_90
+bt1212501_01	bf0904_01	bs1212501_01	(Money,821)(it501030,1)(it501031,1)	In_mood_08.wav	Burning of Chongyan Village: Battle to Rescue Villagers (Female Ling Wujue)	m1212501_20	m1212501_90
+bt1212501_01b	bf0904_01	bs1212501_01b	(Money,821)(it501030,1)(it501031,1)	In_mood_08.wav	Burning of Chongyan Village: Battle to Rescue Villagers (Male Ling Wujue)	m1212501_20	m1212501_90
+bt1212501_02	bf0904_02	bs1212501_02		In_battle_24.wav	Burning of Chongyan Village: Baili Fenglei	m1212501_21	m1212501_90
+bt2201201_01	bf0107_01	bs2201201_01		In_battle_01.wav	Battle during the Shangguan Xu Event 1	m2201201_01	m2201201_01
+bt5103502_00	bf0107_02	bs5103502_00		In_battle_01.wav	Daoheng's Message Event 2	m5103502_01	m5103502_02
+bt5201101_00	bf0304_01	bs5201101_01		In_battle_01.wav	Message: Message from Tang Sanchang	m5201101_02	m5201101_02
+bt5201103_00	bf0302_01	bs5201103_00	(Money,200)	In_battle_01.wav	Huo Tan's Message Mission 5201103	m5201103_03	m5201103_04
+bt5201104_01	bf0901_01	bs5201104_01		In_battle_01.wav	Message: Out-of-Control Automaton Part I (Mu Renxin)	m5201104_03	m5201104_05
+bt5201104_02	bf0901_01	bs5201104_02		In_battle_01.wav	Message: Out-of-Control Automaton Part II (Mu Renxin)	m5201104_04	m5201104_02
+bt5201105_01	bf0601_10	bs5201105_00		In_explore_01.wav	Message: Rampaging Bandits (Part I)	m5201105_02	
+bt5201106_00	bf0401_03	bs5201106_00		In_explore_02.wav	Message: Rampaging Bandits Part II – Battle at the Provincial Capital	m5201106_03	m5201106_02
+bt5201106_01	bf1501_02	bs5201106_01		In_mood_16.wav	Message: Rampaging Bandits Part II – Battle at the Drawbridge	m5201106_04	m5201106_05
+bt5201107_00	bf0107_01	bs5201107_01		In_explore_01.wav	Message: Defensive Automaton Functionality Test	m5201107_02	m5201107_02
+bt5201108_00	bf1301_07	bs5201108_01		In_battle_04.wav	Message: Defensive Automaton Functionality Test Part II	m5201108_02	m5201108_04
+bt5201109_00	bf0601_06	bs5201109_00		In_explore_02.wav	Message: Assisting in Training New Students' Willpower		
+bt5201109_01	bf0601_04	bs5201109_01		In_mood_08.wav	Message: Assisting in Training New Students' Willpower	m5201109_03	m5201109_03
+bt5201110_00	bf1003_01	bs5201110_00		In_battle_01.wav	Message: Assisting in Training New Students' Agility	m5201110_02	m5201110_02
+bt5201111_00	bf0107_02	bs5201111_00		In_battle_01.wav	Message: Assisting in Training New Students' Constitution		
+bt5201112_00	bf0107_02	bs5201112_00		In_battle_01.wav	Message: Assisting in Training New Students' Strength		
+bt5201114_00	bf0601_06	bs5201114_00		In_battle_01.wav	Message: Investigating Abnormal Beasts		
+bt5201115_00	bf0107_01	bs5201115_00		In_battle_01.wav	Message: 2nd Xia-Yin Arena Tournament (vs. Di Ting)		m5201115_01
+bt5201115_01	bf0107_01	bs5201115_01		In_battle_01.wav	Message: 2nd Xia-Yin Arena Tournament (vs. Di Ting)		m5201115_01
+bt5201115_02	bf0107_01	bs5201115_02		In_battle_04.wav	Message: 2nd Xia-Yin Arena Tournament (vs. Di Ting)	m5201115_01	m5201115_01
+bt5201116_00	bf0107_01	bs5201116_00		In_battle_01.wav	Message: 2nd Xia-Yin Arena Tournament (vs. Shangguan Lin)	m5201116_01	m5201115_01
+bt5201116_01	bf0107_01	bs5201116_01		In_battle_01.wav	Message: 2nd Xia-Yin Tournament (with Shangguan Lin)	m5201116_02	m5201115_01
+bt5201116_02	bf0107_01	bs5201116_02		In_battle_04.wav	Message: 2nd Xia-Yin Tournament (with Shangguan Lin)	m5201115_01	m5201115_01
+bt5201117_00	bf0107_01	bs5201117_00		In_battle_01.wav	Message: Friendly Martial Arts Sparring Match	m5201117_01	m5201117_01
+bt5201118_00	bf1501_03	bs5201118_00		In_battle_01.wav	Message: Friendly Martial Arts Sparring Match	m5201118_01	m5201118_01
+bt5201119_00	bf1501_04	bs5201119_00		In_battle_01.wav	Message: The Recluse of Wulao Mountain	m5201119_01	m5201119_02
+bt5201122_00	bf0801_02	bs5201122_00		In_battle_04.wav	Message: Pickled Cabbage	m5201122_01	m5201122_02
+bt5201123_00	bf0604_03	bs5201123_00		In_mood_08.wav	Message: Rampaging Bandits (Part 3)	m5201123_03	m5201123_04
+bt5202091_01	bf1501_05	bs5202091_01		In_battle_01.wav	Message: Assassination Attempt on Wu Hao	m5202091_02	m5202091_02
+bt5202091_02	bf1501_05	bs5202091_02		In_battle_01.wav	Message: Assassination Attempt on Wu Hao (Second Battle)	m5202091_03	m5202091_09
+bt5210401_00	bf0701_01	bs5210401_00		In_battle_01.wav		m5210401_02	m5210401_03
+bt5210401_01	bf0702_01	bs5210401_01	(it715015,1)	In_battle_01.wav	Shangguan Family Banquet: Obstacle Course Battle	m5210401_13	m5210401_12
+bt5210401_02	bf0702_02	bs5210401_02	(it715015,2)	In_battle_01.wav	Shangguan Family Banquet: Riot Suppression Battle	m5210401_15	m5210401_12
+bt5210401_03	bf0702_03	bs5210401_03		In_battle_01.wav	Shangguan Family Banquet: Boss Battle	m5210401_19	m5210401_18
+bt_in0104_01	bf0107_02	bs_in0104_01		In_battle_21.wav	Xiao Qianling: Move Showcase	a_gettingready_rever	a_gettingready_rever
+bt_in0104_02	bf1501_01	bs_in0104_02		In_battle_21.wav	Xiao Qianling: Move Showcase (Part 2)	a_gettingready_rever	a_gettingready_rever
+bt_in0110_01	bf0107_02	bs_in0110_01			Shangguan Xu: Move Showcase	a_gettingready_rever	a_gettingready_rever
+bt_in0110_02	bf0402_01	bs_in0110_02			Shangguan Xu: Combat Showcase	a_gettingready_rever	a_gettingready_rever
+bt_in0111_01	bf0107_02	bs_in0111_01		In_battle_21.wav	Wu Zhe: Move Showcase	a_gettingready_rever	a_gettingready_rever
+test0701	bf0702_01	test0701		In_battle_01.wav	Shangguan Family Banquet: Obstacle Course Battle		
+bt1010503_00	bf0601_10	bs1010503_00	(it501011,2)(it713008,1)	In_mood_08.wav	Shi Kun Rank 3: Protagonist and Shi Kun vs. Wang Qi	m605in010520_03	m605in010520_03
+bt1010504_00	bf0601_11	bs1010504_00	(it501011,2)(it713008,1)	In_mood_10.wav	Shi Kun Rank 4: Rescuing the Female Disciple of the Bingqing Sword Sect	m605in010530_03	m605in010530_03
+bt1010705_01	bf1103_01	bs1010705_01	(Money,126)(it715015,2)	In_battle_21.wav	Cheng Yong Rank 5: Dealing with Defense Automatons	m605in010740_05	m605in010740_05
+bt1011004_01	bf1301_08	bs1011004_01		In_battle_24.wav	Shangguan Xu Rank 4: Battle 1	m605in011030_01	m605in011030_02
+bt1011004_02	bf1301_09	bs1011004_02	(it715010,1)	In_battle_24.wav	Shangguan Xu Rank 4: Battle 2	m605in011030_03	m605in011030_04
+bt1011004_03	bf1301_10	bs1011004_03		In_battle_24.wav	Shangguan Xu Rank 4: Battle 3	m605in011030_05	m605in011030_06
+bt1011103_01	bf0107_01	bs1011103_01		In_battle_01.wav	Wu Zhe Rank 3: 3 vs. 5	m605in011120_01	m605in011120_02
+bt5201124_00	bf0304_02	bs5201124_00		In_battle_04.wav	Message: Dragon Boat Festival Creative Zongzi Contest	m5201124_03	m5201124_04
 06test	06test	06test		In_battle_01.wav			
 1301test	bf1301_12	1301test		In_battle_01.wav	1301test		
-bt1010206_01	bf0108_01	bs1010206_01	(it501506,1)	In_battle_31.wav	Duan Hong'Er Sixth Order: Back Mountain on Wooden Automaton Heart	m605in010250_02	m605in010250_03
-bt1010207_01	bf0602_09	bs1010207_01		In_battle_34.wav	Duan Hong'Er Sixth Order: Frigid Fountain vs. Liang Xing	m605in010260_05	m605in010260_07
-bt1010306_01	bf1301_11	bs1010306_01		In_battle_01.wav	Zhong Ruoxin six steps: Tong Tian Yi two into the force of a single fight	m605in010350_05	m605in010350_05
-bt1010306_02	bf1301_11	bs1010306_02		In_battle_01.wav	Zhong Ruoxin six steps: Tong Tian Yi two into the force of a single fight	m605in010350_07	m605in010350_07
-bt1010307_01	bf1501_03	bs1010307_01		In_battle_01.wav	Zhong Ruoxin seventh order: the first side of the miscellaneous fish fighting	m605in010360_09	m605in010360_09
-bt1010307_02A	bf1501_03	bs1010307_02A		In_battle_01.wav	Zhong Ruoxin VII _ Second battle victory VER	m605in010360_05	m605in010360_05
-bt1010307_02B	bf1501_03	bs1010307_02B		In_battle_01.wav	Zhong Ruoxin VII ___ Second battle failed VER	m605in010360_05	m605in010360_05
-bt1010405_01	bf1601_01	bs1010405_02	(Money,50)	In_battle_11.wav	Xiao Qianling fifth order	m605in010440_03	m605in010440_03
-bt1010406_01	bf1501_07	bs1010406_01		In_battle_01.wav	Xiao Qianling VI: Mountain Bandit Battle	m605in010450_03	m605in010450_03
-bt1010407_01	bf0107_01	bs1010407_01		In_battle_01.wav	Xiao Qianling VII:Dao Heng war	m605in010460_03	m605in010460_03
-bt1010505_00	bf0608_01	bs1010505_00		In_mood_10.wav	Shi Kun fifth order: Shi Kun dream world to meet old friends again	m605in010540_04	m605in010540_04
-bt1010506_00	bf0601_04	bs1010506_00		In_mood_08.wav	Shi Kun sixth order_Lindo rescue merchant war	m605in010550_03	m605in010550_03
-bt1010507_00	bf0605_01	bs1010507_00		In_battle_31.wav	Shi Kun Seventh Order_Phases of Clash and Sangha	m605in010560_03	a_EndingTemplate
-bt1010507_01	bf1501_08	bs1010507_01		In_explore_03.wav	Shi Kun seventh order_Wang Qi's death match with the Goddess Bird Hall wheelbarrow	m605in010560_04	a_EndingTemplate
-bt1010606_00	bf0601_05	bs1010606_00		In_battle_11.wav	Nan Feihuang Six Steps: Tea Master teaches Sword moves	m605in010650_04	m605in010650_04
-bt1010606_01	bf0602_09	bs1010606_01		In_battle_21.wav	Nan Feihuang Sixth Order: Tea Master vs He Cangying/Nan Feihuang save	m605in010650_05	m605in010650_05
-bt1010606_02	bf0602_09	bs1010606_02		In_battle_31.wav	Nan Feihuang Sixth Order: Nan Feihuang vs He Cangying	m605in010650_06	m605in010650_06
-bt1010607_00	bf0302_01	bs1010607_00		In_battle_21.wav	Nan Feihuang seventh order: repel the Jianghu warrior	m605in010660_02	m605in010660_02
-bt1010607_01	bf0604_04	bs1010607_01		In_battle_22.wav	Nan Feihuang seventh order: He Cangying vs.	m605in010660_03	m605in010660_03
-bt1010706_00	bf1301_13	bs1010706_00		In_battle_31.wav	Cheng Yong Sixth Order: Cheng Yong vs.	m605in010750_02	m605in010750_02
-bt1010706_01	bf1103_01	bs1010706_01		In_mood_10.wav	Cheng Yong Sixth Order: Cheng Yong vs. Zhang He and Wu Tianzhi	m605in010750_03	m605in010750_03
-bt1010706_02	bf1102_06	bs1010706_02		In_battle_31.wav	Cheng Yong Sixth Order: Cave Badger Camp Battle	m605in010750_07	m605in010750_07
-bt1010706_03	bf1102_07	bs1010706_03		In_mood_10.wav	Cheng Yong Sixth Order: Cheng Yong vs Qiu Baihe	m605in010750_08	m605in010750_08
-bt1010903_00	bf0601_06	bs1010903_00		In_mood_08.wav	Jing third order: medicine picking	m605in010920_02	m605in010920_01
-bt1010904_00	bf1301_07	bs1010904_00		In_battle_24.wav	Jing Fourth Order: Corpse Zombie scouting	m605in010930_01	m605in010930_02
-bt1010905_00	bf1301_16	bs1010905_00		In_battle_21.wav	Jing five steps: mountain bandit scouting	m605in010940_01	m605in010940_02
-bt1010907_00	bf0107_01	bs1010907_00		In_battle_21.wav	Jing seventh order: master cut wasted	m605in010960_01	m605in010960_01
-bt1011005_01	bf1504_01	bs1011005_01		In_battle_21.wav	Shangguan Xu V_Battle I	m605in011040_01	m605in011040_02
-bt1011005_02	bf1504_02	bs1011005_02		In_mood_07.wav	Shangguan Xu V_Battle II	m605in011040_04	m605in011040_05
-bt1011006_01	bf1504_04	bs1011006_01		In_mood_17.wav	Shangguan Xu VI_Battle I	m605in011050_01	m605in011050_02
-bt1011007_01	bf1504_05	bs1011007_01		In_battle_03.wav	Shangguan Xu VII_Battle I	m605in011060_01	m605in011060_02
-bt1011104_01	bf1501_06	bs1011104_01		In_battle_21.wav	Wu Zhe IV	m605in011130_01	m605in011130_02
-bt1011105_01	bf1301_12	bs1011105_01		In_battle_24.wav	Wu Zhe V	m605in011140_01	m605in011140_02
-bt1011106_01	bf1301_11	bs1011106_01		In_battle_23.wav	Wu Zhe six crazy workout	m605in011150_12	m605in011150_13
-bt1011107_01	bf0601_15	bs1011107_01		In_battle_24.wav	Wu Zhe seven escape war	m605in011160_01	m605in011160_02
+bt1010206_01	bf0108_01	bs1010206_01	(it501506,1)	In_battle_31.wav	Duan Hong'er Rank 6: Sparring with Mu Renxin (Back Mountain)	m605in010250_02	m605in010250_03
+bt1010207_01	bf0602_09	bs1010207_01		In_battle_34.wav	Duan Hong'er Rank 6: Versus Liang Xing (Chegu Spring)	m605in010260_05	m605in010260_07
+bt1010306_01	bf1301_11	bs1010306_01		In_battle_01.wav	Zhong Ruoxin Rank 6: Duel vs. Tong Tianyi (at 20% power)	m605in010350_05	m605in010350_05
+bt1010306_02	bf1301_11	bs1010306_02		In_battle_01.wav	Zhong Ruoxin Rank 6: Duel vs. Tong Tianyi (at 20% power)	m605in010350_07	m605in010350_07
+bt1010307_01	bf1501_03	bs1010307_01		In_battle_01.wav	Zhong Ruoxin Rank 7: Battle against minor disciples	m605in010360_09	m605in010360_09
+bt1010307_02A	bf1501_03	bs1010307_02A		In_battle_01.wav	Zhong Ruoxin Rank 7: Second battle (Victory version)	m605in010360_05	m605in010360_05
+bt1010307_02B	bf1501_03	bs1010307_02B		In_battle_01.wav	Zhong Ruoxin Rank 7: Second battle (Defeat version)	m605in010360_05	m605in010360_05
+bt1010405_01	bf1601_01	bs1010405_02	(Money,50)	In_battle_11.wav	Xiao Qianling Rank 5	m605in010440_03	m605in010440_03
+bt1010406_01	bf1501_07	bs1010406_01		In_battle_01.wav	Xiao Qianling Rank 6: Battle against bandits	m605in010450_03	m605in010450_03
+bt1010407_01	bf0107_01	bs1010407_01		In_battle_01.wav	Xiao Qianling Rank 7: Battle against Dao Heng	m605in010460_03	m605in010460_03
+bt1010505_00	bf0608_01	bs1010505_00		In_mood_10.wav	Shi Kun Rank 5: Shi Kun reunites with an old friend in a dream	m605in010540_04	m605in010540_04
+bt1010506_00	bf0601_04	bs1010506_00		In_mood_08.wav	Shi Kun Rank 6: Rescue the caravan (Lin Dao)	m605in010550_03	m605in010550_03
+bt1010507_00	bf0605_01	bs1010507_00		In_battle_31.wav	Shi Kun Rank 7: Mutual Counteraction and Generation	m605in010560_03	a_EndingTemplate
+bt1010507_01	bf1501_08	bs1010507_01		In_explore_03.wav	Shi Kun Rank 7: Wang Qi's life-or-death struggle & Gauntlet battle against Shenniao Hall	m605in010560_04	a_EndingTemplate
+bt1010606_00	bf0601_05	bs1010606_00		In_battle_11.wav	Nan Feihuang Rank 6: Tea Master teaches sword techniques	m605in010650_04	m605in010650_04
+bt1010606_01	bf0602_09	bs1010606_01		In_battle_21.wav	Nan Feihuang Rank 6: Tea Master vs. He Cangying / Nan Feihuang intervenes	m605in010650_05	m605in010650_05
+bt1010606_02	bf0602_09	bs1010606_02		In_battle_31.wav	Nan Feihuang Rank 6: Nan Feihuang vs. He Cangying	m605in010650_06	m605in010650_06
+bt1010607_00	bf0302_01	bs1010607_00		In_battle_21.wav	Nan Feihuang Rank 7: Repelling the martial artists	m605in010660_02	m605in010660_02
+bt1010607_01	bf0604_04	bs1010607_01		In_battle_22.wav	Nan Feihuang Rank 7: He Cangying vs. martial artists	m605in010660_03	m605in010660_03
+bt1010706_00	bf1301_13	bs1010706_00		In_battle_31.wav	Cheng Yong Rank 6: Cheng Yong vs. Protagonist	m605in010750_02	m605in010750_02
+bt1010706_01	bf1103_01	bs1010706_01		In_mood_10.wav	Cheng Yong Rank 6: Cheng Yong vs. Zhang He and Wu Tianzhi	m605in010750_03	m605in010750_03
+bt1010706_02	bf1102_06	bs1010706_02		In_battle_31.wav	Cheng Yong Rank 6: Great Battle at Xuehuan Stronghold	m605in010750_07	m605in010750_07
+bt1010706_03	bf1102_07	bs1010706_03		In_mood_10.wav	Cheng Yong Rank 6: Cheng Yong vs. Qiu Baihe	m605in010750_08	m605in010750_08
+bt1010903_00	bf0601_06	bs1010903_00		In_mood_08.wav	Jing Rank 3: Gathering herbs	m605in010920_02	m605in010920_01
+bt1010904_00	bf1301_07	bs1010904_00		In_battle_24.wav	Jing Rank 4: Investigating the undead	m605in010930_01	m605in010930_02
+bt1010905_00	bf1301_16	bs1010905_00		In_battle_21.wav	Jing Rank 5: Investigating bandits	m605in010940_01	m605in010940_02
+bt1010907_00	bf0107_01	bs1010907_00		In_battle_21.wav	Jing Rank 7: Sparring with Master	m605in010960_01	m605in010960_01
+bt1011005_01	bf1504_01	bs1011005_01		In_battle_21.wav	Shangguan Xu Rank 5: Battle 1	m605in011040_01	m605in011040_02
+bt1011005_02	bf1504_02	bs1011005_02		In_mood_07.wav	Shangguan Xu Rank 5: Battle 2	m605in011040_04	m605in011040_05
+bt1011006_01	bf1504_04	bs1011006_01		In_mood_17.wav	Shangguan Xu Rank 6: Battle 1	m605in011050_01	m605in011050_02
+bt1011007_01	bf1504_05	bs1011007_01		In_battle_03.wav	Shangguan Xu Rank 7: Battle 1	m605in011060_01	m605in011060_02
+bt1011104_01	bf1501_06	bs1011104_01		In_battle_21.wav	Wu Zhe Rank 4	m605in011130_01	m605in011130_02
+bt1011105_01	bf1301_12	bs1011105_01		In_battle_24.wav	Wu Zhe Rank 5	m605in011140_01	m605in011140_02
+bt1011106_01	bf1301_11	bs1011106_01		In_battle_23.wav	Wu Zhe Rank 6: Intense training	m605in011150_12	m605in011150_13
+bt1011107_01	bf0601_15	bs1011107_01		In_battle_24.wav	Wu Zhe Rank 7: Escape battle	m605in011160_01	m605in011160_02
 bt1303101_01	bf1701_01	bs1303101_01	(Money,600)(it501021,1)	In_battle_31.wav	Spring Y3: Rescue Bai Congyi (righteous sect vs corpse zombie)	m1303101_11	m1112402_95
 bt1303101_02	bf1701_02	bs1303101_02	(Money,800)(it501020,1)	In_battle_31.wav	Spring Y3: Rescue Bai Congyi (help bai congyi)	m1303101_12	m1112402_95
 bt1303101_03	bf1701_02	bs1303101_03	(Money,800)(it501020,1)	In_battle_31.wav	Spring Y3: Rescue Bai Congyi (help bai congyi after help righteous sect)	m1303101_12	m1112402_95
 bt1303101_04	bf1701_03	bs1303101_04	(it501030,1)(it501506,1)	In_battle_32.wav	Spring Y3: Rescue Bai Congyi (vs Mirror Gaze, Gu Kongsheng)	m1303101_32	m1112402_95
-bt1306501_00	bf0110_00	bs1306501_00		In_mood_08.wav	Summer Exam: Starting Battle	m1306501_01	m1306501_99
-bt1306501_01a	bf0601_05	bs1306501_01a		In_battle_31.wav	Summer Exam: One of the Phantom War	m1306501_02	m1306501_99
-bt1306501_01b	bf0601_13	bs1306501_01b		In_battle_31.wav	Summer Exam: Smoking Tapir Battle One	m1306501_02	m1306501_99
-bt1306501_02_01a	bf0602_13	bs1306501_02_01a		In_battle_31.wav	Summer Exam: Phantom War No. 2 (Corpse Zombie congregation)	m1306501_03	m1306501_99
-bt1306501_02_01b	bf0602_12	bs1306501_02_01b		In_battle_31.wav	Summer Exam: Phantom War No. 2 (Gimmick Soldier)	m1306501_03	m1306501_99
-bt1306501_02_02a	bf0603_02	bs1306501_02_02a		In_battle_31.wav	Summer Exam: Smoking Tapir Battle No. 2 (Corpse Zombie congregation)	m1306501_03	m1306501_99
-bt1306501_02_02b	bf0604_05	bs1306501_02_02b		In_battle_31.wav	Summer Exam: Smoking Tapir Battle No. 2 (Gimmick Soldiers)	m1306501_03	m1306501_99
-bt1306501_03a	bf0108_03	bs1306501_03a		In_battle_23.wav	Summer Exam: Back Mountain War One (Gong Zihen)	m1306501_05	m1306501_99
-bt1306501_03b	bf0108_03	bs1306501_03b		In_battle_33.wav	Summer Exam: Back Mountain War No. 2 (Yin Calculation)	m1306501_06	m1306501_99
-bt1306501_03c	bf0108_03	bs1306501_03c		In_battle_24.wav	Summer Exam: Back Mountain War No. 3 (He Changrui)	m1306501_07	m1306501_99
-bt1307201_01	bf1501_10	bs1307201_01		In_battle_11.wav	The third year Tanabata ___Shangguan Xu line battle	m1307201_10	m1307201_10
-bt1307201_02	bf0107_01	bs1307201_02		In_battle_11.wav	The third year of Tanabata ________ Xiao Qianling line fighting	m1307201_21	m1307201_21
-bt1307201_03	bf1501_11	bs1307201_03		In_battle_11.wav	The third year of Tanabata ________ Xiao Qianling line fighting	m1307201_31	m1307201_31
+bt1306501_00	bf0110_00	bs1306501_00		In_mood_08.wav	Summer School: Opening Battle	m1306501_01	m1306501_99
+bt1306501_01a	bf0601_05	bs1306501_01a		In_battle_31.wav	Summer School: Battle of Youlan I	m1306501_02	m1306501_99
+bt1306501_01b	bf0601_13	bs1306501_01b		In_battle_31.wav	Summer School: Battle of Yanmo I	m1306501_02	m1306501_99
+bt1306501_02_01a	bf0602_13	bs1306501_02_01a		In_battle_31.wav	Summer School: Battle of Youlan II (Undead Horde)	m1306501_03	m1306501_99
+bt1306501_02_01b	bf0602_12	bs1306501_02_01b		In_battle_31.wav	Summer School: Battle of Youlan II (Automaton Soldiers)	m1306501_03	m1306501_99
+bt1306501_02_02a	bf0603_02	bs1306501_02_02a		In_battle_31.wav	Summer School: Battle of Yanmo II (Undead Horde)	m1306501_03	m1306501_99
+bt1306501_02_02b	bf0604_05	bs1306501_02_02b		In_battle_31.wav	Summer School: Battle of Yanmo II (Automaton Soldiers)	m1306501_03	m1306501_99
+bt1306501_03a	bf0108_03	bs1306501_03a		In_battle_23.wav	Summer School: Battle at the Rear Mountain I (Gong Zihen)	m1306501_05	m1306501_99
+bt1306501_03b	bf0108_03	bs1306501_03b		In_battle_33.wav	Summer School: Battle at the Rear Mountain II (Yin Suan)	m1306501_06	m1306501_99
+bt1306501_03c	bf0108_03	bs1306501_03c		In_battle_24.wav	Summer School: Battle at the Rear Mountain III (He Changrui)	m1306501_07	m1306501_99
+bt1307201_01	bf1501_10	bs1307201_01		In_battle_11.wav	Year 3 Qixi Festival: Shangguan Xu Route Battle	m1307201_10	m1307201_10
+bt1307201_02	bf0107_01	bs1307201_02		In_battle_11.wav	Year 3 Qixi Festival: Xiao Qianling Route Battle	m1307201_21	m1307201_21
+bt1307201_03	bf1501_11	bs1307201_03		In_battle_11.wav	Year 3 Qixi Festival: Xiao Qianling Route Battle	m1307201_31	m1307201_31
 bt1310301_01	bf1506_01	bs1310301_01	(it501030,2)(it501031,2)	In_battle_22.wav	Raid on Miao territory first battle (battle Ling Wujie)	m1310301_14	m1112402_95
 bt1310301_02	bf1506_02	bs1310301_02	(it501032,2)(it501506,1)	In_battle_23.wav	Raid on Miao territory second battle (battle Gui Gu)	m1310301_40	m1112402_95
 bt1310301_03	bf1506_03	bs1310301_03	(it501030,2)(it501031,2)	In_battle_31.wav	Rescue abyssal palace on Miao territory first battle (rescue Ling Wujie)	m1310301_24	m1310301_50
 bt1310301_04	bf1506_02	bs1310301_04	(it501032,2)(it501506,1)	In_battle_33.wav	Rescue abyssal palace on Miao territory second battle (rescue Gui Gu)	m1310301_42	m1310301_43
 bt1310301_05	bf1003_02	bs1310301_05	(it501030,2)(it501031,2)	In_battle_22.wav	Kill Yan Huang, battle against holy rock sect, zhenwu temple	m1310301_35	m1112402_95
 bt1310301_06	bf1002_01	bs1310301_06	(it501032,2)(it501506,1)	In_battle_24.wav	Kill Yan Huang and Xiahou Yuan	m1310301_37	m1112402_95
-bt1312501_01a	bf0605_01	bs1312501_01a		In_battle_32.wav	Chu Duan Duel: Chu Tianbi Line (Final Battle Edition)	m1312501_02	m1312501_02
-bt1312501_01b	bf0605_01	bs1312501_01b		In_battle_33.wav	Chu Duan duel: Duan Xiaolie line (final battle version)	m1312501_02	m1312501_02
-bt1312501_02	bf0110_00	bs1312501_02		In_mood_12.wav	One of the final battles: the battle of the yin calculation in front of the mountain gate	m1312501_05	m1312501_99
-bt1312501_03	bf0101_02	bs1312501_03		In_battle_32.wav	The final battle of the second: the square before the battle of the Phantom Orchid	m1312501_06	m1312501_99
-bt1312501_04a	bf0101_01	bs1312501_04a		In_battle_34.wav	The final battle of three: the square (female) Ling no end of the battle	m1312501_07	m1312501_99
-bt1312501_04b	bf0101_01	bs1312501_04b		In_battle_34.wav	The final battle of the third: the square (male) Ling no end of the battle	m1312501_07	m1312501_99
-bt1312501_05a	bf0101_01	bs1312501_05a		In_battle_34.wav	The final battle of the third: the square (female) Ling Wujie war between the war performance	m1312501_08	m1312501_08
-bt1312501_05b	bf0101_01	bs1312501_05b		In_battle_34.wav	The final battle of the third: the square (male) Ling Wujie war between the war performance	m1312501_08	m1312501_08
-bt1312501_06a	bf0101_01	bs1312501_06a		In_battle_24.wav	The final battle of the fourth: the square (female) Ling no end of the battle of the second	m1312501_09	m1312501_09
-bt1312501_06b	bf0101_01	bs1312501_06b		In_battle_24.wav	The final battle of the fourth: the square (male) Ling no end of the battle of the second	m1312501_09	m1312501_09
-bt1312501_07a	bf0111_00	bs1312501_07a		In_battle_31.wav	Final Battle No. 5: Xia Pavillion vs Abyssal Palace (Female Ling Wu Jie)	m1312501_14	m1312501_99
-bt1312501_07b	bf0111_00	bs1312501_07b		In_battle_31.wav	Final Battle No. 5: Xia Pavillion vs Abyssal Palace (Male Ling Wu Jie)	m1312501_14	m1312501_99
-bt1312501_08	bf0111_00	bs1312501_08		In_battle_03.wav	Final Battle No. 5: Xia Pavillion post-final battle performance	m1312501_15	m1312501_15
-bt1312501_09a	bf0111_00	bs1312501_09a		In_mood_17.wav	Final Battle No. 5: Xia Pavillion post-final battle performance - phasing	m1312501_16	m1312501_16
-bt1312501_09b	bf0111_00	bs1312501_09b		In_mood_21.wav	Final Battle No. 5: Xia Pavillion Post-Final Battle Performance - Sang Sang	m1312501_16	m1312501_16
-bt1312501_10a	bf0111_00	bs1312501_10a		In_battle_23.wav	Three moves of the appointment (female Ling Wujie)	m1312501_17	m1312501_17
-bt1312501_10b	bf0111_00	bs1312501_10b		In_battle_23.wav	Three moves of the appointment (male Ling Wujie)	m1312501_17	m1312501_17
-bt5201125_00	bf1301_03	bs5201125_00		In_mood_08.wav	Capturing Corpse Zombie (I)	m5201125_01	m5201125_02
-bt5201126_00	bf0603_01	bs5201126_00		In_battle_22.wav	Capturing Corpse Zombie (II)	m5201126_02	m5201126_03
-bt5201127_00	bf0304_03	bs5201127_00		In_battle_04.wav	Three Heroes Village Militia Training	m5201127_01	m5201127_01
-bt5201128_00	bf0201_03	bs5201128_00		In_battle_01.wav	heterophonic synesthesia	m5201128_01	m5201128_02
-bt5201129_00	bf0201_04	bs5201129_00		In_battle_31.wav	Training Ah Ha		
-bt5201130_00	bf0603_01	bs5201130_00		In_battle_31.wav	Three Heroes Village Militia Training (II)	m5201130_01	m5201130_01
-bt5201131_00	bf0108_01	bs5201131_00		In_battle_31.wav	Assist in testing new drugs	m5201131_01	m5201131_02
-bt5201132_00	bf0601_13	bs5201132_00		In_battle_22.wav	Killing Corpse Zombie (I)	m5201132_01	m5201132_02
-bt5201133_00	bf0107_01	bs5201133_00		In_battle_04.wav	Xia Pavillion defense function	m5201133_01	m5201133_01
-bt5201134_00	bf0601_16	bs5201134_00		In_battle_33.wav	Killing Corpse Zombie (II)	m5201134_01	m5201134_02
-bt5201135_00	bf1501_09	bs5201135_00		In_battle_34.wav	Assist in the collection of toxic substances	m5201135_01	m5201135_02
-bt5201136_00	bf0108_01	bs5201136_00		In_explore_03.wav	Refining poison control Corpse Zombie	m5201136_01	m5201136_01
-bt5201137_00	bf0107_02	bs5201137_00		In_battle_01.wav	Kill Corpse Zombie training	m5201137_01	m5201137_01
-bt5201138_00	bf0603_01	bs5201138_00		In_battle_22.wav	Catching Corpse Zombie No. 3	m5201138_01	m5201138_02
-bt5201138_01	bf0604_01	bs5201138_01		In_mood_16.wav	Catching Corpse Zombie No. 3	m5201138_03	m5201138_04
-bt5201139_00	bf0603_01	bs5201139_00		In_battle_22.wav	Kill Corpse Zombie No. 3	m5201139_01	m5201139_02
-bt5201139_01	bf0604_01	bs5201139_01		In_mood_16.wav	Kill Corpse Zombie No. 3	m5201139_03	m5201139_04
-bt5201208_01	bf0601_15	bs5201208_01		In_battle_03.wav	Dao Heng5 Combat	m5201208_01	ending_for_xiadaonichen
-bt5203011_01	bf0601_14	bs5203011_01		In_battle_01.wav	Neutral line Jin Gang pass Calligraphy_combat	m5203011_03	m5203011_04
-bt5305101_01	bf1301_14	bs5305101_01		In_mood_16.wav	Xiao Qianling biography Calligraphy _ the main character official road war	m5305101_04	m5305101_05
-bt5305101_02	bf1301_15	bs5305101_02		In_mood_16.wav	Xiao Qianling biography Calligraphy _ the main character official road war	m5305101_05	m5305101_05
-bt5307301_00	bf0107_02	bs5307301_00		In_mood_10.wav	Tournament	m5307301_01	m5307301_99
-bt5307302_00	bf0602_09	bs5307302_00		In_battle_31.wav	Punch: Fateful Hellfire Palms preacher (Duan Xiaolie)	m5307302_01	m5307302_01
-bt5307303_00	bf0605_02	bs5307303_00		In_battle_31.wav	Kicks: Taiyin return to the light to teach (Flying Snowy Fox)	m5307303_01	m5307303_01
-bt5307304_00	bf0108_03	bs5307304_00		In_battle_31.wav	Sword method: the other side to the heart Sword transmission (Chu Tianbi)	m5307304_01	m5307304_01
-bt5307305_00	bf0605_01	bs5307305_00		In_battle_31.wav	Blade method: Ten Thousand Gullies Songfeng impartation (Liu Xinping)	m5307305_01	m5307305_01
-bt5307306_00	bf1501_03	bs5307306_00		In_battle_31.wav	Polearm: Giant Spear of the Phoenix King preacher (Shangguan Xu)	m5307306_01	m5307306_01
-bt5307307_00	bf0107_02	bs5307307_00		In_battle_31.wav	Short Weapons: Thousand Machinations Passing on (Wooden Automaton Heart)	m5307307_01	m5307307_01
-bt1011009_01	bf1301_17	bs1011009_01		In_battle_03.wav	Shangguan Xu Redemption_Battle	m1312501_261	m1312501_262
+bt1312501_01a	bf0605_01	bs1312501_01a		In_battle_32.wav	The Final Showdown (Chu vs. Duan): Chu Tianbi Route (Final Battle Version)	m1312501_02	m1312501_02
+bt1312501_01b	bf0605_01	bs1312501_01b		In_battle_33.wav	The Final Showdown (Chu vs. Duan): Duan Xiaolie Route (Final Battle Version)	m1312501_02	m1312501_02
+bt1312501_02	bf0110_00	bs1312501_02		In_mood_12.wav	Final Battle I: Ambush at the Mountain Gate	m1312501_05	m1312501_99
+bt1312501_03	bf0101_02	bs1312501_03		In_battle_32.wav	Final Battle II: Battle of Youlan at the Plaza	m1312501_06	m1312501_99
+bt1312501_04a	bf0101_01	bs1312501_04a		In_battle_34.wav	Final Battle III: Plaza Battle vs. Ling Wujue (Female)	m1312501_07	m1312501_99
+bt1312501_04b	bf0101_01	bs1312501_04b		In_battle_34.wav	Final Battle III: Plaza Battle vs. Ling Wujue (Male)	m1312501_07	m1312501_99
+bt1312501_05a	bf0101_01	bs1312501_05a		In_battle_34.wav	Final Battle III: Plaza Battle vs. Ling Wujue (Female) – Mid-battle Cutscene	m1312501_08	m1312501_08
+bt1312501_05b	bf0101_01	bs1312501_05b		In_battle_34.wav	Final Battle III: Plaza Battle vs. Ling Wujue (Male) – Mid-battle Cutscene	m1312501_08	m1312501_08
+bt1312501_06a	bf0101_01	bs1312501_06a		In_battle_24.wav	Final Battle IV: Plaza Battle vs. Ling Wujue (Female) – Part 2	m1312501_09	m1312501_09
+bt1312501_06b	bf0101_01	bs1312501_06b		In_battle_24.wav	Final Battle IV: Plaza Battle vs. Ling Wujue (Male) – Part 2	m1312501_09	m1312501_09
+bt1312501_07a	bf0111_00	bs1312501_07a		In_battle_31.wav	Final Battle V: Xiayin Pavilion vs. Underworld Palace (Ling Wujue - Female)	m1312501_14	m1312501_99
+bt1312501_07b	bf0111_00	bs1312501_07b		In_battle_31.wav	Final Battle V: Xiayin Pavilion vs. Underworld Palace (Ling Wujue - Male)	m1312501_14	m1312501_99
+bt1312501_08	bf0111_00	bs1312501_08		In_battle_03.wav	Final Battle V: Post-battle Cutscene (Xiayin Pavilion)	m1312501_15	m1312501_15
+bt1312501_09a	bf0111_00	bs1312501_09a		In_mood_17.wav	Final Battle V: Post-battle Cutscene (Xiayin Pavilion) – Mutual Countering	m1312501_16	m1312501_16
+bt1312501_09b	bf0111_00	bs1312501_09b		In_mood_21.wav	Final Battle V: Post-battle Cutscene (Xiayin Pavilion) – Mutual Generation	m1312501_16	m1312501_16
+bt1312501_10a	bf0111_00	bs1312501_10a		In_battle_23.wav	The Three-Move Pact (Ling Wujue - Female)	m1312501_17	m1312501_17
+bt1312501_10b	bf0111_00	bs1312501_10b		In_battle_23.wav	The Three-Move Pact (Ling Wujue - Male)	m1312501_17	m1312501_17
+bt5201125_00	bf1301_03	bs5201125_00		In_mood_08.wav	Capture The Undead (I)	m5201125_01	m5201125_02
+bt5201126_00	bf0603_01	bs5201126_00		In_battle_22.wav	Capturing the Undead (II)	m5201126_02	m5201126_03
+bt5201127_00	bf0304_03	bs5201127_00		In_battle_04.wav	Sanxia Village Militia Training	m5201127_01	m5201127_01
+bt5201128_00	bf0201_03	bs5201128_00		In_battle_01.wav	Investigating Strange Noises	m5201128_01	m5201128_02
+bt5201129_00	bf0201_04	bs5201129_00		In_battle_31.wav	Training Aha		
+bt5201130_00	bf0603_01	bs5201130_00		In_battle_31.wav	Sanxia Village Militia Training (II)	m5201130_01	m5201130_01
+bt5201131_00	bf0108_01	bs5201131_00		In_battle_31.wav	Assisting with New Medicine Trials	m5201131_01	m5201131_02
+bt5201132_00	bf0601_13	bs5201132_00		In_battle_22.wav	Eliminating the Undead (I)	m5201132_01	m5201132_02
+bt5201133_00	bf0107_01	bs5201133_00		In_battle_04.wav	Academy Defense Mechanisms	m5201133_01	m5201133_01
+bt5201134_00	bf0601_16	bs5201134_00		In_battle_33.wav	Eliminating the Undead (II)	m5201134_01	m5201134_02
+bt5201135_00	bf1501_09	bs5201135_00		In_battle_34.wav	Assisting in Gathering Toxins	m5201135_01	m5201135_02
+bt5201136_00	bf0108_01	bs5201136_00		In_explore_03.wav	Brewing Toxin to Control the Undead	m5201136_01	m5201136_01
+bt5201137_00	bf0107_02	bs5201137_00		In_battle_01.wav	Eliminating the Undead: Training	m5201137_01	m5201137_01
+bt5201138_00	bf0603_01	bs5201138_00		In_battle_22.wav	Capturing the Undead (III)	m5201138_01	m5201138_02
+bt5201138_01	bf0604_01	bs5201138_01		In_mood_16.wav	Capturing the Undead (III)	m5201138_03	m5201138_04
+bt5201139_00	bf0603_01	bs5201139_00		In_battle_22.wav	Eliminating the Undead (III)	m5201139_01	m5201139_02
+bt5201139_01	bf0604_01	bs5201139_01		In_mood_16.wav	Eliminating the Undead (III)	m5201139_03	m5201139_04
+bt5201208_01	bf0601_15	bs5201208_01		In_battle_03.wav	Daoheng 5: Combat	m5201208_01	ending_for_xiadaonichen
+bt5203011_01	bf0601_14	bs5203011_01		In_battle_01.wav	Neutral Path – Vajra Letter: Combat	m5203011_03	m5203011_04
+bt5305101_01	bf1301_14	bs5305101_01		In_mood_16.wav	Xiao Qianling Letter – Protagonist's Battle on the Official Road	m5305101_04	m5305101_05
+bt5305101_02	bf1301_15	bs5305101_02		In_mood_16.wav	Xiao Qianling Letter – Protagonist's Battle on the Official Road	m5305101_05	m5305101_05
+bt5307301_00	bf0107_02	bs5307301_00		In_mood_10.wav	Martial Arts Tournament	m5307301_01	m5307301_99
+bt5307302_00	bf0602_09	bs5307302_00		In_battle_31.wav	Fist/Palm: Teaching of "Heavenly Karma-Fire Palm" (Duan Xiaolie)	m5307302_01	m5307302_01
+bt5307303_00	bf0605_02	bs5307303_00		In_battle_31.wav	Legwork: Teaching of "Taiyin Reflection" (Feixue Linghu)	m5307303_01	m5307303_01
+bt5307304_00	bf0108_03	bs5307304_00		In_battle_31.wav	Swordplay: Teaching of "Returning Heart to the Other Shore" (Chu Tianbi)	m5307304_01	m5307304_01
+bt5307305_00	bf0605_01	bs5307305_00		In_battle_31.wav	Sabreplay: Teaching of "Pine Wind Amidst Myriad Ravines" (Liu Xinping)	m5307305_01	m5307305_01
+bt5307306_00	bf1501_03	bs5307306_00		In_battle_31.wav	Long-handled Weapon: Teaching of "Phoenix King Great Spear" (Shangguan Xu)	m5307306_01	m5307306_01
+bt5307307_00	bf0107_02	bs5307307_00		In_battle_31.wav	Short-handled Weapon: Teaching of "Divine Calculation of a Thousand Mechanisms" (Mu Renxin)	m5307307_01	m5307307_01
+bt1011009_01	bf1301_17	bs1011009_01		In_battle_03.wav	Redeeming Shangguan Xu: Combat	m1312501_261	m1312501_262
 bt1310301_08	bf1506_02	bs1310301_08	(it501032,2)(it501506,1)	In_battle_33.wav		m1310301_45	m1310301_45
-bt1312501_11a	bf0111_00	bs1312501_11a		In_battle_35.wav	Combined battle (single Duan Xiaolie)	m1312501_31	m1312501_32
-bt1312501_11b	bf0111_00	bs1312501_11b		In_battle_35.wav	Combined battle (singled out the division chiefs)	m1312501_31	m1312501_32
-bt5201142_00	bf0903_04	bs5201142_00		In_battle_31.wav	Teaching machine technology	m5201142_02	m5201142_03
-bt5201143_01	bf0101_03	bs5201143_01		In_battle_11.wav	Mysterious palm print	m5201143_03	m5201143_03
-bt5206102_00	bf0101_02	bs5206102_00		In_battle_01.wav	Enthusiasm Passes Calligraphy Escape from Library	m5206102_04	m5206102_05
-bt5206104_00	bf0601_13	bs5206104_00		In_battle_01.wav	Bravery pass Calligraphy battle Corpse Zombie - with Junior Sister	m5206104_05	m5206104_05
-bt5206104_01	bf0601_13	bs5206104_01		In_battle_01.wav	Bravery pass Calligraphy battle Corpse Zombie - Lone Ranger	m5206104_05	m5206104_05
-bt5401101_00	bf1504_06	bs5401101_00		In_mood_16.wav	Scarlet Bone Horde_Combating the Wolf's Den	m5401101_02	m5401101_03
-bt5401102_00	bf1504_07	bs5401102_00		In_battle_01.wav	Scarlet Bone Horde_coordinated village (not available)	m5401102_02	m5401102_03
-bt5401103_00	bf0604_01	bs5401103_00		In_explore_02.wav	Dream_Magical Du pay	m5401103_02	m5401103_03
-bt5401104_00	bf0201_03	bs5401104_00		In_mood_05.wav	Dream_Magicized Damsel	m5401104_02	m5401104_03
-bt5401105_00	bf0601_10	bs5401105_00		In_mood_07.wav	Dreamland_Magicized Jin Gang	m5401105_02	m5401105_03
+bt1312501_11a	bf0111_00	bs1312501_11a		In_battle_35.wav	Battle of Unity (Duel against Duan Xiaolie)	m1312501_31	m1312501_32
+bt1312501_11b	bf0111_00	bs1312501_11b		In_battle_35.wav	Battle of Unity (Duel against the Masters)	m1312501_31	m1312501_32
+bt5201142_00	bf0903_04	bs5201142_00		In_battle_31.wav	Learning Mechanism Arts	m5201142_02	m5201142_03
+bt5201143_01	bf0101_03	bs5201143_01		In_battle_11.wav	Mysterious Palm Print	m5201143_03	m5201143_03
+bt5206102_00	bf0101_02	bs5206102_00		In_battle_01.wav	Cheerfulness Message: Escaping the Scripture Pavilion	m5206102_04	m5206102_05
+bt5206104_00	bf0601_13	bs5206104_00		In_battle_01.wav	Boldness Message: Fighting the Corpse-men (with Junior Martial Sister)	m5206104_05	m5206104_05
+bt5206104_01	bf0601_13	bs5206104_01		In_battle_01.wav	Boldness Message: Fighting the Corpse-men (Lone Wolf)	m5206104_05	m5206104_05
+bt5401101_00	bf1504_06	bs5401101_00		In_mood_16.wav	Red Bone Tribe: Exterminating the Wolf Den	m5401101_02	m5401101_03
+bt5401102_00	bf1504_07	bs5401102_00		In_battle_01.wav	Red Bone Tribe: Defending the Village (Not yet available)	m5401102_02	m5401102_03
+bt5401103_00	bf0604_01	bs5401103_00		In_explore_02.wav	Dreamscape: Demonized Du Xin	m5401103_02	m5401103_03
+bt5401104_00	bf0201_03	bs5401104_00		In_mood_05.wav	Dreamscape: Demonized Auntie	m5401104_02	m5401104_03
+bt5401105_00	bf0601_10	bs5401105_00		In_mood_07.wav	Dreamscape: Demonized Vajra	m5401105_02	m5401105_03

@@ -1,1 +1,1 @@
-in0107_buff01	Tomb Raiding	Parry Rate +15%	Cheng Yong Trait 1	buff_trait	Positive	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "BufferSequenceNode" : [ { "BufferPropertyAction" : 6003, 1, 15.00000}  ]}  ]}  ]}
+in0107_buff01	Tomb Raiding	Block Rate +15%	Cheng Yong Trait 1	buff_trait	Positive	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "BufferSequenceNode" : [ { "BufferPropertyAction" : 6003, 1, 15.00000}  ]}  ]}  ]}

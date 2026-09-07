@@ -73,7 +73,7 @@ BattleLiberatedState_Force_Counter	必定反击	Inevitable Counter Attack
 BattleLiberatedState_Force_Critical	必定爆击	Inevitable Critical Hit
 BattleLiberatedState_Force_Dodge	必定闪避	Inevitable Evasion
 BattleLiberatedState_Force_Hit	必定命中	Inevitable Strike
-BattleLiberatedState_Force_Parry	必定招架	Inevitable Parry
+BattleLiberatedState_Force_Parry	必定招架	Inevitable Block
 BattleLiberatedState_InfiniteAction	无限行动	Infinite Movement
 BattleLiberatedState_Invincible	气血无限	Infinite HP
 BattleLiberatedState_MoveAgain	再次移动	Move Again
@@ -114,12 +114,12 @@ BattleProperty_Force_Counter	必反	Inevitable Counter Attack
 BattleProperty_Force_Critical	必爆	Inevitable Critical Hit
 BattleProperty_Force_Dodge	必闪	Inevitable Evasion
 BattleProperty_Force_Hit	必中	Inevitable Strike
-BattleProperty_Force_Parry	必招架	Inevitable Parry
+BattleProperty_Force_Parry	必招架	Inevitable Block
 BattleProperty_Hit_Rate	命中率	Accuracy
 BattleProperty_Invincible	反无	Invincible
 BattleProperty_No_Consumption	归一	Return To Original State
 BattleProperty_One_Shot	一击必杀	One-Hit-Kill
-BattleProperty_Parry_Rate	招架率	Parry Rate
+BattleProperty_Parry_Rate	招架率	Block Rate
 BattleRestrictedState_Crippled	断筋	Crippled
 BattleRestrictedState_Daze	晕眩	Daze
 BattleRestrictedState_Dyspnea	气滞	Qi Stagnation
@@ -128,7 +128,7 @@ BattleRestrictedState_Immobility	定身	Immobility
 BattleRestrictedState_No_Counter	无法反击	Counter Attack Fail
 BattleRestrictedState_No_Critical	无法爆击	Critical Hit Fail
 BattleRestrictedState_No_Dodge	无法闪避	Evade Fail
-BattleRestrictedState_No_Parry	无法招架	Parry Fail
+BattleRestrictedState_No_Parry	无法招架	Block Fail
 BattleRestrictedState_Seal	封技	Seal
 Battle_Menu_Attack	攻击	Attack
 Battle_Menu_Item	物品	Item
@@ -242,7 +242,7 @@ Forge_Condition	装备条件	Pre-req
 Forge_Level	锻造难度	Difficulty Lv
 General_Area	范围	Applied Area
 General_Armor	防具	Armor
-General_BladeAndSword	刀剑	<size=19>saber<br>Sword</size>
+General_BladeAndSword	刀剑	<size=19>Saber<br>Sword</size>
 General_Cancel	取消	Cancel
 General_CD	冷却回合	CD
 General_Condition	条件	Criteria
@@ -296,7 +296,7 @@ Level_08	阶段8	Lv 8
 Level_09	阶段9	Lv 9
 Level_10	阶段10	Lv 10
 LoadingInterface0101	读取介面TIP	Riding the wind, seek for the recluse beyond the waterfall. Admist purple smoke rising from the incense burner, I found the Dao with my sword.
-LoadingInterface0102	读取介面TIP	Critical attack, parry, Evasion and counter rates are computed based on comparing the respective attribute values of both parties
+LoadingInterface0102	读取介面TIP	Critical attack, block, Evasion and counter rates are computed based on comparing the respective attribute values of both parties
 LoadingInterface0103	读取介面TIP	Critical attack will always result in damage regardless of the evasion rate
 LoadingInterface0104	读取介面TIP	Unlock Special Traits with progress in the four Attributes
 LoadingInterface0105	读取介面TIP	When attacking, if One's own element counters that of the target's element, additional damage will be dealt.
@@ -373,7 +373,7 @@ Property_Max_HP	最大气血	Max HP
 Property_Max_MP	最大真气	Max Qi
 Property_Move	移动格数	Movement
 Property_MP	真气	Qi
-Property_Parry	招架	Parry
+Property_Parry	招架	Block
 PropsCategory101	道具小分类	Handwrap
 PropsCategory102	道具小分类	Footwrap
 PropsCategory103	道具小分类	Sword
@@ -385,23 +385,23 @@ PropsCategory108	道具小分类	Dual Weapons
 PropsCategory109	道具小分类	Special
 PropsCategory201	道具小分类	Armor
 PropsCategory301	道具小分类	Accessories
-PropsCategory401	道具小分类	Fist Skill Book
-PropsCategory402	道具小分类	Kicks Skill Book
-PropsCategory403	道具小分类	Sword Skill Book
-PropsCategory404	道具小分类	Saber Skill Book
-PropsCategory405	道具小分类	Polearm Skill Book
-PropsCategory406	道具小分类	Short Range Skill Book
-PropsCategory407	道具小分类	Darts Skill Book
-PropsCategory408	道具小分类	Inner Arts Skill Book
+PropsCategory401	道具小分类	Fist Skill Manual
+PropsCategory402	道具小分类	Legs Skill Manual
+PropsCategory403	道具小分类	Sword Skill Manual
+PropsCategory404	道具小分类	Saber Skill Manual
+PropsCategory405	道具小分类	Polearm Skill Manual
+PropsCategory406	道具小分类	Short Range Skill Manual
+PropsCategory407	道具小分类	Hidden Weapons Skill Manual
+PropsCategory408	道具小分类	Inner Arts Skill Manual
 PropsCategory409	道具小分类	Others
-PropsCategory411	道具小分类	Palm Skill Book (Hall of Modesty)
-PropsCategory412	道具小分类	Legs Skill Book (Hall of Modesty)
-PropsCategory413	道具小分类	Sword Skill Book (Hall of Modesty)
-PropsCategory414	道具小分类	Saber Skill Book (Hall of Modesty)
-PropsCategory415	道具小分类	Polearm Skill Book (Hall of Modesty)
-PropsCategory416	道具小分类	Short Range Skill Book (Hall of Modesty)
-PropsCategory417	道具小分类	Darts Skill Book (Hall of Modesty)
-PropsCategory418	道具小分类	Inner Arts Skill Book (Hall of Modesty)
+PropsCategory411	道具小分类	Palm Skill Manual (Hall of Modesty)
+PropsCategory412	道具小分类	Legs Skill Manual (Hall of Modesty)
+PropsCategory413	道具小分类	Sword Skill Manual (Hall of Modesty)
+PropsCategory414	道具小分类	Saber Skill Manual (Hall of Modesty)
+PropsCategory415	道具小分类	Polearm Skill Manual (Hall of Modesty)
+PropsCategory416	道具小分类	Short Range Skill Manual (Hall of Modesty)
+PropsCategory417	道具小分类	Hidden Weapons Skill Manual (Hall of Modesty)
+PropsCategory418	道具小分类	Inner Arts Skill Manual (Hall of Modesty)
 PropsCategory419	道具小分类	Others
 PropsCategory501	道具小分类	Medication
 PropsCategory502	道具小分类	Herbs
@@ -547,7 +547,7 @@ SecondaryInterface0106	选课介面	<size=20.5>Skills Learned</size>
 SecondaryInterface0107	选课介面	Description
 SecondaryInterface0108	选课介面	Teaching Master
 SecondaryInterface0109	选课介面	Confirm Course
-SecondaryInterface0110	选课介面	Unvailable
+SecondaryInterface0110	选课介面	Unavailable
 SecondaryInterface0201	炼药次级介面（确认选项）	Are you sure to refine {1} {0}?
 SecondaryInterface0202	炼药介面道恒对白	Be careful not to burn down this place...
 SecondaryInterface0203	炼药介面道恒对白	Haven't figured out what medicine to make yet? I am already... (Yawn)
@@ -595,7 +595,7 @@ SecondaryInterface0802	养成介面交友提示	<size=22>Relationship Lv {0}</si
 SecondaryInterface0803	赠送礼物键	Send Gifts
 SecondaryInterface0804	出游键	Outings
 SecondaryInterface0805	出游tip01	Get Closer
-SecondaryInterface0806	出游tip02(1~3阶)	Energy +5
+SecondaryInterface0806	出游tip02(1~3阶)	Energy +7
 SecondaryInterface0807	赠送礼物tip01	Get Closer
 SecondaryInterface0808	好友等级	Friendship
 SecondaryInterface0809	好友各阶能力	Ability
@@ -629,7 +629,7 @@ SecondaryInterface1207	战斗按键TIP	Insufficient Qi
 SecondaryInterface1208	主角特技按键TIP	Element changed to <color=#FF0000>金</color>. Attacking from the back will trigger Critical Hit. Attacking from the side will increase Critical rate by 25%.
 SecondaryInterface1209	主角特技按键TIP	Element changed to <color=#FF0000>木</color>. In this turn, Dodge all attacks except critical hit.
 SecondaryInterface1210	主角特技按键TIP	Element changed to <color=#FF0000>水</color>. Remove all negative status effect. Restore 15% HP and 25% Qi.
-SecondaryInterface1211	主角特技按键TIP	Element changed to <color=#FF0000>火</color>. In this turn, Attack damage +25%. Parry all incoming attack.
+SecondaryInterface1211	主角特技按键TIP	Element changed to <color=#FF0000>火</color>. In this turn, Attack damage +25%. Block all incoming attack.
 SecondaryInterface1212	主角特技按键TIP	Element changed to <color=#FF0000>土</color>. In this turn, Counter attack rate +50%, Counter Attack range + 1, and 50% chance to Counter Attack for an ally that took damage.
 SecondaryInterface1213	主角特技按键TIP	Five Elements
 SecondaryInterface1214	主角特技按键TIP	Movement restricted!
@@ -644,7 +644,7 @@ SecondaryInterface1301	战斗（伤害预估TIP）	Damage
 SecondaryInterface1302	战斗（伤害预估TIP）	Accuracy
 SecondaryInterface1303	战斗（伤害预估TIP）	Estimated<br>remaining HP
 SecondaryInterface1304	战斗（伤害预估TIP）	Critial Hit Rate
-SecondaryInterface1305	战斗（伤害预估TIP）	Parry Rate
+SecondaryInterface1305	战斗（伤害预估TIP）	Block Rate
 SecondaryInterface1306	战斗（伤害预估TIP）	Counter Rate
 SecondaryInterface1307	背袭提示at伤害面板	Backstab succeeded
 SecondaryInterface1308	侧袭提示at伤害面板	Side Attack succeeded
@@ -764,7 +764,7 @@ SecondaryInterface2614	创角介面	Acquired
 SecondaryInterface2615	创角介面	Traits
 SecondaryInterface2616	创角介面	Points
 SecondaryInterface2617	创角介面	Points
-SecondaryInterface2618	创角介面力量	Attack 4 / Defense 1 / Parry 2 / HP 1 / Qi 1
+SecondaryInterface2618	创角介面力量	Attack 4 / Defense 1 / Block 2 / HP 1 / Qi 1
 SecondaryInterface2619	创角介面体魄	Attack 1 / Defense 4 / Counterattack 2 / HP 4 / Qi 2
 SecondaryInterface2620	创角介面灵巧	Attack 3 / Defence 2 / Evasion 2 / HP 1 / Qi 1 / 120 points + 1 movement, and then every 200 points + 1 movement
 SecondaryInterface2621	创角介面意志	Attack 2 / Defense 3 / Critical Hit 2 / HP 2 / Qi 3 / Increase the five elements of the body to counteract each other's damage
@@ -800,7 +800,7 @@ SecondaryInterface2822	系统设置介面	Status<br>Display Button
 SecondaryInterface2823	系统设置介面	Battle Animation Skipping
 SecondaryInterface2824	系统设置介面	On
 SecondaryInterface2825	系统设置介面	Off
-SecondaryInterface2901	抢先体验声明	Dear player, thank you for your support of "Path of Wuxia". The game is currently in its early access phase, and we are working hard to improve the game content and provide a more rich and diverse gaming experience.<br>During the gameplay, you may encounter bugs or other aspects that may affect the gaming experience. We encourage you to provide feedback and suggestions on platforms such as Steam forums, Tieba, and Facebook. We will use this feedback to fix and enhance the game accordingly.<br>Once again, we sincerely thank every player who has supported us during this stage. We hope that this game can bring you joy and fantasy in the world of martial arts.
+SecondaryInterface2901	正式版声明	Dear player, thank you for your support of "Path of Wuxia". The game is currently in its early access phase, and we are working hard to improve the game content and provide a more rich and diverse gaming experience.<br>During the gameplay, you may encounter bugs or other aspects that may affect the gaming experience. We encourage you to provide feedback and suggestions on platforms such as Steam forums, Tieba, and Facebook. We will use this feedback to fix and enhance the game accordingly.<br>Once again, we sincerely thank every player who has supported us during this stage. We hope that this game can bring you joy and fantasy in the world of martial arts.
 SecondaryInterface2902	抢先体验声明	Heluo Studio
 SecondaryInterface2903	抢先体验声明	Press Any Key to Continue
 SecondaryInterface3001	图象设置	Video Setting

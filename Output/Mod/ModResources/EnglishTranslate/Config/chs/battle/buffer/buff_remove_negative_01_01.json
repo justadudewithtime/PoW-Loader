@@ -1,1 +1,1 @@
-buff_remove_negative_01_01	Randomly remove negative	Randomly Clear 1 debuff from Self.	Randomly remove negative		Positive	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "AttacherRandomClearBuffAction" : 2, 1} , { "BufferTimesAction" : 2, 1}  ]}  ]} 
+buff_remove_negative_01_01	Randomly remove negative	Randomly Clear 1 debuff from Self.	Randomly clear negative elements		Positive	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "AttacherRandomClearBuffAction" : 2, 1} , { "BufferTimesAction" : 2, 1}  ]}  ]} 

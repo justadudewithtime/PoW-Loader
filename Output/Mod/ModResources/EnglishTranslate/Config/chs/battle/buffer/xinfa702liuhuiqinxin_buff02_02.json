@@ -1,1 +1,1 @@
-xinfa702liuhuiqinxin_buff02_02	Effect - Guangling Stops	Parry rate -10%.	Guangling Stopping Heart Technique Part 1 of 1	debuff_parry	None	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "BufferPropertyAction" : 6003, 2, 10.00000}  ]}  ]} 
+xinfa702liuhuiqinxin_buff02_02	Effect - Guangling Stops	Block rate -10%.	Guangling Stopping Heart Technique Part 1 of 1	debuff_parry	None	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "BufferPropertyAction" : 6003, 2, 10.00000}  ]}  ]} 

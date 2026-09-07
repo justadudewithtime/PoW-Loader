@@ -3016,7 +3016,7 @@ io52101301	The third year opening teahouse Divine Wind Temple female casualtyㄧ
 io52101302	The third year opening teahouse Divine Wind Temple female disciples ㄧ step fire Sword	Remarks	io521013	io521001	False	io52101302_h99	0.5
 io52101303	The third year opening Divine Wind Temple Divine Wind Temple female casualtiesㄧ order fire Sword	Xiao Qianling Medical Treatment	io521013	io521001	False	io52101303_h99	0.5
 io52101304	The third year opening Divine Wind Temple Divine Wind Temple female casualtiesㄧ order fire Sword	Yun Xiaohou Medical Treatment	io521013	io521001	False	io52101304_h99	0.5
-io52105101	October Mid Chupai with combat fifth order Divine Wind Temple disciples fire fist	Remarks	io521051	io521000	False	io52105101_h99,io52105101_h98,io52105101_h97	0.5
+io52105101	In mid-October, the Chu faction deployed a disciple of the Immortal Wind Sect—a "Fire Fist" specialist at the fifth stage of combat—to the fray.	Remarks	io521051	io521000	False	io52105101_h99,io52105101_h98,io52105101_h97	0.5
 io52105301	October Mid Chupai with combat fifth order Divine Wind Temple disciples fire Sword	Remarks	io521053	io521001	False	io52105301_h99	0.5
 io52115101	October Mid Chupai with combat fifth order Divine Wind Temple disciples earth fist	Remarks	io521151	io521001	False	io52115101_h99,io52115101_h98	0.5
 io52115301	October Mid Chupai with combat fifth order Divine Wind Temple disciples earth Sword	Remarks	io521153	io521000	False	io52115301_h99	0.5

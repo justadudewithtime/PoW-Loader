@@ -1,1 +1,1 @@
-buff_parry01_010_00	Copper Tendon	Parry rate increased by 10%	Parry rate continues to increase by 10%	buff_parry	Positive	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "BufferSequenceNode" : [ { "BufferPropertyAction" : 6003, 1, 10.00000}  ]}  ]}  ]} 
+buff_parry01_010_00	Copper Tendon	Block rate increased by 10%	Block rate continues to increase by 10%	buff_parry	Positive	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "BufferSequenceNode" : [ { "BufferPropertyAction" : 6003, 1, 10.00000}  ]}  ]}  ]} 

@@ -1,1 +1,1 @@
-xinfa503shouzheng_buff02	Careful Moderation	Parry rate +30%, Dodge rate +30%.		buff_xingfa	None	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "BufferPropertyAction" : 6003, 1, 30.00000} , { "BufferPropertyAction" : 6002, 1, 30.00000}  ]}  ]} 
+xinfa503shouzheng_buff02	Careful Moderation	Block rate +30%, Dodge rate +30%.		buff_xingfa	None	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "BufferPropertyAction" : 6003, 1, 30.00000} , { "BufferPropertyAction" : 6002, 1, 30.00000}  ]}  ]} 

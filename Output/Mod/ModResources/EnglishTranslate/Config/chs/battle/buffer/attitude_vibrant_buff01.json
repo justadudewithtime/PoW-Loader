@@ -1,1 +1,1 @@
-attitude_vibrant_buff01	Generous	Parry Rate and Counter Attack Rate +1%	Enthusiasm Trait 1	buff_trait	Positive	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "BufferPropertyAction" : 6005, 1, 1.00000} , { "BufferPropertyAction" : 6003, 1, 1.00000}  ]}  ]}
+attitude_vibrant_buff01	Generous	Block Rate and Counter Attack Rate +1%	Enthusiasm Trait 1	buff_trait	Positive	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "BufferPropertyAction" : 6005, 1, 1.00000} , { "BufferPropertyAction" : 6003, 1, 1.00000}  ]}  ]}

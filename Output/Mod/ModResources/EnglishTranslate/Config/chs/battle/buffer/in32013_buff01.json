@@ -1,1 +1,1 @@
-in32013_buff01	Elite Disciple	Maximum HP +400, Parry rate +20%.		buff_trait	None	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "BufferPropertyAction" : 6003, 1, 20.00000}  ]}  ]} 
+in32013_buff01	Elite Disciple	Maximum HP +400, Block rate +20%.		buff_trait	None	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "BufferPropertyAction" : 6003, 1, 20.00000}  ]}  ]} 

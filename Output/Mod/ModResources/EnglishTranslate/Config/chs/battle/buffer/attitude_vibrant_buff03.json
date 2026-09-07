@@ -1,1 +1,1 @@
-attitude_vibrant_buff03	Optimistic	Parry Rate and Counter Attack Rate +6%	EnthusiasmTrait3	buff_trait	Positive	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "BufferPropertyAction" : 6005, 1, 6.00000} , { "BufferPropertyAction" : 6003, 1, 6.00000}  ]}  ]} 
+attitude_vibrant_buff03	Optimistic	Block Rate and Counter Attack Rate +6%	EnthusiasmTrait3	buff_trait	Positive	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "BufferPropertyAction" : 6005, 1, 6.00000} , { "BufferPropertyAction" : 6003, 1, 6.00000}  ]}  ]} 

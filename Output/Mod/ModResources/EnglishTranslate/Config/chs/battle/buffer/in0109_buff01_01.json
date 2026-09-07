@@ -1,1 +1,1 @@
-in0109_buff01_01	Effect - Instructor	Parry rate +3%.		buff_trait	None	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "BufferPropertyAction" : 6003, 1, 3.00000}  ]}  ]} 
+in0109_buff01_01	Effect - Instructor	Block rate +3%.		buff_trait	None	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "BufferPropertyAction" : 6003, 1, 3.00000}  ]}  ]} 

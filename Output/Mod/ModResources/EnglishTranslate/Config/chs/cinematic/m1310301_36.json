@@ -997,12 +997,12 @@
       "Prallel": 199
     },
     {
-      "Node": "{ \"ChangeCharacterDescription\" : \"in21001b\", \"The Gimmick monster made by Abyssal Palace in cooperation with Yan Huang is so powerful and brutal that it seems to have no weaknesses.\"} ",
+      "Node": "{ \"ChangeCharacterDescription\" : \"in21001b\", \"A mechanical monstrosity made by Abyssal Palace in cooperation with Yan Huang, it's incredibly strong, cruel and ruthless, and seems to have no weaknesses\"} ",
       "Next": -1,
       "Prallel": 200
     },
     {
-      "Node": "{ \"ChangeCharacterDescription\" : \"in21002\", \"A woman in white with an erratic posture... looks like her outfit has something to do with Ming Gong and Ling Wujue\"} ",
+      "Node": "{ \"ChangeCharacterDescription\" : \"in21002\", \"A woman in white, moving with an ethereal, elusive grace... Judging by her attire, she seems to have some connection to the Abyssal Palace and Ling Wujue...?\"} ",
       "Next": -1,
       "Prallel": -1
     },

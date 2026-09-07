@@ -1,1 +1,1 @@
-bt1205504_02_Buff_Mountain	Crackdown the Mountains	Parry Rate +10%	Summer Exam plot	buff_trait	Positive	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "BufferPropertyAction" : 6003, 1, 10.00000}  ]}  ]} 
+bt1205504_02_Buff_Mountain	Crackdown the Mountains	Block Rate +10%	Summer Exam plot	buff_trait	Positive	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "BufferPropertyAction" : 6003, 1, 10.00000}  ]}  ]} 

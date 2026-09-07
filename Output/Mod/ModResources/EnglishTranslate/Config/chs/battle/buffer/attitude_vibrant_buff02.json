@@ -1,1 +1,1 @@
-attitude_vibrant_buff02	Peaceful	Parry Rate and Counter Attack Rate +3%	EnthusiasmTrait2	buff_trait	Positive	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "BufferPropertyAction" : 6005, 1, 3.00000} , { "BufferPropertyAction" : 6003, 1, 3.00000}  ]}  ]} 
+attitude_vibrant_buff02	Peaceful	Block Rate and Counter Attack Rate +3%	EnthusiasmTrait2	buff_trait	Positive	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "BufferPropertyAction" : 6005, 1, 3.00000} , { "BufferPropertyAction" : 6003, 1, 3.00000}  ]}  ]} 

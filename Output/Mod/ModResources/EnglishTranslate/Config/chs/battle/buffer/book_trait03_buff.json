@@ -1,1 +1,1 @@
-book_trait03_buff	Ambitious	Parry Rate +5%	Read Huaiyin Hou Biography	buff_trait	None	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "BufferPropertyAction" : 6003, 1, 5.00000}  ]}  ]} 
+book_trait03_buff	Ambitious	Block Rate +5%	Read Huaiyin Hou Biography	buff_trait	None	1	0	{ "BufferRootNode" : [ { "BufferEventNode" : 230, [ { "BufferPropertyAction" : 6003, 1, 5.00000}  ]}  ]} 
