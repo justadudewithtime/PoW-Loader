@@ -44,81 +44,93 @@ namespace PoW_Tool_SheetUtilities.Handler
             {
                 Value = cell.UserEnteredValue.StringValue;
             }
-            if (cell.UserEnteredFormat != null)
+            //UserEnteredFormat is null when a cell inherits its fill from the row or column default,
+            //so fall back to the effective format instead of treating the cell as colorless
+            if (cell.UserEnteredFormat != null && cell.UserEnteredFormat.BackgroundColor != null)
             {
                 Color = cell.UserEnteredFormat.BackgroundColor;
+            }
+            else if (cell.EffectiveFormat != null)
+            {
+                Color = cell.EffectiveFormat.BackgroundColor;
             }
         }
     }
 
     public class ColorHelper
     {
-	    public static bool IsSameColor(Color a, Color b)
-	    {
-		    if (a == null || b == null)
-		    {
-			    return a == null && b == null;
-		    }
-		    if (a.Red == null) a.Red = 0;
-		    if (a.Green == null) a.Green = 0;
-		    if (a.Blue == null) a.Blue = 0;
-		    if (b.Red == null) b.Red = 0;
-		    if (b.Green == null) b.Green = 0;
-		    if (b.Blue == null) b.Blue = 0;
+        //The API hands out floats, so compare colors quantized to the 0-255 channels the sheet UI actually uses
+        private static int ToChannel(float? value)
+        {
+            if (value == null)
+            {
+                return 0;
+            }
 
-		    return a.Blue == b.Blue && a.Red == b.Red && a.Green == b.Green;
-	    }
+            int channel = (int)Math.Round(value.Value * 255.0, MidpointRounding.AwayFromZero);
+            return channel < 0 ? 0 : (channel > 255 ? 255 : channel);
+        }
+
+        public static bool IsSameColor(Color a, Color b)
+        {
+            if (a == null || b == null)
+            {
+                return a == null && b == null;
+            }
+
+            return ToChannel(a.Red) == ToChannel(b.Red)
+                && ToChannel(a.Green) == ToChannel(b.Green)
+                && ToChannel(a.Blue) == ToChannel(b.Blue);
+        }
+
+        //An unfilled cell is either colorless or plain white and is never a marked line
+        public static bool IsUnfilled(Color color)
+        {
+            return color == null || (ToChannel(color.Red) == 255 && ToChannel(color.Green) == 255 && ToChannel(color.Blue) == 255);
+        }
+
+        public static string ToHex(Color color)
+        {
+            if (color == null)
+            {
+                return "no fill";
+            }
+
+            return string.Format("#{0:X2}{1:X2}{2:X2}", ToChannel(color.Red), ToChannel(color.Green), ToChannel(color.Blue));
+        }
+
+        //"B6D7A8" -> Color. Divides by 255.0f on purpose: 0xB6 / 255 is integer division and collapses to 0
+        public static Color FromHex(string hex)
+        {
+            if (hex.StartsWith("#"))
+            {
+                hex = hex.Substring(1);
+            }
+
+            return new Color()
+            {
+                Alpha = 1.0f,
+                Red = Convert.ToInt32(hex.Substring(0, 2), 16) / 255.0f,
+                Green = Convert.ToInt32(hex.Substring(2, 2), 16) / 255.0f,
+                Blue = Convert.ToInt32(hex.Substring(4, 2), 16) / 255.0f,
+            };
+        }
     }
 
     public class AssetVariable
     {
-	    public static Color NeedsCheckColor = new Color()
-        {
-            Alpha = 1.0f,
-            Red = 0.8f,
-            Green = 0.8f,
-            Blue = 0.0196078438f
-        };
+	    //Hex values match the Legend tab of the spreadsheets
+	    public static Color NeedsCheckColor = ColorHelper.FromHex("CCCC05");
 
-        public static Color MTLColor = new Color()
-        {
-            Alpha = 1.0f,
-            Red = 1.0f,
-            Green = 0.65882355f,
-            Blue = 0.0f
-        };
+        public static Color MTLColor = ColorHelper.FromHex("FFA800");
 
-        public static Color StandardizedTermColor = new Color()
-        {
-            Alpha = 1.0f,
-            Red = 0.91764705882f,
-            Green = 0.81960784313f,
-            Blue = 0.86274509803f
-        };
+        public static Color StandardizedTermColor = ColorHelper.FromHex("EAD1DC");
 
-        public static Color DoNotTouchColor = new Color()
-        {
-            Alpha = 1.0f,
-            Red = 0.6f,
-            Green = 0.6f,
-            Blue = 0.6f
-        };
+        public static Color DoNotTouchColor = ColorHelper.FromHex("999999");
 
-        public static Color TranslatedColor = new Color()
-        {
-            Alpha = 1.0f,
-            Red = 0.71372549019f,
-            Green = 0.8431372549f,
-            Blue = 0.65882352941f
-        };
+        public static Color TranslatedColor = ColorHelper.FromHex("B6D7A8");
 
-        public static Color ProofReadColor = new Color()
-        {
-            Alpha = 1.0f,
-            Red = 0.78823529411f,
-            Green = 0.85490196078f,
-            Blue = 0.9725490196f
-        };
+        public static Color ProofReadColor = ColorHelper.FromHex("C9DAF8");
 
         public AssetVariableDefinition Definition;
 
@@ -611,26 +623,22 @@ namespace PoW_Tool_SheetUtilities.Handler
                 string value = rowRaw[columnIndex++].Value; //Translation
                 columnIndex++;//Original
                 columnIndex++;//Standardized Term Locator
-                if (string.IsNullOrWhiteSpace(value) || Translation == "0")
+                if (string.IsNullOrWhiteSpace(value) || value == "0" || ColorHelper.IsUnfilled(colorOfEntry))
                 {
                     return;
                 }
 
                 for (int i = 0; i < stats.Count; i++)
                 {
-                    bool foundMatch = false;
-                    for (int cI = 0; cI < stats[i].AcceptableColors.Count; cI++)
+                    //MatchAll has to be tested outside of the color list: the catch all bucket has none,
+                    //so testing it inside the loop meant unknown colors were counted nowhere at all
+                    if (stats[i].MatchAll || stats[i].Matches(colorOfEntry))
                     {
-                        Color acceptableColor = stats[i].AcceptableColors[cI];
-                        if (stats[i].MatchAll || ColorHelper.IsSameColor(colorOfEntry, acceptableColor))
-                        {
-                            stats[i].LineCount += 1;
-                            stats[i].WordCount += _GetWordCount(value);
-                            foundMatch = true;
-                            break;
-                        }
+                        stats[i].LineCount += 1;
+                        stats[i].WordCount += _GetWordCount(value);
+                        stats[i].NoteColor(colorOfEntry);
+                        break;
                     }
-                    if (foundMatch) break;
                 }
             }
         }
@@ -1048,21 +1056,34 @@ namespace PoW_Tool_SheetUtilities.Handler
             Console.WriteLine("");
         }
 
-        public virtual void GetTranslationStats(ref List<TranslationStatEntry> stats)
+        //Sheet row (1 based, as displayed in the UI) of the last row that has content in column A
+        protected int GetLastContentRow()
         {
-            Console.WriteLine("Calculating Translation Statistic for " + AssetName);
-            SpreadsheetsResource.GetRequest request = GoogleSheetConnector.GetInstance().Service.Spreadsheets.Get(SheetId);
-            request.Ranges = SheetRange;
-            request.IncludeGridData = true;
-            Spreadsheet sheet = request.Execute();
-            IList<GridData> grid = sheet.Sheets[0].Data;
-            //Getting each range (should only be one)
+            SpreadsheetsResource.ValuesResource.GetRequest request = GoogleSheetConnector.GetInstance().Service.Spreadsheets.Values.Get(SheetId, "A2:A");
+            ValueRange response = request.Execute();
+            int rowsWithContent = response.Values == null ? 0 : response.Values.Count;
+            return rowsWithContent + 1;
+        }
+
+        //Counts one grid response into the stats. Rows the API returns without any cell data are skipped.
+        protected void AccumulateTranslationStats(IList<GridData> grid, ref List<TranslationStatEntry> stats)
+        {
             AssetEntry tmpEntry = new AssetEntry(VariableDefinitions);
             foreach (GridData gridData in grid)
             {
+                if (gridData.RowData == null)
+                {
+                    continue;
+                }
+
                 //For each row
                 foreach (var row in gridData.RowData)
                 {
+                    if (row.Values == null)
+                    {
+                        continue;
+                    }
+
                     SheetCellWithColor[] rowRaw = new SheetCellWithColor[row.Values.Count];
                     for (int i = 0; i < row.Values.Count; i++)
                     {
@@ -1072,6 +1093,16 @@ namespace PoW_Tool_SheetUtilities.Handler
                     tmpEntry.CalculateTranslationStats(rowRaw, ref stats);
                 }
             }
+        }
+
+        public virtual void GetTranslationStats(ref List<TranslationStatEntry> stats)
+        {
+            Console.WriteLine("Calculating Translation Statistic for " + AssetName);
+            SpreadsheetsResource.GetRequest request = GoogleSheetConnector.GetInstance().Service.Spreadsheets.Get(SheetId);
+            request.Ranges = SheetRange;
+            request.IncludeGridData = true;
+            Spreadsheet sheet = request.Execute();
+            AccumulateTranslationStats(sheet.Sheets[0].Data, ref stats);
         }
     }
 }

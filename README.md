@@ -48,6 +48,23 @@ To get the latest translations or update the translation sheet to match the curr
 
 For access and setup support, join our Discord server and reach out to us!
 
+The tool starts an interactive menu when launched without arguments, and also accepts commands directly, which is what CI and quick checks should use:
+
+```bash
+SheetUtilities.exe stats                     # translation statistics over all sheets
+SheetUtilities.exe stats --sheet Talk        # only one sheet, no throttling between sheets
+SheetUtilities.exe update                    # update the sheets from the game files in ./Input
+SheetUtilities.exe build mod                 # build the mod data (output|mod selects the target folder)
+SheetUtilities.exe csv --sheet Talk,Book     # export translated lines to ./ExportOutput
+SheetUtilities.exe formats Talk              # print the variable format of an input asset
+SheetUtilities.exe sheets                    # list the known sheet names
+SheetUtilities.exe help
+```
+
+`--sheet` takes a comma separated list of sheet names and applies to `update`, `build`, `stats` and `csv`. Commands exit with 1 on failure, so they can be scripted.
+
+`stats` prints a line count per cell color bucket plus a catch all bucket. Lines in the catch all are listed with their hex color: either the color belongs into one of the buckets in `Program.cs` or the cell is mismarked in the sheet.
+
 ---
 
 ### Mod Loader and Plugins

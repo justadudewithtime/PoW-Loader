@@ -80,33 +80,24 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
             };
         }
 
-        //Custom Handling of this one because of it's size and google api liking to complain if one requests all at once
+        //The sheet is too big for a single request, so it is read in chunks.
+        //The chunk count follows the actual row count: a hardcoded one silently dropped every row past 70002.
+        private const int ChunkRows = 10000;
+
         public override void GetTranslationStats(ref List<TranslationStatEntry> stats)
         {
             Console.WriteLine("Calculating Translation Statistic for " + AssetName);
-            for (int k = 0; k < 7; k++)
+            int lastRow = GetLastContentRow();
+            for (int startRow = 2; startRow <= lastRow; startRow += ChunkRows)
             {
+                int endRow = Math.Min(startRow + ChunkRows - 1, lastRow);
+                Console.WriteLine("    Rows " + startRow + " - " + endRow + " of " + lastRow);
+
                 SpreadsheetsResource.GetRequest request = GoogleSheetConnector.GetInstance().Service.Spreadsheets.Get(SheetId);
-                request.Ranges = "A" + (k * 10000 + 2) + ":O" + ((k + 1) * 10000 + 2);
+                request.Ranges = "A" + startRow + ":O" + endRow;
                 request.IncludeGridData = true;
                 Spreadsheet sheet = request.Execute();
-                IList<GridData> grid = sheet.Sheets[0].Data;
-                //Getting each range (should only be one)
-                AssetEntry tmpEntry = new AssetEntry(VariableDefinitions);
-                foreach (GridData gridData in grid)
-                {
-                    //For each row
-                    foreach (var row in gridData.RowData)
-                    {
-                        SheetCellWithColor[] rowRaw = new SheetCellWithColor[row.Values.Count];
-                        for (int i = 0; i < row.Values.Count; i++)
-                        {
-                            rowRaw[i] = new SheetCellWithColor(row.Values[i]);
-                        }
-
-                        tmpEntry.CalculateTranslationStats(rowRaw, ref stats);
-                    }
-                }
+                AccumulateTranslationStats(sheet.Sheets[0].Data, ref stats);
             }
         }
 
@@ -138,11 +129,14 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
 
             sw.Write('\n');
 
-            int rI = 0;
-            for (int k = 0; k < 7; k++)
+            int lastRow = GetLastContentRow();
+            for (int startRow = 2; startRow <= lastRow; startRow += ChunkRows)
             {
+                int endRow = Math.Min(startRow + ChunkRows - 1, lastRow);
+                Console.WriteLine("    Rows " + startRow + " - " + endRow + " of " + lastRow);
+
                 SpreadsheetsResource.GetRequest request2 = GoogleSheetConnector.GetInstance().Service.Spreadsheets.Get(SheetId);
-                request2.Ranges = "A" + (k * 10000 + 2) + ":O" + ((k + 1) * 10000 + 2);
+                request2.Ranges = "A" + startRow + ":O" + endRow;
                 request2.IncludeGridData = true;
                 Spreadsheet sheet = request2.Execute();
                 IList<GridData> grid = sheet.Sheets[0].Data;
@@ -152,10 +146,19 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                     for (int gridI = 0; gridI < grid.Count; gridI++)
                     {
                         var gridData = grid[gridI];
+                        if (gridData.RowData == null)
+                        {
+                            continue;
+                        }
+
                         //For each row
                         for (int rowI = 0; rowI < gridData.RowData.Count; rowI++)
                         {
                             var row = gridData.RowData[rowI];
+                            if (row.Values == null)
+                            {
+                                continue;
+                            }
 
                             SheetCellWithColor[] rowRaw = new SheetCellWithColor[row.Values.Count];
                             for (int i = 0; i < row.Values.Count; i++)
@@ -163,23 +166,23 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                                 rowRaw[i] = new SheetCellWithColor(row.Values[i]);
                             }
 
-                            if (rI >= values.Count)
+                            //Index into the values of A2:O, derived from the absolute sheet row instead of a running
+                            //counter so a skipped row cannot shift every following line onto the wrong original
+                            int valueIndex = (gridData.StartRow ?? (startRow - 1)) + rowI - 1;
+                            if (valueIndex < 0 || valueIndex >= values.Count)
                             {
-								break;
-							}
+                                continue;
+                            }
 
-                            var rowValues = values[rI];
+                            var rowValues = values[valueIndex];
                             AssetEntry thisEntry = new AssetEntry(VariableDefinitions);
                             thisEntry.PopulateBySheetRow(rowValues);
                             thisEntry.AppendToCSV(sw, thisEntry, rowRaw, ref acceptableColors);
-
-                            rI++;
                         }
                     }
                 }
 
                 Thread.Sleep(3000);
-
             }
 
             sw.Close();
