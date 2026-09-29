@@ -14,7 +14,7 @@ in0196	素体亦天铃	Yi 	Tianling		in0115	A girl born with a special physique,
 in0197	素体亦天凛	Yi 	Tianliao		in0101	A young man born with a special physique, who gathered all five elemental arts in one body.<br>Born in an unknown remote mining village. After his village was destroyed, he came to Jiangxi and stayed at the Wang Family in Zhongyan Village.	0	1	in0116		1.75		True		0
 in0201	楚天碧	Chu 	Tianbi	White Plum	in0201	A white robed swordsman known to be sentimental and merciful. His swordmanship skill is divine, but he draws his blade to subdue his enemy, not kill. He is able to preserve lives even in a battle to the death.	0	1	in0201	in0201	1.75		True		1
 in0202	段霄烈	Duan 	Xiaolie	Barbed Bamboo	in0202	Calmness and hateful anger coexist within his eyes, this black robed warrior is intimidating even when he is not angered. His body is surrounded by an aura of heat, and his palm can cut through metals and jade as surely as the sharpest of blades.	0	1	in0202	in0202	1.75		True		1
-in0204	柳心萍	Liu 	Xinping	Pure Flame Red Lotus	in0204	Master bladeswoman of Xia Pavilion, she is serious and stern. However, beneath her iron visage there also exists a hint of gentleness and...... sorrow? Her blade style is fierce and explosive.<br>Often annoyed by Daoheng's laziness.	1	1	in0204	in0204	1.65		True		1
+in0204	柳心萍	Liu 	Xinping	Pure Flame Red Lotus	in0204	Master bladeswoman of Xia Pavilion, she is serious and stern. However, beneath her iron visage there also exists a hint of gentleness and...... sorrow? Her blade style is fierce and explosive.<br>Often annoyed by Dao Heng's laziness.	1	1	in0204	in0204	1.65		True		1
 in0205	霍坦	Huo 	Tan	Wolf's Lung, Condor's Heart	in0205	The master of Xia Pavilion's fist and leg arts. He is brash and direct, and does not dwell on minute details. He was a prolific bandit beyond the north eastern border, but ended up as a master in the Pavilion for some reason.	0	2	in0205	in0205	1.9		True		1
 in0206	唐三长	Tang 	Sanchang	Fisherman Upon Great Waves	in0206	The master of polearms in Xia Pavilion, as well as the boatman ferrying guests and students. Addicted to drinking and often neglect his duty because of it. Was a disciple of Xia Pavilion in his youth, though he often flaunt his life experiences to the students, he rarely speaks about his personal past.	0	1	in0206	in0206	1.75		True		2
 in0207	飞雪皊狐	Snowy 	Fox	Flying Snow White Fox	in0207	The master of Xia Pavilion's leg techniques, her original name is Qiu Xiaoshuang, leader of the White Fox Camp under Sky Stealer Fort. Master at acrobatics and poison techniques. Though she is normally sly, seductive, and loves to toy with others, she also cares deeply about the members of her camp.	1	2	in0207	in0207	1.75		True		1
@@ -139,14 +139,14 @@ in11000	三侠村村长	Three Heroes Village 	Chief		ar0345		0	1	ar0345		1.75		T
 in11001	茶馆老板	Tea 	Master		ar0101	The owner of Three Hero Village Tea House, the father of Xu Xiaoyuan, occasionally holds a storytelling event in front of the tea house.	0	1	ar0101		1.75		True		1
 in11002	茶馆老板女儿	Tea 	Lady		ar0328	The girl who lives in Three Hero Village is usually meek and pleasant, but once angered, she becomes very fiery.	1	1	ar0328		1.65		True		0
 in11003	周老丐	Old Beggar 	Zhou		ar0348	Flying thief in the Three Heroes Village, extremely quick on his feet. Often steals alcohol to drink.	0	1	ar0348		1.75		True		2
-in11004	陈福	Chen 	Fu		in0000		0	1	ar0345		1.75		False		2
-in11005	陈婆	Chen 	Po		in0001		1	1	ar0310		1.75		False		2
+in11004	陈福	Grandpa 	Chen		in0000		0	1	ar0345		1.75		False		2
+in11005	陈婆	Granny 	Chen		in0001		1	1	ar0310		1.75		False		2
 in11006	三侠村肉饼贩	Cai 	Gouzi		ar0313	A hawker in Three Heroes Village who sells savory snacks; his specialty is steamed meat buns. He appears to harbor a distinct admiration for the proprietress of the flower shop.	0	1	ar0313		1.75		True		1
 in11007	花坊老板娘	Flower Shop 	Owner		in0001	As a child, she loved flowers, so she planted them all around her house, and when she grew up, she started a flower selling business.	1	1	ar0333		1.65		False		1
 in11008	老孟	Old 	Meng		in0000	The elder of Three Heroes Village, who has been close friends with Old Zhao for many years, knows everything about the village.	0	1	ar0346		1.75		False		2
 in11009	老赵	Old 	Zhao		in0000	The elder of Three Heroes Village, who has been close friends with Old Meng for many years, knows everything about the village.	0	1	ar0345		1.75		False		2
 in11010	孙大夫	Doctor 	Sun		in0000	The doctor of Three Heroes Village is passionate and helpful, and often treat patients for free, but he often falls into financial difficulties because of this.	0	1	ar0322		1.75		False		1
-in11011	酒铺老板娘	Zhao 	San Niang		in0001		1	1	ar0304		1.65		False		1
+in11011	酒铺老板娘	Zhao 	Sanniang		in0001		1	1	ar0304		1.65		False		1
 in11012	酒楼小二	Restaurant 	Server		in0000		0	1	ar0313		1.75		False		1
 in11015	脸色发青的小二	Pale 	Server		in0000	The waiter in the restaurant with poor stomach, often turns blue.	0	1	ar0313		1.75		False		1
 in11016	喝醉的粗工	Drunken 	Worker		in0000	The rough laborer in the village, whose wife ran off with someone because of his addiction to alcohol, but he seemed unconcerned about it.	0	1	ar0316		1.75		False		1
@@ -183,7 +183,7 @@ in21005	烟貘	Smoking 	Tapir	Smoking Tapir	ev0105	Hall of Vicissitudes Assassin
 in21006	飞鱿	Flying 	Squid	Flying Squid	in0000	An Abyssal Palace corpse zomebie, who suffered a tragic fate due to the arbitary behaviours of a Xia. Using the evil arts taught by the master of the Abyssal Palace, he turned his arms into strange weapons. Eventually, he became a monster filled with hate, who enjoys to torment righteous individuals.	0	3	ev0106		1.75		True		1
 in21007	金刚	Va	jra	Vajra	ev0107	An disciple of Tibet's Vajrayana sect's Clear Lotus Consort, he heeded the Consort's instruction to seek a stolen manuscript in China. Yet his simple-minded and direct personality got him into a lot of troubles. 	0	3	ev0107	in21007	2.15		True		1
 in21008	金丝薰	Golden 	Phoebe		ev0108	Hall of Vicissitudes Assassin, studies medicine and poison under Smoking Tapir, her identity and origin are unknown.	1	0	ev0108	in21008	1.5		True		0
-in22001	夏侯焕	Xiahou 	Huan	Killing Thunder	ev0110	Secret Guard Commander, an agent working directly under His Majesty The Emperor.  Skilled in the use of a three barreled gun-spear "Three Heart Piercing Eyes", merciless and cares little of honor, yet is devoted in his loyalty to the emperor. He use any means at his disposal to wipe away threats to the imperial power.	0	2	ev0110	in22001	1.9		True		1
+in22001	夏侯焕	Xiahou 	Huan	Heavenly Thunder Soul Chaser	ev0110	Secret Guard Commander, an agent working directly under His Majesty The Emperor.  Skilled in the use of a three barreled gun-spear "Three Heart Piercing Eyes", merciless and cares little of honor, yet is devoted in his loyalty to the emperor. He use any means at his disposal to wipe away threats to the imperial power.	0	2	ev0110	in22001	1.9		True		1
 in22002	南昌知府	Li 	Qian Jin		ev0202		0	1	ev0202		1.75		True		1
 in22003	张师爷	Counselor 	Zhang	Court Counselor	ev0203	The devious looking court counselor, abusing his official power to threaten the chief of Zhongyan village to provide him with captured lone travellers and supply of Heavy Stones. His real agenda and who he works for are both unknown.	0	1	ev0203	in22003	1.75		True		1
 in222000	战斗用南昌官兵	Nanchang 	Soldier		ev0205	Soldiers from Nanchang magistrate guardhouses, wear almond yellow banner upon their backs.	0	1	ev0205		1.75		False		1
@@ -285,8 +285,8 @@ in36006	焰狐	Flame 	Fox		in0001		1	1	ar0318		1.65		False		1
 in36007	玉狐	Jade 	Fox		in0001		1	1	ar0317		1.65		False		1
 in36008	兰狐	Orchid 	Fox		in0001		1	1	ar0319		1.65		False		1
 in36009	小灵狐	Little 	Fox		in0001		1	4	ar0344		1.4		False		0
-in38001	张梦阳	Zhang 	Mengyang	Sword of Fiery Virtue	ev0701	Head disciple of the grandmaster of Zhenwu Temple, Yin Kongmiao. One of the most outstanding young heroes of the Meng generation, his skill in the Mystical Heaven Swords are almost divine. He respects his masters and carries himself righteously. He is charitable and his loyalty unshakable, yet his hatred for evil is also passionate, and he does not hesitate to cut down the wicked. He is known in the Jianghu as Sword of Fiery Virtue.	0	1	ev0701	in48001	1.75		True		0
-in41001	冰清剑派门人	Crystalline Ice Sword Sect 	Disciple		ar0402	Female disciples of the Crystalline Ice Sword Sect, rigidly upholding sect rules and mainting the purity of their bodies.If they are found to be in contact with men, they will suffer severe punishment. For that reason, fewer disciple came to this sect in recent years, and it has starting to decline.	1	1	ar0402		1.65		False		0
+in38001	张梦阳	Zhang 	Mengyang	Sword of Fiery Virtue	ev0701	The eldest disciple of grandmaster of Zhenwu Temple, Yin Kongmiao. One of the most outstanding young heroes of the "Meng" generation, his skill in the Mystical Heaven Swords has reached the pinnacle of perfection. He respects his masters and carries himself as Xia, radiating an aura of upright righteousness. He is known for his boundless benevolence and generosity toward the virtuous and his sense of justice knows no bounds, while harboring a fierce, uncompromising hatred for the wicked—punishing them without mercy. He is known in the Jianghu as Sword of Fiery Virtue.	0	1	ev0701	in48001	1.75		True		0
+in41001	冰清剑派门人	Crystalline Ice Sword Sect 	Disciple		ar0402	Female disciples of the Crystalline Ice Sword Sect, rigidly upholding rules of chastity and preserve the purity of their bodies. If they are found to be in contact with men, they will suffer severe punishment. For that reason, fewer disciple came to this sect in recent years, and causing the sect’s influence to wane significantly.	1	1	ar0402		1.65		False		0
 in42001	坤龙门门人流氓A	Earth Dragon Sect 	Disciple		ev0403		0	1	ev0403		1.75		False		1
 in42002	坤龙门门人流氓B	Earth Dragon Sect 	Disciple		ev0403		0	1	ev0404		1.75		False		1
 in42003	坤龙门门人流氓C	Earth Dragon Sect 	Disciple		ev0403		0	1	ev0405		1.75		False		1
@@ -474,7 +474,7 @@ in05739	善画的师姐	Skilled Painter 	Senior Sister		in0308	Disciple in the p
 in05740	略通画艺的师姐	Senior Sister 	Who Understands Painting		in0312	Disciple in the pavilion, moderately skilled in the art of painting.	1	1	in0312		1.65		False		0
 in05741	陌生男子	Strange 	Man		in0000		0	1	ar0331		1.75		False		1
 in058091	恒山屍人吴平	Wu 	Ping		ev0507	After leaving Sky Stealer Fort and joining Abyssal Palace, Wu Ping, who practiced their dark arts, underwent a significant transformation in both strength and mentality. The only constant may be the determination to protect Yu'er.	0	1	ev0507	io261000	1.75		True		2
-in05822	二年夏校桑登阳	Sang 	Dengyang		ar0604	A messenger from Robbing Stallion Camp, have excellent equestrian skill.	0	1	ar0604		1.75		False		1
+in05822	二年夏校桑登阳	Sang 	Dengyang		ar0604	A messenger from Robbing Stallion Stronghold, have excellent equestrian skill.	0	1	ar0604		1.75		False		1
 in05823	二年夏校刘安邦	Liu 	Anbang		ev0204	The commander of the Secret Guards assigned to attack the Cave Badger Camp, seems to have limited knowledge about martial artists.	0	1	ev0204		1.75		False		1
 in05824	二年夏校魏遵	Wei 	Zun		ar0503	The commander of the Northern Flame Guard tasked with attacking the Cave Badger Camp. He was under the command of Shangguan Nan, the left governor.	0	1	ar0503		1.75		False		1
 in05828	二年夏校叶梦秋	Ye 	Mengqiu		ev0702	Zhenwu Temple Daoist, tasked with attacking the Cave Badger Camp. Along with fellow disciples, they attempted to sweep through the fortress from outside but were blocked by the Tomb Gate, leading to a separation from their senior brother inside the camp.	0	1	ev0702	in48001	1.75		False		0
@@ -586,12 +586,12 @@ in010501	素体石崑	Shi 	Kun		in0105	The young master of the Hall of Vicissitu
 in05211	行脚商人	Travelling 	Merchant 		in0000	A traveling merchant passing through the Three Heroes Village from a distant land, possessing a variety of rare commodities.	0	1	ar0330		1.75		False		2
 in05212	端午包粽大赛包头师兄	Xia Pavillion 	Senior Brother		in0301	A disciple in the Xia Pavilion.	0	1	in0301		1.75		False		0
 in05213	端午包粽大赛短发师兄	Xia Pavillion 	Senior Brother		in0302	A disciple in the Xia Pavilion.	0	1	in0302		1.75		False		0
-in05214	端午包粽大赛包头师兄的小弟（一）	Baotou Sect 	Senior Brother		in0305	A disciple in the Xia Pavilion.	0	1	in0305		1.75		False		0
-in05215	端午包粽大赛包头师兄的小弟（二）	Baotou Sect 	Senior Brother		in0305	A disciple in the Xia Pavilion.	0	1	in0305		1.75		False		0
-in05216	端午包粽大赛包头师兄的小弟（三）	Baotou Sect 	Senior Brother		in0305	A disciple in the Xia Pavilion.	0	1	in0305		1.75		False		0
-in05217	端午包粽大赛短发师兄的小弟（一）	Duanfa Sect 	Senior Brother		in0304	A disciple in the Xia Pavilion.	0	1	in0304		1.75		False		0
-in05218	端午包粽大赛短发师兄的小弟（二）	Duanfa Sect 	Senior Brother		in0304	A disciple in the Xia Pavilion.	0	1	in0304		1.75		False		0
-in05219	端午包粽大赛短发师兄的小弟（三）	Duanfa Sect 	Senior Brother		in0304	A disciple in the Xia Pavilion.	0	1	in0304		1.75		False		0
+in05214	端午包粽大赛包头师兄的小弟（一）	Headwrap Gang	Senior Brother		in0305	A disciple in the Xia Pavilion.	0	1	in0305		1.75		False		0
+in05215	端午包粽大赛包头师兄的小弟（二）	Headwrap Gang	Senior Brother		in0305	A disciple in the Xia Pavilion.	0	1	in0305		1.75		False		0
+in05216	端午包粽大赛包头师兄的小弟（三）	Headwrap Gang	Senior Brother		in0305	A disciple in the Xia Pavilion.	0	1	in0305		1.75		False		0
+in05217	端午包粽大赛短发师兄的小弟（一）	Short-Hair Gang	Senior Brother		in0304	A disciple in the Xia Pavilion.	0	1	in0304		1.75		False		0
+in05218	端午包粽大赛短发师兄的小弟（二）	Short-Hair Gang	Senior Brother		in0304	A disciple in the Xia Pavilion.	0	1	in0304		1.75		False		0
+in05219	端午包粽大赛短发师兄的小弟（三）	Short-Hair Gang	Senior Brother		in0304	A disciple in the Xia Pavilion.	0	1	in0304		1.75		False		0
 in05579	石崑三阶_吴远	Travelling Merchant		Merchant	in0000		0	1	ar0353		1.75		False		1
 in05580	石崑三阶_吴牧之	Elegant Dressed Young Man			in0000		0	1	ar0303		1.75		False		1
 in05581	石崑三阶_丁叔	Uncle 	Ding		in0000		0	1	ar0309		1.75		False		2
@@ -892,4 +892,4 @@ in44007	北焰卫探子	Northern Flame Guard 	Scout		ar0503	Soldiers of the Impe
 in93004	血狼	Blood 	Wolf		be0106	Wolves raised by the Blood Wolf Army.	3	3	be0106	in93001	1.75		True		1
 in93005	巨血狼	Huge 	Blood Wolf		be0106	A mutated alien blood-wolf found in the wild.	3	3	be0106	in93001	1.75		True		1
 io54100101	赤骨族士兵(手弩版)	Blood Wolf 	Elite		ev0712	A soldier serving under the banner of the Blood Wolf Army.	0	1	ev0712		1.75		False		1
-io541002	血狼将领	Blood Wolf 	Commander of a Hundred		ev0711	A mid-ranking officer in the Blood Wolf Army, holding the rank of commander of a hundred-man unit.	0	2	ev0711		1.9		False		1
+io541002	血狼将领	Blood Wolf 	Commander		ev0711	A mid-ranking officer in the Blood Wolf Army, holding the rank of commander of a hundred-man unit.	0	2	ev0711		1.9		False		1
