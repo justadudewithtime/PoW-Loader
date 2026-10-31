@@ -49,16 +49,35 @@ namespace EnglishPatch
             }
         }
 
-        public static void Begin(BaseUnityPlugin plugin)
+        //The start of the SHA-256 of a file, tells two builds of the same size apart
+        public static string Fingerprint(string file)
+        {
+            try
+            {
+                using (var sha = System.Security.Cryptography.SHA256.Create())
+                {
+                    return System.BitConverter.ToString(sha.ComputeHash(File.ReadAllBytes(file)), 0, 4).Replace("-", "").ToLowerInvariant();
+                }
+            }
+            catch (System.Exception)
+            {
+                return "unknown";
+            }
+        }
+
+        //logger: BepInEx's log of the plugin, LogOutput.log says whether this file could be written
+        public static void Begin(BaseUnityPlugin plugin, BepInEx.Logging.ManualLogSource logger)
         {
             try
             {
                 File.WriteAllText(_Path, "English Patch diagnostics log\n");
             }
-            catch (System.Exception)
+            catch (System.Exception e)
             {
+                logger.LogWarning("Could not write the diagnostic log " + _Path + ": " + e.Message);
                 return;
             }
+            logger.LogInfo("Diagnostic log: " + _Path);
 
             Section("System", LogSystem);
             Section("Mod files", LogModFiles);
@@ -91,7 +110,7 @@ namespace EnglishPatch
 
         private static void LogModFiles()
         {
-            Log("English Patch " + EnglishPatch.Version + ": " + Describe(typeof(EnglishPatch).Assembly.Location));
+            Log("English Patch " + EnglishPatch.Version + ", build " + Fingerprint(typeof(EnglishPatch).Assembly.Location) + ": " + Describe(typeof(EnglishPatch).Assembly.Location));
             Log("Mod API: " + Describe(typeof(ModAPI.ModAPI).Assembly.Location));
 
             foreach (PluginInfo info in Chainloader.PluginInfos.Values)

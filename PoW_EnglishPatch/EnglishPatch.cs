@@ -50,7 +50,7 @@ namespace EnglishPatch
         public static bool LayoutLog { get; private set; } = false;
 
         //Writes BepInEx/EnglishPatch_Diagnostics.log, what is installed and loaded and the controller input, to report problems on another PC
-        public static bool DiagnosticLog { get; private set; } = false;
+        public static bool DiagnosticLog { get; private set; } = true;
 
         //Values of the ChristmasTitle setting
         private const string ChristmasAuto = "Auto";
@@ -104,13 +104,16 @@ namespace EnglishPatch
             LayoutLog = Config.Bind("Debug", "LayoutLog", false,
                 "Write BepInEx/EnglishPatch_Layout.log: how the turn counter and the skill key numbers in combat were measured " +
                 "and moved. Only useful to report a text that is misplaced or missing. Restart the game after changing it.").Value;
-            DiagnosticLog = Config.Bind("Debug", "DiagnosticLog", false,
+            DiagnosticLog = Config.Bind("Debug", "DiagnosticLog", true,
                 "Write BepInEx/EnglishPatch_Diagnostics.log: versions and locations of the mod files, the translation folders, " +
-                "the fonts, and every game controller axis or button that moves. Only useful to report a problem that happens " +
-                "on one PC and not another. Restart the game after changing it.").Value;
+                "the fonts, and every game controller axis or button that moves. Send this file with a problem report, it shows " +
+                "what differs from another PC. Set it to false to stop writing it. Restart the game after changing it.").Value;
+            //Which build runs, in LogOutput.log, whatever the setting
+            Logger.LogInfo("English Patch " + _VERSION + ", build " + Diagnostics.Fingerprint(typeof(EnglishPatch).Assembly.Location)
+                + ", diagnostic log " + (DiagnosticLog ? "on" : "off (DiagnosticLog in BepInEx/config/plugins.englishpatch.cfg)"));
             if (DiagnosticLog)
             {
-                Diagnostics.Begin(this);
+                Diagnostics.Begin(this, Logger);
             }
 
             //The title of the main menu has a Christmas version (Main_title_Christmas.png), shown in December by default
