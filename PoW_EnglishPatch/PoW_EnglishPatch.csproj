@@ -37,6 +37,7 @@
     <Compile Include="Hooks\CommaFix.cs" />
     <Compile Include="Hooks\PlayerName.cs" />
     <Compile Include="Hooks\UI.cs" />
+    <Compile Include="Diagnostics.cs" />
     <Compile Include="EnglishPatch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

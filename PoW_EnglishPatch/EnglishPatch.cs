@@ -16,6 +16,8 @@ namespace EnglishPatch
     {
         private static readonly string _VERSION = "0.9.0";
 
+        public static string Version => _VERSION;
+
         public string GetVersion()
         {
             return _VERSION;
@@ -46,6 +48,9 @@ namespace EnglishPatch
 
         //Writes BepInEx/EnglishPatch_Layout.log, how some texts were measured and moved, to report layout problems
         public static bool LayoutLog { get; private set; } = false;
+
+        //Writes BepInEx/EnglishPatch_Diagnostics.log, what is installed and loaded and the controller input, to report problems on another PC
+        public static bool DiagnosticLog { get; private set; } = false;
 
         //Values of the ChristmasTitle setting
         private const string ChristmasAuto = "Auto";
@@ -99,6 +104,14 @@ namespace EnglishPatch
             LayoutLog = Config.Bind("Debug", "LayoutLog", false,
                 "Write BepInEx/EnglishPatch_Layout.log: how the turn counter and the skill key numbers in combat were measured " +
                 "and moved. Only useful to report a text that is misplaced or missing. Restart the game after changing it.").Value;
+            DiagnosticLog = Config.Bind("Debug", "DiagnosticLog", false,
+                "Write BepInEx/EnglishPatch_Diagnostics.log: versions and locations of the mod files, the translation folders, " +
+                "the fonts, and every game controller axis or button that moves. Only useful to report a problem that happens " +
+                "on one PC and not another. Restart the game after changing it.").Value;
+            if (DiagnosticLog)
+            {
+                Diagnostics.Begin(this);
+            }
 
             //The title of the main menu has a Christmas version (Main_title_Christmas.png), shown in December by default
             string christmasTitle = Config.Bind("Seasonal", "ChristmasTitle", ChristmasAuto, new ConfigDescription(
