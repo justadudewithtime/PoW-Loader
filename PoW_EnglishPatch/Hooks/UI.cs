@@ -90,6 +90,31 @@ namespace EnglishPatch.Hooks
             }
         }
 
+        //The 新 ("new") badges under root, a text over a red ring, get the English "New" from StringTable (General_New)
+        public static void TranslateNewBadges(Component root)
+        {
+            foreach (Text text in root.GetComponentsInChildren<Text>(true))
+            {
+                if (text.text == null || text.text.Trim() != "新")
+                {
+                    continue;
+                }
+
+                text.text = Heluo.Game.Data.Get<StringTable>("General_New")?.Text ?? "New";
+                text.font = UIFont;
+                //The box is sized for one Chinese character. Wrapping or truncating would hide the word, so it may overflow
+                //and we shrink the font ourselves until the word is as wide as the box
+                text.resizeTextForBestFit = false;
+                text.horizontalOverflow = HorizontalWrapMode.Overflow;
+                text.verticalOverflow = VerticalWrapMode.Overflow;
+                float width = text.rectTransform.rect.width;
+                if (width > 0 && text.preferredWidth > width)
+                {
+                    text.fontSize = Mathf.Max(8, Mathf.FloorToInt(text.fontSize * width / text.preferredWidth));
+                }
+            }
+        }
+
         private static Font LoadFont(string name)
         {
             Font arial = Resources.GetBuiltinResource<Font>("Arial.ttf");
@@ -6329,7 +6354,7 @@ namespace EnglishPatch.Hooks
         }
     }
 
-    //The 新 ("new") badges on the inventory tabs, if they are a text, get the English "New" from StringTable (General_New)
+    //The 新 ("new") badges on the inventory tabs, if they are a text. Their tabs are set up after the screen is shown.
     [HarmonyPatch(typeof(UIInventory), "UpdateTabNotice")]
     public class UIInventory_UpdateTabNotice_Hook
     {
@@ -6340,23 +6365,23 @@ namespace EnglishPatch.Hooks
                 return;
             }
 
-            foreach (Text text in ___TabNotices[index].GetComponentsInChildren<Text>(true))
+            TextUtil.TranslateNewBadges(___TabNotices[index].transform);
+        }
+    }
+
+    /*
+     * The 新 ("new") badges of every other screen (library tabs and books, forge, alchemy, medicine, shop, commissions,
+     * save and load tabs, help entries): a text written into the prefab, hidden or shown later. Done every time a screen
+     * is shown, items added to its lists are copies of texts already changed.
+     */
+    [HarmonyPatch(typeof(UIForm), "Show")]
+    public class UIForm_Show_NewBadge_Hook
+    {
+        public static void Postfix(UIForm __instance)
+        {
+            if (__instance != null)
             {
-                if (text.text.Trim() == "新")
-                {
-                    text.text = Heluo.Game.Data.Get<StringTable>("General_New")?.Text ?? "New";
-                    text.font = TextUtil.UIFont;
-                    //The box is sized for one Chinese character. Wrapping or truncating would hide the word, so it may overflow
-                    //and we shrink the font ourselves until the word is as wide as the box
-                    text.resizeTextForBestFit = false;
-                    text.horizontalOverflow = HorizontalWrapMode.Overflow;
-                    text.verticalOverflow = VerticalWrapMode.Overflow;
-                    float width = text.rectTransform.rect.width;
-                    if (width > 0 && text.preferredWidth > width)
-                    {
-                        text.fontSize = Mathf.Max(8, Mathf.FloorToInt(text.fontSize * width / text.preferredWidth));
-                    }
-                }
+                TextUtil.TranslateNewBadges(__instance);
             }
         }
     }
