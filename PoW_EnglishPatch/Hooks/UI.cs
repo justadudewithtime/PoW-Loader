@@ -652,7 +652,7 @@ namespace EnglishPatch.Hooks
                 return;
             }
 
-            text.text = text.text.Replace(' ', ' ');
+            text.text = text.text.Replace('\u00A0', ' ');
             text.horizontalOverflow = HorizontalWrapMode.Wrap;
             float height = text.rectTransform.rect.height;
             while (text.preferredHeight > height && text.fontSize > minSize)
@@ -692,7 +692,7 @@ namespace EnglishPatch.Hooks
         //Shrinks a text to fit its rect and lets it wrap at spaces
         public static void FitToBox(Text text, int minSize)
         {
-            text.text = text.text.Replace(' ', ' ');
+            text.text = text.text.Replace('\u00A0', ' ');
             if (!text.resizeTextForBestFit)
             {
                 text.resizeTextMaxSize = text.fontSize;
@@ -1506,7 +1506,7 @@ namespace EnglishPatch.Hooks
             }
 
             //StringTool.Replace turned the spaces into non-breaking spaces, which made English break in the middle of words
-            msg = msg.Replace(' ', ' ');
+            msg = msg.Replace('\u00A0', ' ');
 
             if (!_OriginalFontSize.TryGetValue(___pmdText, out int originalSize))
             {
@@ -2830,6 +2830,15 @@ namespace EnglishPatch.Hooks
                 ___text_current.font = font;
             }
 
+            //The status formats come from StringTable, whose spaces the game turns into non-breaking ones: "survives (Not Achieved)"
+            //was one word, and the line broke after the character's name. Normal spaces let it break before the status, a short
+            //status in brackets keeps its own spaces non-breaking so it is never split
+            if (___text_win_lose != null && ___text_win_lose.text != null && ___text_win_lose.text.IndexOf('\u00A0') >= 0)
+            {
+                string text = ___text_win_lose.text.Replace('\u00A0', ' ');
+                ___text_win_lose.text = _ShortBrackets.Replace(text, m => m.Value.Replace(' ', '\u00A0'));
+            }
+
             Schedule(__instance, ___text_current, ___text_win_lose, ___tipObj);
         }
 
@@ -2847,6 +2856,9 @@ namespace EnglishPatch.Hooks
                 }
             });
         }
+
+        //"(Not Achieved)", "(Achieved)", "(Failure)": a bracket short enough to always fit on a line
+        private static readonly System.Text.RegularExpressions.Regex _ShortBrackets = new System.Text.RegularExpressions.Regex(@"\([^()\n]{1,14}\)");
 
         private static readonly AccessTools.FieldRef<WgBattleRound, Text> _Current = AccessTools.FieldRefAccess<WgBattleRound, Text>("text_current");
         private static readonly AccessTools.FieldRef<WgBattleRound, Text> _WinLose = AccessTools.FieldRefAccess<WgBattleRound, Text>("text_win_lose");
@@ -3994,7 +4006,7 @@ namespace EnglishPatch.Hooks
             TextUtil.ShrinkToWidth(___community_name, 16);
 
             //The game turns every space into a non-breaking space (StringTool.Replace), so English lines broke in the middle of words. Turning them back allows wrapping at spaces.
-            ___community_introduction.text = ___community_introduction.text.Replace(' ', ' ');
+            ___community_introduction.text = ___community_introduction.text.Replace('\u00A0', ' ');
 
             //Longer bios got cut off at the bottom of the Info box, so we let the text shrink until it fits with a little room
             //above and below, then justify it. It sits in the middle of the box, so the room is the same at the top and bottom.
@@ -5566,9 +5578,9 @@ namespace EnglishPatch.Hooks
             text.horizontalOverflow = HorizontalWrapMode.Wrap;
 
             //Words wrap at spaces, the game's non-breaking spaces made lines break inside words ("fro / m")
-            if (text.text.IndexOf(' ') >= 0)
+            if (text.text.IndexOf('\u00A0') >= 0)
             {
-                text.text = text.text.Replace(' ', ' ');
+                text.text = text.text.Replace('\u00A0', ' ');
             }
             RectTransform rect = text.rectTransform;
             if (TextUtil.OwningForm(titlevalue) is UIAttributeList)
