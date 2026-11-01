@@ -109,8 +109,7 @@ namespace EnglishPatch
                 "the fonts, and every game controller axis or button that moves. Send this file with a problem report, it shows " +
                 "what differs from another PC. Set it to false to stop writing it. Restart the game after changing it.").Value;
             //Which build runs, in LogOutput.log, whatever the setting
-            Logger.LogInfo("English Patch " + _VERSION + ", build " + Diagnostics.Fingerprint(typeof(EnglishPatch).Assembly.Location)
-                + ", diagnostic log " + (DiagnosticLog ? "on" : "off (DiagnosticLog in BepInEx/config/plugins.englishpatch.cfg)"));
+            Logger.LogInfo("English Patch " + _VERSION + ", build " + Diagnostics.Build + ", diagnostic log " + (DiagnosticLog ? "on" : "off (DiagnosticLog in BepInEx/config/plugins.englishpatch.cfg)"));
             if (DiagnosticLog)
             {
                 Diagnostics.Begin(this, Logger);

@@ -90,17 +90,23 @@ namespace EnglishPatch.Hooks
             }
         }
 
+        //Texts of the screen being searched for badges, one list for every search (a screen is searched each time it is shown)
+        private static readonly System.Collections.Generic.List<Text> _BadgeSearch = new System.Collections.Generic.List<Text>();
+
         //The 新 ("new") badges under root, a text over a red ring, get the English "New" from StringTable (General_New)
         public static void TranslateNewBadges(Component root)
         {
-            foreach (Text text in root.GetComponentsInChildren<Text>(true))
+            string english = null;
+            root.GetComponentsInChildren(true, _BadgeSearch);
+            foreach (Text text in _BadgeSearch)
             {
                 if (text.text == null || text.text.Trim() != "新")
                 {
                     continue;
                 }
 
-                text.text = Heluo.Game.Data.Get<StringTable>("General_New")?.Text ?? "New";
+                english = english ?? Heluo.Game.Data.Get<StringTable>("General_New")?.Text ?? "New";
+                text.text = english;
                 text.font = UIFont;
                 //The box is sized for one Chinese character. Wrapping or truncating would hide the word, so it may overflow
                 //and we shrink the font ourselves until the word is as wide as the box
@@ -113,6 +119,7 @@ namespace EnglishPatch.Hooks
                     text.fontSize = Mathf.Max(8, Mathf.FloorToInt(text.fontSize * width / text.preferredWidth));
                 }
             }
+            _BadgeSearch.Clear();
         }
 
         private static Font LoadFont(string name)

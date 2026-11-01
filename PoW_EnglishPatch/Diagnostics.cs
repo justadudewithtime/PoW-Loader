@@ -24,23 +24,26 @@ namespace EnglishPatch
     {
         private static readonly string _Path = Path.Combine(Paths.BepInExRootPath, "EnglishPatch_Diagnostics.log");
 
+        //Kept open while the game runs, every line is flushed so the log is complete even after a crash
+        private static StreamWriter _Writer;
+
         //A broken controller can move an axis every frame, the log stops growing after this many lines
         private const int MaxLines = 3000;
         private static int _Lines;
 
         public static void Log(string line)
         {
-            if (_Lines >= MaxLines)
+            if (_Writer == null || _Lines >= MaxLines)
             {
                 return;
             }
             try
             {
                 _Lines++;
-                File.AppendAllText(_Path, System.DateTime.Now.ToString("HH:mm:ss ") + line + "\n");
+                _Writer.Write(System.DateTime.Now.ToString("HH:mm:ss ") + line + "\n");
                 if (_Lines == MaxLines)
                 {
-                    File.AppendAllText(_Path, "(log full, nothing more is written)\n");
+                    _Writer.Write("(log full, nothing more is written)\n");
                 }
             }
             catch (System.Exception)
@@ -49,19 +52,29 @@ namespace EnglishPatch
             }
         }
 
-        //The start of the SHA-256 of a file, tells two builds of the same size apart
-        public static string Fingerprint(string file)
+        private static string _Build;
+
+        //The start of the SHA-256 of this DLL, tells two builds of the same size apart. Worked out once.
+        public static string Build
         {
-            try
+            get
             {
-                using (var sha = System.Security.Cryptography.SHA256.Create())
+                if (_Build == null)
                 {
-                    return System.BitConverter.ToString(sha.ComputeHash(File.ReadAllBytes(file)), 0, 4).Replace("-", "").ToLowerInvariant();
+                    try
+                    {
+                        using (var sha = System.Security.Cryptography.SHA256.Create())
+                        {
+                            byte[] hash = sha.ComputeHash(File.ReadAllBytes(typeof(EnglishPatch).Assembly.Location));
+                            _Build = System.BitConverter.ToString(hash, 0, 4).Replace("-", "").ToLowerInvariant();
+                        }
+                    }
+                    catch (System.Exception)
+                    {
+                        _Build = "unknown";
+                    }
                 }
-            }
-            catch (System.Exception)
-            {
-                return "unknown";
+                return _Build;
             }
         }
 
@@ -70,7 +83,8 @@ namespace EnglishPatch
         {
             try
             {
-                File.WriteAllText(_Path, "English Patch diagnostics log\n");
+                _Writer = new StreamWriter(_Path, false, new System.Text.UTF8Encoding(false)) { AutoFlush = true };
+                _Writer.Write("English Patch diagnostics log\n");
             }
             catch (System.Exception e)
             {
@@ -110,7 +124,7 @@ namespace EnglishPatch
 
         private static void LogModFiles()
         {
-            Log("English Patch " + EnglishPatch.Version + ", build " + Fingerprint(typeof(EnglishPatch).Assembly.Location) + ": " + Describe(typeof(EnglishPatch).Assembly.Location));
+            Log("English Patch " + EnglishPatch.Version + ", build " + Build + ": " + Describe(typeof(EnglishPatch).Assembly.Location));
             Log("Mod API: " + Describe(typeof(ModAPI.ModAPI).Assembly.Location));
 
             foreach (PluginInfo info in Chainloader.PluginInfos.Values)
@@ -206,41 +220,82 @@ namespace EnglishPatch
             "PS4 DPad Horizontal", "PS4 DPad Vertical"
         };
 
-        //Axis => last value written, rounded to a tenth. Axes this game does not define are dropped.
-        private readonly Dictionary<string, float> _AxisValues = new Dictionary<string, float>();
+        //The axes this game defines and the last value written for each, in half steps: a stick or pedal resting
+        //off-centre shows, small moves of a stick do not fill the log
+        private string[] _DefinedAxes = new string[0];
+        private float[] _AxisValues = new float[0];
         private readonly HashSet<KeyCode> _HeldButtons = new HashSet<KeyCode>();
         private string _Joysticks;
+        private int _Controllers;
+        private float _NextControllerCheck;
         private bool _KeyW;
         private bool _DataChecked;
         private float _NextDataCheck;
+
+        //Asking Windows for the controllers can take long, the game itself does it once. Every few seconds is enough to see one plugged in.
+        private const float ControllerCheckInterval = 2f;
+
+        //Buttons per controller in Unity's KeyCode (Joystick1Button0 to Joystick1Button19)
+        private const int ButtonsPerController = 20;
 
         private void Start()
         {
             Section("Fonts", LogFonts);
 
+            var defined = new List<string>();
             foreach (string axis in _Axes)
             {
                 try
                 {
                     Input.GetAxisRaw(axis);
-                    _AxisValues[axis] = 0f;
+                    defined.Add(axis);
                 }
                 catch (System.Exception)
                 {
                     Log("Axis not defined by the game: " + axis);
                 }
             }
+            _DefinedAxes = defined.ToArray();
+            _AxisValues = new float[_DefinedAxes.Length];
         }
 
         private void Update()
         {
-            string joysticks = string.Join(" | ", Input.GetJoystickNames().Select(name => string.IsNullOrEmpty(name) ? "(empty slot)" : name).ToArray());
+            float now = Time.unscaledTime;
+            if (now >= _NextControllerCheck)
+            {
+                _NextControllerCheck = now + ControllerCheckInterval;
+                CheckControllers();
+            }
+
+            //The input is only watched while a controller is plugged in, without one nothing moves the axes
+            if (_Controllers > 0)
+            {
+                LogInput();
+            }
+
+            if (!_DataChecked && now >= _NextDataCheck)
+            {
+                _NextDataCheck = now + 2f;
+                LogLoadedText();
+            }
+        }
+
+        private void CheckControllers()
+        {
+            string[] names = Input.GetJoystickNames();
+            string joysticks = string.Join(" | ", names.Select(name => string.IsNullOrEmpty(name) ? "(empty slot)" : name).ToArray());
+            //Unity keeps an empty slot for a controller that was unplugged
+            _Controllers = names.Any(name => !string.IsNullOrEmpty(name)) ? Mathf.Min(names.Length, 8) : 0;
             if (joysticks != _Joysticks)
             {
                 _Joysticks = joysticks;
                 Log("Game controllers reported by Windows: " + (joysticks.Length > 0 ? joysticks : "none"));
             }
+        }
 
+        private void LogInput()
+        {
             bool keyW = Input.GetKey(KeyCode.W);
             if (keyW != _KeyW)
             {
@@ -248,18 +303,20 @@ namespace EnglishPatch
                 Log("Keyboard W " + (keyW ? "down" : "up"));
             }
 
-            foreach (string axis in _AxisValues.Keys.ToList())
+            for (int i = 0; i < _DefinedAxes.Length; i++)
             {
-                float value = Mathf.Round(Input.GetAxisRaw(axis) * 10f) / 10f;
-                if (value != _AxisValues[axis])
+                float value = Mathf.Round(Input.GetAxisRaw(_DefinedAxes[i]) * 2f) / 2f;
+                if (value != _AxisValues[i])
                 {
-                    _AxisValues[axis] = value;
-                    Log("Axis " + axis + " = " + value.ToString("0.0") + (axis == "Vertical" && value > 0f && !keyW ? " (W is not pressed: a controller moves it)" : ""));
+                    _AxisValues[i] = value;
+                    Log("Axis " + _DefinedAxes[i] + " = " + value.ToString("0.0", System.Globalization.CultureInfo.InvariantCulture)
+                        + (_DefinedAxes[i] == "Vertical" && value > 0f && !keyW ? " (W is not pressed: a controller moves it)" : ""));
                 }
             }
 
             //Per controller (Joystick1Button0...), the generic JoystickButton0... would write every press twice
-            for (KeyCode button = KeyCode.Joystick1Button0; button <= KeyCode.Joystick8Button19; button++)
+            KeyCode last = KeyCode.Joystick1Button0 + _Controllers * ButtonsPerController - 1;
+            for (KeyCode button = KeyCode.Joystick1Button0; button <= last; button++)
             {
                 bool held = Input.GetKey(button);
                 if (held ? _HeldButtons.Add(button) : _HeldButtons.Remove(button))
@@ -267,12 +324,12 @@ namespace EnglishPatch
                     Log("Controller " + button + (held ? " down" : " up"));
                 }
             }
+        }
 
-            if (!_DataChecked && Time.unscaledTime >= _NextDataCheck)
-            {
-                _NextDataCheck = Time.unscaledTime + 2f;
-                LogLoadedText();
-            }
+        private void OnApplicationQuit()
+        {
+            _Writer?.Dispose();
+            _Writer = null;
         }
 
         //The text the game really got for the checked row, once its data is loaded
