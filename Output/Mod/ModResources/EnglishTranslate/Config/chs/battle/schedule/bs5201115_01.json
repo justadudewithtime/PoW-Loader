@@ -251,7 +251,7 @@
     },
     {
       "Index": 35,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Zhong Ruoxin，Cheng Yong and He Changrui!\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Zhong Ruoxin, Cheng Yong and He Changrui!\"} ",
       "Next": -1,
       "Child": []
     },

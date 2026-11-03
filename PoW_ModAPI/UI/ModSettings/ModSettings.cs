@@ -12,11 +12,6 @@ namespace PoW_ModAPI.UI.ModSettings
 {
     internal class ModSettings : UIForm
     {
-        protected override void Awake()
-        {
-            base.Awake();
-        }
-
         public override void Show()
         {
             GameCamera mainCamera = Game.MainCamera;

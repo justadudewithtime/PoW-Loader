@@ -1077,7 +1077,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"ChangCharactereName\": \"in0201\", \"Chu\", \" Tianbi\"} ",
+      "Node": "{ \"ChangCharactereName\": \"in0201\", \"Chu \", \"Tianbi\"} ",
       "Next": 198,
       "Prallel": 216
     },

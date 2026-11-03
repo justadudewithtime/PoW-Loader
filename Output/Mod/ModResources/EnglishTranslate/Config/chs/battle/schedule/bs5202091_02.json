@@ -367,7 +367,7 @@
     },
     {
       "Index": 50,
-      "Node": "{ \"BattleResultChangeLoseTip\" : \"Any enemy breaks through the defense line or any of Wu Hao，{name_1} {name_2} is defeated\"} ",
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"Any enemy breaks through the defense line or any of Wu Hao, {name_1} {name_2} is defeated\"} ",
       "Next": 51,
       "Child": []
     },

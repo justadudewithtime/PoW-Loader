@@ -40,7 +40,7 @@
     },
     {
       "Index": 5,
-      "Node": "{ \"BattleResultAddSecondaryGoal\" : \"bsc12055040201\", \"During the battle against Mu Ying，all party members survive\"} ",
+      "Node": "{ \"BattleResultAddSecondaryGoal\" : \"bsc12055040201\", \"During the battle against Mu Ying, all party members survive\"} ",
       "Next": -1,
       "Child": []
     },

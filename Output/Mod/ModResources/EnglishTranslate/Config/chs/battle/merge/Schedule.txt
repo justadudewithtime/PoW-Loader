@@ -740,7 +740,7 @@
     }
   ],
   "Remark": "",
-  "WinTip": "One party member reaches escape point，or defeats all the enemies!",
+  "WinTip": "One party member reaches escape point, or defeats all the enemies!",
   "LoseTip": "All friendly units are defeated or the battle exceeds five turns"
 }{
   "Id": "bs1010201_01",
@@ -3162,7 +3162,7 @@
   ],
   "Remark": "锺若昕四阶：打流氓营救戴彤霞",
   "WinTip": "Defeat all rogues!",
-  "LoseTip": "{name_1} {name_2}，Zhong Ruoxin and Dai Tongxia are defeated"
+  "LoseTip": "{name_1} {name_2}, Zhong Ruoxin and Dai Tongxia are defeated"
 }{
   "Id": "bs1010304_02",
   "Name": "bs1010304_02",
@@ -5145,7 +5145,7 @@
     }
   ],
   "Remark": "锺若昕六：二战童天易",
-  "WinTip": "Defeated Tong Tian Yi，Dai Tongxia",
+  "WinTip": "Defeated Tong Tian Yi, Dai Tongxia",
   "LoseTip": "Zhong Ruoxin and {name_1} {name_2} are defeated"
 }{
   "Id": "bs1010307_01",
@@ -17114,7 +17114,7 @@
     },
     {
       "Index": 15,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Avenge your family，kill the robbers\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Avenge your family, kill the robbers\"} ",
       "Next": -1,
       "Child": []
     },
@@ -24661,7 +24661,7 @@
     }
   ],
   "Remark": "净三阶采药",
-  "WinTip": "Collect <color=#FF0000>Stretching Grass，Red Flower</color> and <color=#FF0000>Old Stork grass</color>。",
+  "WinTip": "Collect <color=#FF0000>Stretching Grass, Red Flower</color> and <color=#FF0000>Old Stork grass</color>。",
   "LoseTip": "{name_1} {name_2} is defeated"
 }{
   "Id": "bs1010904_00",
@@ -32999,7 +32999,7 @@
   ],
   "Remark": "武辙五阶战斗",
   "WinTip": "Protect the objective and defeat all Hall of Vicissitudes assassins",
-  "LoseTip": "Any of Wu Zhe，Cai Si，Old Man or Woman is defeated"
+  "LoseTip": "Any of Wu Zhe, Cai Si, Old Man or Woman is defeated"
 }{
   "Id": "bs1011106_01",
   "Name": "武辙六疯狂锻炼",
@@ -55898,7 +55898,7 @@
     }
   ],
   "Remark": "",
-  "WinTip": "One party member reaches escape point，or defeats all the enemies!",
+  "WinTip": "One party member reaches escape point, or defeats all the enemies!",
   "LoseTip": "All friendly units are defeated or the battle exceeds five turns"
 }{
   "Id": "bs1203201_02",
@@ -60438,7 +60438,7 @@
     }
   ],
   "Remark": "",
-  "WinTip": "Suppress coallition of Secret Guard，Northern Flame Guard and Zhenwu Temple!",
+  "WinTip": "Suppress coallition of Secret Guard, Northern Flame Guard and Zhenwu Temple!",
   "LoseTip": "{name_1} {name_2} is defeated"
 }{
   "Id": "bs1205503_01",
@@ -61551,7 +61551,7 @@
     },
     {
       "Index": 5,
-      "Node": "{ \"BattleResultAddSecondaryGoal\" : \"bsc12055040201\", \"During the battle against Mu Ying，all party members survive\"} ",
+      "Node": "{ \"BattleResultAddSecondaryGoal\" : \"bsc12055040201\", \"During the battle against Mu Ying, all party members survive\"} ",
       "Next": -1,
       "Child": []
     },
@@ -75061,7 +75061,7 @@
     },
     {
       "Index": 210,
-      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1} {name_2}，Shi Kun，Tang Yun，Shangguan Yan，or Tang Sanchang are defeated\"} ",
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1} {name_2}, Shi Kun, Tang Yun, Shangguan Yan, or Tang Sanchang are defeated\"} ",
       "Next": 515,
       "Prallel": -1,
       "Child": []
@@ -79216,7 +79216,7 @@
     },
     {
       "Index": 210,
-      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1} {name_2}，Shi Kun，Tang Yun，Shangguan Yan，or Tang Sanchang are defeated\"} ",
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1} {name_2}, Shi Kun, Tang Yun, Shangguan Yan, or Tang Sanchang are defeated\"} ",
       "Next": 513,
       "Prallel": -1,
       "Child": []
@@ -103694,7 +103694,7 @@
     },
     {
       "Index": 88,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeated Gui Gu，Chu Tianbi，Dao Heng，Guan Qiu Gong\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeated Gui Gu, Chu Tianbi, Dao Heng, Guan Qiu Gong\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []
@@ -104083,7 +104083,7 @@
     },
     {
       "Index": 136,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeated Gui Gu，Chu Tianbi，Dao Heng，Guan Qiu Gong\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeated Gui Gu, Chu Tianbi, Dao Heng, Guan Qiu Gong\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []
@@ -104406,7 +104406,7 @@
     },
     {
       "Index": 176,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeated Gui Gu，Chu Tianbi，Dao Heng，Guan Qiu Gong\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeated Gui Gu, Chu Tianbi, Dao Heng, Guan Qiu Gong\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []
@@ -104729,7 +104729,7 @@
     },
     {
       "Index": 216,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeated Gui Gu，Chu Tianbi，Dao Heng，Guan Qiu Gong\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeated Gui Gu, Chu Tianbi, Dao Heng, Guan Qiu Gong\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []
@@ -108512,7 +108512,7 @@
     }
   ],
   "Remark": "",
-  "WinTip": "Defeated Duan Xiaolie，Huo Tan，Ning Chuchu，Di Yan，Qi Feng",
+  "WinTip": "Defeated Duan Xiaolie, Huo Tan, Ning Chuchu, Di Yan, Qi Feng",
   "LoseTip": "All friendly units are defeated"
 }{
   "Id": "bs1310301_05",
@@ -109269,7 +109269,7 @@
     },
     {
       "Index": 93,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Holy Rock Sect，Zhenwu Temple，Hall of Vicissitudes\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Holy Rock Sect, Zhenwu Temple, Hall of Vicissitudes\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []
@@ -131666,7 +131666,7 @@
     },
     {
       "Index": 42,
-      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1} {name_2}，Chu Tianbi or Duan Xiaolie were defeated\"} ",
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1} {name_2}, Chu Tianbi or Duan Xiaolie were defeated\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []
@@ -150701,7 +150701,7 @@
     },
     {
       "Index": 1533,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat <color=#FF0000>Ling Wujie</color> and <color=#FF0000>Ling Yun</color> first，so Shui Ruo Chan reveal her weakness\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat <color=#FF0000>Ling Wujie</color> and <color=#FF0000>Ling Yun</color> first, so Shui Ruo Chan reveal her weakness\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []
@@ -160221,7 +160221,7 @@
     },
     {
       "Index": 1148,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat <color=#FF0000>Ling Wujie</color> and <color=#FF0000>Ling Yun</color> first，so Shui Ruo Chan reveal her weakness\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat <color=#FF0000>Ling Wujie</color> and <color=#FF0000>Ling Yun</color> first, so Shui Ruo Chan reveal her weakness\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []
@@ -164010,7 +164010,7 @@
     },
     {
       "Index": 61,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Shui Ruo Chan with the element that counters her's，or 。。。。。。?\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Shui Ruo Chan with the element that counters her's, or 。。。。。。?\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []
@@ -170851,7 +170851,7 @@
     },
     {
       "Index": 45,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Beat Tang Yun，Lou Yanyu，Gongsun Ming!\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Beat Tang Yun, Lou Yanyu, Gongsun Ming!\"} ",
       "Next": 46,
       "Child": []
     },
@@ -171034,7 +171034,7 @@
     },
     {
       "Index": 71,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Jiang Hongbo，Xiang Tianlei，Tian Tao!\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Jiang Hongbo, Xiang Tianlei, Tian Tao!\"} ",
       "Next": 72,
       "Child": []
     },
@@ -171509,7 +171509,7 @@
     },
     {
       "Index": 45,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Beat Tang Yun，Lou Yanyu，Gongsun Ming!\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Beat Tang Yun, Lou Yanyu, Gongsun Ming!\"} ",
       "Next": 46,
       "Child": []
     },
@@ -171692,7 +171692,7 @@
     },
     {
       "Index": 71,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Jiang Hongbo，Xiang Tianlei，Tian Tao!\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Jiang Hongbo, Xiang Tianlei, Tian Tao!\"} ",
       "Next": 72,
       "Child": []
     },
@@ -172057,7 +172057,7 @@
     }
   ],
   "Remark": "",
-  "WinTip": "Using elemental counter，defeat all automatons within 5 turns",
+  "WinTip": "Using elemental counter, defeat all automatons within 5 turns",
   "LoseTip": "All friendly units are defeated or the battle reaches the sixth turns"
 }{
   "Id": "bs5104201_00",
@@ -176007,7 +176007,7 @@
     },
     {
       "Index": 71,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"{name_1} {name_2} arrive at the escape point (Additional objective: Defeat Nan Feihuang，reduce Huo Tan's HP to 60%)\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"{name_1} {name_2} arrive at the escape point (Additional objective: Defeat Nan Feihuang, reduce Huo Tan's HP to 60%)\"} ",
       "Next": 72,
       "Child": []
     },
@@ -176125,7 +176125,7 @@
     }
   ],
   "Remark": "［传书］唐三长特别修业（枪法）",
-  "WinTip": "{name_1} {name_2} obtain Mixed Grain Wine (Additional objective: Defeat Nan Feihuang，reduce Huo Tan's HP to 70%)",
+  "WinTip": "{name_1} {name_2} obtain Mixed Grain Wine (Additional objective: Defeat Nan Feihuang, reduce Huo Tan's HP to 70%)",
   "LoseTip": "{name_1} {name_2} is defeated"
 }{
   "Id": "bs5104207_00",
@@ -177825,7 +177825,7 @@
     },
     {
       "Index": 23,
-      "Node": "{ \"BattleResultChangeLoseTip\" : \"Either Nicey，Fiercy or Zhong Ruoxin was defeated\"} ",
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"Either Nicey, Fiercy or Zhong Ruoxin was defeated\"} ",
       "Next": 24,
       "Child": []
     },
@@ -180896,7 +180896,7 @@
     },
     {
       "Index": 25,
-      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1} {name_2}，Nan Feihuang，and Zhang Rong are defeated\"} ",
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1} {name_2}, Nan Feihuang, and Zhang Rong are defeated\"} ",
       "Next": 26,
       "Child": []
     },
@@ -182897,7 +182897,7 @@
     },
     {
       "Index": 39,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"{name_1} {name_2} reached the escape point，or defeat all enemies\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"{name_1} {name_2} reached the escape point, or defeat all enemies\"} ",
       "Next": 40,
       "Child": []
     },
@@ -183988,7 +183988,7 @@
     },
     {
       "Index": 26,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Capture the Mechanical Parasol in 5 turns（Additional objectives: Within seven turns，defeat the Thief Leader，and martial artist survives）\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Capture the Mechanical Parasol in 5 turns（Additional objectives: Within seven turns, defeat the Thief Leader, and martial artist survives）\"} ",
       "Next": 27,
       "Child": []
     },
@@ -184108,7 +184108,7 @@
     },
     {
       "Index": 43,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Capture the Mechanical Parasol in 5 turns（Additional objectives: Within seven turns，defeat the Thief Leader，and martial artist survives）\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Capture the Mechanical Parasol in 5 turns（Additional objectives: Within seven turns, defeat the Thief Leader, and martial artist survives）\"} ",
       "Next": 44,
       "Child": []
     },
@@ -186911,7 +186911,7 @@
     },
     {
       "Index": 52,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Beat Gray Wolf King，Black Bear King and White Tiger King! (Additional objectives: Cowardly merchant，Hunter From Afar，Hunter's Assistant survive or reach the escape point!)\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Beat Gray Wolf King, Black Bear King and White Tiger King! (Additional objectives: Cowardly merchant, Hunter From Afar, Hunter's Assistant survive or reach the escape point!)\"} ",
       "Next": 53,
       "Child": []
     },
@@ -190196,7 +190196,7 @@
     },
     {
       "Index": 38,
-      "Node": "{ \"BattleResultChangeLoseTip\" : \"Defeated，the division commander was left alone to retreat from the enemy。\"} ",
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"Defeated, the division commander was left alone to retreat from the enemy。\"} ",
       "Next": 39,
       "Child": []
     },
@@ -190557,7 +190557,7 @@
     },
     {
       "Index": 89,
-      "Node": "{ \"BattleResultChangeLoseTip\" : \"Defeated，the division commander was left alone to retreat from the enemy。\"} ",
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"Defeated, the division commander was left alone to retreat from the enemy。\"} ",
       "Next": 90,
       "Child": []
     },
@@ -207081,7 +207081,7 @@
     },
     {
       "Index": 19,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Duan Hong'er，Nan Feihuang，Yun Xiaohou!\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Duan Hong'er, Nan Feihuang, Yun Xiaohou!\"} ",
       "Next": -1,
       "Child": []
     },
@@ -207442,7 +207442,7 @@
     },
     {
       "Index": 35,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Zhong Ruoxin，Cheng Yong and He Changrui!\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Zhong Ruoxin, Cheng Yong and He Changrui!\"} ",
       "Next": -1,
       "Child": []
     },
@@ -207695,7 +207695,7 @@
     },
     {
       "Index": 19,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Shangguan Lin，Shangguan Xu，Wu Zhe!\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Shangguan Lin, Shangguan Xu, Wu Zhe!\"} ",
       "Next": 20,
       "Child": []
     },
@@ -208359,7 +208359,7 @@
     },
     {
       "Index": 19,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Duan Hong'er，Nan Feihuang，Yun Xiaohou!\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Duan Hong'er, Nan Feihuang, Yun Xiaohou!\"} ",
       "Next": -1,
       "Child": []
     },
@@ -208720,7 +208720,7 @@
     },
     {
       "Index": 35,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Zhong Ruoxin，Cheng Yong and He Changrui!\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Zhong Ruoxin, Cheng Yong and He Changrui!\"} ",
       "Next": -1,
       "Child": []
     },
@@ -208980,7 +208980,7 @@
     },
     {
       "Index": 20,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Di Ting，Xiao Qianling，Wu Zhe!\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Di Ting, Xiao Qianling, Wu Zhe!\"} ",
       "Next": 21,
       "Child": []
     },
@@ -227160,7 +227160,7 @@
     },
     {
       "Index": 50,
-      "Node": "{ \"BattleResultChangeLoseTip\" : \"Any enemy breaks through the defense line or any of Wu Hao，{name_1} {name_2} is defeated\"} ",
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"Any enemy breaks through the defense line or any of Wu Hao, {name_1} {name_2} is defeated\"} ",
       "Next": 51,
       "Child": []
     },
@@ -229141,7 +229141,7 @@
     },
     {
       "Index": 10,
-      "Node": "{ \"BattleResultAddSecondaryGoal\" : \"bf521040101_01\", \"Shangguan Xu，{name_1} {name_2} and {party02} reached the disengagement point within 10 turns\"} ",
+      "Node": "{ \"BattleResultAddSecondaryGoal\" : \"bf521040101_01\", \"Shangguan Xu, {name_1} {name_2} and {party02} reached the disengagement point within 10 turns\"} ",
       "Next": 11,
       "Child": []
     },
@@ -229631,8 +229631,8 @@
     }
   ],
   "Remark": "",
-  "WinTip": "Shangguan Xu，{name_1} {name_2} and {party02} reached the disengagement point within 15 turns",
-  "LoseTip": "Shangguan Xu，{name_1} {name_2} and {party02} failed to reach the disengagement point within 15 turns or any of them are defeated"
+  "WinTip": "Shangguan Xu, {name_1} {name_2} and {party02} reached the disengagement point within 15 turns",
+  "LoseTip": "Shangguan Xu, {name_1} {name_2} and {party02} failed to reach the disengagement point within 15 turns or any of them are defeated"
 }{
   "Id": "bs5210401_02",
   "Name": "上官家宴平乱战",
@@ -230603,8 +230603,8 @@
     }
   ],
   "Remark": "",
-  "WinTip": "Shangguan Xu，{name_1} {name_2} and {party02} reached the disengagement point",
-  "LoseTip": "Any of Shangguan Xu，{name_1} {name_2} and {party02} is defeated"
+  "WinTip": "Shangguan Xu, {name_1} {name_2} and {party02} reached the disengagement point",
+  "LoseTip": "Any of Shangguan Xu, {name_1} {name_2} and {party02} is defeated"
 }{
   "Id": "bs5210401_03",
   "Name": "上官家宴BOSS战",
@@ -243014,8 +243014,8 @@
     }
   ],
   "Remark": "",
-  "WinTip": "Shangguan Xu，{name_1} {name_2} and {party02} reached the disengagement point within 10 turns",
-  "LoseTip": "Shangguan Xu，{name_1} {name_2} and {party02} failed to reach the disengagement point within 10 turns or any of them are defeated"
+  "WinTip": "Shangguan Xu, {name_1} {name_2} and {party02} reached the disengagement point within 10 turns",
+  "LoseTip": "Shangguan Xu, {name_1} {name_2} and {party02} failed to reach the disengagement point within 10 turns or any of them are defeated"
 }{
   "Id": "test_4vs4",
   "Name": "test_4vs4",
@@ -243155,7 +243155,7 @@
     }
   ],
   "Remark": "测试用战斗",
-  "WinTip": "One，two，three，four，five，six，seven，eight，ninety，one，two，three，four，five，six，seven，eight，ninety，one，two，three，four，five，six，seven，eight，ninety，one，two，three，four，five，six，seven，eight，ninety",
+  "WinTip": "One, two, three, four, five, six, seven, eight, ninety, one, two, three, four, five, six, seven, eight, ninety, one, two, three, four, five, six, seven, eight, ninety, one, two, three, four, five, six, seven, eight, ninety",
   "LoseTip": ""
 }{
   "Id": "test_4vs4_1",
@@ -243296,7 +243296,7 @@
     }
   ],
   "Remark": "测试用战斗",
-  "WinTip": "One，two，three，four，five，six，seven，eight，ninety，one，two，three，four，five，six，seven，eight，ninety，one，two，three，four，five，six，seven，eight，ninety，one，two，three，four，five，six，seven，eight，ninety",
+  "WinTip": "One, two, three, four, five, six, seven, eight, ninety, one, two, three, four, five, six, seven, eight, ninety, one, two, three, four, five, six, seven, eight, ninety, one, two, three, four, five, six, seven, eight, ninety",
   "LoseTip": ""
 }{
   "Id": "test_ai",
@@ -243381,7 +243381,7 @@
     }
   ],
   "Remark": "测试用战斗",
-  "WinTip": "One，two，three，four，five，six，seven，eight，ninety，one，two，three，four，five，six，seven，eight，ninety，one，two，three，four，five，six，seven，eight，ninety，one，two，three，four，five，six，seven，eight，ninety",
+  "WinTip": "One, two, three, four, five, six, seven, eight, ninety, one, two, three, four, five, six, seven, eight, ninety, one, two, three, four, five, six, seven, eight, ninety, one, two, three, four, five, six, seven, eight, ninety",
   "LoseTip": ""
 }{
   "Id": "test_average_average1",

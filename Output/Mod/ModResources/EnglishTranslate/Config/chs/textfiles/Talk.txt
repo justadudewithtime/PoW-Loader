@@ -60201,7 +60201,7 @@ t1310306_627	in35001	0	0	Now, the time of our lives that do something big is fin
 t1310306_628	in35001	0	0	Whether we succeed or not, we have to do it in a piece to be worthy of our Xia heart, and with a bang!		0	t1310306_629	m_stand00_talk13	0	0
 t1310306_629	in35001	0	0	By the way, that Hall of Vicissitudes kid comes with us too... 		0	t1310306_630		{ "LogicalNode" : [ { "CheckFlag" : 1, 1, "fe1310301_2_51"}  ], 0} 	0
 t1310306_630	in35001	0	0	Never mind, since the wooden man did not say anything, I'll believe him for one more time.		0	t1310306_631	m_stand00_talk31	0	0
-t1310306_631	in35001	0	0	Jiangzuo's elegy kills without being seen in his early years. He is notorious, his strength wasn't bad，guess we can count him as a strong support.		0	t1310306_632		0	0
+t1310306_631	in35001	0	0	Jiangzuo's elegy kills without being seen in his early years. He is notorious, his strength wasn't bad, guess we can count him as a strong support.		0	t1310306_632		0	0
 t1310306_632	in35001	0	0	Well, I didn't expect that kid to be so young, and let alone ... you guys would have such a friendship with him... 		0			0	0
 t1310306_633	in0209	0	0	...... 		0	t1310306_634		0	0
 t1310306_634	in0209	0	0	Ready to go?		1	t1310306_635,t1310306_636		0	0

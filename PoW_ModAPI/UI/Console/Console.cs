@@ -14,11 +14,6 @@ namespace ModAPI.UI
 
         public static void Unload()
         {
-            _Unload();
-        }
-
-        private static void _Unload()
-        {
             GameObject.Destroy(_Console);
         }
     }

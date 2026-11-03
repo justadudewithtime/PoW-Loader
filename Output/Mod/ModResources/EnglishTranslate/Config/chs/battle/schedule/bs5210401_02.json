@@ -968,6 +968,6 @@
     }
   ],
   "Remark": "",
-  "WinTip": "Shangguan Xu，{name_1} {name_2} and {party02} reached the disengagement point",
-  "LoseTip": "Any of Shangguan Xu，{name_1} {name_2} and {party02} is defeated"
+  "WinTip": "Shangguan Xu, {name_1} {name_2} and {party02} reached the disengagement point",
+  "LoseTip": "Any of Shangguan Xu, {name_1} {name_2} and {party02} is defeated"
 }

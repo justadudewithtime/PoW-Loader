@@ -211,6 +211,6 @@
     }
   ],
   "Remark": "",
-  "WinTip": "Using elemental counter，defeat all automatons within 5 turns",
+  "WinTip": "Using elemental counter, defeat all automatons within 5 turns",
   "LoseTip": "All friendly units are defeated or the battle reaches the sixth turns"
 }

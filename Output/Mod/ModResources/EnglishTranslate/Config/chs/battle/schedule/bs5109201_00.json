@@ -191,7 +191,7 @@
     },
     {
       "Index": 26,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Capture the Mechanical Parasol in 5 turns（Additional objectives: Within seven turns，defeat the Thief Leader，and martial artist survives）\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Capture the Mechanical Parasol in 5 turns（Additional objectives: Within seven turns, defeat the Thief Leader, and martial artist survives）\"} ",
       "Next": 27,
       "Child": []
     },
@@ -311,7 +311,7 @@
     },
     {
       "Index": 43,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Capture the Mechanical Parasol in 5 turns（Additional objectives: Within seven turns，defeat the Thief Leader，and martial artist survives）\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Capture the Mechanical Parasol in 5 turns（Additional objectives: Within seven turns, defeat the Thief Leader, and martial artist survives）\"} ",
       "Next": 44,
       "Child": []
     },

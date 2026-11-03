@@ -153,7 +153,18 @@ namespace ModAPI
 
             //Hooking
             _HM = new Harmony("ModAPI");
-            _HM.PatchAll();
+            //Patching hook by hook, so one hook broken by a game update (e.g. DataManager.ReadData became ambiguous with ReadData<T>) does not stop all the others.
+            foreach (System.Type type in AccessTools.GetTypesFromAssembly(typeof(ModAPI).Assembly))
+            {
+                try
+                {
+                    _HM.CreateClassProcessor(type).Patch();
+                }
+                catch (System.Exception e)
+                {
+                    Debug.LogError("[ModAPI] Could not apply hook " + type.FullName + ": " + e.Message);
+                }
+            }
 
             //Initing in game console (basically just a log viewer right now)
             UI.Console.Init();

@@ -150,7 +150,7 @@
     },
     {
       "Index": 20,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Di Ting，Xiao Qianling，Wu Zhe!\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Di Ting, Xiao Qianling, Wu Zhe!\"} ",
       "Next": 21,
       "Child": []
     },

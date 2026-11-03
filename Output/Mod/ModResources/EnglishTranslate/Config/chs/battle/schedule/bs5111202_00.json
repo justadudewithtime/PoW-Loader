@@ -373,7 +373,7 @@
     },
     {
       "Index": 52,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Beat Gray Wolf King，Black Bear King and White Tiger King! (Additional objectives: Cowardly merchant，Hunter From Afar，Hunter's Assistant survive or reach the escape point!)\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Beat Gray Wolf King, Black Bear King and White Tiger King! (Additional objectives: Cowardly merchant, Hunter From Afar, Hunter's Assistant survive or reach the escape point!)\"} ",
       "Next": 53,
       "Child": []
     },

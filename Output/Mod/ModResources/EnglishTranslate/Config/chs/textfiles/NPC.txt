@@ -375,9 +375,9 @@ in11004	Chen Fu	Sanxia Village Old Man		in11004	False	in11004_h99,in11004_d99,in
 in15021	Chen Hongfu		in15001	in15021	False	in15021_01	0.5
 in11005	Chen Po	Old Woman in the Three Heroes Village		in11005	False	in11005_h99,in11005_d99,in11005_d80,in11005_d20,in11005_d10,in11005_c99,in11005_93,in11005_90,in11005_89,in11005_88,in11005_87,in11005_10	0.5
 in0107	Cheng Yong	Remarks	in0107	in0107	False	in0107_i99,in0107_i98,in0107_i97,in0107_h99,in0107_h98,in0107_h97,in0107_h96,in0107_h95,in0107_h94,in0107_h93,in0107_h92,in0107_h91,in0107_g97,in0107_g96,in0107_e70,in0107_e68,in0107_e60,in0107_d99,in0107_d10,in0107_98,in0107_96,in0107_94,in0107_93,in0107_92,in0107_91,in0107_90,in0107_88,in0107_87,in0107_86,in0107_85,in0107_84,in0107_01	0.5
-in05518	Cheng Yongyi，Disciple of Beiyanwei 02	Remarks	io041215	in05518	False	in05518_11,in05518_02	0.5
-in05522	Cheng Yongyi，Disciple of Beiyanwei 03	Remarks	io041414	in05522	False	in05522_02	0.5
-in05517	Cheng Yongyi，Disciple of the North Flame Guard 01	Remarks	io041414	in05517	False	in05517_11,in05517_02	0.5
+in05518	Cheng Yongyi, Disciple of Beiyanwei 02	Remarks	io041215	in05518	False	in05518_11,in05518_02	0.5
+in05522	Cheng Yongyi, Disciple of Beiyanwei 03	Remarks	io041414	in05522	False	in05522_02	0.5
+in05517	Cheng Yongyi, Disciple of the North Flame Guard 01	Remarks	io041414	in05517	False	in05517_11,in05517_02	0.5
 in05547	Cheng Yongzhuan's martial arts book guards the thieves	Remarks	in05547	in05547	False		0.5
 in05549	Cheng Yongzhuan's martial arts book pretends to be a crude thief	Remarks	in05549	in05549	False		0.5
 in05548	Cheng Yongzhuan's martial arts book pretends to be a farmer thief	Remarks	in05548	in05548	False		0.5
@@ -428,8 +428,8 @@ io27221501	Combat first ranking armed organ man Changmu 01	Remarks	io27221501	in
 io27221502	Combat first ranking armed organ man wood long soldier 02	Remarks	io27221502	in27027	False		0.5
 io221315	Combat first ranking officers and soldiers	Remarks	io221315	io221000	False		0.5
 io272307	Combat gold weapon of the zeroth order armed organ	Remarks	io272307	in27032	False		0.5
-io272325	Combat Jin Changbing，a second tier armed organ	Remarks	io272325	in27026	False	io272325_e75	0.5
-io272335	Combat Kim Changbing，a third tier armed organ	Remarks	io272335	in27026	False		0.5
+io272325	Combat Jin Changbing, a second tier armed organ	Remarks	io272325	in27026	False	io272325_e75	0.5
+io272335	Combat Kim Changbing, a third tier armed organ	Remarks	io272335	in27026	False		0.5
 io271125	Combat of the second tier organs	Remarks	io271125	in27012	False		0.5
 io272227	Combat second level armed organs	Remarks	io272227	in27033	False	io272227_e75	0.5
 io221125	Combat second level officers and soldiers	Remarks	io221125	io221000	False	io221125_d99	0.5
@@ -817,10 +817,10 @@ in05907	Jiang Hongbo's mother	Jiang Hongbo's mother	in04001	in05907	False	in0590
 in11018	Jianghu people	Jianghu people	in11018	in11018	False	in11018_d10,in11018_89,in11018_10,in11018_02	0.5
 io271315	Jin Changbing	Remarks	io271315	in27008	False	io271315_02	0.5
 io271325	Jin Changbing	Remarks	io271325	in27008	False		0.5
-io27231502	Jin Changbing，a member of the first ranking armed forces 02	Remarks	io27231502	in27026	False		0.5
-io272305	Jin Changbing，a member of the zeroth ranking armed forces	Remarks	io272305	in27026	False		0.5
-io27231503	Jin Changbing，the first ranked armed organ 03	Remarks	io27231503	in27026	False		0.5
-io272315	Jin Changbing，the first stage armed organ	Remarks	io272315	in27026	False	io272315_g94	0.5
+io27231502	Jin Changbing, a member of the first ranking armed forces 02	Remarks	io27231502	in27026	False		0.5
+io272305	Jin Changbing, a member of the zeroth ranking armed forces	Remarks	io272305	in27026	False		0.5
+io27231503	Jin Changbing, the first ranked armed organ 03	Remarks	io27231503	in27026	False		0.5
+io272315	Jin Changbing, the first stage armed organ	Remarks	io272315	in27026	False	io272315_g94	0.5
 in21008	Jin Xun		in21008	in21008	False	in21008_h99,in21008_e99,in21008_e80,in21008_e79,in21008_d99,in21008_90,in21008_11	0.5
 in0109	Jing	Remarks	in0109	in0109	False	in0109_h99,in0109_h98,in0109_h97,in0109_h96,in0109_h95,in0109_h94,in0109_h93,in0109_h92,in0109_h91,in0109_h90,in0109_h89,in0109_g75,in0109_g69,in0109_g68,in0109_g67,in0109_e70,in0109_e68,in0109_c99,in0109_88,in0109_01	0.5
 in21007	King Kong		in21007	in21007	False	in21007_h99,in21007_h98,in21007_h97,in21007_h96,in21007_h95,in21007_e00,in21007_d99,in21007_d11,in21007_d10	0.5
@@ -1038,14 +1038,14 @@ io27451903	The first stage of battle	Remarks	io27451903	in27999	False		0.5
 io441214	The first stage of combat Beiyanwei wooden sword	Remarks	io441214	in44001	False		0.5
 io27231703	The first stage of the armed organs of the battle	Remarks	io27231703	in27032	False		0.5
 io27201702	The first stage of the armed organs of the fire weapon weapon 02	Remarks	io27201702	in27035	False		0.5
-io272217	The first stage of the armed organs，the wooden hidden weapon	Remarks	io272217	in27033	False		0.5
+io272217	The first stage of the armed organs, the wooden hidden weapon	Remarks	io272217	in27033	False		0.5
 io441314	The first stage of the battle	Remarks	io441314	in44001	False		0.5
 io441315	The first stage of the battle	Remarks	io441315	in44001	False		0.5
 io27351901	The first stage of the battle of Jinyiwei organs no 01	Remarks	io27351901	in27300	False	io27351901_h99,io27351901_h98	0.5
 io27351903	The first stage of the battle of Jinyiwei organs no 03	Remarks	io27351903	in27300	False	io27351903_h99	0.5
 io27351902	The first stage of the battle of Jinyiwei organs without Wu 02	Remarks	io27351902	in27300	False	io27351902_h99	0.5
 io271317	The first stage of the battle organs gold weapon	Remarks	io271317	in27014	False		0.5
-io431012	The first stage of the battle，the female disciple of Riyue Mountain Villa	Remarks	io431012	in43002	False		0.5
+io431012	The first stage of the battle, the female disciple of Riyue Mountain Villa	Remarks	io431012	in43002	False		0.5
 io431312	The Golden Legs of the First Rise Discipline	Remarks	io431312	in43003	False		0.5
 in05535	The second brother	The second brother	io242216	in05535	False	in05535_90	0.5
 io271524	The second order combat man without a sword	Remarks	io271524	in27001	False		0.5

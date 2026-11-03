@@ -252,7 +252,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"ChangCharactereName\": \"in05835\", \"Corpse\", \" Zombie\"} ",
+      "Node": "{ \"ChangCharactereName\": \"in05835\", \"Corpse \", \"Zombie\"} ",
       "Next": -1,
       "Prallel": -1
     },

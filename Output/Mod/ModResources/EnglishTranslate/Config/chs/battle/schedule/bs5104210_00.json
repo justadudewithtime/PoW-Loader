@@ -169,7 +169,7 @@
     },
     {
       "Index": 23,
-      "Node": "{ \"BattleResultChangeLoseTip\" : \"Either Nicey，Fiercy or Zhong Ruoxin was defeated\"} ",
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"Either Nicey, Fiercy or Zhong Ruoxin was defeated\"} ",
       "Next": 24,
       "Child": []
     },

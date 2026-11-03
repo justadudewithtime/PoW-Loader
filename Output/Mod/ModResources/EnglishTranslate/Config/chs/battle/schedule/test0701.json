@@ -382,6 +382,6 @@
     }
   ],
   "Remark": "",
-  "WinTip": "Shangguan Xu，{name_1} {name_2} and {party02} reached the disengagement point within 10 turns",
-  "LoseTip": "Shangguan Xu，{name_1} {name_2} and {party02} failed to reach the disengagement point within 10 turns or any of them are defeated"
+  "WinTip": "Shangguan Xu, {name_1} {name_2} and {party02} reached the disengagement point within 10 turns",
+  "LoseTip": "Shangguan Xu, {name_1} {name_2} and {party02} failed to reach the disengagement point within 10 turns or any of them are defeated"
 }

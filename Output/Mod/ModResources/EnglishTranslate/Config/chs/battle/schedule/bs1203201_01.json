@@ -1052,6 +1052,6 @@
     }
   ],
   "Remark": "",
-  "WinTip": "One party member reaches escape point，or defeats all the enemies!",
+  "WinTip": "One party member reaches escape point, or defeats all the enemies!",
   "LoseTip": "All friendly units are defeated or the battle exceeds five turns"
 }

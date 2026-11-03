@@ -162,7 +162,7 @@
       "Prallel": 33
     },
     {
-      "Node": "{ \"ChangCharactereName\" : \"in0604\", \"Special\", \" Examiner\"} ",
+      "Node": "{ \"ChangCharactereName\" : \"in0604\", \"Special \", \"Examiner\"} ",
       "Next": 131,
       "Prallel": -1
     },

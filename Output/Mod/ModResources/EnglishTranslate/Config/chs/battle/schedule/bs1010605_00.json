@@ -111,7 +111,7 @@
     },
     {
       "Index": 15,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Avenge your family，kill the robbers\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Avenge your family, kill the robbers\"} ",
       "Next": -1,
       "Child": []
     },

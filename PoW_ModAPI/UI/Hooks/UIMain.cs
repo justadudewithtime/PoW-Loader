@@ -1,3 +1,0 @@
-﻿namespace PoW_ModAPI
-{
-}

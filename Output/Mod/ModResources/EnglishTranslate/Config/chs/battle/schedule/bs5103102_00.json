@@ -327,7 +327,7 @@
     },
     {
       "Index": 45,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Beat Tang Yun，Lou Yanyu，Gongsun Ming!\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Beat Tang Yun, Lou Yanyu, Gongsun Ming!\"} ",
       "Next": 46,
       "Child": []
     },
@@ -510,7 +510,7 @@
     },
     {
       "Index": 71,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Jiang Hongbo，Xiang Tianlei，Tian Tao!\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Jiang Hongbo, Xiang Tianlei, Tian Tao!\"} ",
       "Next": 72,
       "Child": []
     },

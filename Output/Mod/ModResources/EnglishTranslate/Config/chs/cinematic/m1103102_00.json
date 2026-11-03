@@ -232,7 +232,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"ChangCharactereName\" : \"in0102\", \"Duan\", \" Hong'er\"} ",
+      "Node": "{ \"ChangCharactereName\" : \"in0102\", \"Duan \", \"Hong'er\"} ",
       "Next": 11,
       "Prallel": 47
     },
@@ -247,7 +247,7 @@
       "Prallel": 49
     },
     {
-      "Node": "{ \"ChangCharactereName\": \"in0107\", \"Cheng\", \" Yong\"} ",
+      "Node": "{ \"ChangCharactereName\": \"in0107\", \"Cheng \", \"Yong\"} ",
       "Next": -1,
       "Prallel": 50
     },

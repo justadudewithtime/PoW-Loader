@@ -76,7 +76,7 @@
     },
     {
       "Index": 10,
-      "Node": "{ \"BattleResultAddSecondaryGoal\" : \"bf521040101_01\", \"Shangguan Xu，{name_1} {name_2} and {party02} reached the disengagement point within 10 turns\"} ",
+      "Node": "{ \"BattleResultAddSecondaryGoal\" : \"bf521040101_01\", \"Shangguan Xu, {name_1} {name_2} and {party02} reached the disengagement point within 10 turns\"} ",
       "Next": 11,
       "Child": []
     },
@@ -566,6 +566,6 @@
     }
   ],
   "Remark": "",
-  "WinTip": "Shangguan Xu，{name_1} {name_2} and {party02} reached the disengagement point within 15 turns",
-  "LoseTip": "Shangguan Xu，{name_1} {name_2} and {party02} failed to reach the disengagement point within 15 turns or any of them are defeated"
+  "WinTip": "Shangguan Xu, {name_1} {name_2} and {party02} reached the disengagement point within 15 turns",
+  "LoseTip": "Shangguan Xu, {name_1} {name_2} and {party02} failed to reach the disengagement point within 15 turns or any of them are defeated"
 }

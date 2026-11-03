@@ -9305,7 +9305,7 @@
     },
     {
       "Index": 1148,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat <color=#FF0000>Ling Wujie</color> and <color=#FF0000>Ling Yun</color> first，so Shui Ruo Chan reveal her weakness\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat <color=#FF0000>Ling Wujie</color> and <color=#FF0000>Ling Yun</color> first, so Shui Ruo Chan reveal her weakness\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []

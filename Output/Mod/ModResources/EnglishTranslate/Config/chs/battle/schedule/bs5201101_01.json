@@ -274,7 +274,7 @@
     },
     {
       "Index": 38,
-      "Node": "{ \"BattleResultChangeLoseTip\" : \"Defeated，the division commander was left alone to retreat from the enemy。\"} ",
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"Defeated, the division commander was left alone to retreat from the enemy。\"} ",
       "Next": 39,
       "Child": []
     },
@@ -635,7 +635,7 @@
     },
     {
       "Index": 89,
-      "Node": "{ \"BattleResultChangeLoseTip\" : \"Defeated，the division commander was left alone to retreat from the enemy。\"} ",
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"Defeated, the division commander was left alone to retreat from the enemy。\"} ",
       "Next": 90,
       "Child": []
     },

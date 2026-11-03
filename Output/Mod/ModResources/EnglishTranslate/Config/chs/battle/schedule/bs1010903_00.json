@@ -879,6 +879,6 @@
     }
   ],
   "Remark": "净三阶采药",
-  "WinTip": "Collect <color=#FF0000>Stretching Grass，Red Flower</color> and <color=#FF0000>Old Stork grass</color>。",
+  "WinTip": "Collect <color=#FF0000>Stretching Grass, Red Flower</color> and <color=#FF0000>Old Stork grass</color>。",
   "LoseTip": "{name_1} {name_2} is defeated"
 }

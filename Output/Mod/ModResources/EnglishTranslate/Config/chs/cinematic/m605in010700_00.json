@@ -302,7 +302,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"ChangCharactereName\": \"in0107\", \"Cheng\", \" Yong\"} ",
+      "Node": "{ \"ChangCharactereName\": \"in0107\", \"Cheng \", \"Yong\"} ",
       "Next": 61,
       "Prallel": -1
     },
@@ -352,7 +352,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"ChangCharactereName\": \"in0107\", \"Cheng\", \" Yong\"} ",
+      "Node": "{ \"ChangCharactereName\": \"in0107\", \"Cheng \", \"Yong\"} ",
       "Next": 71,
       "Prallel": -1
     },

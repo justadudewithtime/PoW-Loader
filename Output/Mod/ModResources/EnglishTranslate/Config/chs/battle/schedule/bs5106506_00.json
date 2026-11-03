@@ -184,7 +184,7 @@
     },
     {
       "Index": 25,
-      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1} {name_2}，Nan Feihuang，and Zhang Rong are defeated\"} ",
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1} {name_2}, Nan Feihuang, and Zhang Rong are defeated\"} ",
       "Next": 26,
       "Child": []
     },

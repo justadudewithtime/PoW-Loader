@@ -754,7 +754,7 @@
     },
     {
       "Index": 93,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Holy Rock Sect，Zhenwu Temple，Hall of Vicissitudes\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Holy Rock Sect, Zhenwu Temple, Hall of Vicissitudes\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []

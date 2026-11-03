@@ -139,7 +139,7 @@
     },
     {
       "Index": 19,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Duan Hong'er，Nan Feihuang，Yun Xiaohou!\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Duan Hong'er, Nan Feihuang, Yun Xiaohou!\"} ",
       "Next": -1,
       "Child": []
     },

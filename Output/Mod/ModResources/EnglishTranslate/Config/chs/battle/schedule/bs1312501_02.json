@@ -359,7 +359,7 @@
     },
     {
       "Index": 42,
-      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1} {name_2}，Chu Tianbi or Duan Xiaolie were defeated\"} ",
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1} {name_2}, Chu Tianbi or Duan Xiaolie were defeated\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []

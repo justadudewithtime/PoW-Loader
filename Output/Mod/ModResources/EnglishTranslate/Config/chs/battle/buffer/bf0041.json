@@ -1,1 +1,1 @@
-bf0041	After counterattack，teammates heals	After counterattack, teammates heals	After counterattack，teammates make up blood	buff_hp	Positive	0	1	{ "BufferRootNode" : [ { "BufferEventNode" : 220, [ { "BufferAttackCondition" } , { "AuraPromoteAction" : 2, 4, 1, "bf0040"}  ]}  ]} 
+bf0041	After counterattack, teammates heals	After counterattack, teammates heals	After counterattack，teammates make up blood	buff_hp	Positive	0	1	{ "BufferRootNode" : [ { "BufferEventNode" : 220, [ { "BufferAttackCondition" } , { "AuraPromoteAction" : 2, 4, 1, "bf0040"}  ]}  ]} 

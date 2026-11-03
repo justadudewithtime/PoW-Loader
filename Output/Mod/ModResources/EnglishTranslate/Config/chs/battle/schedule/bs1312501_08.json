@@ -500,7 +500,7 @@
     },
     {
       "Index": 61,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Shui Ruo Chan with the element that counters her's，or 。。。。。。?\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Shui Ruo Chan with the element that counters her's, or 。。。。。。?\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []

@@ -32,73 +32,79 @@ namespace ModAPI
             _ForceOriginalNextLoad = true;
         }
 
-        public bool ExistsRedirect(string path)
+        //The game asks for assets as "Assets/Image/..." or with backslashes, our redirects are stored as "Image/..."
+        private static string NormalizePath(string path)
         {
-            if (path.StartsWith("Assets/") || path.StartsWith("assets/"))
+            path = path.Replace("\\", "/");
+            if (path.StartsWith("Assets/", StringComparison.OrdinalIgnoreCase))
             {
                 path = path.Substring(7);
             }
 
-            path = path.Replace("\\", "/");
-            return PathRedirections.ContainsKey(path);
+            return path;
+        }
+
+        public bool ExistsRedirect(string path)
+        {
+            return PathRedirections.ContainsKey(NormalizePath(path));
         }
 
         public string GetRedirect(string path)
         {
-            if (path.StartsWith("Assets/") || path.StartsWith("assets/"))
+            if (PathRedirections.TryGetValue(NormalizePath(path), out List<string> result) && result.Count > 0)
             {
-                path = path.Substring(7);
+                return result[result.Count - 1];
             }
 
-            path = path.Replace("\\", "/");
-
-            List<string> result = null;
-            PathRedirections.TryGetValue(path, out result);
-            if (result != null)
-            {
-                //UnityEngine.Debug.Log(path + " redirects to RootPath " + result);
-                if (result.Count > 0)
-                {
-                    return result[result.Count - 1];
-                }
-                else
-                {
-                    return string.Empty;
-                }
-            }
-            else
-            {
-                return string.Empty;
-            }
+            return string.Empty;
         }
 
         public List<string> GetAllRedirects(string path)
         {
-            if (path.StartsWith("Assets/") || path.StartsWith("assets/"))
+            PathRedirections.TryGetValue(NormalizePath(path), out List<string> result);
+            return result;
+        }
+
+        private string GetRedirectedFilePath(string path)
+        {
+            return Paths.GameRootPath + Path.DirectorySeparatorChar + GetRedirect(path) + Path.DirectorySeparatorChar + path;
+        }
+
+        //A variant of the images to use where a mod has one, set by a mod before the images are loaded (empty: none).
+        //With "Christmas", Image/ui/uimain/Main_title_Christmas.png is used in place of Image/ui/uimain/Main_title.png.
+        public string ImageVariant { get; set; } = "";
+
+        //The variant of an image path if the mods have that file, otherwise the path itself
+        private string VariantPath(string path)
+        {
+            if (string.IsNullOrEmpty(ImageVariant))
             {
-                path = path.Substring(7);
+                return path;
             }
 
-            path = path.Replace("\\", "/");
+            string extension = Path.GetExtension(path);
+            string variant = path.Substring(0, path.Length - extension.Length) + "_" + ImageVariant + extension;
+            return ExistsRedirect(variant) ? variant : path;
+        }
 
-            List<string> result = null;
-            PathRedirections.TryGetValue(path, out result);
-            return result;
+        private Texture2D ReadTexture(string path)
+        {
+            Texture2D texture2D = new Texture2D(2, 2);
+            texture2D.LoadImage(File.ReadAllBytes(GetRedirectedFilePath(VariantPath(path))));
+            return texture2D;
         }
 
         //Asset Managment/Loading/Caching
         private Dictionary<string, object> _AssetCache;
 
-        private Texture2D LoadTexture2D(string path)
+        private T LoadCached<T>(string path, Func<string, T> load) where T : class
         {
-            if (path.StartsWith("Assets/") || path.StartsWith("assets/"))
+            path = NormalizePath(path);
+            //The same .png can be asked for as Texture2D and as Sprite, so the type is part of the key
+            string key = typeof(T).FullName + "|" + path;
+            if (_AssetCache.TryGetValue(key, out object cached))
             {
-                path = path.Substring(7);
-            }
-
-            if (_AssetCache.ContainsKey(path))
-            {
-                return _AssetCache[path] as Texture2D;
+                return cached as T;
             }
 
             if (!ExistsRedirect(path))
@@ -106,83 +112,77 @@ namespace ModAPI
                 return default;
             }
 
-            string rootRedirect = GetRedirect(path);
-            string absolutePath = Paths.GameRootPath + Path.DirectorySeparatorChar + rootRedirect + Path.DirectorySeparatorChar + path;
+            T asset = load(path);
+            _AssetCache[key] = asset;
+            return asset;
+        }
 
-            byte[] data = File.ReadAllBytes(absolutePath);
-            Texture2D texture2D = new Texture2D(2, 2);
-            texture2D.LoadImage(data);
-
-            _AssetCache[path] = texture2D;
-
-            return texture2D;
+        private Texture2D LoadTexture2D(string path)
+        {
+            return LoadCached(path, ReadTexture);
         }
 
         private Sprite LoadSprite(string path)
         {
-            if (path.StartsWith("Assets/") || path.StartsWith("assets/"))
+            return LoadCached(path, p =>
             {
-                path = path.Substring(7);
+                Texture2D texture2D = ReadTexture(p);
+                return Sprite.Create(texture2D, new Rect(0f, 0f, texture2D.width, texture2D.height), new Vector2(texture2D.width / 2, texture2D.height / 2));
+            });
+        }
+
+        public Sprite GetRedirectedSprite(string path)
+        {
+            return LoadSprite(path);
+        }
+
+        //Sprites built for replacing sprites inside prefabs. Kept apart from _AssetCache since they copy pivot, pixelsPerUnit and border of the sprite they replace.
+        private Dictionary<string, Sprite> _PrefabSpriteCache;
+
+        private Sprite LoadPrefabSprite(string path, Sprite original)
+        {
+            if (_PrefabSpriteCache.TryGetValue(path, out Sprite cached))
+            {
+                return cached;
             }
 
-            if (_AssetCache.ContainsKey(path))
-            {
-                return _AssetCache[path] as Sprite;
-            }
+            //We need our own texture here. The texture of the original sprite is often a sprite atlas shared with other sprites (item icons etc.),
+            //overwriting it with LoadImage replaced the whole atlas and made those sprites disappear until a restart.
+            Texture2D texture2D = ReadTexture(path);
 
-            if (!ExistsRedirect(path))
-            {
-                return default;
-            }
+            Vector2 pivot = new Vector2(original.pivot.x / original.rect.width, original.pivot.y / original.rect.height);
+            Sprite sprite = Sprite.Create(texture2D, new Rect(0f, 0f, texture2D.width, texture2D.height), pivot, original.pixelsPerUnit, 0, SpriteMeshType.FullRect, original.border);
+            sprite.name = original.name;
 
-            string rootRedirect = GetRedirect(path);
-            string absolutePath = Paths.GameRootPath + Path.DirectorySeparatorChar + rootRedirect + Path.DirectorySeparatorChar + path;
-
-            byte[] data = File.ReadAllBytes(absolutePath);
-            Texture2D texture2D = new Texture2D(2, 2);
-            texture2D.LoadImage(data);
-
-            Sprite sprite = Sprite.Create(texture2D, new Rect(0f, 0f, (float)texture2D.width, (float)texture2D.height), new Vector2((float)(texture2D.width / 2), (float)(texture2D.height / 2)));
-
-            _AssetCache[path] = sprite;
+            _PrefabSpriteCache[path] = sprite;
             return sprite;
+        }
+
+        //Resolves the redirect path for a sprite used inside a prefab. Prefers the path the game bundles told us, falls back to our own files by name.
+        private string GetPrefabImagePath(string imageFileName)
+        {
+            if (assetNameToPath.TryGetValue(imageFileName, out string path) && ExistsRedirect(path))
+            {
+                return path;
+            }
+
+            if (_RedirectFileNameToPath.TryGetValue(imageFileName, out path) && path != null)
+            {
+                return path;
+            }
+
+            return null;
         }
 
         private TextAsset LoadText(string path)
         {
-            if (path.StartsWith("Assets/") || path.StartsWith("assets/"))
-            {
-                path = path.Substring(7);
-            }
-
-            if (_AssetCache.ContainsKey(path))
-            {
-                return _AssetCache[path] as TextAsset;
-            }
-
-            if (!ExistsRedirect(path))
-            {
-                return default;
-            }
-
-            string rootRedirect = GetRedirect(path);
-            string absolutePath = Paths.GameRootPath + Path.DirectorySeparatorChar + rootRedirect + Path.DirectorySeparatorChar + path;
-
-            byte[] data = File.ReadAllBytes(absolutePath);
-            TextAsset ta = new TextAsset(Encoding.UTF8.GetString(data, 0, data.Length));
-
-            _AssetCache[path] = ta;
-            return ta;
+            return LoadCached(path, p => new TextAsset(Encoding.UTF8.GetString(File.ReadAllBytes(GetRedirectedFilePath(p)))));
         }
 
         //XUnity.ResourceRedirector stuff
         public void AssetLoading(AssetLoadingContext context)
         {
-            string path = context.Parameters.Name;
-            if (path.StartsWith("Assets/") || path.StartsWith("assets/"))
-            {
-                path = path.Substring(7);
-            }
+            string path = NormalizePath(context.Parameters.Name);
 
             //Debug.LogError("AssetLoading: " + context.Parameters.Name);
             string rootRedirect = GetRedirect(path);
@@ -220,46 +220,21 @@ namespace ModAPI
             //Debug.LogError("AssetLoaded: " + context.Parameters.Name);
             if (!_ForceOriginalNextLoad && Path.GetExtension(context.Parameters.Name) == ".prefab")
             {
-                //It is a prefab, we want to check for child GameObjects and replace them if needed
+                //It is a prefab, we want to check for child GameObjects and replace them if needed.
+                //Hidden children too: badges such as the life menu "NEW" are hidden in the prefab and only shown later.
                 GameObject prefab = context.Asset as GameObject;
-                Component[] allChildren = prefab.GetComponentsInChildren(typeof(Component));
-                //Debug.Log("Prefab: " + context.Parameters.Name);
-                foreach (Component child in allChildren)
+                foreach (UnityEngine.UI.Image childImage in prefab.GetComponentsInChildren<UnityEngine.UI.Image>(true))
                 {
-                    if (child == null) continue;
-
-                    //Checking if we can replace the content of the component based on the type of the component
-                    Type childType = child.GetType();
-                    if (childType == typeof(UnityEngine.UI.Image))
+                    //Only plain Images, subclasses manage their sprite themselves
+                    if (childImage.GetType() != typeof(UnityEngine.UI.Image) || childImage.sprite == null)
                     {
-                        //It is an Image, checking if we can replace the image.
-                        UnityEngine.UI.Image childImage = child as UnityEngine.UI.Image;
-                        if (childImage.sprite != null)
-                        {
-                            string originalSpriteName = childImage.sprite.name;
-                            string imageFileName = originalSpriteName + ".png";
-                            if (assetNameToPath.ContainsKey(imageFileName))
-                            {
-                                string path = assetNameToPath[imageFileName];
-                                if (ExistsRedirect(path))
-                                {
-                                    //We have a replacement for the sprite
-                                    //Debug.Log("Overriding the texture of the over Prefab loaded Sprite  " + childImage.sprite.name + " with the texture " + path);
-                                    //Overwritting Sprite Texture
-                                    string rootRedirect = GetRedirect(path);
-                                    string absolutePath = Paths.GameRootPath + Path.DirectorySeparatorChar + rootRedirect + Path.DirectorySeparatorChar + path;
-                                    childImage.sprite.texture.LoadImage(File.ReadAllBytes(absolutePath), false);
-                                }
-                                else
-                                {
-                                    //Debug.Log("Could not find prefab redirect for image from path " + path);
-                                }
-                            }
-                            else
-                            {
-                                //Debug.Log("Could not find prefab redirect for image file " + imageFileName + " from bundle " + context.Bundle.name);
-                            }
-                        }
+                        continue;
+                    }
+
+                    string path = GetPrefabImagePath(childImage.sprite.name + ".png");
+                    if (path != null)
+                    {
+                        childImage.sprite = LoadPrefabSprite(path, childImage.sprite);
                     }
                 }
             }
@@ -291,15 +266,8 @@ namespace ModAPI
                 }
                 else
                 {
-                    string path = assetName;
-                    if (path.StartsWith("Assets/") || path.StartsWith("assets/"))
-                    {
-                        path = path.Substring(7);
-                    }
-
-                    string filename = Path.GetFileName(path);
-                    //Debug.LogError("Remembering path for " + filename + " is " + path);
-                    assetNameToPath[filename] = path;
+                    string path = NormalizePath(assetName);
+                    assetNameToPath[Path.GetFileName(path)] = path;
                 }
             }
             //Debug.LogError("AssetBundleLoaded: " + context.Parameters.Path);
@@ -324,12 +292,13 @@ namespace ModAPI
             PathRedirections = new Dictionary<string, List<string>>(_IgnoreCaseStringComparer);
             _AssetCache = new Dictionary<string, object>(_IgnoreCaseStringComparer);
             assetNameToPath = new Dictionary<string, string>(_IgnoreCaseStringComparer);
+            _PrefabSpriteCache = new Dictionary<string, Sprite>(_IgnoreCaseStringComparer);
+            _RedirectFileNameToPath = new Dictionary<string, string>(_IgnoreCaseStringComparer);
 
             //ResourceRedirection.LogAllLoadedResources = true;
 
             ResourceRedirection.EnableRedirectMissingAssetBundlesToEmptyAssetBundle(0);
             ResourceRedirection.DisableRecursionPermanently();
-            ResourceRedirection.EnableRedirectMissingAssetBundlesToEmptyAssetBundle(0);
 
             ResourceRedirection.RegisterAssetLoadedHook(HookBehaviour.OneCallbackPerResourceLoaded, 0, AssetLoaded);
             ResourceRedirection.RegisterAssetLoadingHook(0, AssetLoading);
@@ -372,7 +341,9 @@ namespace ModAPI
             {
                 // This path is a valid directory
                 UnityEngine.Debug.Log("[ResourceRedirectManager] Adding Ressource Folder " + absolutePath + " as " + path);
+                _AddedFileCount = 0;
                 AddDirectoryToPathRedirection(path, "");
+                UnityEngine.Debug.Log("[ResourceRedirectManager] Added " + _AddedFileCount + " redirects from " + path);
             }
             else
             {
@@ -416,16 +387,34 @@ namespace ModAPI
             path = path.Replace("\\", "/");
             rootPath = rootPath.Replace("\\", "/");
 
-            Debug.Log("[ResourceRedirectManager] Adding redirect for file " + path + " over root folder " + rootPath);
-            if (ExistsRedirect(path))
+            //Not logging every file here, with thousands of files that slowed down the start and flooded the log. AddRessourceFolder logs the total.
+            _AddedFileCount++;
+            if (PathRedirections.TryGetValue(path, out List<string> roots))
             {
-                UnityEngine.Debug.LogWarning("[ResourceRedirectManager] Mod Collision: Overwritting Resource Redirect " + path + " from " + GetRedirect(path) + " to " + rootPath);
+                UnityEngine.Debug.LogWarning("[ResourceRedirectManager] Mod Collision: Overwritting Resource Redirect " + path + " from " + roots[roots.Count - 1] + " to " + rootPath);
             }
-            if (!PathRedirections.ContainsKey(path))
+            else
             {
-                PathRedirections[path] = new List<string>();
+                roots = new List<string>();
+                PathRedirections[path] = roots;
             }
-            PathRedirections[path].Add(rootPath);
+            roots.Add(rootPath);
+
+            //Remembering our files by name for the prefab sprite replacement. A name used in more than one folder is ambiguous, so it is stored as null.
+            string fileName = Path.GetFileName(path);
+            if (_RedirectFileNameToPath.TryGetValue(fileName, out string knownPath) && !string.Equals(knownPath, path, StringComparison.OrdinalIgnoreCase))
+            {
+                _RedirectFileNameToPath[fileName] = null;
+            }
+            else
+            {
+                _RedirectFileNameToPath[fileName] = path;
+            }
         }
+
+        //File name => path inside the resource folders, null if the file name is not unique
+        private Dictionary<string, string> _RedirectFileNameToPath;
+
+        private int _AddedFileCount;
     }
 }
