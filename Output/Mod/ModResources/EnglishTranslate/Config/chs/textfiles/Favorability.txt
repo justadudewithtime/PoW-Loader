@@ -1,72 +1,72 @@
-rankprz0102_1	Stranger	段红儿	Unlock Social Option:<color=#FF0000>Basic Interactions</color><br>Unlock Social Option:<color=#FF0000>Invite to Team</color>
-rankprz0102_2	Acquaintance	段红儿	Learned Skill:<color=#FF0000>Migrant Boomerang</color>
-rankprz0102_3	Schoolmate	段红儿	Trait Acquired:<color=#FF0000>Steadfast Loyalty</color>
-rankprz0102_4	Friend	段红儿	Learned Skill:<color=#FF0000>Spiritual Sparrow</color><br>Learned Special Skill:<color=#FF0000>Discern Opportunities</color>
-rankprz0102_5	Companion	段红儿	Learn Skill:<color=#FF0000>Swallow Pecks Soil</color><br>Learn Internal Art:<color=#FF0000>The Encyclopedia of Hundreds Inventors</color>
-rankprz0102_6	Confidant	段红儿	Learned Skill:<color=#FF0000>Virtous Swan</color><br>Learned Skill:<color=#FF0000>Flowers Opens Red</color>
-rankprz0102_7	Sworn Sibling	段红儿	Learned Skill:<color=#FF0000>Chirp Heralds Blood</color><br>Special Skill Upgraded:<color=#FF0000>Discern Opportunities</color>
-rankprz0102_8	Romantic Interest	段红儿	Learned Skill:<color=#FF0000>Chirp Heralds Blood</color><br>Special Skill Upgraded:<color=#FF0000>Discern Opportunities</color><br>Became <color=#FF0000>lovers</color> with Duan Hong'er
-rankprz0103_1	Stranger	锺若昕	Unlock Social Option:<color=#FF0000>Basic Interactions</color><br>Unlock Social Option:<color=#FF0000>Invite to Team</color>
-rankprz0103_2	Acquaintance	锺若昕	Learned Skill:<color=#FF0000>Sunset Glow</color>
-rankprz0103_3	Schoolmate	锺若昕	Trait Acquired:<color=#FF0000>Pushing on</color>
-rankprz0103_4	Friend	锺若昕	Learned Skill:<color=#FF0000>Dawn Halo</color>
-rankprz0103_5	Companion	锺若昕	Learn Internal Art:<color=#FF0000>Sun and Moon Mantra</color><br>Trait Acquired:<color=#FF0000>In the Same Shoes</color>
-rankprz0103_6	Confidant	锺若昕	Learned Skill:<color=#FF0000>Cycle of Sun and Moon</color><br>Trait Acquired:<color=#FF0000>Instant Shadow</color>
-rankprz0103_7	Sworn Sibling	锺若昕	Learned Skill:<color=#FF0000>Rising Sun</color>, <color=#FF0000>Setting Glow</color>, <color=#FF0000>Firey Afterglow</color>
-rankprz0103_8	Romantic Interest	锺若昕	Learned Skill:<color=#FF0000>Rising Sun</color>, <color=#FF0000>Setting Glow</color>, <color=#FF0000>Firey Afterglow</color><br>Become <color=#FF0000>lovers</color> with Zhong Ruoxin
-rankprz0104_1	Stranger	萧芊苓	Unlock Social Option:<color=#FF0000>Basic Interactions</color><br>Unlock Social Option:<color=#FF0000>Invite to Team</color>
-rankprz0104_2	Acquaintance	萧芊苓	Trait Acquired:<color=#FF0000>Caged Bird</color><br>Learned Skill:<color=#FF0000>Snow Cranes Brings Warmth</color>
-rankprz0104_3	Schoolmate	萧芊苓	Internal Arts Level Up:<color=#FF0000>Phoenix tail</color><br>Skill Level Up:<color=#FF0000>Snow Cranes Brings Warmth</color>
-rankprz0104_4	Friend	萧芊苓	Skill Level Up:<color=#FF0000>Approaching Swan and Leaving Swallow</color>
-rankprz0104_5	Companion	萧芊苓	Skill Level Up:<color=#FF0000>Yellow Sparrow Carries the Ring</color><br>Trait Acquired: <color=#FF0000>Bygone Days</color>
-rankprz0104_6	Confidant	萧芊苓	Skill Level Up:<color=#FF0000>Adoration of the Noble Phoenix</color><br>Internal Art Level Up:<color=#FF0000>The Empyrean</color>
-rankprz0104_7	Sworn Sibling	萧芊苓	Skill Level Up:<color=#FF0000>Snow Crane brings Warmth</color><br>Trait Level Up:<color=#FF0000>Bygone Days</color>
-rankprz0104_8	Romantic Interest	萧芊苓	Skill Level Up:<color=#FF0000>Snow Crane brings Warmth</color><br>Trait Level Up:<color=#FF0000>Bygone Days</color><br>Become <color=#FF0000>lovers</color> with Xiao Qianling
-rankprz0105_1	Stranger	石崑	Unlock Social Option:<color=#FF0000>Basic Interactions</color><br>Unlock Social Option:<color=#FF0000>Invite to Team</color>
-rankprz0105_2	Acquaintance	石崑	Learned Special Skill:<color=#FF0000>Egoistic Eagerness</color>
-rankprz0105_3	Schoolmate	石崑	Trait Acquired:<color=#FF0000>Poison Fist</color>
-rankprz0105_4	Friend	石崑	Learned Skill:<color=#FF0000>Soul Obliteration</color>
-rankprz0105_5	Companion	石崑	Skill Level Up:<color=#FF0000>Soul Obliteration</color>
-rankprz0105_6	Confidant	石崑	Skill Level Up:<color=#FF0000>Origin Recovering</color>
-rankprz0105_7	Sworn Sibling	石崑	Internal Arts Level Up:<color=#FF0000>Regression of Mystic Heart</color>
-rankprz0105_8	Romantic Interest	石崑	Internal Arts Level Up:<color=#FF0000>Regression of Mystic Heart</color><br>Becoming <color=#FF0000>lovers</color> with Shi Kun
-rankprz0106_1	Stranger	南飞鍠	Unlock Social Option:<color=#FF0000>Basic Interactions</color><br>Unlock Social Option:<color=#FF0000>Invite to Team</color>
-rankprz0106_2	Acquaintance	南飞鍠	Learned Skill:<color=#FF0000>Lantern Clock Sutra</color>
-rankprz0106_3	Schoolmate	南飞鍠	Learned Skill:<color=#FF0000>Style of Bamboo Wings</color>
-rankprz0106_4	Friend	南飞鍠	Trait Acquired:<color=#FF0000>Confluence With Sword</color>
-rankprz0106_5	Companion	南飞鍠	Learn Internal Skill:<color=#FF0000>Seven Feats of The Cascade</color><br>Learned Special Skill:<color=#FF0000>Matchless Will of the Sword</color>
-rankprz0106_6	Confidant	南飞鍠	Learned Skill:<color=#FF0000>Unalterable Truth</color><br>Learned Movesets:<color=#FF0000>Nine Heavenly Clouds Swordplay</color>
-rankprz0106_7	Sworn Sibling	南飞鍠	Acquired Weapon:<color=#FF0000>Flying Frost Sword</color>
-rankprz0106_8	Romantic Interest	南飞鍠	Acquired Weapon:<color=#FF0000>Flying Frost Sword</color><br>Became <color=#FF0000>lovers</color> with Nan Feihuang
-rankprz0107_1	Stranger	程墉	Unlock Social Option:<color=#FF0000>Basic Interactions</color><br>Unlock Social Option:<color=#FF0000>Invite to Team</color>
-rankprz0107_2	Acquaintance	程墉	Learned Skill:<color=#FF0000>Drizzling Rain Admists the Sands</color><br>Acquired Weapon:<color=#FF0000>Parasol Lv2</color>
-rankprz0107_3	Schoolmate	程墉	Trait Acquired:<color=#FF0000>Mechanical Proficency</color>
-rankprz0107_4	Friend	程墉	Learned Skill:<color=#FF0000>Blood Rain Fills the Storm</color>
-rankprz0107_5	Companion	程墉	Learned Skill:<color=#FF0000>Vengeful Rain Crumbles the Mountains</color><br>Learned Special Skill:<color=#FF0000>Lone Shadow in the Sands</color>
-rankprz0107_6	Confidant	程墉	Learned Skill:<color=#FF0000>Heavy Rain Shocks the Wastelands</color><br>Learned Skill:<color=#FF0000>Neonatal Rain From the Welkin</color>
-rankprz0107_7	Sworn Sibling	程墉	Learned Skill:<color=#FF0000>Timely Rain Indicates the Harvest</color>
-rankprz0107_8	Romantic Interest	程墉	Learned Skill:<color=#FF0000>Timely Rain Indicates the Harvest</color><br>Become <color=#FF0000>lovers</color> with Cheng Yong
-rankprz0109_1	Stranger	净	Unlock Social Option:<color=#FF0000>Basic Interactions</color><br>Unlock Social Option:<color=#FF0000>Invite to Team</color>
-rankprz0109_2	Acquaintance	净	Internal Arts Level Up:<color=#FF0000>Give No Clue, Leave no trace</color>.
-rankprz0109_3	Schoolmate	净	Skill Level Up:<color=#FF0000>Dragon Searches for Pearl</color>
-rankprz0109_4	Friend	净	Learned Special Skill:<color=#FF0000>Dragon Incarnation</color>
-rankprz0109_5	Companion	净	Trait Acquired:<color=#FF0000>Cooperation</color><br>Skill Level Up:<color=#FF0000>Dragon Wakes to Rise</color>
-rankprz0109_6	Confidant	净	Skill Level Up:<color=#FF0000>Dragon Makes the Rain</color>
-rankprz0109_7	Sworn Sibling	净	Acquired Weapon:<color=#FF0000>Mirror Lake Reflecting Moon</color>
-rankprz0109_8	Romantic Interest	净	Acquired Weapon:<color=#FF0000>Mirror Lake Reflecting Moon</color><br>Become <color=#FF0000>lovers</color> with Jing
-rankprz0110_1	Stranger	上官煦	Unlock Social Option:<color=#FF0000>Basic Interactions</color><br>Unlock Social Option:<color=#FF0000>Invite to Team</color>
-rankprz0110_2	Acquaintance	上官煦	Trait Acquired:<color=#FF0000>Valiant</color><br>Shangguan Xu <color=#FF0000>Maximum HP +100</color>
-rankprz0110_3	Schoolmate	上官煦	Skill Level Up:<color=#FF0000>Nightfall Flames</color><br>Shangguan Xu <color=#FF0000>Maximum HP +150</color>
-rankprz0110_4	Friend	上官煦	Internal Art Level Up:<color=#FF0000>Breakthrough, Flying General</color><br>Learned Skill:<color=#FF0000>No Path is Lost</color>
-rankprz0110_5	Companion	上官煦	Learned Skill:<color=#FF0000>Flickering War Fire, Lone Boat in the Snow</color>
-rankprz0110_6	Confidant	上官煦	Trait Acquired:<color=#FF0000>Endevor</color><br>Shangguan Xu <color=#FF0000>Maximum HP +300</color>
-rankprz0110_7	Sworn Sibling	上官煦	Learned Skill:<color=#FF0000>None shall Pass</color><br>Learned Special Skill:<color=#FF0000>Moon Yao Go Armor</color>
-rankprz0110_8	Romantic Interest	上官煦	Learned Skill:<color=#FF0000>None shall Pass</color><br>Learned Special Skill:<color=#FF0000>Moon Yao Go Armor</color> Become <color=#FF0000>lovers</color> with Shangguan Xu
-rankprz0111_1	Stranger	武辙	Unlock Social Option:<color=#FF0000>Basic Interactions</color><br>Unlock Social Option:<color=#FF0000>Invite to Team</color>
-rankprz0111_2	Acquaintance	武辙	Trait Acquired:<color=#FF0000>Vast Shade</color>
-rankprz0111_3	Schoolmate	武辙	Learned Skill:<color=#FF0000>Self-perception</color>
-rankprz0111_4	Friend	武辙	Learned Special Skill:<color=#FF0000>Mysterious pills</color><br>Learned Skill:<color=#FF0000>Splitting the Clouds</color>
-rankprz0111_5	Companion	武辙	Skill Level Up:<color=#FF0000>Apprehend the Hereticals</color><br>Learned Skill:<color=#FF0000>Pass on the Good Will<br>Expeling the Six Dragons</color>
-rankprz0111_6	Confidant	武辙	Internal Art Level Up:<color=#FF0000>Tough Bone of the Rocks, Thousand Year Pine</color><br>Trait Acquired:<color=#FF0000>Eternal Light</color>
-rankprz0111_7	Sworn Sibling	武辙	Learned Skill:<color=#FF0000>Carving the Kingly Way</color><br>Learned Special Skill:<color=#FF0000>Refined Through Herbs</color>
-rankprz0111_8	Romantic Interest	武辙	Learned Skill:<color=#FF0000>Carving the Kingly Way</color><br>Learned Special Skill:<color=#FF0000>Refined Through Herbs</color><br>Become <color=#FF0000>lovers</color> with Wu Zhe
+rankprz0102_1	Stranger	段红儿	Unlock Social Option : <color=#FF0000>Basic Interactions</color><br>Unlock Social Option : <color=#FF0000>Invite to Team</color>
+rankprz0102_2	Acquaintance	段红儿	Learned Skill : <color=#FF0000>Migrant Boomerang</color>
+rankprz0102_3	Schoolmate	段红儿	Trait Acquired : <color=#FF0000>Steadfast Loyalty</color>
+rankprz0102_4	Friend	段红儿	Learned Skill : <color=#FF0000>Spiritual Sparrow</color><br>Learned Special Skill : <color=#FF0000>Discern Opportunities</color>
+rankprz0102_5	Companion	段红儿	Learn Skill : <color=#FF0000>Swallow Pecks Soil</color><br>Learn Internal Art : <color=#FF0000>The Encyclopedia of Hundreds Inventors</color>
+rankprz0102_6	Confidant	段红儿	Learned Skill : <color=#FF0000>Virtous Swan</color><br>Learned Skill : <color=#FF0000>Flowers Opens Red</color>
+rankprz0102_7	Sworn Sibling	段红儿	Learned Skill : <color=#FF0000>Chirp Heralds Blood</color><br>Special Skill Upgraded : <color=#FF0000>Discern Opportunities</color>
+rankprz0102_8	Romantic Interest	段红儿	Learned Skill : <color=#FF0000>Chirp Heralds Blood</color><br>Special Skill Upgraded : <color=#FF0000>Discern Opportunities</color><br>Became <color=#FF0000>lovers</color> with Duan Hong'er
+rankprz0103_1	Stranger	锺若昕	Unlock Social Option : <color=#FF0000>Basic Interactions</color><br>Unlock Social Option : <color=#FF0000>Invite to Team</color>
+rankprz0103_2	Acquaintance	锺若昕	Learned Skill : <color=#FF0000>Sunset Glow</color>
+rankprz0103_3	Schoolmate	锺若昕	Trait Acquired : <color=#FF0000>Pushing on</color>
+rankprz0103_4	Friend	锺若昕	Learned Skill : <color=#FF0000>Dawn Halo</color>
+rankprz0103_5	Companion	锺若昕	Learn Internal Art : <color=#FF0000>Sun and Moon Mantra</color><br>Trait Acquired : <color=#FF0000>In the Same Shoes</color>
+rankprz0103_6	Confidant	锺若昕	Learned Skill : <color=#FF0000>Cycle of Sun and Moon</color><br>Trait Acquired : <color=#FF0000>Instant Shadow</color>
+rankprz0103_7	Sworn Sibling	锺若昕	Learned Skill : <color=#FF0000>Rising Sun</color>, <color=#FF0000>Setting Glow</color>, <color=#FF0000>Firey Afterglow</color>
+rankprz0103_8	Romantic Interest	锺若昕	Learned Skill : <color=#FF0000>Rising Sun</color>, <color=#FF0000>Setting Glow</color>, <color=#FF0000>Firey Afterglow</color><br>Become <color=#FF0000>lovers</color> with Zhong Ruoxin
+rankprz0104_1	Stranger	萧芊苓	Unlock Social Option : <color=#FF0000>Basic Interactions</color><br>Unlock Social Option : <color=#FF0000>Invite to Team</color>
+rankprz0104_2	Acquaintance	萧芊苓	Trait Acquired : <color=#FF0000>Caged Bird</color><br>Learned Skill : <color=#FF0000>Snow Cranes Brings Warmth</color>
+rankprz0104_3	Schoolmate	萧芊苓	Internal Arts Level Up : <color=#FF0000>Phoenix tail</color><br>Skill Level Up : <color=#FF0000>Snow Cranes Brings Warmth</color>
+rankprz0104_4	Friend	萧芊苓	Skill Level Up : <color=#FF0000>Approaching Swan and Leaving Swallow</color>
+rankprz0104_5	Companion	萧芊苓	Skill Level Up : <color=#FF0000>Yellow Sparrow Carries the Ring</color><br>Trait Acquired :  <color=#FF0000>Bygone Days</color>
+rankprz0104_6	Confidant	萧芊苓	Skill Level Up : <color=#FF0000>Adoration of the Noble Phoenix</color><br>Internal Art Level Up : <color=#FF0000>The Empyrean</color>
+rankprz0104_7	Sworn Sibling	萧芊苓	Skill Level Up : <color=#FF0000>Snow Crane brings Warmth</color><br>Trait Level Up : <color=#FF0000>Bygone Days</color>
+rankprz0104_8	Romantic Interest	萧芊苓	Skill Level Up : <color=#FF0000>Snow Crane brings Warmth</color><br>Trait Level Up : <color=#FF0000>Bygone Days</color><br>Become <color=#FF0000>lovers</color> with Xiao Qianling
+rankprz0105_1	Stranger	石崑	Unlock Social Option : <color=#FF0000>Basic Interactions</color><br>Unlock Social Option : <color=#FF0000>Invite to Team</color>
+rankprz0105_2	Acquaintance	石崑	Learned Special Skill : <color=#FF0000>Egoistic Eagerness</color>
+rankprz0105_3	Schoolmate	石崑	Trait Acquired : <color=#FF0000>Poison Fist</color>
+rankprz0105_4	Friend	石崑	Learned Skill : <color=#FF0000>Soul Obliteration</color>
+rankprz0105_5	Companion	石崑	Skill Level Up : <color=#FF0000>Soul Obliteration</color>
+rankprz0105_6	Confidant	石崑	Skill Level Up : <color=#FF0000>Origin Recovering</color>
+rankprz0105_7	Sworn Sibling	石崑	Internal Arts Level Up : <color=#FF0000>Regression of Mystic Heart</color>
+rankprz0105_8	Romantic Interest	石崑	Internal Arts Level Up : <color=#FF0000>Regression of Mystic Heart</color><br>Becoming <color=#FF0000>lovers</color> with Shi Kun
+rankprz0106_1	Stranger	南飞鍠	Unlock Social Option : <color=#FF0000>Basic Interactions</color><br>Unlock Social Option : <color=#FF0000>Invite to Team</color>
+rankprz0106_2	Acquaintance	南飞鍠	Learned Skill : <color=#FF0000>Lantern Clock Sutra</color>
+rankprz0106_3	Schoolmate	南飞鍠	Learned Skill : <color=#FF0000>Style of Bamboo Wings</color>
+rankprz0106_4	Friend	南飞鍠	Trait Acquired : <color=#FF0000>Confluence With Sword</color>
+rankprz0106_5	Companion	南飞鍠	Learn Internal Skill : <color=#FF0000>Seven Feats of The Cascade</color><br>Learned Special Skill : <color=#FF0000>Matchless Will of the Sword</color>
+rankprz0106_6	Confidant	南飞鍠	Learned Skill : <color=#FF0000>Unalterable Truth</color><br>Learned Movesets : <color=#FF0000>Nine Heavenly Clouds Swordplay</color>
+rankprz0106_7	Sworn Sibling	南飞鍠	Acquired Weapon : <color=#FF0000>Flying Frost Sword</color>
+rankprz0106_8	Romantic Interest	南飞鍠	Acquired Weapon : <color=#FF0000>Flying Frost Sword</color><br>Became <color=#FF0000>lovers</color> with Nan Feihuang
+rankprz0107_1	Stranger	程墉	Unlock Social Option : <color=#FF0000>Basic Interactions</color><br>Unlock Social Option : <color=#FF0000>Invite to Team</color>
+rankprz0107_2	Acquaintance	程墉	Learned Skill : <color=#FF0000>Drizzling Rain Admists the Sands</color><br>Acquired Weapon : <color=#FF0000>Parasol Lv2</color>
+rankprz0107_3	Schoolmate	程墉	Trait Acquired : <color=#FF0000>Mechanical Proficency</color>
+rankprz0107_4	Friend	程墉	Learned Skill : <color=#FF0000>Blood Rain Fills the Storm</color>
+rankprz0107_5	Companion	程墉	Learned Skill : <color=#FF0000>Vengeful Rain Crumbles the Mountains</color><br>Learned Special Skill : <color=#FF0000>Lone Shadow in the Sands</color>
+rankprz0107_6	Confidant	程墉	Learned Skill : <color=#FF0000>Heavy Rain Shocks the Wastelands</color><br>Learned Skill : <color=#FF0000>Neonatal Rain From the Welkin</color>
+rankprz0107_7	Sworn Sibling	程墉	Learned Skill : <color=#FF0000>Timely Rain Indicates the Harvest</color>
+rankprz0107_8	Romantic Interest	程墉	Learned Skill : <color=#FF0000>Timely Rain Indicates the Harvest</color><br>Become <color=#FF0000>lovers</color> with Cheng Yong
+rankprz0109_1	Stranger	净	Unlock Social Option : <color=#FF0000>Basic Interactions</color><br>Unlock Social Option : <color=#FF0000>Invite to Team</color>
+rankprz0109_2	Acquaintance	净	Internal Arts Level Up : <color=#FF0000>Give No Clue, Leave no trace</color>.
+rankprz0109_3	Schoolmate	净	Skill Level Up : <color=#FF0000>Dragon Searches for Pearl</color>
+rankprz0109_4	Friend	净	Learned Special Skill : <color=#FF0000>Dragon Incarnation</color>
+rankprz0109_5	Companion	净	Trait Acquired : <color=#FF0000>Cooperation</color><br>Skill Level Up : <color=#FF0000>Dragon Wakes to Rise</color>
+rankprz0109_6	Confidant	净	Skill Level Up : <color=#FF0000>Dragon Makes the Rain</color>
+rankprz0109_7	Sworn Sibling	净	Acquired Weapon : <color=#FF0000>Mirror Lake Reflecting Moon</color>
+rankprz0109_8	Romantic Interest	净	Acquired Weapon : <color=#FF0000>Mirror Lake Reflecting Moon</color><br>Become <color=#FF0000>lovers</color> with Jing
+rankprz0110_1	Stranger	上官煦	Unlock Social Option : <color=#FF0000>Basic Interactions</color><br>Unlock Social Option : <color=#FF0000>Invite to Team</color>
+rankprz0110_2	Acquaintance	上官煦	Trait Acquired : <color=#FF0000>Valiant</color><br>Shangguan Xu <color=#FF0000>Maximum HP +100</color>
+rankprz0110_3	Schoolmate	上官煦	Skill Level Up : <color=#FF0000>Nightfall Flames</color><br>Shangguan Xu <color=#FF0000>Maximum HP +150</color>
+rankprz0110_4	Friend	上官煦	Internal Art Level Up : <color=#FF0000>Breakthrough, Flying General</color><br>Learned Skill : <color=#FF0000>No Path is Lost</color>
+rankprz0110_5	Companion	上官煦	Learned Skill : <color=#FF0000>Flickering War Fire, Lone Boat in the Snow</color>
+rankprz0110_6	Confidant	上官煦	Trait Acquired : <color=#FF0000>Endevor</color><br>Shangguan Xu <color=#FF0000>Maximum HP +300</color>
+rankprz0110_7	Sworn Sibling	上官煦	Learned Skill : <color=#FF0000>None shall Pass</color><br>Learned Special Skill : <color=#FF0000>Moon Yao Go Armor</color>
+rankprz0110_8	Romantic Interest	上官煦	Learned Skill : <color=#FF0000>None shall Pass</color><br>Learned Special Skill : <color=#FF0000>Moon Yao Go Armor</color> Become <color=#FF0000>lovers</color> with Shangguan Xu
+rankprz0111_1	Stranger	武辙	Unlock Social Option : <color=#FF0000>Basic Interactions</color><br>Unlock Social Option : <color=#FF0000>Invite to Team</color>
+rankprz0111_2	Acquaintance	武辙	Trait Acquired : <color=#FF0000>Vast Shade</color>
+rankprz0111_3	Schoolmate	武辙	Learned Skill : <color=#FF0000>Self-perception</color>
+rankprz0111_4	Friend	武辙	Learned Special Skill : <color=#FF0000>Mysterious pills</color><br>Learned Skill : <color=#FF0000>Splitting the Clouds</color>
+rankprz0111_5	Companion	武辙	Skill Level Up : <color=#FF0000>Apprehend the Hereticals</color><br>Learned Skill : <color=#FF0000>Pass on the Good Will<br>Expeling the Six Dragons</color>
+rankprz0111_6	Confidant	武辙	Internal Art Level Up : <color=#FF0000>Tough Bone of the Rocks, Thousand Year Pine</color><br>Trait Acquired : <color=#FF0000>Eternal Light</color>
+rankprz0111_7	Sworn Sibling	武辙	Learned Skill : <color=#FF0000>Carving the Kingly Way</color><br>Learned Special Skill : <color=#FF0000>Refined Through Herbs</color>
+rankprz0111_8	Romantic Interest	武辙	Learned Skill : <color=#FF0000>Carving the Kingly Way</color><br>Learned Special Skill : <color=#FF0000>Refined Through Herbs</color><br>Become <color=#FF0000>lovers</color> with Wu Zhe

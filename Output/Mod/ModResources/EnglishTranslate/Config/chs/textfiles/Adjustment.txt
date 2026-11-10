@@ -5,7 +5,7 @@ ad5106503_01	Raging Beasts II		Recently, wild beasts have been rampaging in Five
 ad5107302_01	Parcel Delivery		Deliver the goods to Nanchang City for Master Dao Heng.	None	None	4	4	in0111	in0105	m5107302_01
 ad5111202_01	Solve the Trouble of the Mountain Beast		Investigate the recent situation of wild beasts ravaging the mountains, it seems to be more than just wild animals preying on villagers... Go to Five Elder Mountain with Duan Hong'er to investigate this matter.	Water	Metal	4	4	in0102	in0105	m5111202_01
 ad5112101_01	Destroy the Bandit Lair		Go to the bandit's lair and eradicate the bandits with Wu Zhe.	None	None	4	4	in0111	in0105	m5112101_01
-test	Test preparation	Test and test，test and test，test and test，test and test	Test and test, test and test, test and test, test and test, test and test.	Metal	Water	3	3	in0102	in0103	
+test	Test preparation	Test and test，test and test，test and test，test and test	Test and test，test and test，test and test，test and test，test and test.	Metal	Water	3	3	in0102	in0103	
 ad1203201_01	Spring Exam: Theft in Nanchang City	Supporting the Spring Exam	Go to Nanchang City to inspect the actions of Di Ting's group and ensure their safety.	None	None	4	4	in0106		m1203201_02
 ad1205501_01	Summer Exam	Second Year Summer Exam	Go to Fujian and Guangdong area and cooperate with Butterfly Troupe to investigate the missing villagers.	None	None	4	4		in0107	m1205501_01
 ad1210401_01	Emergency Dispatch	Mount Heng Corpse Zombies	Master Dao Heng has not yet announced the specific content of the mission.	None	None	4	4		in0102	m1210401_01
@@ -16,7 +16,7 @@ ad5201106_01	Bandit Rage II	Raging Bandits II	Find suitable teammates and hurry 
 ad5201123_01	Bandit Rage III	Raging Bandits III	Find suitable teammates and hurry to provide support!	None	None	4	4	in0110		m5201123_01
 ad5202091_01	Escort Elder Wu back to the city	The assassination attempt on Wu Hao.	Escort Elder Wu back to Nanchang City, the journey is long, be cautious.	None	None	4	4		in0105	m5202091_01
 ad5210401_00	Shangguan Family Banquet	Shangguan Family Banquet	Choose a disciple to accompany you to the banquet at the Shangguan's family residence.	None	None	3	3	in0110		m5210401_01
-ad1303101_01	Search for Bai Congyi	Clear Heaven Creed Reappearance	Heard that Chengdie Ban has obtained information on Miss Bai's whereabouts. Go with three other fellow disciples to the Unming Tower to confirm the intelligence and plan the next steps	None	None	4	4			m1303101_02
+ad1303101_01	Search for Bai Congyi	Clear Heaven Creed Reappearance	Heard that Butterfly Troupe has obtained information on Miss Bai's whereabouts. Go with three other fellow disciples to the Unming Tower to confirm the intelligence and plan the next steps	None	None	4	4			m1303101_02
 ad1310301_01	Raid on Abyssal Palace's Miao territory	Master Duan's Faction Route	Under the leadership of Master Duan, he and his fellow disciples and Wulin Zhengdao raided Abyssal Palace's stronghold in Miao territory	None	None	4	4			m1310301_12
 ad1310302_01	Rescue Abyssal Palace in the Miao territory	Master Chu's Faction Route	Dividing into two groups with Master Chu and Master Dao Heng, proceed with fellow disciples and righteous martial artists to Abyssal Palace's stronghold in Miao territory, striving to save lives wherever possible.	None	None	4	4			m1310301_22
 ad1310303_01	Kill Craft Queen Yan Huang	Neutral route	Catch up to Master Mu with Master Linghu, infiltrate the Hall of Divine Machine and kill the cunning and sinister Craft Queen Yan Huang.	None	None	2	2			m1310301_32
