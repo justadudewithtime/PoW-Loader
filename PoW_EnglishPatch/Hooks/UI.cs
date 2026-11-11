@@ -49,6 +49,24 @@ namespace EnglishPatch.Hooks
             }
         }
 
+        private static Font _MessageFont;
+        private static bool _MessageFontLoaded;
+
+        //Font for the messages popping up on screen in the game's own font, chosen in the config file (see EnglishPatch.MessageFontName).
+        //null when the setting is empty, those texts then keep the game's font.
+        public static Font MessageFont
+        {
+            get
+            {
+                if (!_MessageFontLoaded)
+                {
+                    _MessageFontLoaded = true;
+                    _MessageFont = string.IsNullOrEmpty(EnglishPatch.MessageFontName?.Trim()) ? null : LoadFont(EnglishPatch.MessageFontName);
+                }
+                return _MessageFont;
+            }
+        }
+
         private static Font _DialogueFont;
         private static bool _DialogueFontLoaded;
 
@@ -2802,6 +2820,26 @@ namespace EnglishPatch.Hooks
             }
 
             TextUtil.ReplaceGameFont(__instance, TextUtil.CombatFont);
+        }
+    }
+
+    /*
+     * The messages popping up on screen (items acquired or lost, money, party members, stats and skills increased, notebook):
+     * their texts written in the game's own font (Kaiu) get the MessageFont from the config file, if one is set.
+     * Done when the screen is made and for every message, in case it makes new rows.
+     */
+    [HarmonyPatch]
+    public class UIPromptMessage_MessageFont_Hook
+    {
+        public static System.Collections.Generic.IEnumerable<MethodBase> TargetMethods()
+        {
+            yield return AccessTools.Method(typeof(UIPromptMessage), "Awake");
+            yield return AccessTools.Method(typeof(UIPromptMessage), "AddPromptMessage");
+        }
+
+        public static void Postfix(UIPromptMessage __instance)
+        {
+            TextUtil.ReplaceGameFont(__instance, TextUtil.MessageFont);
         }
     }
 
