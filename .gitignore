@@ -477,7 +477,6 @@ Output/Mod/BepInEx/config/plugins.test4.cfg
 Output/Mod/BepInEx/config/plugins.test3.cfg
 Output/Mod/BepInEx/config/plugins.test2.cfg
 Output/Mod/BepInEx/config/plugins.test1.cfg
-Output/Mod/BepInEx/config/plugins.englishpatch.cfg
 Output/Mod/BepInEx/plugins/Assembly-CSharp-firstpass.dll
 Output/Mod/BepInEx/plugins/BehaviourMachineRuntime.dll
 .vscode/tasks.json
