@@ -9,6 +9,7 @@ Newest first, from the first of these releases (23 October 2026).
 - **"New" badges** in English on every screen: library tabs and books, forge, alchemy, medicine, shop, commissions, save / load tabs and help entries (only the inventory had them before).
 - **Life menu "NEW" badges** in English, the word in the middle of its diamond. Other images the game only shows later are replaced too (evaluation grade glow, the strike-back popup in combat).
 - **Secondary objectives in combat:** the status stays in one piece after the objective ("Zhao Zilong survives" / "(Not Achieved)") instead of breaking the line after the character's name.
+- **Battle defeat title in English:** "DEFEAT" in place of 战斗失败, in the two pieces the game slides apart (the victory title was already "VICTORY").
 - **Two dialogue lines in English again:** "Providing Information" (`t5202091_100`) and `t3070203_102` had a sentence pasted over their ID, so the game showed its Chinese line.
 
 ### Fonts
