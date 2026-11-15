@@ -32,6 +32,12 @@ namespace ModAPI
             _ForceOriginalNextLoad = true;
         }
 
+        //Ends ForceOriginalLoadInNextLoad when the load it was for did not go through the asset hooks (a file outside the bundles)
+        public void EndForceOriginalLoad()
+        {
+            _ForceOriginalNextLoad = false;
+        }
+
         //The game asks for assets as "Assets/Image/..." or with backslashes, our redirects are stored as "Image/..."
         private static string NormalizePath(string path)
         {
@@ -90,7 +96,13 @@ namespace ModAPI
         private Texture2D ReadTexture(string path)
         {
             Texture2D texture2D = new Texture2D(2, 2);
-            texture2D.LoadImage(File.ReadAllBytes(GetRedirectedFilePath(VariantPath(path))));
+            //A file that is not a readable image: no texture (the game's own is used), not Unity's red placeholder
+            if (!texture2D.LoadImage(File.ReadAllBytes(GetRedirectedFilePath(VariantPath(path)))))
+            {
+                Debug.LogError("[ResourceRedirectManager] Could not read the image " + path);
+                UnityEngine.Object.Destroy(texture2D);
+                return null;
+            }
             return texture2D;
         }
 
@@ -113,7 +125,11 @@ namespace ModAPI
             }
 
             T asset = load(path);
-            _AssetCache[key] = asset;
+            //A file that could not be read is not remembered, it is tried again next time
+            if (asset != null)
+            {
+                _AssetCache[key] = asset;
+            }
             return asset;
         }
 
@@ -127,6 +143,10 @@ namespace ModAPI
             return LoadCached(path, p =>
             {
                 Texture2D texture2D = ReadTexture(p);
+                if (texture2D == null)
+                {
+                    return null;
+                }
                 return Sprite.Create(texture2D, new Rect(0f, 0f, texture2D.width, texture2D.height), new Vector2(texture2D.width / 2, texture2D.height / 2));
             });
         }
@@ -149,6 +169,11 @@ namespace ModAPI
             //We need our own texture here. The texture of the original sprite is often a sprite atlas shared with other sprites (item icons etc.),
             //overwriting it with LoadImage replaced the whole atlas and made those sprites disappear until a restart.
             Texture2D texture2D = ReadTexture(path);
+            if (texture2D == null)
+            {
+                //The prefab keeps its own sprite
+                return original;
+            }
 
             Vector2 pivot = new Vector2(original.pivot.x / original.rect.width, original.pivot.y / original.rect.height);
             Sprite sprite = Sprite.Create(texture2D, new Rect(0f, 0f, texture2D.width, texture2D.height), pivot, original.pixelsPerUnit, 0, SpriteMeshType.FullRect, original.border);
@@ -184,30 +209,41 @@ namespace ModAPI
         {
             string path = NormalizePath(context.Parameters.Name);
 
-            //Debug.LogError("AssetLoading: " + context.Parameters.Name);
             string rootRedirect = GetRedirect(path);
             if (string.IsNullOrEmpty(rootRedirect) || _ForceOriginalNextLoad) //_ForceOriginalNextLoad is resetted in AssetLoaded hook
             {
-                //Debug.Log("[ResourceRedirectManager] Found no redirect for " + path);
                 context.Complete(false, false, false);
                 return;
             }
 
-            if (context.Parameters.Type == typeof(Texture2D))
+            Type type = context.Parameters.Type;
+            try
             {
-                context.Asset = LoadTexture2D(path);
+                if (type == typeof(Texture2D))
+                {
+                    context.Asset = LoadTexture2D(path);
+                }
+                else if (type == typeof(Sprite))
+                {
+                    context.Asset = LoadSprite(path);
+                }
+                else if (type == typeof(TextAsset))
+                {
+                    context.Asset = LoadText(path);
+                }
             }
-            else if (context.Parameters.Type == typeof(Sprite))
+            catch (Exception e) when (e is IOException || e is UnauthorizedAccessException)
             {
-                context.Asset = LoadSprite(path);
+                //The mod file is gone or locked: the game's own asset is loaded below
+                Debug.LogError("[ResourceRedirectManager] Could not read " + path + ": " + e.Message);
+                context.Asset = null;
             }
-            else if (context.Parameters.Type == typeof(TextAsset))
+
+            //A type we cannot build from a file (or a file that could not be read): the game's own asset is loaded, not nothing
+            if (context.Asset == null)
             {
-                context.Asset = LoadText(path);
-            }
-            else if (context.Parameters.Type == typeof(Shader))
-            {
-                Debug.LogError("Loading Shader " + context.Parameters.Name);
+                context.Complete(false, false, false);
+                return;
             }
 
             context.Complete(true, true, true);
@@ -217,12 +253,21 @@ namespace ModAPI
 
         public void AssetLoaded(AssetLoadedContext context)
         {
-            //Debug.LogError("AssetLoaded: " + context.Parameters.Name);
             if (!_ForceOriginalNextLoad && Path.GetExtension(context.Parameters.Name) == ".prefab")
             {
                 //It is a prefab, we want to check for child GameObjects and replace them if needed.
                 //Hidden children too: badges such as the life menu "NEW" are hidden in the prefab and only shown later.
                 GameObject prefab = context.Asset as GameObject;
+                if (prefab == null)
+                {
+                    _ForceOriginalNextLoad = false;
+                    context.Complete(false);
+                    return;
+                }
+
+                //Texture mods (ModResources\Textures) on the model's materials
+                TextureOverrides.Instance.ApplyTo(prefab);
+
                 foreach (UnityEngine.UI.Image childImage in prefab.GetComponentsInChildren<UnityEngine.UI.Image>(true))
                 {
                     //Only plain Images, subclasses manage their sprite themselves
@@ -245,44 +290,33 @@ namespace ModAPI
 
         public void AsyncAssetLoading(AsyncAssetLoadingContext context)
         {
-            //Debug.LogError("AsyncAssetLoading: " + context.Parameters.Name);
             context.Complete(false, false, false);
         }
 
         public void AssetBundleLoading(AssetBundleLoadingContext context)
         {
-            //Debug.LogError("AssetBundleLoading: " + context.Parameters.Path);
             context.Complete(false, false, false);
         }
 
         public void AssetBundleLoaded(AssetBundleLoadedContext context)
         {
             //Caching filenames to their actual path. We need this to modify prefab game objects later on.
+            //Keyed by file name: with the same name in two bundles, the bundle loaded last wins
             foreach (string assetName in context.Bundle.GetAllAssetNames())
             {
-                if (assetNameToPath.ContainsKey(assetName))
-                {
-                    Debug.LogError("[Resource Redirector] An Asset with name " + assetName + " already exists in teh assetNameToPath list. This is a big issue since we need unique asset names!");
-                }
-                else
-                {
-                    string path = NormalizePath(assetName);
-                    assetNameToPath[Path.GetFileName(path)] = path;
-                }
+                string path = NormalizePath(assetName);
+                assetNameToPath[Path.GetFileName(path)] = path;
             }
-            //Debug.LogError("AssetBundleLoaded: " + context.Parameters.Path);
             context.Complete(false);
         }
 
         public void AsyncAssetBundleLoading(AsyncAssetBundleLoadingContext context)
         {
-            //Debug.LogError("AsyncAssetBundleLoading: " + context.Parameters.Path);
             context.Complete(false, false, false);
         }
 
         public void ResourceLoaded(ResourceLoadedContext context)
         {
-            //Debug.LogError("ResourceLoaded: " + context.Parameters.Path);
             context.Complete(false);
         }
 

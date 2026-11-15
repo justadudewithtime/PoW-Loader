@@ -39,6 +39,9 @@ namespace EnglishPatch
         //Font for the combat texts that use the game's own font (DFKai-SB), empty keeps that font
         public static string CombatFontName { get; private set; } = "";
 
+        //Font for the messages popping up on screen (items acquired, stats increased...) that use the game's own font, empty keeps that font
+        public static string MessageFontName { get; private set; } = "";
+
         //Hides the dark tab behind the labels under the buff and debuff icons in combat
         public static bool HideBuffLabelBackground { get; private set; } = true;
 
@@ -92,6 +95,14 @@ namespace EnglishPatch
                 "Font for the combat texts that are written in the game's own font, DFKai-SB (skill names, victory and failure " +
                 "conditions...). Leave it empty to keep the game's font. Otherwise any font installed in Windows, by its name " +
                 "as for Font (for example Arial). A font that is not installed falls back to Arial. Restart the game after changing it.").Value;
+            MessageFontName = Config.Bind("Text", "MessageFont", "",
+                "Font for the messages that pop up on screen in the game's own font, DFKai-SB (items acquired or lost, money, " +
+                "party members joining, stats and skills increased...). Leave it empty to keep the game's font. Otherwise any font " +
+                "installed in Windows, by its name as for Font. A font that is not installed falls back to Arial. Restart the game after changing it.").Value;
+            //Read by PathOfWuxiaEndingEnglish, which has no config file of its own
+            Config.Bind("Text", "EndingFont", "",
+                "Font for the ending screens. Leave it empty to use Font. Otherwise any font installed in Windows, by its name as for Font. " +
+                "A font that is not installed falls back to Arial. Restart the game after changing it.");
             DialogueFontName = Config.Bind("Text", "DialogueFont", "",
                 "Font for the dialogue text in the talk box only. Leave it empty to use Font. Otherwise any font installed in Windows, " +
                 "by its name as for Font. A font that is not installed falls back to Arial. Restart the game after changing it.").Value;

@@ -49,6 +49,24 @@ namespace EnglishPatch.Hooks
             }
         }
 
+        private static Font _MessageFont;
+        private static bool _MessageFontLoaded;
+
+        //Font for the messages popping up on screen in the game's own font, chosen in the config file (see EnglishPatch.MessageFontName).
+        //null when the setting is empty, those texts then keep the game's font.
+        public static Font MessageFont
+        {
+            get
+            {
+                if (!_MessageFontLoaded)
+                {
+                    _MessageFontLoaded = true;
+                    _MessageFont = string.IsNullOrEmpty(EnglishPatch.MessageFontName?.Trim()) ? null : LoadFont(EnglishPatch.MessageFontName);
+                }
+                return _MessageFont;
+            }
+        }
+
         private static Font _DialogueFont;
         private static bool _DialogueFontLoaded;
 
@@ -986,6 +1004,13 @@ namespace EnglishPatch.Hooks
         };
         private const int MinTitleSize = 14;
 
+        //Labels on a plate of their own, their letters are put in the middle of it (see PlateCenter)
+        private static readonly System.Collections.Generic.HashSet<string> _OnPlate = new System.Collections.Generic.HashSet<string>
+        {
+            //Relationship screen: Friendship, Send Gifts, Outings and the "Ability" tags
+            "General_Favorability", "SecondaryInterface0808", "SecondaryInterface0803", "SecondaryInterface0804", "SecondaryInterface0809",
+        };
+
         //Labels of _FitWidth whose translation has a size tag ("<size=26>Amount to Refine</size>"), it is removed so they can shrink
         private static readonly System.Collections.Generic.HashSet<string> _DropSizeTags = new System.Collections.Generic.HashSet<string>
         {
@@ -1073,6 +1098,10 @@ namespace EnglishPatch.Hooks
                     text.text = _SizeTags.Replace(text.text, "");
                 }
                 TextUtil.ShrinkToWidth(text, MinTitleSize, margin);
+            }
+            if (_OnPlate.Contains(___id))
+            {
+                PlateCenter.Run(text);
             }
 
             WgBattleRound_UpdateRound_Hook.LabelChanged(text);
@@ -1545,7 +1574,8 @@ namespace EnglishPatch.Hooks
 
     /*
      * The item Info box (and Effect box) on the character screen:
-     * Gear tab: the Info box reaches down to the bottom of the Effect box next to it, the texts shrink (down to 14) if they still do not fit.
+     * Gear tab: the Info box reaches down to the bottom of the Effect box next to it, its text is in the middle of the box,
+     * the texts shrink (down to 14) if they still do not fit.
      * Items tab (Gift, Books, Quest): nothing is below the Info box, every item gets the same taller box (see InfoBox.Grow).
      * Medicine tab: the Effect part moves down and gives up some height, the Info box takes that room (see InfoBox.Split).
      * WGPropsIntroduction is also used by popups (gear selection, gifts, battle items), the shop, forge, elixirs and battle status,
@@ -1584,6 +1614,12 @@ namespace EnglishPatch.Hooks
                 //The Info box always reaches down to the bottom of the Effect box next to it
                 InfoBox.SideMargins(info);
                 InfoBox.Grow(info, float.MaxValue, MinSize);
+                //That box is tall, a short Info sat alone at its top while the Effect next to it is in the middle of its box.
+                //The Info is in the middle of its box too, a long one still fills it.
+                if (info != null)
+                {
+                    info.alignment = (TextAnchor)((int)info.alignment % 3 + 3);
+                }
                 TextUtil.ShrinkToHeight(effect, MinSize);
             }
             else if (IsPanelOf<UIInventory>(__instance) && effect == null)
@@ -2802,6 +2838,26 @@ namespace EnglishPatch.Hooks
             }
 
             TextUtil.ReplaceGameFont(__instance, TextUtil.CombatFont);
+        }
+    }
+
+    /*
+     * The messages popping up on screen (items acquired or lost, money, party members, stats and skills increased, notebook):
+     * their texts written in the game's own font (Kaiu) get the MessageFont from the config file, if one is set.
+     * Done when the screen is made and for every message, in case it makes new rows.
+     */
+    [HarmonyPatch]
+    public class UIPromptMessage_MessageFont_Hook
+    {
+        public static System.Collections.Generic.IEnumerable<MethodBase> TargetMethods()
+        {
+            yield return AccessTools.Method(typeof(UIPromptMessage), "Awake");
+            yield return AccessTools.Method(typeof(UIPromptMessage), "AddPromptMessage");
+        }
+
+        public static void Postfix(UIPromptMessage __instance)
+        {
+            TextUtil.ReplaceGameFont(__instance, TextUtil.MessageFont);
         }
     }
 
@@ -4043,6 +4099,117 @@ namespace EnglishPatch.Hooks
             }
 
             TextUtil.ShrinkToWidth(___item_name, 12);
+            PlateCenter.Run(___item_name);
+        }
+    }
+
+    /*
+     * Labels on a plate (relationship screen: Friendship, Send Gifts, Outings, the hobbies, the Ability tags): Unity puts
+     * the line of a text in the middle of its box, but the capitals of the English fonts are drawn low in that line, so
+     * the words sat on the bottom edge of their plate. The drawn letters are measured and moved to the middle of the
+     * plate behind them (the nearest image around the label, at most a few times as tall as the letters).
+     * Moved from where the label is in the prefab every time, nothing moves when no plate is found.
+     */
+    internal static class PlateCenter
+    {
+        private static readonly System.Collections.Generic.Dictionary<RectTransform, Vector2> _Origin = new System.Collections.Generic.Dictionary<RectTransform, Vector2>();
+        private const float MaxPlateHeight = 3.5f;
+
+        public static void Run(Text text)
+        {
+            if (text != null)
+            {
+                Replacer.Run(text, () => Place(text));
+            }
+        }
+
+        private static void Place(Text text)
+        {
+            if (text == null || !text.isActiveAndEnabled)
+            {
+                return;
+            }
+            RectTransform rect = text.rectTransform;
+            if (!_Origin.TryGetValue(rect, out Vector2 origin))
+            {
+                TextUtil.Prune(_Origin);
+                origin = rect.anchoredPosition;
+                _Origin[rect] = origin;
+            }
+            rect.anchoredPosition = origin;
+            if (rect.parent == null || string.IsNullOrEmpty(text.text))
+            {
+                return;
+            }
+
+            //The plate is looked for around the drawn letters: a label box can be much bigger than its plate (the words at its bottom)
+            Vector3? ink = UIBattle_SkillHotKeys_Hook.InkCenter(text);
+            Image plate = ink == null ? null : PlateOf(text, ink.Value);
+            if (LayoutLog.Enabled) LayoutLog.Once("plate " + text.GetInstanceID(), "Plate label '" + text.text + "': " + LayoutLog.Describe(text)
+                + ", plate " + (plate == null ? "not found" : "'" + plate.name + "' size " + LayoutLog.V(plate.rectTransform.rect.size))
+                + ", in " + Path(text.transform));
+            if (ink == null)
+            {
+                return;
+            }
+            //No plate of its own (the hobby plates are part of a bigger picture): the label's box is the size of the band
+            //it is drawn on, the letters go in the middle of the box
+            RectTransform target = plate != null ? plate.rectTransform : rect;
+            Vector3 middle = plate != null ? UIBattle_SkillHotKeys_Hook.DrawnMiddle(plate) : rect.TransformPoint(rect.rect.center);
+            Vector3 shift = rect.parent.InverseTransformVector(middle - ink.Value);
+            Vector3 plateSize = rect.parent.InverseTransformVector(target.TransformVector(target.rect.size));
+            //Within the plate, a bigger move is a measure gone wrong
+            if (Mathf.Abs(shift.x) <= Mathf.Abs(plateSize.x) / 4f && Mathf.Abs(shift.y) <= Mathf.Abs(plateSize.y) / 2f)
+            {
+                rect.anchoredPosition = origin + new Vector2(shift.x, shift.y);
+            }
+        }
+
+        private static string Path(Transform t)
+        {
+            string path = t.name;
+            for (int i = 0; i < 3 && t.parent != null; i++)
+            {
+                t = t.parent;
+                path = t.name + "/" + path;
+            }
+            return path;
+        }
+
+        //The smallest image around the drawn letters, among the images of the label's parent and grandparent (not the label's own)
+        private static Image PlateOf(Text text, Vector3 middle)
+        {
+            Vector3[] corners = new Vector3[4];
+            float letters = Mathf.Abs(text.rectTransform.TransformVector(new Vector3(0f, text.fontSize, 0f)).y);
+            Transform root = text.transform.parent.parent ?? text.transform.parent;
+
+            Image best = null;
+            float bestArea = float.MaxValue;
+            foreach (Image image in root.GetComponentsInChildren<Image>())
+            {
+                Transform t = image.transform;
+                if (t == text.transform || t.IsChildOf(text.transform))
+                {
+                    continue;
+                }
+                if (!image.isActiveAndEnabled || image.sprite == null)
+                {
+                    continue;
+                }
+                image.rectTransform.GetWorldCorners(corners);
+                float width = corners[2].x - corners[0].x, height = corners[1].y - corners[0].y;
+                if (middle.x < corners[0].x || middle.x > corners[2].x || middle.y < corners[0].y || middle.y > corners[1].y
+                    || height < letters * 0.8f || height > letters * MaxPlateHeight)
+                {
+                    continue;
+                }
+                if (width * height < bestArea)
+                {
+                    best = image;
+                    bestArea = width * height;
+                }
+            }
+            return best;
         }
     }
 

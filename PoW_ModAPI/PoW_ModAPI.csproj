@@ -39,11 +39,11 @@
     <AssemblyOriginatorKeyFile>ModLoaderKey.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Debug\DebugHooks.cs" />
     <Compile Include="IPoWMod.cs" />
     <Compile Include="ResourceRedirection\DataManagerRedirector.cs" />
     <Compile Include="ResourceRedirection\ImageLanguageRedirector.cs" />
     <Compile Include="ResourceRedirection\ResourceRedirectManager.cs" />
+    <Compile Include="ResourceRedirection\TextureOverrides.cs" />
     <Compile Include="UI\Hooks\MainMenu.cs" />
     <Compile Include="UI\Console\Console.cs" />
     <Compile Include="UI\Console\ConsoleScript.cs" />

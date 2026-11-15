@@ -1,4 +1,6 @@
 ﻿using BepInEx;
+using BepInEx.Bootstrap;
+using BepInEx.Configuration;
 using HarmonyLib;
 using HarmonyLib.Tools;
 using Heluo;
@@ -12,12 +14,16 @@ using UnityEngine.UI;
 namespace PathOfWuxiaEndingEnglish
 {
     [BepInPlugin(modGUID, modName, modVersion)]
+    [BepInDependency(englishPatchGUID, BepInDependency.DependencyFlags.SoftDependency)]
     [BepInProcess("PathOfWuxia.exe")]
     public class PathOfWuxiaEndingEnglish : BaseUnityPlugin
     {
         private const string modGUID = "PathOfWuxiaEndingEnglish";
         private const string modName = "PathOfWuxiaEndingEnglish";
         private const string modVersion = "0.0.0.1";
+
+        // The font of the endings is set in the English Patch's config file (EndingFont, else Font)
+        private const string englishPatchGUID = "plugins.englishpatch";
 
         private readonly Harmony harmony = new Harmony(modGUID);
 
@@ -238,14 +244,76 @@ namespace PathOfWuxiaEndingEnglish
         }
 
         /**
-         * Sets <text> to Ariel with a font size of <fontSize>.
+         * Sets <text> to the ending font with a font size of <fontSize>.
          * This function allows english text to fit more easily.
          * Note, overflow behaviours are not specified to keep unity's word wrapping and auto shrink feature.
          */
         private static void FormatText(Text text, int fontSize)
         {
-            text.font = Resources.GetBuiltinResource<Font>("Arial.ttf");
+            text.font = EndingFont;
             text.fontSize = fontSize;
+        }
+
+        private static Font endingFont;
+
+        // The font chosen in the English Patch's config file: EndingFont, or Font when it is empty. Arial without the English Patch,
+        // or when the font is not installed. Looked up once.
+        private static Font EndingFont
+        {
+            get
+            {
+                if (endingFont == null)
+                {
+                    string name = EnglishPatchSetting("EndingFont");
+                    if (string.IsNullOrEmpty(name))
+                    {
+                        name = EnglishPatchSetting("Font");
+                    }
+                    endingFont = LoadFont(name);
+                }
+                return endingFont;
+            }
+        }
+
+        // A [Text] setting of the English Patch, empty when the English Patch or the setting is missing
+        private static string EnglishPatchSetting(string key)
+        {
+            if (Chainloader.PluginInfos.TryGetValue(englishPatchGUID, out PluginInfo info) && info.Instance != null
+                && info.Instance.Config.TryGetEntry("Text", key, out ConfigEntry<string> entry))
+            {
+                return entry.Value?.Trim() ?? "";
+            }
+            return "";
+        }
+
+        // An installed Windows font by its name (spaces, dashes and capitals ignored), with Arial behind it for missing characters
+        private static Font LoadFont(string name)
+        {
+            Font arial = Resources.GetBuiltinResource<Font>("Arial.ttf");
+            if (string.IsNullOrEmpty(name) || name.Equals("Arial", StringComparison.OrdinalIgnoreCase))
+            {
+                return arial;
+            }
+
+            string wanted = Simplified(name);
+            foreach (string installed in Font.GetOSInstalledFontNames())
+            {
+                if (Simplified(installed) == wanted)
+                {
+                    Font font = Font.CreateDynamicFontFromOSFont(new[] { installed, "Arial" }, 16);
+                    if (font != null)
+                    {
+                        return font;
+                    }
+                }
+            }
+            FileLog.Log("Ending font '" + name + "' is not installed, using Arial");
+            return arial;
+        }
+
+        private static string Simplified(string fontName)
+        {
+            return fontName.Replace(" ", "").Replace("-", "").Replace("_", "").ToLowerInvariant();
         }
 
         /**

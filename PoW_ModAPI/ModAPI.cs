@@ -82,6 +82,9 @@ namespace ModAPI
         private Harmony _HM;
         public ResourceRedirectManager ResourceRedirector = ResourceRedirectManager.GetInstance();
 
+        //Texture mods in ModResources\Textures, see TextureOverrides
+        public TextureOverrides Textures { get { return TextureOverrides.Instance; } }
+
         private bool _ModsLoaded = false;
         private readonly SortedList<int, PoWMod_Wrapper> _Mods = new SortedList<int, PoWMod_Wrapper>();
         private int _ModsHighestLoadOrderIndex = -1;
@@ -103,6 +106,12 @@ namespace ModAPI
             int loadOrderIndex = modWrapper.GetLoadOrderIndex();
             if (loadOrderIndex == -1)
             {
+                _NewMods.Add(modWrapper);
+            }
+            else if (_Mods.ContainsKey(loadOrderIndex))
+            {
+                //Two mods with the same index in their config files: the second one gets a new index instead of stopping the loading
+                Debug.LogWarning("[ModAPI] " + mod.GetName() + " has the load order index " + loadOrderIndex + " of " + _Mods[loadOrderIndex].Mod.GetName() + ", it gets a new one");
                 _NewMods.Add(modWrapper);
             }
             else

@@ -12902,7 +12902,7 @@ t3070203_005	in0208	0	0	{name_1} {name_2}, you first		0			0	0
 t3070203_006	in0208	0	0	Begin.		0			0	0
 t3070203_100	in0208	0	0	Well done.		0			0	0
 t3070203_101	in0105	1	0	Hmph... 		0			0	0
-Your opponents is wooden automatons under my control. Don't hold back; give it your all and destroy them.	in0102	1	0	Your technique and reactions were flawless, congratulations {friend_1} {name_1}.		0	t3070203_103	f_stand00_talk03	0	0
+t3070203_102	in0102	1	0	Your technique and reactions were flawless, congratulations {friend_1} {name_1}.		0	t3070203_103	f_stand00_talk03	0	0
 t3070203_103	in03012	0	0	{junior}'s aim is pretty good, too.		0	t3070203_104		0	0
 t3070203_104	in0107	0	0	Mm. Keep calm in battle, and you will not be defeated.		0	t3070203_105		0	0
 t3070203_105	in04003	0	0	...Such precise and swift attacks... is that really a wooden automaton...?		0	t3070203_106	m_stand00_talk01	0	0
@@ -36247,7 +36247,7 @@ t5201206_033	in0209	0	0	Compared to these boring pieces of wood, you should have
 t5201206_034	in0207	0	0	Oh... Pity... it seems that I have to do as you say and have some fun by myself.		0			0	0
 t5201206_035	in0207	0	0	Let's go, little {name_2}, your Master Mu, he's going to stay all day again.		0		f_stand00_talk23	0	0
 t5201206_036	in0209	0	0	...... 		0			0	0
-...Over the past several weeks, the Pavilion's disciples have clashed with the corpse zombies several times. The disappearance of Disciple He has also become a lingering fear in the hearts of many disciples.	in0201	0	0	—In that case, we truly must pay close attention to that swordsman's intentions.		0			0	0
+t5202091_100	in0201	0	0	—In that case, we truly must pay close attention to that swordsman's intentions.		0			0	0
 t5202091_101	in0201	0	0	...Over the past few months, the disciples in the Pavilion have fought against Corpse Zombies several times, and the incident of Junior Disciple He's disappearance has become a source of anxiety for many disciples.		0	t5202091_102		0	0
 t5202091_102	in0201	0	0	Yet despite our repeated encounters, we have still found no substantial clues as to whom the corpse zombie answer to, nor why they have joined forces with the Hall of Vicissitudes to repeatedly stir up trouble at the Xia Pavilion.		0	t5202091_103	m_stand00_talk01	0	0
 t5202091_103	in0201	0	0	If this swordsman truly has ties to the corpse people, perhaps he can finally break the disadvantage in which we have been kept on the defensive for so long.		0		m_stand00_talk03	0	0

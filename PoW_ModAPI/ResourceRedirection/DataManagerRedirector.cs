@@ -60,7 +60,16 @@ namespace PoW_ModAPI.ResourceRedirection
                         //First we load the original
                         var resourceRedirector = ResourceRedirectManager.GetInstance();
                         resourceRedirector.ForceOriginalLoadInNextLoad();
-                        byte[] array = ___resource.LoadBytes(dataPath);
+                        byte[] array;
+                        try
+                        {
+                            array = ___resource.LoadBytes(dataPath);
+                        }
+                        finally
+                        {
+                            //Never left on for the next asset (a redirected image would load the original)
+                            resourceRedirector.EndForceOriginalLoad();
+                        }
                         result = ((Activator.CreateInstance(csvDataSourceType, new object[] { array }) as IDictionary));
 
                         List<string> redirects = resourceRedirector.GetAllRedirects(dataPath);
