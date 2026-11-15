@@ -23,12 +23,13 @@ Newest first, from the first of these releases (23 October 2026).
 - **Relationship screen:** Friendship, Send Gifts, Outings, the hobbies and the Ability tags in the middle of their plates (the letters sat on the bottom edge).
 
 ### Texture mods
-- **Outfits, hair, weapons and accessories can be repainted:** every `.png` in `ModResources\Textures` (any sub folder, one per mod) replaces the game texture of the same name when a model loads. With no files there nothing is looked at. Reloading the texture mods updates every loaded model, not only those on screen.
+- **Outfits, hair, weapons and accessories can be repainted:** every `.png` in `ModResources\Textures` (any sub folder, one per mod) replaces the game texture of the same name when a model loads. With no files there nothing is looked at. Reloading the texture mods updates every loaded model, not only those on screen, and a removed file gives each texture slot its own game texture back.
 
 ### Mod API
 - An asset with a mod file of a type ModAPI cannot build loads the game's own asset instead of nothing; a prefab that fails to load no longer throws an error.
 - After the text tables are loaded, the next image no longer loads its original instead of the English one.
 - Two mods with the same load order number no longer stop the mod loading.
+- A mod image that is not a readable image, or a mod file that is gone or locked, loads the game's own asset instead of Unity's red placeholder or an error.
 - The F9 log console keeps the last 500 lines instead of every line since the start, so memory no longer grows the longer you play.
 - Removed a debug hook that logged every battle schedule load as an error, and other dead code.
 
@@ -39,7 +40,7 @@ Newest first, from the first of these releases (23 October 2026).
 - **Diagnostic log**, on by default (`DiagnosticLog` setting): `BepInEx\EnglishPatch_Diagnostics.log` lists the Windows language, the mod files and stray copies of them, the loaded plugins, the translation folder, the fonts and the game controllers, with every controller axis or button that moves.
 - **`BepInEx\LogOutput.log`** is written again, its first lines give the running build and whether the diagnostic log is on (or why it could not be written).
 - The diagnostic log does not slow the game: controllers are looked up every 2 seconds and only watched while one is plugged in (an earlier test build made loading a save slow).
-- **Release packing:** `Output\PackRelease.bat` builds the plugins in Release before packing and stops if a build fails, so a release can no longer ship old DLLs; the release includes the default `plugins.englishpatch.cfg` and writes `LogOutput.log`.
+- **Release packing:** `Output\PackRelease.bat` builds the plugins in Release before packing and stops if a build fails, so a release can no longer ship old DLLs; a failed zip stops it with an error instead of "Done!"; the release includes the default `plugins.englishpatch.cfg` and writes `LogOutput.log`.
 - Known game behaviour: any device Windows lists as a game controller (rudder pedals, wheel, flight stick) is taken for a gamepad, and a pedal at rest walks the character like a held W key. Unplug it while playing.
 
 ## 29 October 2026
