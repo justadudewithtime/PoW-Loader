@@ -4142,8 +4142,12 @@ namespace EnglishPatch.Hooks
                 return;
             }
 
-            Image plate = PlateOf(text);
+            //The plate is looked for around the drawn letters: a label box can be much bigger than its plate (the words at its bottom)
             Vector3? ink = UIBattle_SkillHotKeys_Hook.InkCenter(text);
+            Image plate = ink == null ? null : PlateOf(text, ink.Value);
+            if (LayoutLog.Enabled) LayoutLog.Once("plate " + text.GetInstanceID(), "Plate label '" + text.text + "': " + LayoutLog.Describe(text)
+                + ", plate " + (plate == null ? "not found" : "'" + plate.name + "' size " + LayoutLog.V(plate.rectTransform.rect.size))
+                + ", in " + Path(text.transform));
             if (plate == null || ink == null)
             {
                 return;
@@ -4157,37 +4161,34 @@ namespace EnglishPatch.Hooks
             }
         }
 
-        //The smallest image around the middle of the label: its parent, next to it, or next to its parent
-        private static Image PlateOf(Text text)
+        private static string Path(Transform t)
+        {
+            string path = t.name;
+            for (int i = 0; i < 3 && t.parent != null; i++)
+            {
+                t = t.parent;
+                path = t.name + "/" + path;
+            }
+            return path;
+        }
+
+        //The smallest image around the drawn letters, among the images of the label's parent and grandparent (not the label's own)
+        private static Image PlateOf(Text text, Vector3 middle)
         {
             Vector3[] corners = new Vector3[4];
-            text.rectTransform.GetWorldCorners(corners);
-            Vector3 middle = (corners[0] + corners[2]) / 2f;
             float letters = Mathf.Abs(text.rectTransform.TransformVector(new Vector3(0f, text.fontSize, 0f)).y);
-            Transform parent = text.transform.parent;
-            var candidates = new System.Collections.Generic.List<Transform> { parent };
-            foreach (Transform child in parent)
-            {
-                candidates.Add(child);
-            }
-            if (parent.parent != null)
-            {
-                foreach (Transform child in parent.parent)
-                {
-                    candidates.Add(child);
-                }
-            }
+            Transform root = text.transform.parent.parent ?? text.transform.parent;
 
             Image best = null;
             float bestArea = float.MaxValue;
-            foreach (Transform t in candidates)
+            foreach (Image image in root.GetComponentsInChildren<Image>())
             {
+                Transform t = image.transform;
                 if (t == text.transform || t.IsChildOf(text.transform))
                 {
                     continue;
                 }
-                Image image = t.GetComponent<Image>();
-                if (image == null || !image.isActiveAndEnabled || image.sprite == null)
+                if (!image.isActiveAndEnabled || image.sprite == null)
                 {
                     continue;
                 }
