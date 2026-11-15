@@ -82,6 +82,9 @@ namespace ModAPI
         private Harmony _HM;
         public ResourceRedirectManager ResourceRedirector = ResourceRedirectManager.GetInstance();
 
+        //Texture mods in ModResources\Textures, see TextureOverrides
+        public TextureOverrides Textures { get { return TextureOverrides.Instance; } }
+
         private bool _ModsLoaded = false;
         private readonly SortedList<int, PoWMod_Wrapper> _Mods = new SortedList<int, PoWMod_Wrapper>();
         private int _ModsHighestLoadOrderIndex = -1;
