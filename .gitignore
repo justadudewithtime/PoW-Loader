@@ -517,3 +517,6 @@ Output/Tools/SheetUtilities/System.ValueTuple.dll
 Output/Tools/SheetUtilities/System.ValueTuple.xml
 Output/Tools/SheetUtilities/RegexTestInput.txt
 *.csv
+
+# Dev tools build output (not part of the release)
+Output/DevTools/

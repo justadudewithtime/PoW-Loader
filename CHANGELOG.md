@@ -1,4 +1,4 @@
-# Changelog
+﻿# Changelog
 
 Path of Wuxia (侠隐阁) English Mod: our fixes to the English Patch, the mod loader (ModAPI) and the translation files.
 Newest first, from the first of these releases (23 October 2026).
@@ -18,6 +18,12 @@ Newest first, from the first of these releases (23 October 2026).
 
 ### Layout
 - **Gear tab:** the Info text is in the middle of its box, like the Effect next to it. A short Info ("Strong and heavy, not easily rust") sat alone at the top of the tall box.
+
+### Texture mods
+- **Outfits, hair, weapons and accessories can be repainted:** every `.png` in `ModResources\Textures` (any sub folder, one per mod) replaces the game texture of the same name when a model loads. With no files there nothing is looked at.
+
+### Dev Tools (separate plugin, not in the release)
+- **`PoW_DevTools.dll`** (project `PoW_DevTools`, built into `Output\DevTools`): F5 the game's own cheating console in English with searchable ID lists (items, skills, internal arts, traits, rewards, characters, about 2000 story flags) and all 4808 Chinese developer notes in English; F6 animation browser (every clip, played on the player or a character nearby); F7 photo mode (free camera, pause, turn the character, screenshots up to 4x); F8 wardrobe (hair, head and body of other models, accessories, weapons in the hands with the combat grip, tint and recolour, texture export and reload for texture mods).
 
 ### Troubleshooting
 - **Diagnostic log**, on by default (`DiagnosticLog` setting): `BepInEx\EnglishPatch_Diagnostics.log` lists the Windows language, the mod files and stray copies of them, the loaded plugins, the translation folder, the fonts and the game controllers, with every controller axis or button that moves.

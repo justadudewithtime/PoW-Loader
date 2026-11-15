@@ -1,4 +1,4 @@
-![](Resources/Mods/EnglishTranslate/Image/ui/uimain/Main_title.png?raw=true)
+﻿![](Resources/Mods/EnglishTranslate/Image/ui/uimain/Main_title.png?raw=true)
 
 # Path of Wuxia ModLoader + English Patch + Mods
 
@@ -75,6 +75,22 @@ This repository leverages **BepInEx** as the underlying mod loader and includes 
 - **Prefab Texture Modification**: Ability to modify textures within game prefabs.
 
 Additionally, the `EnglishPatch` plugin is included to support English translations. Place translated asset files into the `Mods/EnglishTranslate` folder, and the plugin will handle loading these resources and resolve display issues.
+
+---
+### Texture Mods
+
+Every `.png` in `ModResources\Textures` (any sub folder, so each mod keeps its own folder) replaces the game texture of the same name: outfits, hair, weapons, accessories. To make one, export the textures of a character with the Dev Tools wardrobe (F8 > Colours > Export textures, written to `TextureDump`), paint over them keeping size and layout, save them with the same file name into `ModResources\Textures\<your mod>\` and press Reload texture mods.
+
+### Dev Tools
+
+`PoW_DevTools` is a separate plugin for modders, not part of the English release. Build it and copy `Output\DevTools\BepInEx\plugins\PoW_DevTools.dll` into the game's `BepInEx\plugins`.
+
+| Key | Tool |
+|---|---|
+| F5 | The game's own cheating console, in English, with searchable ID lists and the developers' notes translated |
+| F6 | Animation browser: every animation clip, played on the player or a character nearby |
+| F7 | Photo mode: free camera, pause, turn the character, screenshots up to 4x into `PhotoMode` |
+| F8 | Wardrobe: hair, head, body, accessories and weapons, colours, texture export and reload |
 
 ---
 ### Important Configuration Note for BepInEx

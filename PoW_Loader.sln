@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoW_QuadruplicationOfLikeab
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathOfWuxiaEndingEnglish", "PathOfWuxiaEndingEnglish\PathOfWuxiaEndingEnglish.csproj", "{47452C3F-37E0-4480-B3FC-E9DB0BA938D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoW_DevTools", "PoW_DevTools\PoW_DevTools.csproj", "{76E009FC-B9A1-4C72-A047-5D5102859C99}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,18 @@ Global
 		{47452C3F-37E0-4480-B3FC-E9DB0BA938D0}.Release|x64.Build.0 = Release|Any CPU
 		{47452C3F-37E0-4480-B3FC-E9DB0BA938D0}.Release|x86.ActiveCfg = Release|Any CPU
 		{47452C3F-37E0-4480-B3FC-E9DB0BA938D0}.Release|x86.Build.0 = Release|Any CPU
+		{76E009FC-B9A1-4C72-A047-5D5102859C99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76E009FC-B9A1-4C72-A047-5D5102859C99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76E009FC-B9A1-4C72-A047-5D5102859C99}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{76E009FC-B9A1-4C72-A047-5D5102859C99}.Debug|x64.Build.0 = Debug|Any CPU
+		{76E009FC-B9A1-4C72-A047-5D5102859C99}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{76E009FC-B9A1-4C72-A047-5D5102859C99}.Debug|x86.Build.0 = Debug|Any CPU
+		{76E009FC-B9A1-4C72-A047-5D5102859C99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76E009FC-B9A1-4C72-A047-5D5102859C99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76E009FC-B9A1-4C72-A047-5D5102859C99}.Release|x64.ActiveCfg = Release|Any CPU
+		{76E009FC-B9A1-4C72-A047-5D5102859C99}.Release|x64.Build.0 = Release|Any CPU
+		{76E009FC-B9A1-4C72-A047-5D5102859C99}.Release|x86.ActiveCfg = Release|Any CPU
+		{76E009FC-B9A1-4C72-A047-5D5102859C99}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

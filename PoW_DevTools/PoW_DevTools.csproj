@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <RootNamespace>DevToolsProbe</RootNamespace>
+    <AssemblyName>PoW_DevTools</AssemblyName>
+    <!-- Not part of the English release: its own folder, copied into the game's BepInEx\plugins by hand -->
+    <OutputPath>..\Output\DevTools\BepInEx\plugins\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- English notes of the game's Chinese developer notes, shown in the console's ID lists -->
+    <EmbeddedResource Include="Notes.tsv" LogicalName="DevToolsProbe.Notes.tsv" />
+  </ItemGroup>
+
+  <!-- Compile only: everything below is already in the game or BepInEx, so nothing is copied to the output.
+       The Mod API's texture mods are used through reflection, the tools also run without them. -->
+  <ItemGroup>
+    <Reference Include="0Harmony" HintPath="$(BepInExCore)0Harmony.dll" Private="false" />
+    <Reference Include="Artemis_Unity5" HintPath="$(GameDependencies)Artemis_Unity5.dll" Private="false" />
+    <Reference Include="Assembly-CSharp" HintPath="$(GameDependencies)Assembly-CSharp.dll" Private="false" />
+    <Reference Include="BepInEx" HintPath="$(BepInExCore)BepInEx.dll" Private="false" />
+    <Reference Include="UnityEngine" HintPath="$(GameDependencies)UnityEngine.dll" Private="false" />
+    <Reference Include="UnityEngine.AnimationModule" HintPath="$(GameDependencies)UnityEngine.AnimationModule.dll" Private="false" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="$(GameDependencies)UnityEngine.CoreModule.dll" Private="false" />
+    <Reference Include="UnityEngine.IMGUIModule" HintPath="$(GameDependencies)UnityEngine.IMGUIModule.dll" Private="false" />
+    <Reference Include="UnityEngine.ImageConversionModule" HintPath="$(GameDependencies)UnityEngine.ImageConversionModule.dll" Private="false" />
+    <Reference Include="UnityEngine.InputModule" HintPath="$(GameDependencies)UnityEngine.InputModule.dll" Private="false" />
+    <Reference Include="UnityEngine.ScreenCaptureModule" HintPath="$(GameDependencies)UnityEngine.ScreenCaptureModule.dll" Private="false" />
+    <Reference Include="UnityEngine.TextRenderingModule" HintPath="$(GameDependencies)UnityEngine.TextRenderingModule.dll" Private="false" />
+    <Reference Include="UnityEngine.UI" HintPath="$(GameDependencies)UnityEngine.UI.dll" Private="false" />
+    <Reference Include="UnityEngine.UIModule" HintPath="$(GameDependencies)UnityEngine.UIModule.dll" Private="false" />
+  </ItemGroup>
+</Project>
