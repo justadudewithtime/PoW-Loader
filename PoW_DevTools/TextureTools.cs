@@ -5,7 +5,7 @@ using System.Linq;
 using System.Reflection;
 using UnityEngine;
 
-namespace DevToolsProbe
+namespace PoWDevTools
 {
     /*
      * Export: writes the textures of a character part as PNG files (TextureDump\<model>\), the starting point for a
@@ -43,7 +43,7 @@ namespace DevToolsProbe
             }
             catch (Exception e)
             {
-                Debug.LogError("[DevToolsProbe] Reload: " + e);
+                Debug.LogError("[DevTools] Reload: " + e);
                 return "Reload failed: " + (e.InnerException ?? e).Message;
             }
         }
@@ -127,7 +127,7 @@ namespace DevToolsProbe
             }
             catch (Exception e)
             {
-                Debug.LogError("[DevToolsProbe] Export of " + texture.name + " failed: " + e.Message);
+                Debug.LogError("[DevTools] Export of " + texture.name + " failed: " + e.Message);
                 return false;
             }
             finally

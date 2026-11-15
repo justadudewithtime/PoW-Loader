@@ -5,7 +5,7 @@ using System.Linq;
 using Heluo.Features.Wearing;
 using UnityEngine;
 
-namespace DevToolsProbe
+namespace PoWDevTools
 {
     internal enum ColorPart { Hair, Head, Body, Accessories }
 
@@ -153,7 +153,7 @@ namespace DevToolsProbe
             }
             catch (Exception e)
             {
-                Debug.LogError("[DevToolsProbe] Recolour of " + source.name + " failed: " + e.Message);
+                Debug.LogError("[DevTools] Recolour of " + source.name + " failed: " + e.Message);
                 return null;
             }
             finally

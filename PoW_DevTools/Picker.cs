@@ -7,7 +7,7 @@ using Heluo.Data;
 using UnityEngine;
 using System.Text.RegularExpressions;
 
-namespace DevToolsProbe
+namespace PoWDevTools
 {
     /*
      * The console's ID fields get a "▼" button next to them. It opens a list of everything of that kind in the game
@@ -123,7 +123,7 @@ namespace DevToolsProbe
             }
             catch (Exception e)
             {
-                Debug.LogError("[DevToolsProbe] Could not list " + kind + ": " + e);
+                Debug.LogError("[DevTools] Could not list " + kind + ": " + e);
                 _entries = new List<Entry>();
             }
         }

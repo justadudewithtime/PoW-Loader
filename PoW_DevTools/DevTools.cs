@@ -6,7 +6,7 @@ using Heluo;
 using Heluo.UI;
 using UnityEngine;
 
-namespace DevToolsProbe
+namespace PoWDevTools
 {
     /*
      * Dev Tools: tools for modding and having fun with the game, not part of the English release.
@@ -15,7 +15,7 @@ namespace DevToolsProbe
      */
     [BepInPlugin("pow.devtools", "Dev Tools", "1.0.0")]
     [BepInProcess("PathOfWuxia.exe")]
-    public class DevToolsProbe : BaseUnityPlugin
+    public class DevToolsPlugin : BaseUnityPlugin
     {
         private CheatingConsole _console;
         private readonly PhotoMode _photo = new PhotoMode();
@@ -25,7 +25,7 @@ namespace DevToolsProbe
 
         private void Awake()
         {
-            new Harmony("pow.devtools").PatchAll(typeof(DevToolsProbe).Assembly);
+            new Harmony("pow.devtools").PatchAll(typeof(DevToolsPlugin).Assembly);
 
             //The console is a MonoBehaviour the release build never creates: we create it, it handles F5 and draws itself
             _console = gameObject.AddComponent<CheatingConsole>();

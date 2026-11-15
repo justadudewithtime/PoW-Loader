@@ -5,12 +5,12 @@ using System.Text;
 using System.Text.RegularExpressions;
 using UnityEngine;
 
-namespace DevToolsProbe
+namespace PoWDevTools
 {
     /*
      * English for the developers' Chinese notes (items, skills, internal arts, traits, quests, characters, rewards).
-     * All 4808 notes are translated in DevToolsProbe_Notes.tsv, built into the plugin, so nothing is looked up online.
-     * BepInEx\config\DevToolsProbe_Translations.txt (Chinese<TAB>English per line) can override or add lines.
+     * All 4808 notes are translated in Notes.tsv, built into the plugin, so nothing is looked up online.
+     * BepInEx\config\DevTools_Translations.txt (Chinese<TAB>English per line) can override or add lines.
      */
     internal static class Translator
     {
@@ -40,7 +40,7 @@ namespace DevToolsProbe
             _english = new Dictionary<string, string>();
             try
             {
-                using (Stream s = typeof(Translator).Assembly.GetManifestResourceStream("DevToolsProbe.Notes.tsv"))
+                using (Stream s = typeof(Translator).Assembly.GetManifestResourceStream("PoWDevTools.Notes.tsv"))
                 {
                     if (s != null)
                     {
@@ -50,12 +50,12 @@ namespace DevToolsProbe
                         }
                     }
                 }
-                string file = Path.Combine(BepInEx.Paths.ConfigPath, "DevToolsProbe_Translations.txt");
+                string file = Path.Combine(BepInEx.Paths.ConfigPath, "DevTools_Translations.txt");
                 if (File.Exists(file)) Read(File.ReadAllText(file, Encoding.UTF8));
             }
             catch (Exception e)
             {
-                Debug.LogError("[DevToolsProbe] Could not load the note translations: " + e.Message);
+                Debug.LogError("[DevTools] Could not load the note translations: " + e.Message);
             }
         }
 

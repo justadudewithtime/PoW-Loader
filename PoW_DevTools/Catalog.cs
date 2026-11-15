@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 using Heluo;
 using Heluo.Data;
 
-namespace DevToolsProbe
+namespace PoWDevTools
 {
     //One entry of a picker list: the ID, its English name, the developers' note (often Chinese) and longer details
     internal class Entry
@@ -127,7 +127,7 @@ namespace DevToolsProbe
                 }
                 catch (Exception e)
                 {
-                    UnityEngine.Debug.LogError("[DevToolsProbe] Reading the flags failed: " + e.Message);
+                    UnityEngine.Debug.LogError("[DevTools] Reading the flags failed: " + e.Message);
                 }
                 _flagUses = uses;
                 _scanning = false;
@@ -163,7 +163,7 @@ namespace DevToolsProbe
             }
             catch (Exception e)
             {
-                UnityEngine.Debug.LogError("[DevToolsProbe] Could not read flags from " + file + ": " + e.Message);
+                UnityEngine.Debug.LogError("[DevTools] Could not read flags from " + file + ": " + e.Message);
             }
         }
 

@@ -8,7 +8,7 @@ using Heluo.Global;
 using Heluo.UI;
 using UnityEngine;
 
-namespace DevToolsProbe
+namespace PoWDevTools
 {
     /*
      * Battle replay (F5 console > Battle replay): any of the game's battles can be fought again.

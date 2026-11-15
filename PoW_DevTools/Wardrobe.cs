@@ -12,13 +12,13 @@ using Heluo.Features.Wearing;
 using Heluo.Utility;
 using UnityEngine;
 
-namespace DevToolsProbe
+namespace PoWDevTools
 {
     /*
      * F8: wardrobe. Swaps hair, head and body with those of any other model of the same body type, puts accessories
      * on the five attach points and a weapon in the hands, with the game's own AvatarComponent (what its developers'
      * appearance editor used). Changes are visual only. "Keep this look" puts it back on the player after loading a map,
-     * and looks are kept in BepInEx\config\DevToolsProbe_Looks.txt.
+     * and looks are kept in BepInEx\config\DevTools_Looks.txt.
      */
     internal class Wardrobe : Heluo.Controller.IControllable
     {
@@ -158,7 +158,7 @@ namespace DevToolsProbe
             }
             catch (Exception e)
             {
-                Debug.LogError("[DevToolsProbe] Could not read the model list: " + e);
+                Debug.LogError("[DevTools] Could not read the model list: " + e);
             }
         }
 
@@ -366,7 +366,7 @@ namespace DevToolsProbe
             catch (Exception e)
             {
                 _message = "Could not change " + SlotNames[(int)slot].ToLower() + ": " + e.GetType().Name;
-                Debug.LogError("[DevToolsProbe] Wardrobe " + slot + " " + value + ": " + e);
+                Debug.LogError("[DevTools] Wardrobe " + slot + " " + value + ": " + e);
                 return false;
             }
         }
@@ -403,13 +403,16 @@ namespace DevToolsProbe
         }
 
         //-------------------------------------------------------------- saved looks
-        private string LooksFile { get { return Path.Combine(BepInEx.Paths.ConfigPath, "DevToolsProbe_Looks.txt"); } }
+        private string LooksFile { get { return Path.Combine(BepInEx.Paths.ConfigPath, "DevTools_Looks.txt"); } }
 
         //One line per model: model<TAB>slot=value<TAB>slot=value...
         private void LoadLooks()
         {
             try
             {
+                //Looks saved by the first builds (named DevToolsProbe) move to the new file name
+                string old = Path.Combine(BepInEx.Paths.ConfigPath, "DevToolsProbe_Looks.txt");
+                if (!File.Exists(LooksFile) && File.Exists(old)) File.Move(old, LooksFile);
                 if (!File.Exists(LooksFile)) return;
                 foreach (string line in File.ReadAllLines(LooksFile, Encoding.UTF8))
                 {
@@ -424,7 +427,7 @@ namespace DevToolsProbe
                     _looks[parts[0]] = look;
                 }
             }
-            catch (Exception e) { Debug.LogError("[DevToolsProbe] Could not read the saved looks: " + e.Message); }
+            catch (Exception e) { Debug.LogError("[DevTools] Could not read the saved looks: " + e.Message); }
         }
 
         private void SaveLooks()
@@ -434,7 +437,7 @@ namespace DevToolsProbe
                 File.WriteAllLines(LooksFile, _looks.Where(l => l.Value.Count > 0)
                     .Select(l => l.Key + "\t" + string.Join("\t", l.Value.Select(v => v.Key + "=" + v.Value).ToArray())).ToArray(), Encoding.UTF8);
             }
-            catch (Exception e) { Debug.LogError("[DevToolsProbe] Could not save the looks: " + e.Message); }
+            catch (Exception e) { Debug.LogError("[DevTools] Could not save the looks: " + e.Message); }
         }
 
         //-------------------------------------------------------------- panel
@@ -686,7 +689,7 @@ namespace DevToolsProbe
                 if (take) Game.Input.Push(this); else Game.Input.Pop(this);
                 _inputTaken = take;
             }
-            catch (Exception e) { Debug.LogError("[DevToolsProbe] Input: " + e.Message); }
+            catch (Exception e) { Debug.LogError("[DevTools] Input: " + e.Message); }
         }
 
         public void OnKeyDown(Heluo.Controller.Key key) { }

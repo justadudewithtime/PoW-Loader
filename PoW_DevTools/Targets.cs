@@ -6,7 +6,7 @@ using Heluo.Actor;
 using Heluo.Utility;
 using UnityEngine;
 
-namespace DevToolsProbe
+namespace PoWDevTools
 {
     //The character the animation browser, photo mode and wardrobe act on: the player, then characters within 25 m
     internal static class Targets

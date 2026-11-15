@@ -9,7 +9,7 @@ using Heluo.Controller;
 using Heluo.Utility;
 using UnityEngine;
 
-namespace DevToolsProbe
+namespace PoWDevTools
 {
     /*
      * F6: animation browser. Every clip of the game (from its asset index) can be played on the player or a character
@@ -174,7 +174,7 @@ namespace DevToolsProbe
             }
             catch (Exception e)
             {
-                Debug.LogError("[DevToolsProbe] Input: " + e.Message);
+                Debug.LogError("[DevTools] Input: " + e.Message);
             }
         }
 
@@ -256,7 +256,7 @@ namespace DevToolsProbe
             catch (Exception e)
             {
                 Toast("Could not play " + clipName + ": " + e.GetType().Name);
-                Debug.LogError("[DevToolsProbe] Playing " + clipName + ": " + e);
+                Debug.LogError("[DevTools] Playing " + clipName + ": " + e);
             }
         }
 
@@ -304,7 +304,7 @@ namespace DevToolsProbe
                 }
                 catch (Exception e)
                 {
-                    Debug.LogError("[DevToolsProbe] Could not read the animation list: " + e);
+                    Debug.LogError("[DevTools] Could not read the animation list: " + e);
                 }
                 return _clips;
             }
