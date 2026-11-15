@@ -1004,6 +1004,13 @@ namespace EnglishPatch.Hooks
         };
         private const int MinTitleSize = 14;
 
+        //Labels on a plate of their own, their letters are put in the middle of it (see PlateCenter)
+        private static readonly System.Collections.Generic.HashSet<string> _OnPlate = new System.Collections.Generic.HashSet<string>
+        {
+            //Relationship screen: Friendship, Send Gifts, Outings and the "Ability" tags
+            "General_Favorability", "SecondaryInterface0808", "SecondaryInterface0803", "SecondaryInterface0804", "SecondaryInterface0809",
+        };
+
         //Labels of _FitWidth whose translation has a size tag ("<size=26>Amount to Refine</size>"), it is removed so they can shrink
         private static readonly System.Collections.Generic.HashSet<string> _DropSizeTags = new System.Collections.Generic.HashSet<string>
         {
@@ -1091,6 +1098,10 @@ namespace EnglishPatch.Hooks
                     text.text = _SizeTags.Replace(text.text, "");
                 }
                 TextUtil.ShrinkToWidth(text, MinTitleSize, margin);
+            }
+            if (_OnPlate.Contains(___id))
+            {
+                PlateCenter.Run(text);
             }
 
             WgBattleRound_UpdateRound_Hook.LabelChanged(text);
@@ -4088,6 +4099,112 @@ namespace EnglishPatch.Hooks
             }
 
             TextUtil.ShrinkToWidth(___item_name, 12);
+            PlateCenter.Run(___item_name);
+        }
+    }
+
+    /*
+     * Labels on a plate (relationship screen: Friendship, Send Gifts, Outings, the hobbies, the Ability tags): Unity puts
+     * the line of a text in the middle of its box, but the capitals of the English fonts are drawn low in that line, so
+     * the words sat on the bottom edge of their plate. The drawn letters are measured and moved to the middle of the
+     * plate behind them (the nearest image around the label, at most a few times as tall as the letters).
+     * Moved from where the label is in the prefab every time, nothing moves when no plate is found.
+     */
+    internal static class PlateCenter
+    {
+        private static readonly System.Collections.Generic.Dictionary<RectTransform, Vector2> _Origin = new System.Collections.Generic.Dictionary<RectTransform, Vector2>();
+        private const float MaxPlateHeight = 3.5f;
+
+        public static void Run(Text text)
+        {
+            if (text != null)
+            {
+                Replacer.Run(text, () => Place(text));
+            }
+        }
+
+        private static void Place(Text text)
+        {
+            if (text == null || !text.isActiveAndEnabled)
+            {
+                return;
+            }
+            RectTransform rect = text.rectTransform;
+            if (!_Origin.TryGetValue(rect, out Vector2 origin))
+            {
+                TextUtil.Prune(_Origin);
+                origin = rect.anchoredPosition;
+                _Origin[rect] = origin;
+            }
+            rect.anchoredPosition = origin;
+            if (rect.parent == null || string.IsNullOrEmpty(text.text))
+            {
+                return;
+            }
+
+            Image plate = PlateOf(text);
+            Vector3? ink = UIBattle_SkillHotKeys_Hook.InkCenter(text);
+            if (plate == null || ink == null)
+            {
+                return;
+            }
+            Vector3 shift = rect.parent.InverseTransformVector(UIBattle_SkillHotKeys_Hook.DrawnMiddle(plate) - ink.Value);
+            Vector3 plateSize = rect.parent.InverseTransformVector(plate.rectTransform.TransformVector(plate.rectTransform.rect.size));
+            //Within the plate, a bigger move is a measure gone wrong
+            if (Mathf.Abs(shift.x) <= Mathf.Abs(plateSize.x) / 4f && Mathf.Abs(shift.y) <= Mathf.Abs(plateSize.y) / 2f)
+            {
+                rect.anchoredPosition = origin + new Vector2(shift.x, shift.y);
+            }
+        }
+
+        //The smallest image around the middle of the label: its parent, next to it, or next to its parent
+        private static Image PlateOf(Text text)
+        {
+            Vector3[] corners = new Vector3[4];
+            text.rectTransform.GetWorldCorners(corners);
+            Vector3 middle = (corners[0] + corners[2]) / 2f;
+            float letters = Mathf.Abs(text.rectTransform.TransformVector(new Vector3(0f, text.fontSize, 0f)).y);
+            Transform parent = text.transform.parent;
+            var candidates = new System.Collections.Generic.List<Transform> { parent };
+            foreach (Transform child in parent)
+            {
+                candidates.Add(child);
+            }
+            if (parent.parent != null)
+            {
+                foreach (Transform child in parent.parent)
+                {
+                    candidates.Add(child);
+                }
+            }
+
+            Image best = null;
+            float bestArea = float.MaxValue;
+            foreach (Transform t in candidates)
+            {
+                if (t == text.transform || t.IsChildOf(text.transform))
+                {
+                    continue;
+                }
+                Image image = t.GetComponent<Image>();
+                if (image == null || !image.isActiveAndEnabled || image.sprite == null)
+                {
+                    continue;
+                }
+                image.rectTransform.GetWorldCorners(corners);
+                float width = corners[2].x - corners[0].x, height = corners[1].y - corners[0].y;
+                if (middle.x < corners[0].x || middle.x > corners[2].x || middle.y < corners[0].y || middle.y > corners[1].y
+                    || height < letters * 0.8f || height > letters * MaxPlateHeight)
+                {
+                    continue;
+                }
+                if (width * height < bestArea)
+                {
+                    best = image;
+                    bestArea = width * height;
+                }
+            }
+            return best;
         }
     }
 
