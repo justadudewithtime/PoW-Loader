@@ -10,6 +10,8 @@ Newest first, from the first of these releases (23 October 2026).
 - **Life menu "NEW" badges** in English, the word in the middle of its diamond. Other images the game only shows later are replaced too (evaluation grade glow, the strike-back popup in combat).
 - **Secondary objectives in combat:** the status stays in one piece after the objective ("Zhao Zilong survives" / "(Not Achieved)") instead of breaking the line after the character's name.
 - **Battle defeat title in English:** "DEFEAT" in place of 战斗失败, in the two pieces the game slides apart (the victory title was already "VICTORY").
+- **Mantra "Reaching for the Stars"** has its own effects again (a double copy in the sheet had overwritten them).
+- **Translation fix of 9 November** from the main repository merged in, with its text updates.
 - **Two dialogue lines in English again:** "Providing Information" (`t5202091_100`) and `t3070203_102` had a sentence pasted over their ID, so the game showed its Chinese line.
 
 ### Fonts
@@ -21,7 +23,14 @@ Newest first, from the first of these releases (23 October 2026).
 - **Relationship screen:** Friendship, Send Gifts, Outings, the hobbies and the Ability tags in the middle of their plates (the letters sat on the bottom edge).
 
 ### Texture mods
-- **Outfits, hair, weapons and accessories can be repainted:** every `.png` in `ModResources\Textures` (any sub folder, one per mod) replaces the game texture of the same name when a model loads. With no files there nothing is looked at.
+- **Outfits, hair, weapons and accessories can be repainted:** every `.png` in `ModResources\Textures` (any sub folder, one per mod) replaces the game texture of the same name when a model loads. With no files there nothing is looked at. Reloading the texture mods updates every loaded model, not only those on screen.
+
+### Mod API
+- An asset with a mod file of a type ModAPI cannot build loads the game's own asset instead of nothing; a prefab that fails to load no longer throws an error.
+- After the text tables are loaded, the next image no longer loads its original instead of the English one.
+- Two mods with the same load order number no longer stop the mod loading.
+- The F9 log console keeps the last 500 lines instead of every line since the start, so memory no longer grows the longer you play.
+- Removed a debug hook that logged every battle schedule load as an error, and other dead code.
 
 ### Dev Tools (separate plugin, not in the release)
 - **`PoW_DevTools.dll`** (project `PoW_DevTools`, built into `Output\DevTools`): F5 the game's own cheating console in English with searchable ID lists (items, skills, internal arts, traits, rewards, characters, about 2000 story flags) and all 4808 Chinese developer notes in English; F6 animation browser (every clip, played on the player or a character nearby); F7 photo mode (free camera, pause, turn the character, screenshots up to 4x; cutscenes carry on after it); F8 wardrobe (hair, head and body of other models, accessories, weapons in the hands with the combat grip, tint and recolour, texture export and reload for texture mods); **Battle replay** button in the F5 console: fight any battle again, then straight back to where you were, with no rewards, evaluation or story flags.
