@@ -16,6 +16,9 @@ Newest first, from the first of these releases (23 October 2026).
 - **`MessageFont`** setting: the messages popping up on screen (items acquired or lost, money, party members, stats and skills increased, notebook) can use another font than the game's DFKai-SB.
 - **`EndingFont`** setting: the font of the ending screens, `Font` when empty (the ending mod used Arial only).
 
+### Layout
+- **Gear tab:** the Info text is in the middle of its box, like the Effect next to it. A short Info ("Strong and heavy, not easily rust") sat alone at the top of the tall box.
+
 ### Troubleshooting
 - **Diagnostic log**, on by default (`DiagnosticLog` setting): `BepInEx\EnglishPatch_Diagnostics.log` lists the Windows language, the mod files and stray copies of them, the loaded plugins, the translation folder, the fonts and the game controllers, with every controller axis or button that moves.
 - **`BepInEx\LogOutput.log`** is written again, its first lines give the running build and whether the diagnostic log is on (or why it could not be written).

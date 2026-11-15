@@ -1563,7 +1563,8 @@ namespace EnglishPatch.Hooks
 
     /*
      * The item Info box (and Effect box) on the character screen:
-     * Gear tab: the Info box reaches down to the bottom of the Effect box next to it, the texts shrink (down to 14) if they still do not fit.
+     * Gear tab: the Info box reaches down to the bottom of the Effect box next to it, its text is in the middle of the box,
+     * the texts shrink (down to 14) if they still do not fit.
      * Items tab (Gift, Books, Quest): nothing is below the Info box, every item gets the same taller box (see InfoBox.Grow).
      * Medicine tab: the Effect part moves down and gives up some height, the Info box takes that room (see InfoBox.Split).
      * WGPropsIntroduction is also used by popups (gear selection, gifts, battle items), the shop, forge, elixirs and battle status,
@@ -1602,6 +1603,12 @@ namespace EnglishPatch.Hooks
                 //The Info box always reaches down to the bottom of the Effect box next to it
                 InfoBox.SideMargins(info);
                 InfoBox.Grow(info, float.MaxValue, MinSize);
+                //That box is tall, a short Info sat alone at its top while the Effect next to it is in the middle of its box.
+                //The Info is in the middle of its box too, a long one still fills it.
+                if (info != null)
+                {
+                    info.alignment = (TextAnchor)((int)info.alignment % 3 + 3);
+                }
                 TextUtil.ShrinkToHeight(effect, MinSize);
             }
             else if (IsPanelOf<UIInventory>(__instance) && effect == null)
