@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using BepInEx;
 using HarmonyLib;
-using Heluo;
 using Heluo.UI;
 using UnityEngine;
 
@@ -20,8 +18,6 @@ namespace PoWDevTools
         private CheatingConsole _console;
         private readonly PhotoMode _photo = new PhotoMode();
         private readonly Wardrobe _wardrobe = new Wardrobe();
-        private string _message;
-        private float _messageUntil;
 
         private void Awake()
         {
@@ -44,15 +40,6 @@ namespace PoWDevTools
             try { return Heluo.Global.GameGlobal.IsInBattle; } catch { return false; }
         }
 
-        private void Show(string message)
-        {
-            Logger.LogInfo(message);
-            _message = message;
-            _messageUntil = Time.realtimeSinceStartup + 6f;
-        }
-
-        private GUIStyle _style;
-
         private void OnGUI()
         {
             _photo.OnGUI();
@@ -63,16 +50,6 @@ namespace PoWDevTools
 
             //The ID list of the console, drawn after the console so it stays on top
             Picker.DrawList(ConsolePanel.IsOpen(_console) && !GameGlobalIsInBattle());
-
-            if (_message == null || Time.realtimeSinceStartup > _messageUntil)
-            {
-                return;
-            }
-            if (_style == null)
-            {
-                _style = new GUIStyle(GUI.skin.box) { fontSize = 20, wordWrap = true, alignment = TextAnchor.MiddleCenter };
-            }
-            GUI.Box(new Rect(Screen.width / 2f - 400f, 20f, 800f, 60f), _message, _style);
         }
     }
 

@@ -292,7 +292,7 @@ namespace PoWDevTools
     [HarmonyPatch(typeof(Heluo.FSM.Main.Loading), "OnEnable")]
     internal static class Loading_OnEnable
     {
-        private static void Prefix(Heluo.FSM.Main.Loading __instance)
+        private static void Prefix()
         {
             if (!BattleReplay.Replaying || BattleReplay.BattleStarted) return;
             try

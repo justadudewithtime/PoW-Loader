@@ -39,7 +39,6 @@
     <AssemblyOriginatorKeyFile>ModLoaderKey.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Debug\DebugHooks.cs" />
     <Compile Include="IPoWMod.cs" />
     <Compile Include="ResourceRedirection\DataManagerRedirector.cs" />
     <Compile Include="ResourceRedirection\ImageLanguageRedirector.cs" />

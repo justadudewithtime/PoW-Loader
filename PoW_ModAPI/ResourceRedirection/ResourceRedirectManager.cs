@@ -190,11 +190,9 @@ namespace ModAPI
         {
             string path = NormalizePath(context.Parameters.Name);
 
-            //Debug.LogError("AssetLoading: " + context.Parameters.Name);
             string rootRedirect = GetRedirect(path);
             if (string.IsNullOrEmpty(rootRedirect) || _ForceOriginalNextLoad) //_ForceOriginalNextLoad is resetted in AssetLoaded hook
             {
-                //Debug.Log("[ResourceRedirectManager] Found no redirect for " + path);
                 context.Complete(false, false, false);
                 return;
             }
@@ -227,7 +225,6 @@ namespace ModAPI
 
         public void AssetLoaded(AssetLoadedContext context)
         {
-            //Debug.LogError("AssetLoaded: " + context.Parameters.Name);
             if (!_ForceOriginalNextLoad && Path.GetExtension(context.Parameters.Name) == ".prefab")
             {
                 //It is a prefab, we want to check for child GameObjects and replace them if needed.
@@ -265,44 +262,33 @@ namespace ModAPI
 
         public void AsyncAssetLoading(AsyncAssetLoadingContext context)
         {
-            //Debug.LogError("AsyncAssetLoading: " + context.Parameters.Name);
             context.Complete(false, false, false);
         }
 
         public void AssetBundleLoading(AssetBundleLoadingContext context)
         {
-            //Debug.LogError("AssetBundleLoading: " + context.Parameters.Path);
             context.Complete(false, false, false);
         }
 
         public void AssetBundleLoaded(AssetBundleLoadedContext context)
         {
             //Caching filenames to their actual path. We need this to modify prefab game objects later on.
+            //Keyed by file name: with the same name in two bundles, the bundle loaded last wins
             foreach (string assetName in context.Bundle.GetAllAssetNames())
             {
-                if (assetNameToPath.ContainsKey(assetName))
-                {
-                    Debug.LogError("[Resource Redirector] An Asset with name " + assetName + " already exists in teh assetNameToPath list. This is a big issue since we need unique asset names!");
-                }
-                else
-                {
-                    string path = NormalizePath(assetName);
-                    assetNameToPath[Path.GetFileName(path)] = path;
-                }
+                string path = NormalizePath(assetName);
+                assetNameToPath[Path.GetFileName(path)] = path;
             }
-            //Debug.LogError("AssetBundleLoaded: " + context.Parameters.Path);
             context.Complete(false);
         }
 
         public void AsyncAssetBundleLoading(AsyncAssetBundleLoadingContext context)
         {
-            //Debug.LogError("AsyncAssetBundleLoading: " + context.Parameters.Path);
             context.Complete(false, false, false);
         }
 
         public void ResourceLoaded(ResourceLoadedContext context)
         {
-            //Debug.LogError("ResourceLoaded: " + context.Parameters.Path);
             context.Complete(false);
         }
 

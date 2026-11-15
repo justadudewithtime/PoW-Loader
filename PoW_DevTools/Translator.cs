@@ -31,9 +31,6 @@ namespace PoWDevTools
             return _english.TryGetValue(chinese.Trim(), out string english) ? english : null;
         }
 
-        //Kept for the plugin's Update loop, nothing to do any more
-        public static void Pump(MonoBehaviour host) { }
-
         private static void Load()
         {
             if (_english != null) return;
