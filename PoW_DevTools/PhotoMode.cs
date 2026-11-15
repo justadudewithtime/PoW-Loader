@@ -42,6 +42,7 @@ namespace PoWDevTools
         private readonly Dictionary<Transform, Quaternion> _savedRotations = new Dictionary<Transform, Quaternion>();
 
         private List<string> _clips;
+        private bool _clipsErrorLogged;
         private List<string> _shown = new List<string>();
         private string _search = "";
         private string _searchShown;
@@ -74,7 +75,7 @@ namespace PoWDevTools
             else if (Input.GetKeyDown(KeyCode.F6) && !Active)
             {
                 BrowserOpen = !BrowserOpen;
-                if (BrowserOpen) RefreshTargets();
+                if (BrowserOpen) RefreshTargets(); else RestoreSpeeds();
             }
 
             //While typing in the browser's search box, the letters must not walk the character or open menus
@@ -159,6 +160,7 @@ namespace PoWDevTools
             foreach (var r in _savedRotations) if (r.Key != null) r.Key.rotation = r.Value;
             _savedRotations.Clear();
             _turn = 0f;
+            RestoreSpeeds();
             BrowserOpen = false;
         }
 
@@ -271,7 +273,7 @@ namespace PoWDevTools
                     clip.wrapMode = WrapMode.Once;
                     actor.PlayCustom(clip, clip.length, () => { });
                 }
-                if (actor.Animator != null) actor.Animator.speed = _animSpeed;
+                SetSpeed(actor.Animator, _animSpeed);
                 Toast(clipName + " (" + clip.length.ToString("0.0") + " s)");
             }
             catch (Exception e)
@@ -281,6 +283,30 @@ namespace PoWDevTools
             }
         }
 
+        //Animators whose speed the Speed slider changed, with the speed they had: given back on Stop, on leaving photo
+        //mode and on closing the browser, also for characters no longer selected
+        private readonly Dictionary<Animator, float> _savedSpeeds = new Dictionary<Animator, float>();
+
+        private void SetSpeed(Animator animator, float speed)
+        {
+            if (animator == null) return;
+            if (!_savedSpeeds.ContainsKey(animator)) _savedSpeeds[animator] = animator.speed;
+            animator.speed = speed;
+        }
+
+        private void RestoreSpeed(Animator animator)
+        {
+            if (animator == null || !_savedSpeeds.TryGetValue(animator, out float speed)) return;
+            animator.speed = speed;
+            _savedSpeeds.Remove(animator);
+        }
+
+        private void RestoreSpeeds()
+        {
+            foreach (var saved in _savedSpeeds) if (saved.Key != null) saved.Key.speed = saved.Value;
+            _savedSpeeds.Clear();
+        }
+
         private void Stop()
         {
             ActorController actor = Target;
@@ -288,7 +314,7 @@ namespace PoWDevTools
             try
             {
                 actor.StopCustom();
-                if (actor.Animator != null) actor.Animator.speed = 1f;
+                RestoreSpeed(actor.Animator);
             }
             catch { }
         }
@@ -308,7 +334,7 @@ namespace PoWDevTools
             get
             {
                 if (_clips != null) return _clips;
-                _clips = new List<string>();
+                //Kept only once the game's file list was read, until then every draw tries again
                 try
                 {
                     object sheet = Traverse.Create(Heluo.Resource.BundleManagerBySheet.Instance()).Field("bundleSheet").GetValue();
@@ -325,9 +351,11 @@ namespace PoWDevTools
                 }
                 catch (Exception e)
                 {
-                    Debug.LogError("[DevTools] Could not read the animation list: " + e);
+                    //Written once, not on every draw that tries again
+                    if (!_clipsErrorLogged) Debug.LogError("[DevTools] Could not read the animation list: " + e);
+                    _clipsErrorLogged = true;
                 }
-                return _clips;
+                return _clips ?? new List<string>();
             }
         }
 
@@ -465,7 +493,7 @@ namespace PoWDevTools
                 if (Math.Abs(speed - _animSpeed) > 0.001f)
                 {
                     _animSpeed = speed;
-                    if (Target != null && Target.Animator != null) Target.Animator.speed = _animSpeed;
+                    if (Target != null) SetSpeed(Target.Animator, _animSpeed);
                 }
             }
 

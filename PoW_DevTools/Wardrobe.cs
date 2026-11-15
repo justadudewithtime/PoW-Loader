@@ -121,6 +121,12 @@ namespace PoWDevTools
                     _lastPlayerObject = go;
                     if (_looks.TryGetValue(ModelName(go), out var look))
                     {
+                        //What the new model wears before the saved look goes on, so Reset can put it back
+                        foreach (Slot slot in look.Keys.Where(k => k < Slot.Weapon).ToList())
+                        {
+                            try { RememberOriginal(player, slot); }
+                            catch (Exception e) { Debug.LogError("[DevTools] Wardrobe original " + slot + ": " + e.Message); }
+                        }
                         foreach (var item in look.OrderBy(i => i.Key).ToList()) Apply(player, item.Key, item.Value, remember: false);
                     }
                 }
@@ -382,6 +388,8 @@ namespace PoWDevTools
         {
             if (actor == null) return;
             GameObject go = actor.gameObject;
+            //The saved look goes first: putting the parts back must not bring its colours back (ReapplyColours)
+            _looks.Remove(ModelName(go));
             foreach (ColorPart part in Enum.GetValues(typeof(ColorPart)))
             {
                 Apply(actor, HueSlot(part), HueShift.Neutral.ToString(), remember: false);
@@ -397,7 +405,6 @@ namespace PoWDevTools
                 }
                 _original.Remove(go);
             }
-            _looks.Remove(ModelName(go));
             SaveLooks();
             _message = "Back to the original look.";
         }
@@ -645,7 +652,12 @@ namespace PoWDevTools
             using (new GUILayout.HorizontalScope())
             {
                 if (GUILayout.Button("Export textures")) _message = TextureTools.Export(Recolor.RenderersOf(AvatarOf(actor), _colorPart), ModelName(actor.gameObject));
-                if (GUILayout.Button("Reload texture mods")) _message = TextureTools.Reload();
+                if (GUILayout.Button("Reload texture mods"))
+                {
+                    _message = TextureTools.Reload();
+                    //Recolours were taken off for the reload, the saved ones go back on from the new textures
+                    foreach (ColorPart part in Enum.GetValues(typeof(ColorPart))) ReapplyColours(actor, part);
+                }
             }
         }
 

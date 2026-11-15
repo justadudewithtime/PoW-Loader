@@ -96,7 +96,13 @@ namespace ModAPI
         private Texture2D ReadTexture(string path)
         {
             Texture2D texture2D = new Texture2D(2, 2);
-            texture2D.LoadImage(File.ReadAllBytes(GetRedirectedFilePath(VariantPath(path))));
+            //A file that is not a readable image: no texture (the game's own is used), not Unity's red placeholder
+            if (!texture2D.LoadImage(File.ReadAllBytes(GetRedirectedFilePath(VariantPath(path)))))
+            {
+                Debug.LogError("[ResourceRedirectManager] Could not read the image " + path);
+                UnityEngine.Object.Destroy(texture2D);
+                return null;
+            }
             return texture2D;
         }
 
@@ -119,7 +125,11 @@ namespace ModAPI
             }
 
             T asset = load(path);
-            _AssetCache[key] = asset;
+            //A file that could not be read is not remembered, it is tried again next time
+            if (asset != null)
+            {
+                _AssetCache[key] = asset;
+            }
             return asset;
         }
 
@@ -133,6 +143,10 @@ namespace ModAPI
             return LoadCached(path, p =>
             {
                 Texture2D texture2D = ReadTexture(p);
+                if (texture2D == null)
+                {
+                    return null;
+                }
                 return Sprite.Create(texture2D, new Rect(0f, 0f, texture2D.width, texture2D.height), new Vector2(texture2D.width / 2, texture2D.height / 2));
             });
         }
@@ -155,6 +169,11 @@ namespace ModAPI
             //We need our own texture here. The texture of the original sprite is often a sprite atlas shared with other sprites (item icons etc.),
             //overwriting it with LoadImage replaced the whole atlas and made those sprites disappear until a restart.
             Texture2D texture2D = ReadTexture(path);
+            if (texture2D == null)
+            {
+                //The prefab keeps its own sprite
+                return original;
+            }
 
             Vector2 pivot = new Vector2(original.pivot.x / original.rect.width, original.pivot.y / original.rect.height);
             Sprite sprite = Sprite.Create(texture2D, new Rect(0f, 0f, texture2D.width, texture2D.height), pivot, original.pixelsPerUnit, 0, SpriteMeshType.FullRect, original.border);
@@ -198,17 +217,26 @@ namespace ModAPI
             }
 
             Type type = context.Parameters.Type;
-            if (type == typeof(Texture2D))
+            try
             {
-                context.Asset = LoadTexture2D(path);
+                if (type == typeof(Texture2D))
+                {
+                    context.Asset = LoadTexture2D(path);
+                }
+                else if (type == typeof(Sprite))
+                {
+                    context.Asset = LoadSprite(path);
+                }
+                else if (type == typeof(TextAsset))
+                {
+                    context.Asset = LoadText(path);
+                }
             }
-            else if (type == typeof(Sprite))
+            catch (Exception e) when (e is IOException || e is UnauthorizedAccessException)
             {
-                context.Asset = LoadSprite(path);
-            }
-            else if (type == typeof(TextAsset))
-            {
-                context.Asset = LoadText(path);
+                //The mod file is gone or locked: the game's own asset is loaded below
+                Debug.LogError("[ResourceRedirectManager] Could not read " + path + ": " + e.Message);
+                context.Asset = null;
             }
 
             //A type we cannot build from a file (or a file that could not be read): the game's own asset is loaded, not nothing

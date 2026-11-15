@@ -51,7 +51,11 @@ if "%errorlevel%" == "9009" (
     goto :7zip
 ) else (
     winrar a -afzip PoW_English.zip Mod
-    if exist Qol_Mod winrar a -afzip QoL.zip Qol_Mod
+    if errorlevel 1 goto :packfailed
+    if exist Qol_Mod (
+        winrar a -afzip QoL.zip Qol_Mod
+        if errorlevel 1 goto :packfailed
+    )
     goto :end
 )
 
@@ -62,7 +66,11 @@ if "%errorlevel%" == "9009" (
     goto :failed
 ) else (
     7z a -tzip PoW_English.zip Mod
-    if exist Qol_Mod 7z a -tzip QoL.zip Qol_Mod
+    if errorlevel 1 goto :packfailed
+    if exist Qol_Mod (
+        7z a -tzip QoL.zip Qol_Mod
+        if errorlevel 1 goto :packfailed
+    )
     goto :end
 )
 
@@ -71,6 +79,14 @@ echo Done!
 START https://github.com/magxm/PoW-Loader/releases/new
 endlocal
 exit /b 0
+
+:packfailed
+rem A zip that failed (or only half written) is not a release
+echo Packing failed, see the messages above.
+del /q PoW_English.zip QoL.zip 2>nul
+pause
+endlocal
+exit /b 1
 
 :failed
 echo Nothing was packed.

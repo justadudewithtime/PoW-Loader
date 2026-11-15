@@ -36,6 +36,8 @@ namespace PoWDevTools
             try
             {
                 Directory.CreateDirectory(ModFolder);
+                //Recoloured copies hold on to the textures the reload replaces: they come off first (the wardrobe makes them again)
+                Recolor.ReleaseTextures();
                 int changed = (int)_type.GetMethod("Reload").Invoke(o, null);
                 int count = (int)_type.GetProperty("Count").GetValue(o, null);
                 return "Texture mods reloaded: " + count + " file(s) in ModResources\\Textures, " + changed + " texture(s) changed on screen.";
@@ -65,6 +67,7 @@ namespace PoWDevTools
             Directory.CreateDirectory(ModFolder);
             var done = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
             var shared = new List<string>();
+            int exported = 0, failed = 0;
             foreach (Renderer r in renderers)
             {
                 foreach (Material m in r.sharedMaterials)
@@ -75,7 +78,12 @@ namespace PoWDevTools
                         Texture t = GameTexture(m.GetTexture(property));
                         if (t == null || string.IsNullOrEmpty(t.name) || !done.Add(t.name)) continue;
                         bool linear = property.IndexOf("Bump", StringComparison.OrdinalIgnoreCase) >= 0 || property.IndexOf("Normal", StringComparison.OrdinalIgnoreCase) >= 0;
-                        if (!Save(t, Path.Combine(folder, t.name + ".png"), linear)) continue;
+                        if (!Save(t, Path.Combine(folder, t.name + ".png"), linear))
+                        {
+                            failed++;
+                            continue;
+                        }
+                        exported++;
                         int others = UsersOf(t.name) - 1;
                         if (others > 0) shared.Add(t.name + " (" + others + " other)");
                     }
@@ -83,7 +91,8 @@ namespace PoWDevTools
             }
             WriteReadme(folder);
             if (done.Count == 0) return "This part has no textures to export.";
-            return "Exported " + done.Count + " texture(s) to TextureDump\\" + Path.GetFileName(folder) + ". Edit, save into ModResources\\Textures\\<your mod>\\ with the same file name, press Reload."
+            if (exported == 0) return "No texture could be written (" + failed + " failed, see LogOutput.log).";
+            return "Exported " + exported + " texture(s)" + (failed > 0 ? " (" + failed + " failed, see LogOutput.log)" : "") + " to TextureDump\\" + Path.GetFileName(folder) + ". Edit, save into ModResources\\Textures\\<your mod>\\ with the same file name, press Reload."
                 + (shared.Count > 0 ? "\nShared with other models on screen: " + string.Join(", ", shared.ToArray()) : "");
         }
 

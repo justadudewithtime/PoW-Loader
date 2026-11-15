@@ -31,7 +31,13 @@ namespace PoWDevTools
         {
             get
             {
-                _list.RemoveAll(a => a == null);
+                //Characters unloaded before the selected one must not move the selection to someone else
+                ActorController selected = _index >= 0 && _index < _list.Count ? _list[_index] : null;
+                if (_list.RemoveAll(a => a == null) > 0 && selected != null)
+                {
+                    int kept = _list.IndexOf(selected);
+                    if (kept >= 0) _index = kept;
+                }
                 if (_list.Count == 0) Refresh();
                 if (_list.Count == 0) return null;
                 _index = Mathf.Clamp(_index, 0, _list.Count - 1);

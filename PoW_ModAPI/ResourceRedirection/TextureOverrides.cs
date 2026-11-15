@@ -28,6 +28,9 @@ namespace ModAPI
         private readonly Dictionary<string, Texture2D> _Loaded = new Dictionary<string, Texture2D>(StringComparer.OrdinalIgnoreCase);
         //Our textures => the game texture they replace, to find the name again and to put it back
         private readonly Dictionary<Texture, Texture> _Originals = new Dictionary<Texture, Texture>();
+        //Material => property => the game texture that property had before ours. Kept per property: one of our textures
+        //can stand for different game textures of the same name, each property gets its own back.
+        private readonly Dictionary<Material, Dictionary<string, Texture>> _PropertyOriginals = new Dictionary<Material, Dictionary<string, Texture>>();
 
         public string Folder { get { return Path.Combine(Paths.GameRootPath, FolderName); } }
         public int Count { get { return _Files.Count; } }
@@ -105,11 +108,29 @@ namespace ModAPI
                 {
                     continue;
                 }
-                Texture original = OriginalOf(current);
+                Texture original = current;
+                _PropertyOriginals.TryGetValue(material, out Dictionary<string, Texture> recorded);
+                if (_Originals.ContainsKey(current))
+                {
+                    //One of ours: the game texture of this very property, else the one it was first made for
+                    original = recorded != null && recorded.TryGetValue(property, out Texture own) && own != null ? own : OriginalOf(current);
+                }
                 Texture wanted = original;
                 if (_Files.TryGetValue(original.name, out string file))
                 {
                     wanted = Load(file, original, IsLinear(property)) ?? original;
+                }
+                if (wanted != original)
+                {
+                    if (recorded == null)
+                    {
+                        _PropertyOriginals[material] = recorded = new Dictionary<string, Texture>();
+                    }
+                    recorded[property] = original;
+                }
+                else if (recorded != null)
+                {
+                    recorded.Remove(property);
                 }
                 if (wanted != current)
                 {
@@ -167,6 +188,14 @@ namespace ModAPI
         {
             var old = new List<Texture2D>(_Loaded.Values);
             _Loaded.Clear();
+            //Materials unloaded since: nothing to put back on them
+            foreach (Material gone in new List<Material>(_PropertyOriginals.Keys))
+            {
+                if (gone == null)
+                {
+                    _PropertyOriginals.Remove(gone);
+                }
+            }
             Scan();
             int changed = 0;
             //Every loaded material, not only those on screen: a model loaded earlier and shown later must not keep a texture destroyed below

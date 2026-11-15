@@ -109,6 +109,8 @@ namespace PoWDevTools
             _searchShown = null;
             _hover = null;
             _scroll = Vector2.zero;
+            //Only this picker may wait for the flags, an earlier flag picker's wait ends here
+            _waitingForFlags = false;
             if (kind == PickKind.Flag && !Catalog.FlagsReady)
             {
                 Catalog.StartFlagScan();

@@ -22,6 +22,44 @@ namespace PoWDevTools
         private static readonly Dictionary<Material, Texture> _originalTexture = new Dictionary<Material, Texture>();
         private static readonly Dictionary<Material, Texture2D> _madeTexture = new Dictionary<Material, Texture2D>();
 
+        /*
+         * Materials of parts that were swapped or of characters that were unloaded are gone: their entries go, and the
+         * recoloured copy made for them is destroyed (nothing else uses it).
+         */
+        private static void ForgetRetired()
+        {
+            foreach (Material m in _madeTexture.Keys.Where(k => k == null).ToList())
+            {
+                if (_madeTexture[m] != null) UnityEngine.Object.Destroy(_madeTexture[m]);
+                _madeTexture.Remove(m);
+            }
+            foreach (Material m in _originalTexture.Keys.Where(k => k == null).ToList()) _originalTexture.Remove(m);
+            foreach (Material m in _originalTint.Keys.Where(k => k == null).ToList()) _originalTint.Remove(m);
+        }
+
+        /*
+         * Before the texture mods are reloaded: every recoloured copy comes off and the texture it was made from goes
+         * back on, so the reload can swap that texture (it may be a texture mod it destroys). Nothing here keeps a
+         * texture the reload could destroy. Returns the materials that were recoloured.
+         */
+        public static int ReleaseTextures()
+        {
+            int released = 0;
+            foreach (var entry in _originalTexture)
+            {
+                Material m = entry.Key;
+                if (m != null && entry.Value != null && _madeTexture.ContainsKey(m))
+                {
+                    m.mainTexture = entry.Value;
+                    released++;
+                }
+            }
+            foreach (Texture2D made in _madeTexture.Values) if (made != null) UnityEngine.Object.Destroy(made);
+            _madeTexture.Clear();
+            _originalTexture.Clear();
+            return released;
+        }
+
         //The texture behind one of our recoloured copies
         public static Texture OriginalOf(Texture t)
         {
@@ -70,6 +108,7 @@ namespace PoWDevTools
         //-------------------------------------------------------------- tint
         public static int Tint(Renderer[] renderers, Color tint)
         {
+            ForgetRetired();
             int changed = 0;
             foreach (Renderer r in renderers)
             {
@@ -89,6 +128,7 @@ namespace PoWDevTools
         //-------------------------------------------------------------- hue shift
         public static int Shift(Renderer[] renderers, HueShift shift)
         {
+            ForgetRetired();
             int changed = 0;
             foreach (Renderer r in renderers)
             {

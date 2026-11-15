@@ -307,6 +307,8 @@ namespace ModAPI
                 // Replace previous log with incremented count instead of adding a new one.
                 log.count = lastLog.Value.count + 1;
                 logs[logs.Count - 1] = log;
+                //A message repeated over and over counts too, the expanded view draws it once per repeat
+                TrimExcessLogs();
             }
             else
             {
@@ -349,14 +351,31 @@ namespace ModAPI
                 return;
             }
 
-            var amountToRemove = logs.Count - maxLogCount;
-
-            if (amountToRemove <= 0)
+            //Counted as drawn: each record once per repeat
+            int total = 0;
+            foreach (Log log in logs)
             {
-                return;
+                total += log.count;
             }
 
-            logs.RemoveRange(0, amountToRemove);
+            int remove = 0;
+            while (total > maxLogCount && remove < logs.Count - 1)
+            {
+                total -= logs[remove].count;
+                remove++;
+            }
+            if (remove > 0)
+            {
+                logs.RemoveRange(0, remove);
+            }
+
+            //Only one record left and still too many repeats: its count stops at the limit
+            if (total > maxLogCount && logs.Count == 1)
+            {
+                Log only = logs[0];
+                only.count = maxLogCount;
+                logs[0] = only;
+            }
         }
     }
 
