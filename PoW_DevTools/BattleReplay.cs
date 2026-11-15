@@ -41,6 +41,9 @@ namespace PoWDevTools
         private static string _selected;
         private static string _message = "";
         private static GUIStyle _rowStyle, _noteStyle;
+        private static bool _snapshotShown;
+        private static float _nextSnapshotCheck;
+        private static bool _snapshotExists;
 
         //-------------------------------------------------------------- start
         private static void Start(string battleId)
@@ -81,14 +84,31 @@ namespace PoWDevTools
             Debug.Log("[DevTools] Battle replay over, back to " + Snapshot);
             try
             {
+                //What the game does when a battle ends (EndBattle.OnBattleFinish), without the result screen, drops and cutscene
                 Traverse.Create(battleManager).Field("InBattle").SetValue(false);
                 Game.UI.Close<UIBattle>();
+                //The battle's mouse handlers come off, or the next battle would get every click twice
+                RemoveMouseHandlers(Game.BattleStateMachine);
+                Game.DeleteSaveFile(GameConfig.BattleSaveFile);
             }
             catch (Exception e)
             {
                 Debug.LogError("[DevTools] Battle replay end: " + e.Message);
             }
             Game.LoadAsync(Snapshot);
+        }
+
+        private static void RemoveMouseHandlers(Heluo.FSM.Battle.BattleStateMachine fsm)
+        {
+            var touch = Game.UI?.TouchController;
+            if (fsm == null || touch == null) return;
+            var move = AccessTools.Method(typeof(Heluo.FSM.Battle.BattleStateMachine), "OnMouseMove");
+            var down = AccessTools.Method(typeof(Heluo.FSM.Battle.BattleStateMachine), "OnMouseDown");
+            if (move != null)
+                touch.OnMouseMove = (Action<float, float>)Delegate.Remove(touch.OnMouseMove, Delegate.CreateDelegate(typeof(Action<float, float>), fsm, move));
+            if (down != null)
+                touch.OnMouseDown = (Action<float, float, UnityEngine.EventSystems.PointerEventData.InputButton>)Delegate.Remove(touch.OnMouseDown,
+                    Delegate.CreateDelegate(typeof(Action<float, float, UnityEngine.EventSystems.PointerEventData.InputButton>), fsm, down));
         }
 
         //A different save loaded (or the menu): replay mode ends, its own load and the game's battle retry do not end it
@@ -125,7 +145,13 @@ namespace PoWDevTools
         {
             get
             {
-                try { return System.IO.File.Exists(string.Format(GameConfig.SaveFilePath, Snapshot)); } catch { return false; }
+                //Looked at on disk at most twice a second while the list is open
+                if (Time.realtimeSinceStartup >= _nextSnapshotCheck)
+                {
+                    _nextSnapshotCheck = Time.realtimeSinceStartup + 0.5f;
+                    try { _snapshotExists = System.IO.File.Exists(string.Format(GameConfig.SaveFilePath, Snapshot)); } catch { _snapshotExists = false; }
+                }
+                return _snapshotExists;
             }
         }
 
@@ -232,7 +258,8 @@ namespace PoWDevTools
                 if (GUILayout.Button(_starting ? "Saving..." : "Start replay", GUILayout.Height(30f))) Start(_selected);
                 GUI.enabled = true;
             }
-            if (SnapshotExists)
+            if (layout) _snapshotShown = SnapshotExists;
+            if (_snapshotShown)
             {
                 using (new GUILayout.HorizontalScope())
                 {

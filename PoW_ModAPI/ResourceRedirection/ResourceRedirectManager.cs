@@ -32,6 +32,12 @@ namespace ModAPI
             _ForceOriginalNextLoad = true;
         }
 
+        //Ends ForceOriginalLoadInNextLoad when the load it was for did not go through the asset hooks (a file outside the bundles)
+        public void EndForceOriginalLoad()
+        {
+            _ForceOriginalNextLoad = false;
+        }
+
         //The game asks for assets as "Assets/Image/..." or with backslashes, our redirects are stored as "Image/..."
         private static string NormalizePath(string path)
         {
@@ -193,21 +199,25 @@ namespace ModAPI
                 return;
             }
 
-            if (context.Parameters.Type == typeof(Texture2D))
+            Type type = context.Parameters.Type;
+            if (type == typeof(Texture2D))
             {
                 context.Asset = LoadTexture2D(path);
             }
-            else if (context.Parameters.Type == typeof(Sprite))
+            else if (type == typeof(Sprite))
             {
                 context.Asset = LoadSprite(path);
             }
-            else if (context.Parameters.Type == typeof(TextAsset))
+            else if (type == typeof(TextAsset))
             {
                 context.Asset = LoadText(path);
             }
-            else if (context.Parameters.Type == typeof(Shader))
+
+            //A type we cannot build from a file (or a file that could not be read): the game's own asset is loaded, not nothing
+            if (context.Asset == null)
             {
-                Debug.LogError("Loading Shader " + context.Parameters.Name);
+                context.Complete(false, false, false);
+                return;
             }
 
             context.Complete(true, true, true);
@@ -223,6 +233,12 @@ namespace ModAPI
                 //It is a prefab, we want to check for child GameObjects and replace them if needed.
                 //Hidden children too: badges such as the life menu "NEW" are hidden in the prefab and only shown later.
                 GameObject prefab = context.Asset as GameObject;
+                if (prefab == null)
+                {
+                    _ForceOriginalNextLoad = false;
+                    context.Complete(false);
+                    return;
+                }
 
                 //Texture mods (ModResources\Textures) on the model's materials
                 TextureOverrides.Instance.ApplyTo(prefab);

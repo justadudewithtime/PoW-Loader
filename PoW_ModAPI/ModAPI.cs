@@ -108,6 +108,12 @@ namespace ModAPI
             {
                 _NewMods.Add(modWrapper);
             }
+            else if (_Mods.ContainsKey(loadOrderIndex))
+            {
+                //Two mods with the same index in their config files: the second one gets a new index instead of stopping the loading
+                Debug.LogWarning("[ModAPI] " + mod.GetName() + " has the load order index " + loadOrderIndex + " of " + _Mods[loadOrderIndex].Mod.GetName() + ", it gets a new one");
+                _NewMods.Add(modWrapper);
+            }
             else
             {
                 if (loadOrderIndex > _ModsHighestLoadOrderIndex)

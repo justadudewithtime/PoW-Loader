@@ -86,28 +86,35 @@ namespace ModAPI
             }
             foreach (Material material in renderer.sharedMaterials)
             {
-                if (material == null)
+                changed += ApplyTo(material);
+            }
+            return changed;
+        }
+
+        private int ApplyTo(Material material)
+        {
+            int changed = 0;
+            if (material == null)
+            {
+                return 0;
+            }
+            foreach (string property in material.GetTexturePropertyNames())
+            {
+                Texture current = material.GetTexture(property);
+                if (current == null)
                 {
                     continue;
                 }
-                foreach (string property in material.GetTexturePropertyNames())
+                Texture original = OriginalOf(current);
+                Texture wanted = original;
+                if (_Files.TryGetValue(original.name, out string file))
                 {
-                    Texture current = material.GetTexture(property);
-                    if (current == null)
-                    {
-                        continue;
-                    }
-                    Texture original = OriginalOf(current);
-                    Texture wanted = original;
-                    if (_Files.TryGetValue(original.name, out string file))
-                    {
-                        wanted = Load(file, original, IsLinear(property)) ?? original;
-                    }
-                    if (wanted != current)
-                    {
-                        material.SetTexture(property, wanted);
-                        changed++;
-                    }
+                    wanted = Load(file, original, IsLinear(property)) ?? original;
+                }
+                if (wanted != current)
+                {
+                    material.SetTexture(property, wanted);
+                    changed++;
                 }
             }
             return changed;
@@ -162,9 +169,10 @@ namespace ModAPI
             _Loaded.Clear();
             Scan();
             int changed = 0;
-            foreach (Renderer renderer in UnityEngine.Object.FindObjectsOfType<Renderer>())
+            //Every loaded material, not only those on screen: a model loaded earlier and shown later must not keep a texture destroyed below
+            foreach (Material material in Resources.FindObjectsOfTypeAll<Material>())
             {
-                changed += ApplyTo(renderer);
+                changed += ApplyTo(material);
             }
             //Our old textures are not used by anything now
             foreach (Texture2D texture in old)

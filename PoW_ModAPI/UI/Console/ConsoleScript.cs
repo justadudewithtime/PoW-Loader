@@ -30,7 +30,7 @@ namespace ModAPI
         /// <summary>
         /// Whether to open the window by shaking the device (mobile-only).
         /// </summary>
-        public bool shakeToOpen = true;
+        public bool shakeToOpen = false;
 
         /// <summary>
         /// Also require touches while shaking to avoid accidental shakes.
@@ -52,12 +52,12 @@ namespace ModAPI
         /// <summary>
         /// Whether to only keep a certain number of logs, useful if memory usage is a concern.
         /// </summary>
-        public bool restrictLogCount = false;
+        public bool restrictLogCount = true;
 
         /// <summary>
         /// Number of logs to keep before removing old ones.
         /// </summary>
-        public int maxLogCount = 25;
+        public int maxLogCount = 500;
 
         /// <summary>
         /// Font size to display log entries with.
