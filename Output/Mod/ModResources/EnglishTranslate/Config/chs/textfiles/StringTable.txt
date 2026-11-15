@@ -678,7 +678,7 @@ SecondaryInterface1714	传书介面完成奖励	Reward
 SecondaryInterface1715	传书介面期限	<size=30>Validity</size>
 SecondaryInterface1716	传书介面传书分页标题	Quest
 SecondaryInterface1717	传书介面记录分页标题	Record
-SecondaryInterface1718	传书介面任务日程不费时	0 Turns
+SecondaryInterface1718	传书介面任务日程不费时	0 Turn
 SecondaryInterface1801	战斗状态介面文本	Inner Arts
 SecondaryInterface1802	战斗状态介面文本	Weapon
 SecondaryInterface1803	战斗状态介面文本	Armor
@@ -769,7 +769,7 @@ SecondaryInterface2619	创角介面体魄	Attack 1 / Defense 4 / Counterattack 2
 SecondaryInterface2620	创角介面灵巧	Attack 3 / Defence 2 / Evasion 2 / HP 1 / Qi 1 / 120 points + 1 movement, and then every 200 points + 1 movement
 SecondaryInterface2621	创角介面意志	Attack 2 / Defense 3 / Critical Hit 2 / HP 2 / Qi 3 / Increase the five elements of the body to counteract each other's damage
 SecondaryInterface2622	创角介面	Finish
-SecondaryInterface2623	创角介面	Please enter a Name, this field cannot be empty。
+SecondaryInterface2623	创角介面	Please enter a Name，this field cannot be empty。
 SecondaryInterface2624	创角介面	This Name cannot be used
 SecondaryInterface2625	创角介面	Capacity impact range
 SecondaryInterface2701	按键说明	ESC＝Back
@@ -955,9 +955,9 @@ SecondaryInterface3543	按键符号	←
 SecondaryInterface3601	战斗胜败介面	Victory Conditions：
 SecondaryInterface3602	战斗胜败介面	Failure Conditions：
 SecondaryInterface3603	战斗胜败介面	Secondary Objectives：
-SecondaryInterface3604	战斗胜败介面：次要目标未达成格式	－{0} (Not Achieved)
-SecondaryInterface3605	战斗胜败介面：次要目标已达成格式	－{0} (Achieved)
-SecondaryInterface3606	战斗胜败介面：次要目标失败格式	－{0} (Failure)
+SecondaryInterface3604	战斗胜败介面：次要目标未达成格式	－{0}（Not Achieved）
+SecondaryInterface3605	战斗胜败介面：次要目标已达成格式	－{0}（Achieved）
+SecondaryInterface3606	战斗胜败介面：次要目标失败格式	－{0}（Failure）
 SecondaryInterface3607	战斗胜败介面：胜利tip格式	<color=#B4D3FF><size=21>✓</size>.{0}</color>
 SecondaryInterface3608	战斗胜败介面：失败tip格式	<color=#FF9E9E><size=21>✗</size>.{0}</color>
 SecondaryInterface3609	战斗胜败介面：主要目标	Main objectives：
@@ -1067,7 +1067,7 @@ SecondaryInterface1106	养成介面效果加乘提示	<size=20>Martial arts trai
 SecondaryInterface1107	养成介面效果加乘提示	<size=20>Four Arts effect bonus!</size>
 SecondaryInterface1108	养成介面效果加乘提示	<size=20>Errands bonus!</size>
 SecondaryInterface1109	养成介面效果加乘提示	<size=20>Number of remaining herbal bath buffs: {0}</size>
-SecondaryInterface1110	养成介面效果加乘提示	<size=20>Workout, martial arts training, four arts, outing and errands effects are enhanced!</size>
+SecondaryInterface1110	养成介面效果加乘提示	<size=20>Workout, martial arts training, four arts, outing and, errands effects are enhanced!</size>
 SecondaryInterface1111	养成介面	(Total value: {0})
 SecondaryInterface2209	阅读介面文本	Your energy is too low to understand the content of the manual.
 ta02004001	互动介面	Enter
