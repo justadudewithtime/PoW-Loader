@@ -4148,12 +4148,16 @@ namespace EnglishPatch.Hooks
             if (LayoutLog.Enabled) LayoutLog.Once("plate " + text.GetInstanceID(), "Plate label '" + text.text + "': " + LayoutLog.Describe(text)
                 + ", plate " + (plate == null ? "not found" : "'" + plate.name + "' size " + LayoutLog.V(plate.rectTransform.rect.size))
                 + ", in " + Path(text.transform));
-            if (plate == null || ink == null)
+            if (ink == null)
             {
                 return;
             }
-            Vector3 shift = rect.parent.InverseTransformVector(UIBattle_SkillHotKeys_Hook.DrawnMiddle(plate) - ink.Value);
-            Vector3 plateSize = rect.parent.InverseTransformVector(plate.rectTransform.TransformVector(plate.rectTransform.rect.size));
+            //No plate of its own (the hobby plates are part of a bigger picture): the label's box is the size of the band
+            //it is drawn on, the letters go in the middle of the box
+            RectTransform target = plate != null ? plate.rectTransform : rect;
+            Vector3 middle = plate != null ? UIBattle_SkillHotKeys_Hook.DrawnMiddle(plate) : rect.TransformPoint(rect.rect.center);
+            Vector3 shift = rect.parent.InverseTransformVector(middle - ink.Value);
+            Vector3 plateSize = rect.parent.InverseTransformVector(target.TransformVector(target.rect.size));
             //Within the plate, a bigger move is a measure gone wrong
             if (Mathf.Abs(shift.x) <= Mathf.Abs(plateSize.x) / 4f && Mathf.Abs(shift.y) <= Mathf.Abs(plateSize.y) / 2f)
             {
