@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using BepInEx;
 using HarmonyLib;
@@ -29,13 +29,14 @@ namespace DevToolsProbe
 
             //The console is a MonoBehaviour the release build never creates: we create it, it handles F5 and draws itself
             _console = gameObject.AddComponent<CheatingConsole>();
-            Logger.LogInfo("Cheating Console attached, F5 toggles it. F6: animation browser, F7: photo mode, F8: wardrobe.");
+            Logger.LogInfo("Cheating Console attached, F5 toggles it (with Battle replay). F6: animation browser, F7: photo mode, F8: wardrobe.");
         }
 
         private void Update()
         {
             _photo.Update();
             _wardrobe.Update();
+            BattleReplay.Update();
         }
 
         private static bool GameGlobalIsInBattle()
@@ -57,6 +58,8 @@ namespace DevToolsProbe
             _photo.OnGUI();
             _wardrobe.OnGUI();
             if (_photo.Active) return;
+
+            BattleReplay.DrawList(ConsolePanel.IsOpen(_console) && !BattleReplay.InBattle);
 
             //The ID list of the console, drawn after the console so it stays on top
             Picker.DrawList(ConsolePanel.IsOpen(_console) && !GameGlobalIsInBattle());
@@ -158,11 +161,21 @@ namespace DevToolsProbe
 
         public static bool IsOpen(CheatingConsole console) { return console != null && _IsOpen(console); }
         private static Rect _last = new Rect(0f, 0f, 320f, 330f);
-        private static float _right, _bottom;
+        private static float _right, _bottom, _contentBottom = 320f;
+        private static CheatingConsole _console;
+        private static bool _drawing;
+
+        //The console goes away (the battle replay starts from it)
+        public static void Close()
+        {
+            if (_console != null) _IsOpen(_console) = false;
+        }
 
         public static void Begin(CheatingConsole console)
         {
-            if (!_IsOpen(console) || !Application.isPlaying)
+            _console = console;
+            _drawing = _IsOpen(console) && Application.isPlaying;
+            if (!_drawing)
             {
                 return;
             }
@@ -186,10 +199,34 @@ namespace DevToolsProbe
 
         public static void End()
         {
-            if (Event.current != null && Event.current.type == EventType.Repaint && _bottom > 0f)
+            if (!_drawing || Event.current == null)
             {
-                _last = new Rect(0f, 0f, _right + Margin, _bottom + Margin);
+                return;
+            }
+            bool repaint = Event.current.type == EventType.Repaint && _bottom > 0f;
+            if (repaint)
+            {
+                _contentBottom = _bottom;
+            }
+
+            //Our own entry under the console's sections (not in combat, where the console shows its combat toggles)
+            float extra = 0f;
+            if (!BattleReplay.InBattle)
+            {
+                Rect button = new Rect(10f, _contentBottom + 8f, 230f, 28f);
+                if (GUI.Button(button, BattleReplay.Open ? "Battle replay  ▲" : "Battle replay  ▼"))
+                {
+                    BattleReplay.Open = !BattleReplay.Open;
+                    if (BattleReplay.Open) Picker.CloseList();
+                }
+                extra = 8f + 28f;
+            }
+
+            if (repaint)
+            {
+                _last = new Rect(0f, 0f, Mathf.Max(_right, 240f) + Margin, _bottom + extra + Margin);
                 Picker.PanelRight = _last.xMax;
+                BattleReplay.PanelRight = _last.xMax;
             }
         }
     }

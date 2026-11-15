@@ -49,6 +49,14 @@
       <HintPath>..\Dependencies\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\Dependencies\Assembly-CSharp-firstpass.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BehaviourMachineRuntime">
+      <HintPath>..\Dependencies\BehaviourMachineRuntime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEngine">
       <HintPath>..\Dependencies\UnityEngine.dll</HintPath>
       <Private>False</Private>
@@ -93,6 +101,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BattleReplay.cs" />
     <Compile Include="Catalog.cs" />
     <Compile Include="DevTools.cs" />
     <Compile Include="PhotoMode.cs" />

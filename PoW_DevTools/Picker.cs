@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using HarmonyLib;
@@ -49,6 +49,12 @@ namespace DevToolsProbe
         private static Vector2 _scroll;
         public static float PanelRight = 320f;
 
+        //The battle replay list opens in the same place
+        public static void CloseList()
+        {
+            _openKey = null;
+        }
+
         public static void BeginSection(string name)
         {
             _section = name;
@@ -91,6 +97,7 @@ namespace DevToolsProbe
                 else
                 {
                     Open(key, kind);
+                    BattleReplay.Open = false;
                 }
             }
         }
