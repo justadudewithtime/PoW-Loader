@@ -1,33 +1,114 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
-    <TargetFramework>net472</TargetFramework>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{76E009FC-B9A1-4C72-A047-5D5102859C99}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DevToolsProbe</RootNamespace>
     <AssemblyName>PoW_DevTools</AssemblyName>
-    <!-- Not part of the English release: its own folder, copied into the game's BepInEx\plugins by hand -->
-    <OutputPath>..\Output\DevTools\BepInEx\plugins\</OutputPath>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
-
-  <ItemGroup>
-    <!-- English notes of the game's Chinese developer notes, shown in the console's ID lists -->
-    <EmbeddedResource Include="Notes.tsv" LogicalName="DevToolsProbe.Notes.tsv" />
-  </ItemGroup>
-
+  <!-- Not part of the English release: its own folder, copied into the game's BepInEx\plugins by hand -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\DevTools\BepInEx\plugins\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\DevTools\BepInEx\plugins\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
   <!-- Compile only: everything below is already in the game or BepInEx, so nothing is copied to the output.
        The Mod API's texture mods are used through reflection, the tools also run without them. -->
   <ItemGroup>
-    <Reference Include="0Harmony" HintPath="$(BepInExCore)0Harmony.dll" Private="false" />
-    <Reference Include="Artemis_Unity5" HintPath="$(GameDependencies)Artemis_Unity5.dll" Private="false" />
-    <Reference Include="Assembly-CSharp" HintPath="$(GameDependencies)Assembly-CSharp.dll" Private="false" />
-    <Reference Include="BepInEx" HintPath="$(BepInExCore)BepInEx.dll" Private="false" />
-    <Reference Include="UnityEngine" HintPath="$(GameDependencies)UnityEngine.dll" Private="false" />
-    <Reference Include="UnityEngine.AnimationModule" HintPath="$(GameDependencies)UnityEngine.AnimationModule.dll" Private="false" />
-    <Reference Include="UnityEngine.CoreModule" HintPath="$(GameDependencies)UnityEngine.CoreModule.dll" Private="false" />
-    <Reference Include="UnityEngine.IMGUIModule" HintPath="$(GameDependencies)UnityEngine.IMGUIModule.dll" Private="false" />
-    <Reference Include="UnityEngine.ImageConversionModule" HintPath="$(GameDependencies)UnityEngine.ImageConversionModule.dll" Private="false" />
-    <Reference Include="UnityEngine.InputModule" HintPath="$(GameDependencies)UnityEngine.InputModule.dll" Private="false" />
-    <Reference Include="UnityEngine.ScreenCaptureModule" HintPath="$(GameDependencies)UnityEngine.ScreenCaptureModule.dll" Private="false" />
-    <Reference Include="UnityEngine.TextRenderingModule" HintPath="$(GameDependencies)UnityEngine.TextRenderingModule.dll" Private="false" />
-    <Reference Include="UnityEngine.UI" HintPath="$(GameDependencies)UnityEngine.UI.dll" Private="false" />
-    <Reference Include="UnityEngine.UIModule" HintPath="$(GameDependencies)UnityEngine.UIModule.dll" Private="false" />
+    <Reference Include="0Harmony">
+      <HintPath>..\Output\Mod\BepInEx\core\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>..\Output\Mod\BepInEx\core\BepInEx.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Artemis_Unity5">
+      <HintPath>..\Dependencies\Artemis_Unity5.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\Dependencies\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\Dependencies\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\Dependencies\UnityEngine.AnimationModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\Dependencies\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\Dependencies\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\Dependencies\UnityEngine.ImageConversionModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>..\Dependencies\UnityEngine.InputModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>..\Dependencies\UnityEngine.ScreenCaptureModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\Dependencies\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\Dependencies\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\Dependencies\UnityEngine.UIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Catalog.cs" />
+    <Compile Include="DevTools.cs" />
+    <Compile Include="PhotoMode.cs" />
+    <Compile Include="Picker.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recolor.cs" />
+    <Compile Include="Targets.cs" />
+    <Compile Include="TextureTools.cs" />
+    <Compile Include="Translator.cs" />
+    <Compile Include="Wardrobe.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- English notes of the game's Chinese developer notes, shown in the console's ID lists -->
+    <EmbeddedResource Include="Notes.tsv">
+      <LogicalName>DevToolsProbe.Notes.tsv</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
