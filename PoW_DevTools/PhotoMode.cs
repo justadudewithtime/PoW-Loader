@@ -36,7 +36,9 @@ namespace PoWDevTools
         private float _yaw, _pitch;
         private float _moveSpeed = 4f;
 
-        private readonly List<GameObject> _hiddenUi = new List<GameObject>();
+        //Canvases and their click handling switched off while photo mode is on
+        private readonly List<Behaviour> _hiddenUi = new List<Behaviour>();
+        private float _nextUiHide;
         private readonly Dictionary<Transform, Quaternion> _savedRotations = new Dictionary<Transform, Quaternion>();
 
         private List<string> _clips;
@@ -78,6 +80,7 @@ namespace PoWDevTools
             //While typing in the browser's search box, the letters must not walk the character or open menus
             SetInputTaken(Active || (BrowserOpen && typing));
             if (!Active) return;
+            if (Time.unscaledTime >= _nextUiHide) HideUi();
 
             if (!typing)
             {
@@ -124,10 +127,7 @@ namespace PoWDevTools
 
             //The game's UI goes away (menus, names over heads)
             _hiddenUi.Clear();
-            foreach (GameObject ui in new[] { Game.UI.Canvas, Game.UI.Canvas3D != null ? Game.UI.Canvas3D.gameObject : null })
-            {
-                if (ui != null && ui.activeSelf) { ui.SetActive(false); _hiddenUi.Add(ui); }
-            }
+            HideUi();
 
             //Photo mode takes the input like a menu does, the player can't walk or open menus
             SetInputTaken(true);
@@ -143,7 +143,7 @@ namespace PoWDevTools
             SetPaused(false);
             SetInputTaken(false);
 
-            foreach (GameObject ui in _hiddenUi) if (ui != null) ui.SetActive(true);
+            foreach (Behaviour ui in _hiddenUi) if (ui != null) ui.enabled = true;
             _hiddenUi.Clear();
 
             if (_camera != null)
@@ -160,6 +160,27 @@ namespace PoWDevTools
             _savedRotations.Clear();
             _turn = 0f;
             BrowserOpen = false;
+        }
+
+        /*
+         * The UI is hidden by switching its canvases off, not its objects: a cutscene's talk box, fades and the scripts
+         * waiting on them keep running (a deactivated object stops its coroutines and animations, and the cutscene
+         * chain then waited forever). A box opened while photo mode is on is hidden too, at the next check.
+         */
+        private void HideUi()
+        {
+            _nextUiHide = Time.unscaledTime + 0.25f;
+            foreach (GameObject root in new[] { Game.UI?.Canvas, Game.UI?.Canvas3D != null ? Game.UI.Canvas3D.gameObject : null })
+            {
+                if (root == null) continue;
+                foreach (Canvas canvas in root.GetComponentsInChildren<Canvas>(true)) Hide(canvas);
+                foreach (UnityEngine.UI.GraphicRaycaster raycaster in root.GetComponentsInChildren<UnityEngine.UI.GraphicRaycaster>(true)) Hide(raycaster);
+            }
+        }
+
+        private void Hide(Behaviour ui)
+        {
+            if (ui != null && ui.enabled) { ui.enabled = false; _hiddenUi.Add(ui); }
         }
 
         private bool _inputTaken;
